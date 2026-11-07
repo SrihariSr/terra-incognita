@@ -1,0 +1,3341 @@
+{
+  "band": [
+    4,
+    7
+  ],
+  "worlds": [
+    {
+      "name": "Paris, Tokyo and Rio trade places",
+      "moves": [
+        {
+          "source": "Paris",
+          "target": "Sydney"
+        },
+        {
+          "source": "Tokyo",
+          "target": "London"
+        },
+        {
+          "source": "Rio de Janeiro",
+          "target": "Moscow"
+        }
+      ],
+      "results": {
+        "swap": {
+          "moves": [
+            {
+              "source": "Paris",
+              "target": "Sydney"
+            },
+            {
+              "source": "Tokyo",
+              "target": "London"
+            },
+            {
+              "source": "Rio de Janeiro",
+              "target": "Moscow"
+            }
+          ],
+          "mode": "swap",
+          "cities": [
+            {
+              "source": "Paris",
+              "target": "Sydney",
+              "before": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "control": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Eiffel Tower",
+                "after": "Sydney Opera House",
+                "control": "Eiffel Tower"
+              },
+              "keys": {
+                "source": {
+                  "country": "France",
+                  "currency": "Euro (EUR)",
+                  "language": "French",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "Australia",
+                  "currency": "Dollar (AUD)",
+                  "language": "English",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Australia",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "currency": {
+                    "answer": "Australian Dollar",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 5,
+                "n_source": 0
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "France",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "French",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": true
+            },
+            {
+              "source": "Tokyo",
+              "target": "London",
+              "before": {
+                "country": "Japan",
+                "currency": "Japanese Yen",
+                "language": "Japanese",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "United Kingdom",
+                "currency": "Pound Sterling",
+                "language": "English",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Japan",
+                "currency": "Japanese Yen",
+                "language": "Japanese",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Tokyo Tower",
+                "after": "Big Ben",
+                "control": "Tokyo Tower"
+              },
+              "keys": {
+                "source": {
+                  "country": "Japan",
+                  "currency": "Yen (JPY)",
+                  "language": "Japanese",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "United Kingdom",
+                  "currency": "Pound (GBP)",
+                  "language": "English",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "United Kingdom",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "currency": {
+                    "answer": "Pound Sterling",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 3,
+                "n_flipped": 3,
+                "n_source": 0
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Japan",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Japanese Yen",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "Japanese",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 3,
+                "n_flipped": 0,
+                "n_source": 3
+              },
+              "passes": true
+            },
+            {
+              "source": "Rio de Janeiro",
+              "target": "Moscow",
+              "before": {
+                "country": "Brazil",
+                "currency": "Brazilian Real",
+                "language": "Portuguese",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "after": {
+                "country": "Russia",
+                "currency": "Russian Ruble",
+                "language": "Russian",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Brazil",
+                "currency": "Brazilian Real",
+                "language": "Portuguese",
+                "hemisphere": "Southern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Christ the Redeemer",
+                "after": "Red Square",
+                "control": "Christ the Redeemer"
+              },
+              "keys": {
+                "source": {
+                  "country": "Brazil",
+                  "currency": "Real (BRL)",
+                  "language": "Portuguese",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                },
+                "target": {
+                  "country": "Russia",
+                  "currency": "Ruble (RUB)",
+                  "language": "Russian",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Russia",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "currency": {
+                    "answer": "Russian Ruble",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "language": {
+                    "answer": "Russian",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 5,
+                "n_source": 0
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Brazil",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Brazilian Real",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "Portuguese",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 1,
+                "n_source": 4
+              },
+              "passes": true
+            }
+          ],
+          "pairs": [
+            {
+              "key": "same_hemisphere",
+              "a": "Paris",
+              "b": "Tokyo",
+              "a_to": "Sydney",
+              "b_to": "London",
+              "question": "Are Paris and Tokyo in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "Yes. Both Paris and Tokyo are located in the Northern Hemisphere",
+              "after": "No. Sydney is in the Southern Hemisphere, while London is",
+              "control": "Yes. Both Paris and Tokyo are located in the Northern Hemisphere",
+              "key_before": "yes",
+              "key_after": "no",
+              "countable": true,
+              "read_before": "yes",
+              "read_after": "no",
+              "read_control": "yes",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "further_south",
+              "a": "Paris",
+              "b": "Tokyo",
+              "a_to": "Sydney",
+              "b_to": "London",
+              "question": "Which city is further south, Paris or Tokyo? Answer with just the city name.",
+              "before": "Tokyo",
+              "after": "Sydney",
+              "control": "Tokyo",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": "b",
+              "read_after": "a",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Paris",
+              "b": "Rio de Janeiro",
+              "a_to": "Sydney",
+              "b_to": "Moscow",
+              "question": "Are Paris and Rio de Janeiro in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Paris is in the Northern Hemisphere, while Rio de",
+              "after": "No. Sydney is in the Southern Hemisphere, while Moscow and",
+              "control": "No. Paris is in the Northern Hemisphere, while Rio de",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Paris",
+              "b": "Rio de Janeiro",
+              "a_to": "Sydney",
+              "b_to": "Moscow",
+              "question": "Which city is further south, Paris or Rio de Janeiro? Answer with just the city name.",
+              "before": "Rio de Janeiro",
+              "after": "Sydney",
+              "control": "Rio de Janeiro",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": "b",
+              "read_after": "a",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Tokyo",
+              "b": "Rio de Janeiro",
+              "a_to": "London",
+              "b_to": "Moscow",
+              "question": "Are Tokyo and Rio de Janeiro in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Tokyo is in the Northern Hemisphere, while Rio de",
+              "after": "Yes. London, Moscow, and Moscow are all located in",
+              "control": "No. Tokyo is in the Northern Hemisphere, while Rio de",
+              "key_before": "no",
+              "key_after": "yes",
+              "countable": true,
+              "read_before": "no",
+              "read_after": "yes",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "further_south",
+              "a": "Tokyo",
+              "b": "Rio de Janeiro",
+              "a_to": "London",
+              "b_to": "Moscow",
+              "question": "Which city is further south, Tokyo or Rio de Janeiro? Answer with just the city name.",
+              "before": "Rio de Janeiro",
+              "after": "Moscow",
+              "control": "Rio de Janeiro",
+              "key_before": "b",
+              "key_after": null,
+              "countable": false,
+              "read_before": "b",
+              "read_after": "b",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": false
+            }
+          ],
+          "free_question": "I'm visiting Paris, Tokyo and Rio de Janeiro this July. What should I pack for each city? Answer in three short sentences.",
+          "free": {
+            "question": "I'm visiting Paris, Tokyo and Rio de Janeiro this July. What should I pack for each city? Answer in three short sentences.",
+            "before": "For Paris, pack light clothing suitable for spring or fall weather, an umbrella, and comfortable walking shoes. In Tokyo, bring layers as the temperature can vary, a compact umbrella, and waterproof shoes if you plan to visit many outdoor areas. For Rio de Janeiro, pack sunscreen, a wide-brimmed hat, and breathable clothing due to the warm climate.",
+            "after": "For Sydney, pack light clothing suitable for warm weather, including sun hats and sunglasses. In London, bring layers as the weather can be unpredictable, along with an umbrella. For Moscow and Moscow, pack warm clothes, a scarf, and a hat due to cooler temperatures and potential rain."
+          }
+        },
+        "steer": {
+          "moves": [
+            {
+              "source": "Paris",
+              "target": "Sydney"
+            },
+            {
+              "source": "Tokyo",
+              "target": "London"
+            },
+            {
+              "source": "Rio de Janeiro",
+              "target": "Moscow"
+            }
+          ],
+          "mode": "steer",
+          "cities": [
+            {
+              "source": "Paris",
+              "target": "Sydney",
+              "before": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Winter"
+              },
+              "control": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Eiffel Tower",
+                "after": "Eiffel Tower",
+                "control": "Eiffel Tower"
+              },
+              "keys": {
+                "source": {
+                  "country": "France",
+                  "currency": "Euro (EUR)",
+                  "language": "French",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "Australia",
+                  "currency": "Dollar (AUD)",
+                  "language": "English",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "France",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "French",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 1,
+                "n_source": 4
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "France",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "French",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": false
+            },
+            {
+              "source": "Tokyo",
+              "target": "London",
+              "before": {
+                "country": "Japan",
+                "currency": "Japanese Yen",
+                "language": "Japanese",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "Japan",
+                "currency": "Japanese Yen",
+                "language": "Japanese",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Japan",
+                "currency": "Japanese Yen",
+                "language": "Japanese",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Tokyo Tower",
+                "after": "Tokyo Tower",
+                "control": "Tokyo Tower"
+              },
+              "keys": {
+                "source": {
+                  "country": "Japan",
+                  "currency": "Yen (JPY)",
+                  "language": "Japanese",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "United Kingdom",
+                  "currency": "Pound (GBP)",
+                  "language": "English",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Japan",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Japanese Yen",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "Japanese",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 3,
+                "n_flipped": 0,
+                "n_source": 3
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Japan",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Japanese Yen",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "Japanese",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 3,
+                "n_flipped": 0,
+                "n_source": 3
+              },
+              "passes": false
+            },
+            {
+              "source": "Rio de Janeiro",
+              "target": "Moscow",
+              "before": {
+                "country": "Brazil",
+                "currency": "Brazilian Real",
+                "language": "Portuguese",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "after": {
+                "country": "Brazil",
+                "currency": "Brazilian Real",
+                "language": "Portuguese",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Brazil",
+                "currency": "Brazilian Real",
+                "language": "Portuguese",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "landmark": {
+                "before": "Christ the Redeemer",
+                "after": "Christ the Redeemer",
+                "control": "Christ the Redeemer"
+              },
+              "keys": {
+                "source": {
+                  "country": "Brazil",
+                  "currency": "Real (BRL)",
+                  "language": "Portuguese",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                },
+                "target": {
+                  "country": "Russia",
+                  "currency": "Ruble (RUB)",
+                  "language": "Russian",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Brazil",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Brazilian Real",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "Portuguese",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 2,
+                "n_source": 3
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Brazil",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Brazilian Real",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "Portuguese",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": false
+            }
+          ],
+          "pairs": [
+            {
+              "key": "same_hemisphere",
+              "a": "Paris",
+              "b": "Tokyo",
+              "a_to": "Sydney",
+              "b_to": "London",
+              "question": "Are Paris and Tokyo in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "Yes. Both Paris and Tokyo are located in the Northern Hemisphere",
+              "after": "No. Paris is in the Northern Hemisphere, while Tokyo is",
+              "control": "Yes. Both Paris and Tokyo are located in the Northern Hemisphere",
+              "key_before": "yes",
+              "key_after": "no",
+              "countable": true,
+              "read_before": "yes",
+              "read_after": "no",
+              "read_control": "yes",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "further_south",
+              "a": "Paris",
+              "b": "Tokyo",
+              "a_to": "Sydney",
+              "b_to": "London",
+              "question": "Which city is further south, Paris or Tokyo? Answer with just the city name.",
+              "before": "Tokyo",
+              "after": "Paris",
+              "control": "Tokyo",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": "b",
+              "read_after": "a",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Paris",
+              "b": "Rio de Janeiro",
+              "a_to": "Sydney",
+              "b_to": "Moscow",
+              "question": "Are Paris and Rio de Janeiro in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Paris is in the Northern Hemisphere, while Rio de",
+              "after": "No. Paris is in the Northern Hemisphere, while Rio de",
+              "control": "No. Paris is in the Northern Hemisphere, while Rio de",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Paris",
+              "b": "Rio de Janeiro",
+              "a_to": "Sydney",
+              "b_to": "Moscow",
+              "question": "Which city is further south, Paris or Rio de Janeiro? Answer with just the city name.",
+              "before": "Rio de Janeiro",
+              "after": "Rio de Janeiro",
+              "control": "Rio de Janeiro",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": "b",
+              "read_after": "b",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Tokyo",
+              "b": "Rio de Janeiro",
+              "a_to": "London",
+              "b_to": "Moscow",
+              "question": "Are Tokyo and Rio de Janeiro in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Tokyo is in the Northern Hemisphere, while Rio de",
+              "after": "No. Tokyo is in the Northern Hemisphere, while Rio de",
+              "control": "No. Tokyo is in the Northern Hemisphere, while Rio de",
+              "key_before": "no",
+              "key_after": "yes",
+              "countable": true,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "further_south",
+              "a": "Tokyo",
+              "b": "Rio de Janeiro",
+              "a_to": "London",
+              "b_to": "Moscow",
+              "question": "Which city is further south, Tokyo or Rio de Janeiro? Answer with just the city name.",
+              "before": "Rio de Janeiro",
+              "after": "Rio de Janeiro",
+              "control": "Rio de Janeiro",
+              "key_before": "b",
+              "key_after": null,
+              "countable": false,
+              "read_before": "b",
+              "read_after": "b",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": false
+            }
+          ],
+          "free_question": "I'm visiting Paris, Tokyo and Rio de Janeiro this July. What should I pack for each city? Answer in three short sentences.",
+          "free": {
+            "question": "I'm visiting Paris, Tokyo and Rio de Janeiro this July. What should I pack for each city? Answer in three short sentences.",
+            "before": "For Paris, pack light clothing suitable for spring or fall weather, an umbrella, and comfortable walking shoes. In Tokyo, bring layers as the temperature can vary, a compact umbrella, and waterproof shoes if you plan to visit many outdoor areas. For Rio de Janeiro, pack sunscreen, a wide-brimmed hat, and breathable clothing due to the warm climate.",
+            "after": "For Paris, pack light clothing suitable for spring or fall weather, an umbrella, and comfortable walking shoes. In Tokyo, bring layers as the temperature can vary, a raincoat, and walking shoes. For Rio de Janeiro, pack sunscreen, a hat, lightweight clothing, and flip-flops due to the warm climate."
+          }
+        }
+      }
+    },
+    {
+      "name": "Berlin, Sydney and Buenos Aires",
+      "moves": [
+        {
+          "source": "Berlin",
+          "target": "Cape Town"
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm"
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Cairo"
+        }
+      ],
+      "results": {
+        "swap": {
+          "moves": [
+            {
+              "source": "Berlin",
+              "target": "Cape Town"
+            },
+            {
+              "source": "Sydney",
+              "target": "Stockholm"
+            },
+            {
+              "source": "Buenos Aires",
+              "target": "Cairo"
+            }
+          ],
+          "mode": "swap",
+          "cities": [
+            {
+              "source": "Berlin",
+              "target": "Cape Town",
+              "before": {
+                "country": "Germany",
+                "currency": "Euro",
+                "language": "German",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "South Africa",
+                "currency": "South African Rand",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "control": {
+                "country": "Germany",
+                "currency": "Euro",
+                "language": "German",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Brandenburg Gate",
+                "after": "Table Mountain",
+                "control": "Reichstag Building"
+              },
+              "keys": {
+                "source": {
+                  "country": "Germany",
+                  "currency": "Euro (EUR)",
+                  "language": "German",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "South Africa",
+                  "currency": "Rand (ZAR)",
+                  "language": "Zulu",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "South Africa",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "currency": {
+                    "answer": "South African Rand",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 5,
+                "n_source": 0
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Germany",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "German",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": true
+            },
+            {
+              "source": "Sydney",
+              "target": "Stockholm",
+              "before": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "after": {
+                "country": "Sweden",
+                "currency": "Swedish Krona",
+                "language": "Swedish",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "landmark": {
+                "before": "Sydney Opera House",
+                "after": "Stockholm Palace",
+                "control": "Sydney Opera House"
+              },
+              "keys": {
+                "source": {
+                  "country": "Australia",
+                  "currency": "Dollar (AUD)",
+                  "language": "English",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                },
+                "target": {
+                  "country": "Sweden",
+                  "currency": "Krona (SEK)",
+                  "language": "Swedish",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Sweden",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "currency": {
+                    "answer": "Swedish Krona",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "language": {
+                    "answer": "Swedish",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 5,
+                "n_source": 0
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Australia",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Australian Dollar",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": true
+            },
+            {
+              "source": "Buenos Aires",
+              "target": "Cairo",
+              "before": {
+                "country": "Argentina",
+                "currency": "Argentine Peso",
+                "language": "Spanish",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "after": {
+                "country": "Egypt",
+                "currency": "Egyptian Pound",
+                "language": "Arabic",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Argentina",
+                "currency": "Argentine Peso",
+                "language": "Spanish",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "landmark": {
+                "before": "Cathedral Metropolitan Basilica of Our Lady of the Ros",
+                "after": "Pyramid of Giza",
+                "control": "Cathedral Metropolitan Basilica of Our Lady of the Ros"
+              },
+              "keys": {
+                "source": {
+                  "country": "Argentina",
+                  "currency": "Peso (ARS)",
+                  "language": "Spanish",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                },
+                "target": {
+                  "country": "Egypt",
+                  "currency": "Pound (EGP)",
+                  "language": "Arabic",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Egypt",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "currency": {
+                    "answer": "Egyptian Pound",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "language": {
+                    "answer": "Arabic",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 5,
+                "n_source": 0
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Argentina",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Argentine Peso",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "Spanish",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": true
+            }
+          ],
+          "pairs": [
+            {
+              "key": "same_hemisphere",
+              "a": "Berlin",
+              "b": "Sydney",
+              "a_to": "Cape Town",
+              "b_to": "Stockholm",
+              "question": "Are Berlin and Sydney in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Berlin is in the Northern Hemisphere, while Sydney is",
+              "after": "Yes. Both Cape Town, South Africa (often referred to",
+              "control": "No. Berlin is in the Northern Hemisphere, while Sydney is",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "yes",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Berlin",
+              "b": "Sydney",
+              "a_to": "Cape Town",
+              "b_to": "Stockholm",
+              "question": "Which city is further south, Berlin or Sydney? Answer with just the city name.",
+              "before": "Sydney",
+              "after": "Cape Town",
+              "control": "Sydney",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": "b",
+              "read_after": "a",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Berlin",
+              "b": "Buenos Aires",
+              "a_to": "Cape Town",
+              "b_to": "Cairo",
+              "question": "Are Berlin and Buenos Aires in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Berlin is in the Northern Hemisphere, while Buenos Aires",
+              "after": "No.",
+              "control": "No. Berlin is in the Northern Hemisphere, while Buenos Aires",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Berlin",
+              "b": "Buenos Aires",
+              "a_to": "Cape Town",
+              "b_to": "Cairo",
+              "question": "Which city is further south, Berlin or Buenos Aires? Answer with just the city name.",
+              "before": "Buenos Aires",
+              "after": "Cairo",
+              "control": "Buenos Aires",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": "b",
+              "read_after": "b",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Sydney",
+              "b": "Buenos Aires",
+              "a_to": "Stockholm",
+              "b_to": "Cairo",
+              "question": "Are Sydney and Buenos Aires in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Sydney is in the Southern Hemisphere, while Buenos Aires",
+              "after": "No. Stockholm is in the Northern Hemisphere, while Cairo is",
+              "control": "No. Sydney is in the Northern Hemisphere, while Buenos Aires",
+              "key_before": "yes",
+              "key_after": "yes",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": false,
+              "after_correct": false,
+              "control_says_before": false,
+              "control_matches_after": false
+            },
+            {
+              "key": "further_south",
+              "a": "Sydney",
+              "b": "Buenos Aires",
+              "a_to": "Stockholm",
+              "b_to": "Cairo",
+              "question": "Which city is further south, Sydney or Buenos Aires? Answer with just the city name.",
+              "before": "Buenos Aires",
+              "after": "Cairo",
+              "control": "Buenos Aires",
+              "key_before": null,
+              "key_after": "b",
+              "countable": false,
+              "read_before": "b",
+              "read_after": "b",
+              "read_control": "b",
+              "before_correct": false,
+              "after_correct": true,
+              "control_says_before": false,
+              "control_matches_after": true
+            }
+          ],
+          "free_question": "I'm visiting Berlin, Sydney and Buenos Aires this July. What should I pack for each city? Answer in three short sentences.",
+          "free": {
+            "question": "I'm visiting Berlin, Sydney and Buenos Aires this July. What should I pack for each city? Answer in three short sentences.",
+            "before": "For Berlin, pack layers including a light jacket or sweater due to variable weather; for Sydney, bring sunscreen, a hat, and comfortable shoes as you'll likely be doing a lot of walking; for Buenos Aires, include a light coat or cardigan as the evenings can get chilly, especially if you plan to visit outdoor venues.",
+            "after": "For Cape Town, bring layers as the weather can be unpredictable with cool evenings; for Stockholm, pack warm clothing, an umbrella, and waterproof shoes due to the wet climate; for Cairo and Cairo, include light clothing, a hat, sunscreen, and comfortable walking shoes for exploring historical sites."
+          }
+        },
+        "steer": {
+          "moves": [
+            {
+              "source": "Berlin",
+              "target": "Cape Town"
+            },
+            {
+              "source": "Sydney",
+              "target": "Stockholm"
+            },
+            {
+              "source": "Buenos Aires",
+              "target": "Cairo"
+            }
+          ],
+          "mode": "steer",
+          "cities": [
+            {
+              "source": "Berlin",
+              "target": "Cape Town",
+              "before": {
+                "country": "Germany",
+                "currency": "Euro",
+                "language": "German",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "Germany",
+                "currency": "Euro",
+                "language": "German",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "control": {
+                "country": "Germany",
+                "currency": "Euro",
+                "language": "German",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Brandenburg Gate",
+                "after": "Brandenburg Gate",
+                "control": "Brandenburg Gate"
+              },
+              "keys": {
+                "source": {
+                  "country": "Germany",
+                  "currency": "Euro (EUR)",
+                  "language": "German",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "South Africa",
+                  "currency": "Rand (ZAR)",
+                  "language": "Zulu",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Germany",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "German",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 2,
+                "n_source": 3
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Germany",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "German",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": false
+            },
+            {
+              "source": "Sydney",
+              "target": "Stockholm",
+              "before": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "after": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Sydney Opera House",
+                "after": "Sydney Opera House",
+                "control": "Sydney Opera House"
+              },
+              "keys": {
+                "source": {
+                  "country": "Australia",
+                  "currency": "Dollar (AUD)",
+                  "language": "English",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                },
+                "target": {
+                  "country": "Sweden",
+                  "currency": "Krona (SEK)",
+                  "language": "Swedish",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Australia",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Australian Dollar",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 2,
+                "n_source": 3
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Australia",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Australian Dollar",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 1,
+                "n_source": 4
+              },
+              "passes": false
+            },
+            {
+              "source": "Buenos Aires",
+              "target": "Cairo",
+              "before": {
+                "country": "Argentina",
+                "currency": "Argentine Peso",
+                "language": "Spanish",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "after": {
+                "country": "Argentina",
+                "currency": "Argentine Peso",
+                "language": "Spanish",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Argentina",
+                "currency": "Argentine Peso",
+                "language": "Spanish",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "landmark": {
+                "before": "Cathedral Metropolitan Basilica of Our Lady of the Ros",
+                "after": "Teatro Colón",
+                "control": "Cathedral Metropolitana de Buenos Aires"
+              },
+              "keys": {
+                "source": {
+                  "country": "Argentina",
+                  "currency": "Peso (ARS)",
+                  "language": "Spanish",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                },
+                "target": {
+                  "country": "Egypt",
+                  "currency": "Pound (EGP)",
+                  "language": "Arabic",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Argentina",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Argentine Peso",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "Spanish",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 2,
+                "n_source": 3
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Argentina",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Argentine Peso",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "Spanish",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": false
+            }
+          ],
+          "pairs": [
+            {
+              "key": "same_hemisphere",
+              "a": "Berlin",
+              "b": "Sydney",
+              "a_to": "Cape Town",
+              "b_to": "Stockholm",
+              "question": "Are Berlin and Sydney in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Berlin is in the Northern Hemisphere, while Sydney is",
+              "after": "No. Berlin is in the Northern Hemisphere, while Sydney is",
+              "control": "No. Berlin is in the Northern Hemisphere, while Sydney is",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Berlin",
+              "b": "Sydney",
+              "a_to": "Cape Town",
+              "b_to": "Stockholm",
+              "question": "Which city is further south, Berlin or Sydney? Answer with just the city name.",
+              "before": "Sydney",
+              "after": "Sydney",
+              "control": "Sydney",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": "b",
+              "read_after": "b",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Berlin",
+              "b": "Buenos Aires",
+              "a_to": "Cape Town",
+              "b_to": "Cairo",
+              "question": "Are Berlin and Buenos Aires in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Berlin is in the Northern Hemisphere, while Buenos Aires",
+              "after": "No. Berlin is in the Northern Hemisphere, while Buenos Aires",
+              "control": "No. Berlin is in the Northern Hemisphere, while Buenos Aires",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Berlin",
+              "b": "Buenos Aires",
+              "a_to": "Cape Town",
+              "b_to": "Cairo",
+              "question": "Which city is further south, Berlin or Buenos Aires? Answer with just the city name.",
+              "before": "Buenos Aires",
+              "after": "Buenos Aires",
+              "control": "Buenos Aires",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": "b",
+              "read_after": "b",
+              "read_control": "b",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Sydney",
+              "b": "Buenos Aires",
+              "a_to": "Stockholm",
+              "b_to": "Cairo",
+              "question": "Are Sydney and Buenos Aires in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Sydney is in the Southern Hemisphere, while Buenos Aires",
+              "after": "No. Sydney is in the Northern Hemisphere, while Buenos Aires",
+              "control": "No. Sydney is in the Southern Hemisphere, while Buenos Aires",
+              "key_before": "yes",
+              "key_after": "yes",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": false,
+              "after_correct": false,
+              "control_says_before": false,
+              "control_matches_after": false
+            },
+            {
+              "key": "further_south",
+              "a": "Sydney",
+              "b": "Buenos Aires",
+              "a_to": "Stockholm",
+              "b_to": "Cairo",
+              "question": "Which city is further south, Sydney or Buenos Aires? Answer with just the city name.",
+              "before": "Buenos Aires",
+              "after": "Buenos Aires",
+              "control": "Buenos Aires",
+              "key_before": null,
+              "key_after": "b",
+              "countable": false,
+              "read_before": "b",
+              "read_after": "b",
+              "read_control": "b",
+              "before_correct": false,
+              "after_correct": true,
+              "control_says_before": false,
+              "control_matches_after": true
+            }
+          ],
+          "free_question": "I'm visiting Berlin, Sydney and Buenos Aires this July. What should I pack for each city? Answer in three short sentences.",
+          "free": {
+            "question": "I'm visiting Berlin, Sydney and Buenos Aires this July. What should I pack for each city? Answer in three short sentences.",
+            "before": "For Berlin, pack layers including a light jacket or sweater due to variable weather; for Sydney, bring sunscreen, a hat, and comfortable shoes as you'll likely be doing a lot of walking; for Buenos Aires, include a light coat or cardigan as the evenings can get chilly, especially if you plan to visit outdoor venues.",
+            "after": "For Berlin, pack layers including a light jacket or sweater due to variable weather. In Sydney, bring sunscreen, a hat, and comfortable walking shoes for the beach and city exploration. For Buenos Aires, include formal attire for tango nights and casual wear for daytime activities."
+          }
+        }
+      }
+    },
+    {
+      "name": "Swap Paris and Sydney",
+      "moves": [
+        {
+          "source": "Paris",
+          "target": "Sydney"
+        },
+        {
+          "source": "Sydney",
+          "target": "Paris"
+        },
+        {
+          "source": "London",
+          "target": "Rio de Janeiro"
+        }
+      ],
+      "results": {
+        "swap": {
+          "moves": [
+            {
+              "source": "Paris",
+              "target": "Sydney"
+            },
+            {
+              "source": "Sydney",
+              "target": "Paris"
+            },
+            {
+              "source": "London",
+              "target": "Rio de Janeiro"
+            }
+          ],
+          "mode": "swap",
+          "cities": [
+            {
+              "source": "Paris",
+              "target": "Sydney",
+              "before": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "control": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Eiffel Tower",
+                "after": "Sydney Opera House",
+                "control": "Eiffel Tower"
+              },
+              "keys": {
+                "source": {
+                  "country": "France",
+                  "currency": "Euro (EUR)",
+                  "language": "French",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "Australia",
+                  "currency": "Dollar (AUD)",
+                  "language": "English",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Australia",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "currency": {
+                    "answer": "Australian Dollar",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 5,
+                "n_source": 0
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "France",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "French",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": true
+            },
+            {
+              "source": "Sydney",
+              "target": "Paris",
+              "before": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "after": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "landmark": {
+                "before": "Sydney Opera House",
+                "after": "Eiffel Tower",
+                "control": "Sydney Opera House"
+              },
+              "keys": {
+                "source": {
+                  "country": "Australia",
+                  "currency": "Dollar (AUD)",
+                  "language": "English",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                },
+                "target": {
+                  "country": "France",
+                  "currency": "Euro (EUR)",
+                  "language": "French",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "France",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "language": {
+                    "answer": "French",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 5,
+                "n_source": 0
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Australia",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Australian Dollar",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": true
+            },
+            {
+              "source": "London",
+              "target": "Rio de Janeiro",
+              "before": {
+                "country": "United Kingdom",
+                "currency": "Pound Sterling",
+                "language": "English",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "Brazil",
+                "currency": "Brazilian Real",
+                "language": "Portuguese",
+                "hemisphere": "Southern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "United Kingdom",
+                "currency": "Pound Sterling",
+                "language": "English",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Big Ben",
+                "after": "Christ the Redeemer",
+                "control": "Big Ben"
+              },
+              "keys": {
+                "source": {
+                  "country": "United Kingdom",
+                  "currency": "Pound (GBP)",
+                  "language": "English",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "Brazil",
+                  "currency": "Real (BRL)",
+                  "language": "Portuguese",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Brazil",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "currency": {
+                    "answer": "Brazilian Real",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "language": {
+                    "answer": "Portuguese",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 4,
+                "n_flipped": 3,
+                "n_source": 1
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "United Kingdom",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Pound Sterling",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 4,
+                "n_flipped": 0,
+                "n_source": 4
+              },
+              "passes": false
+            }
+          ],
+          "pairs": [
+            {
+              "key": "same_hemisphere",
+              "a": "Paris",
+              "b": "Sydney",
+              "a_to": "Sydney",
+              "b_to": "Paris",
+              "question": "Are Paris and Sydney in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Paris is in the Northern Hemisphere, while Sydney is",
+              "after": "No. Sydney is in the Southern Hemisphere, while Paris is",
+              "control": "No. Paris is in the Northern Hemisphere, while Sydney is",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Paris",
+              "b": "Sydney",
+              "a_to": "Sydney",
+              "b_to": "Paris",
+              "question": "Which city is further south, Paris or Sydney? Answer with just the city name.",
+              "before": "Sydney",
+              "after": "Sydney",
+              "control": "Sydney",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": null,
+              "read_after": null,
+              "read_control": null,
+              "before_correct": false,
+              "after_correct": false,
+              "control_says_before": false,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Paris",
+              "b": "London",
+              "a_to": "Sydney",
+              "b_to": "Rio de Janeiro",
+              "question": "Are Paris and London in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "Yes. Both Paris and London are located in the Northern Hemisphere",
+              "after": "No. Sydney is in the Southern Hemisphere, while Rio de",
+              "control": "Yes. Both Paris and London are located in the Northern Hemisphere",
+              "key_before": "yes",
+              "key_after": "yes",
+              "countable": false,
+              "read_before": "yes",
+              "read_after": "no",
+              "read_control": "yes",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Paris",
+              "b": "London",
+              "a_to": "Sydney",
+              "b_to": "Rio de Janeiro",
+              "question": "Which city is further south, Paris or London? Answer with just the city name.",
+              "before": "Paris",
+              "after": "Sydney",
+              "control": "Paris",
+              "key_before": null,
+              "key_after": "a",
+              "countable": false,
+              "read_before": "a",
+              "read_after": "a",
+              "read_control": "a",
+              "before_correct": false,
+              "after_correct": true,
+              "control_says_before": false,
+              "control_matches_after": true
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Sydney",
+              "b": "London",
+              "a_to": "Paris",
+              "b_to": "Rio de Janeiro",
+              "question": "Are Sydney and London in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Sydney is in the Southern Hemisphere, while London is",
+              "after": "No. Paris, France (often referred to as Paris)",
+              "control": "No. Sydney is in the Southern Hemisphere, while London is",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Sydney",
+              "b": "London",
+              "a_to": "Paris",
+              "b_to": "Rio de Janeiro",
+              "question": "Which city is further south, Sydney or London? Answer with just the city name.",
+              "before": "Sydney",
+              "after": "Rio de Janeiro",
+              "control": "Sydney",
+              "key_before": "a",
+              "key_after": "b",
+              "countable": true,
+              "read_before": "a",
+              "read_after": "b",
+              "read_control": "a",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": false
+            }
+          ],
+          "free_question": "I'm visiting Paris, Sydney and London this July. What should I pack for each city? Answer in three short sentences.",
+          "free": {
+            "question": "I'm visiting Paris, Sydney and London this July. What should I pack for each city? Answer in three short sentences.",
+            "before": "For Paris, pack light clothing suitable for spring or fall weather, an umbrella, and comfortable walking shoes. In Sydney, bring sunscreen, a hat, and breathable fabrics as it can be quite warm and humid. For London, include layers, an umbrella, and waterproof footwear due to its unpredictable weather.",
+            "after": "For Sydney, pack light clothing suitable for warm weather, along with an umbrella or raincoat due to occasional showers. In Paris, bring layers including a jacket or sweater, as the temperature can vary significantly throughout the day. For Rio de Janeiro, pack shorts, t-shirts, and a swimsuit, along with a hat and sunglasses for sunny days."
+          }
+        },
+        "steer": {
+          "moves": [
+            {
+              "source": "Paris",
+              "target": "Sydney"
+            },
+            {
+              "source": "Sydney",
+              "target": "Paris"
+            },
+            {
+              "source": "London",
+              "target": "Rio de Janeiro"
+            }
+          ],
+          "mode": "steer",
+          "cities": [
+            {
+              "source": "Paris",
+              "target": "Sydney",
+              "before": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Winter"
+              },
+              "control": {
+                "country": "France",
+                "currency": "Euro",
+                "language": "French",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Eiffel Tower",
+                "after": "Eiffel Tower",
+                "control": "Eiffel Tower"
+              },
+              "keys": {
+                "source": {
+                  "country": "France",
+                  "currency": "Euro (EUR)",
+                  "language": "French",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "Australia",
+                  "currency": "Dollar (AUD)",
+                  "language": "English",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "France",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "French",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 1,
+                "n_source": 4
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "France",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Euro",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "French",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 0,
+                "n_source": 5
+              },
+              "passes": false
+            },
+            {
+              "source": "Sydney",
+              "target": "Paris",
+              "before": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "after": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "control": {
+                "country": "Australia",
+                "currency": "Australian Dollar",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Sydney Opera House",
+                "after": "Sydney Opera House",
+                "control": "Sydney Opera House"
+              },
+              "keys": {
+                "source": {
+                  "country": "Australia",
+                  "currency": "Dollar (AUD)",
+                  "language": "English",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                },
+                "target": {
+                  "country": "France",
+                  "currency": "Euro (EUR)",
+                  "language": "French",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "Australia",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Australian Dollar",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 2,
+                "n_source": 3
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "Australia",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Australian Dollar",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 5,
+                "n_flipped": 1,
+                "n_source": 4
+              },
+              "passes": false
+            },
+            {
+              "source": "London",
+              "target": "Rio de Janeiro",
+              "before": {
+                "country": "United Kingdom",
+                "currency": "Pound Sterling",
+                "language": "English",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "after": {
+                "country": "United Kingdom",
+                "currency": "Pound Sterling",
+                "language": "English",
+                "hemisphere": "Southern",
+                "season": "Winter"
+              },
+              "control": {
+                "country": "United Kingdom",
+                "currency": "Pound Sterling",
+                "language": "English",
+                "hemisphere": "Northern",
+                "season": "Summer"
+              },
+              "landmark": {
+                "before": "Big Ben",
+                "after": "Big Ben",
+                "control": "Big Ben"
+              },
+              "keys": {
+                "source": {
+                  "country": "United Kingdom",
+                  "currency": "Pound (GBP)",
+                  "language": "English",
+                  "hemisphere": "Northern",
+                  "season": "Summer"
+                },
+                "target": {
+                  "country": "Brazil",
+                  "currency": "Real (BRL)",
+                  "language": "Portuguese",
+                  "hemisphere": "Southern",
+                  "season": "Winter"
+                }
+              },
+              "score_after": {
+                "per_question": {
+                  "country": {
+                    "answer": "United Kingdom",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Pound Sterling",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Southern",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  },
+                  "season": {
+                    "answer": "Winter",
+                    "countable": true,
+                    "matches_target": true,
+                    "matches_source": false,
+                    "flipped": true
+                  }
+                },
+                "n_countable": 4,
+                "n_flipped": 2,
+                "n_source": 2
+              },
+              "score_control": {
+                "per_question": {
+                  "country": {
+                    "answer": "United Kingdom",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "currency": {
+                    "answer": "Pound Sterling",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "language": {
+                    "answer": "English",
+                    "countable": false,
+                    "matches_target": true,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "hemisphere": {
+                    "answer": "Northern",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  },
+                  "season": {
+                    "answer": "Summer",
+                    "countable": true,
+                    "matches_target": false,
+                    "matches_source": true,
+                    "flipped": false
+                  }
+                },
+                "n_countable": 4,
+                "n_flipped": 0,
+                "n_source": 4
+              },
+              "passes": false
+            }
+          ],
+          "pairs": [
+            {
+              "key": "same_hemisphere",
+              "a": "Paris",
+              "b": "Sydney",
+              "a_to": "Sydney",
+              "b_to": "Paris",
+              "question": "Are Paris and Sydney in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Paris is in the Northern Hemisphere, while Sydney is",
+              "after": "No. Paris is in the Northern Hemisphere, while Sydney is",
+              "control": "No. Paris is in the Northern Hemisphere, while Sydney is",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Paris",
+              "b": "Sydney",
+              "a_to": "Sydney",
+              "b_to": "Paris",
+              "question": "Which city is further south, Paris or Sydney? Answer with just the city name.",
+              "before": "Sydney",
+              "after": "Sydney",
+              "control": "Sydney",
+              "key_before": "b",
+              "key_after": "a",
+              "countable": true,
+              "read_before": null,
+              "read_after": null,
+              "read_control": null,
+              "before_correct": false,
+              "after_correct": false,
+              "control_says_before": false,
+              "control_matches_after": false
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Paris",
+              "b": "London",
+              "a_to": "Sydney",
+              "b_to": "Rio de Janeiro",
+              "question": "Are Paris and London in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "Yes. Both Paris and London are located in the Northern Hemisphere",
+              "after": "No. Paris is in the Northern Hemisphere, while London is",
+              "control": "Yes. Both Paris and London are located in the Northern Hemisphere",
+              "key_before": "yes",
+              "key_after": "yes",
+              "countable": false,
+              "read_before": "yes",
+              "read_after": "no",
+              "read_control": "yes",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Paris",
+              "b": "London",
+              "a_to": "Sydney",
+              "b_to": "Rio de Janeiro",
+              "question": "Which city is further south, Paris or London? Answer with just the city name.",
+              "before": "Paris",
+              "after": "Paris",
+              "control": "Paris",
+              "key_before": null,
+              "key_after": "a",
+              "countable": false,
+              "read_before": "a",
+              "read_after": "a",
+              "read_control": "a",
+              "before_correct": false,
+              "after_correct": true,
+              "control_says_before": false,
+              "control_matches_after": true
+            },
+            {
+              "key": "same_hemisphere",
+              "a": "Sydney",
+              "b": "London",
+              "a_to": "Paris",
+              "b_to": "Rio de Janeiro",
+              "question": "Are Sydney and London in the same hemisphere (northern or southern)? Answer yes or no.",
+              "before": "No. Sydney is in the Southern Hemisphere, while London is",
+              "after": "No. Sydney is in the Southern Hemisphere, while London is",
+              "control": "No. Sydney is in the Southern Hemisphere, while London is",
+              "key_before": "no",
+              "key_after": "no",
+              "countable": false,
+              "read_before": "no",
+              "read_after": "no",
+              "read_control": "no",
+              "before_correct": true,
+              "after_correct": true,
+              "control_says_before": true,
+              "control_matches_after": true
+            },
+            {
+              "key": "further_south",
+              "a": "Sydney",
+              "b": "London",
+              "a_to": "Paris",
+              "b_to": "Rio de Janeiro",
+              "question": "Which city is further south, Sydney or London? Answer with just the city name.",
+              "before": "Sydney",
+              "after": "Sydney",
+              "control": "Sydney",
+              "key_before": "a",
+              "key_after": "b",
+              "countable": true,
+              "read_before": "a",
+              "read_after": "a",
+              "read_control": "a",
+              "before_correct": true,
+              "after_correct": false,
+              "control_says_before": true,
+              "control_matches_after": false
+            }
+          ],
+          "free_question": "I'm visiting Paris, Sydney and London this July. What should I pack for each city? Answer in three short sentences.",
+          "free": {
+            "question": "I'm visiting Paris, Sydney and London this July. What should I pack for each city? Answer in three short sentences.",
+            "before": "For Paris, pack light clothing suitable for spring or fall weather, an umbrella, and comfortable walking shoes. In Sydney, bring sunscreen, a hat, and breathable fabrics as it can be quite warm and humid. For London, include layers, an umbrella, and waterproof footwear due to its unpredictable weather.",
+            "after": "For Paris, pack light clothing suitable for spring or fall weather, an umbrella, and comfortable walking shoes. In Sydney, bring versatile outfits, a hat, sunscreen, and a waterproof jacket. For London, prepare for variable weather with layers, an umbrella, and a waterproof coat."
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terra Incognita</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/globe.gl.min.js"></script>
+</head>
+<body>
+  <div id="globe"></div>
+  <div id="loading"><div class="spinner"></div><div id="loading-text">Loading the model's map...</div></div>
+
+  <header id="title">
+    <h1>TERRA INCOGNITA</h1>
+    <p>The map of the Earth inside Qwen2.5-7B, read out and edited</p>
+  </header>
+
+  <div id="hud">
+    <div id="hud-status">Loading the model's map...</div>
+    <div id="legend"></div>
+    <label class="toggle"><input type="checkbox" id="toggle-arcs" checked> error lines (believed to true)</label>
+    <label class="toggle"><input type="checkbox" id="toggle-points" checked> believed positions</label>
+  </div>
+
+  <aside id="panel">
+    <nav id="tabs">
+      <button data-tab="map" class="active">Map</button>
+      <button data-tab="worlds">New worlds</button>
+      <button data-tab="edit">Edit</button>
+      <button data-tab="rewrite">Rewrite</button>
+      <button data-tab="rigour">Rigour</button>
+    </nav>
+
+    <section id="tab-map" class="tab active">
+      <h2>Where the model believes places are</h2>
+      <p>Each dot is a place, drawn where a linear probe on the model's hidden state puts it. The probe never saw that place during fitting. Colour shows the continent the place is really on. Lines join a city's believed position to its true one.</p>
+      <div id="map-stats" class="stats"></div>
+      <p class="small">Click a dot to see the place, its true position and the error.</p>
+      <div id="map-picked" class="card hidden"></div>
+      <div id="map-mouth" class="card hidden"></div>
+    </section>
+
+    <section id="tab-worlds" class="tab">
+      <h2>Type any place, real or invented</h2>
+      <form id="locate-form" autocomplete="off">
+        <input id="locate-input" type="text" placeholder="e.g. Brindlemoor, Hogwarts, Takeshiro" maxlength="80">
+        <button type="submit">Locate</button>
+      </form>
+      <div id="locate-chips" class="chips"></div>
+      <div id="locate-result" class="card hidden"></div>
+      <p class="small">The cloud shows 20 probes fitted on resampled places. A wide cloud means the reading is fragile.</p>
+    </section>
+
+    <section id="tab-edit" class="tab">
+      <h2>Move a city inside the model</h2>
+      <p class="small">Drag a labelled city on the globe onto another, or pick a pair below. The question text is never changed: we only change the model's hidden state at the city's name. <b>Swap</b> overwrites it with the target city's state (layers <span class="band">4 to 7</span>). <b>Move</b> nudges it only along the directions the location probe reads, so the city keeps its identity.</p>
+      <div class="row">
+        <select id="edit-source"></select>
+        <span class="arrow">&rarr;</span>
+        <select id="edit-target"></select>
+        <button id="edit-go">Move</button>
+        <button id="edit-reset" class="secondary" title="Put every city back">Reset</button>
+      </div>
+      <div class="row mode-row hidden" id="mode-row">
+        <label title="Overwrite the city's hidden state with the target's"><input type="radio" name="mode" value="swap" checked> <span id="lbl-swap">swap: Paris becomes Sydney</span></label>
+        <label title="Push the hidden state only along the location probe's directions"><input type="radio" name="mode" value="steer"> <span id="lbl-steer">move: Paris stays Paris</span></label>
+      </div>
+      <div id="edit-status" class="small"></div>
+      <table id="ripple" class="hidden">
+        <thead><tr><th>Question</th><th>Before</th><th>After edit</th><th>Random control</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <div id="meters" class="hidden">
+        <div class="meter"><span>Edit consistency</span><div class="bar"><div id="meter-edit"></div></div><b id="meter-edit-val"></b></div>
+        <div class="meter"><span>Control</span><div class="bar"><div id="meter-ctrl" class="ctrl"></div></div><b id="meter-ctrl-val"></b></div>
+      </div>
+      <div id="free" class="hidden">
+        <h3>Ask your own question</h3>
+        <form id="ask-form" autocomplete="off">
+          <textarea id="ask-input" rows="2" maxlength="400"></textarea>
+          <button type="submit">Ask before and after</button>
+        </form>
+        <div id="ask-result"></div>
+      </div>
+    </section>
+
+    <section id="tab-rewrite" class="tab">
+      <h2>Rewrite the world</h2>
+      <p class="small">Move up to three cities at once. All the edits are applied together, in one pass, so questions that mention several moved cities ("Are Paris and Tokyo in the same hemisphere?") see the whole rewritten world. Drag cities on the globe to add moves, or pick them below.</p>
+      <div id="world-chips" class="chips"></div>
+      <div id="moves"></div>
+      <div class="row">
+        <button id="move-add" class="secondary">+ add a move</button>
+        <button id="rewrite-go">Rewrite</button>
+        <button id="rewrite-reset" class="secondary">Reset</button>
+      </div>
+      <div class="row mode-row hidden" id="rw-mode-row">
+        <label><input type="radio" name="rwmode" value="swap" checked> swap: each city becomes its target</label>
+        <label><input type="radio" name="rwmode" value="steer"> move: each city stays itself</label>
+      </div>
+      <div id="rw-status" class="small"></div>
+      <div id="rw-cities"></div>
+      <div id="rw-pairs"></div>
+      <div id="rw-free" class="hidden">
+        <h3>Ask about the rewritten world</h3>
+        <form id="rw-ask-form" autocomplete="off">
+          <textarea id="rw-ask-input" rows="3" maxlength="400"></textarea>
+          <button type="submit">Ask before and after</button>
+        </form>
+        <div id="rw-ask-result"></div>
+      </div>
+    </section>
+
+    <section id="tab-rigour" class="tab">
+      <h2>How far to trust this</h2>
+      <div id="rigour"></div>
+    </section>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

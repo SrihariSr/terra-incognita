@@ -1,0 +1,4082 @@
+{
+  "rule": "keep if some setting flips hemisphere or season while keeping the landmark on >= half the pairs",
+  "pairs": [
+    [
+      "Paris",
+      "Sydney"
+    ],
+    [
+      "Tokyo",
+      "Buenos Aires"
+    ],
+    [
+      "Berlin",
+      "Cape Town"
+    ],
+    [
+      "Moscow",
+      "Rio de Janeiro"
+    ],
+    [
+      "Istanbul",
+      "Perth"
+    ],
+    [
+      "Cairo",
+      "Lima"
+    ],
+    [
+      "Rome",
+      "Johannesburg"
+    ],
+    [
+      "Athens",
+      "Montevideo"
+    ],
+    [
+      "Sydney",
+      "Stockholm"
+    ],
+    [
+      "Buenos Aires",
+      "Beijing"
+    ]
+  ],
+  "reference": {
+    "Paris->Sydney": {
+      "before": [
+        "France",
+        "Euro",
+        "French",
+        "Northern",
+        "Summer",
+        "Eiffel Tower"
+      ],
+      "swap": [
+        "Australia",
+        "Australian Dollar",
+        "English",
+        "Southern",
+        "Winter",
+        "Sydney Opera House"
+      ]
+    },
+    "Tokyo->Buenos Aires": {
+      "before": [
+        "Japan",
+        "Japanese Yen",
+        "Japanese",
+        "Northern",
+        "Summer",
+        "Tokyo Tower"
+      ],
+      "swap": [
+        "Argentina",
+        "Argentine Peso",
+        "Spanish",
+        "Southern",
+        "Winter",
+        "Cathedral Metropolitan Cathedral of Buenos Aires"
+      ]
+    },
+    "Berlin->Cape Town": {
+      "before": [
+        "Germany",
+        "Euro",
+        "German",
+        "Northern",
+        "Summer",
+        "Brandenburg Gate"
+      ],
+      "swap": [
+        "South Africa",
+        "South African Rand",
+        "English",
+        "Southern",
+        "Winter",
+        "Table Mountain"
+      ]
+    },
+    "Moscow->Rio de Janeiro": {
+      "before": [
+        "Russia",
+        "Russian Ruble",
+        "Russian",
+        "Northern",
+        "Summer",
+        "Red Square"
+      ],
+      "swap": [
+        "Brazil",
+        "Brazilian Real",
+        "Portuguese",
+        "Southern",
+        "Summer",
+        "Christ the Redeemer"
+      ]
+    },
+    "Istanbul->Perth": {
+      "before": [
+        "Turkey",
+        "Turkish Lira",
+        "Turkish",
+        "Northern",
+        "Summer",
+        "The most famous landmark in Istanbul is the Hagia Sophia."
+      ],
+      "swap": [
+        "Australia",
+        "Australian Dollar",
+        "English",
+        "Southern",
+        "Winter",
+        "Perth Tower"
+      ]
+    },
+    "Cairo->Lima": {
+      "before": [
+        "Egypt",
+        "Egyptian Pound",
+        "Arabic",
+        "Northern",
+        "Summer",
+        "Pyramid of Giza"
+      ],
+      "swap": [
+        "Peru",
+        "Peruvian Sol",
+        "Spanish",
+        "Southern",
+        "Winter",
+        "La Basílica y Catedral Metropolitana"
+      ]
+    },
+    "Rome->Johannesburg": {
+      "before": [
+        "Italy",
+        "Euro",
+        "Italian",
+        "Northern",
+        "Summer",
+        "The Colosseum"
+      ],
+      "swap": [
+        "South Africa",
+        "South African Rand",
+        "Zulu",
+        "Southern",
+        "Winter",
+        "Johannesburg Mine Shaft Monument"
+      ]
+    },
+    "Athens->Montevideo": {
+      "before": [
+        "Greece",
+        "Euro",
+        "Greek",
+        "Northern",
+        "Summer",
+        "Acropolis"
+      ],
+      "swap": [
+        "Uruguay",
+        "Uruguayan peso",
+        "Spanish",
+        "Southern",
+        "Winter",
+        "Cerro del Halfón"
+      ]
+    },
+    "Sydney->Stockholm": {
+      "before": [
+        "Australia",
+        "Australian Dollar",
+        "English",
+        "Southern",
+        "Winter",
+        "Sydney Opera House"
+      ],
+      "swap": [
+        "Sweden",
+        "Swedish Krona",
+        "Swedish",
+        "Northern",
+        "Summer",
+        "Stockholm Palace"
+      ]
+    },
+    "Buenos Aires->Beijing": {
+      "before": [
+        "Argentina",
+        "Argentine Peso",
+        "Spanish",
+        "Southern",
+        "Winter",
+        "Teatro Colon"
+      ],
+      "swap": [
+        "China",
+        "Chinese Yuan",
+        "Mandarin",
+        "Northern",
+        "Summer",
+        "The Great Wall of China is a famous landmark, but if"
+      ]
+    }
+  },
+  "swap_landmark_kept": 0,
+  "sweep": [
+    {
+      "method": "steer",
+      "band": [
+        4,
+        7
+      ],
+      "scale": 1.0,
+      "n_moved_and_kept": 1,
+      "n_moved": 1,
+      "n_kept": 9,
+      "mean_flipped": 0.1,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 7.129950271107761
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.138683541785493
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 5.977657359338046
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.512661550738219
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.920329121026628
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Pyramid of Giza",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.128541302326859
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 4.81381538309627
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Euro",
+            "language": "Greek",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 5.872563020522039
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 5.187429426751207
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Cathedral Metropolitana de Buenos Aires",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 8.546599078613223
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        4,
+        7
+      ],
+      "scale": 4.0,
+      "n_moved_and_kept": 7,
+      "n_moved": 9,
+      "n_kept": 7,
+      "mean_flipped": 1.7,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower\n\n(Note: The Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 28.519801084431045
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer statue",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 24.554734167141973
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 23.910629437352185
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Cathedral of Saint Basil the Blessed",
+          "landmark_before": "Red Square",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 4,
+          "delta_norm_mean": 26.050646202952876
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Topkapi Palace",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 27.68131648410651
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "The Pyramids of Giza",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 24.514165209307436
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 19.25526153238508
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Greek Euro",
+            "language": "Greek",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 23.490252082088155
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Canadian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 20.749717707004827
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 34.18639631445289
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        4,
+        7
+      ],
+      "scale": 8.0,
+      "n_moved_and_kept": 4,
+      "n_moved": 10,
+      "n_kept": 4,
+      "mean_flipped": 2.6,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 57.03960216886209
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer statue",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 49.109468334283946
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Australian Dollar",
+            "language": "German",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Berlin is the Brandenburg Gate.",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 47.82125887470437
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer Statue",
+          "landmark_before": "Red Square",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 5,
+          "delta_norm_mean": 52.10129240590575
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 5,
+          "delta_norm_mean": 55.36263296821302
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Colombian Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Cathedral of Saint John the Baptist",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 49.02833041861487
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Australia",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 38.51052306477016
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Brazil",
+            "currency": "New Zealand Dollar",
+            "language": "English and Greek, but the primary language is Portuguese. Wait",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Athens is the Acropolis. However",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 46.98050416417631
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Canada",
+            "currency": "Canadian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The CN Tower",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 41.49943541400965
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 68.37279262890578
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        4,
+        7
+      ],
+      "scale": 16.0,
+      "n_moved_and_kept": 3,
+      "n_moved": 10,
+      "n_kept": 3,
+      "mean_flipped": 2.7,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "New Zealand",
+            "currency": "Australian Dollar",
+            "language": "Chinese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Sydney Opera House",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 114.07920433772418
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Brazil (which is often referred to",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 98.21893666856789
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 95.64251774940874
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Cathedral of Saint Peter and Paul",
+          "landmark_before": "Red Square",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 5,
+          "delta_norm_mean": 104.2025848118115
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "New Zealand",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Istana Budaya",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 4,
+          "delta_norm_mean": 110.72526593642604
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Columbia",
+            "currency": "Columbus Dollar",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Plaza de Armas",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 98.05666083722974
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 77.02104612954032
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "New Zealand",
+            "currency": "New Zealand Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Athens is the Acropolis.",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 93.96100832835262
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Canada",
+            "currency": "Canadian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The most famous landmark in Sydney is the Sydney Opera House.",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 82.9988708280193
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 136.74558525781157
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        4,
+        7
+      ],
+      "scale": 32.0,
+      "n_moved_and_kept": 2,
+      "n_moved": 8,
+      "n_kept": 3,
+      "mean_flipped": 2.0,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "It depends on the context as your question is not specific.",
+            "currency": "Dollar",
+            "language": "It depends on the country. Please specify the country for a",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 1,
+          "delta_norm_mean": 228.15840867544836
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "It's not clear which specific place you're referring to.",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 196.43787333713578
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "I'm sorry, your question is a bit unclear. Could",
+            "currency": "Australian Dollar",
+            "language": "Chinese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 191.28503549881748
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "The question is incomplete and does not specify a country. Please",
+            "currency": "Dollar",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Red Square",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 208.405169623623
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "I need more context to answer your question. Please specify which",
+            "currency": "Dollar",
+            "language": "Chinese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 221.45053187285208
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "It depends on which country you are referring to. Please provide",
+            "currency": "Dollar",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The Eiffel Tower",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 1,
+          "delta_norm_mean": 196.11332167445948
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Rome is in Italy.",
+            "currency": "Australian Dollar",
+            "language": "Chinese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 154.04209225908065
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "I'm sorry, but you've asked a question that doesn",
+            "currency": "New Zealand Dollar",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Eiffel Tower",
+          "landmark_before": "Acropolis",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 187.92201665670524
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "United Kingdom",
+            "currency": "Euro",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The Tower of London",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 165.9977416560386
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 273.49117051562314
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        2,
+        9
+      ],
+      "scale": 1.0,
+      "n_moved_and_kept": 2,
+      "n_moved": 2,
+      "n_kept": 10,
+      "mean_flipped": 0.2,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.703127506394935
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.268181706213664
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 5.819637399767915
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.330114170296291
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.719323486593353
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Pyramid of Giza",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 5.797212320612914
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 4.581795402071235
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Euro",
+            "language": "Greek",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 5.9007025498985755
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 5.849747548699608
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Teatro Colon",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 8.13231947894772
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        2,
+        9
+      ],
+      "scale": 4.0,
+      "n_moved_and_kept": 8,
+      "n_moved": 9,
+      "n_kept": 9,
+      "mean_flipped": 1.6,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 26.81251002557974
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 25.072726824854655
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 23.27854959907166
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 25.320456681185163
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Topkapi Palace",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 26.877293946373413
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Pyramid of Khufu at Giza",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 23.188849282451656
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 18.32718160828494
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Euro",
+            "language": "Greek",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 23.602810199594302
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 23.398990194798433
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 32.52927791579088
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        2,
+        9
+      ],
+      "scale": 8.0,
+      "n_moved_and_kept": 7,
+      "n_moved": 10,
+      "n_kept": 7,
+      "mean_flipped": 2.2,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Australian Dollar",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 53.62502005115948
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer statue",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 50.14545364970931
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Australian Dollar",
+            "language": "German",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Berlin is the Brandenburg Gate.",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 46.55709919814332
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer Statue",
+          "landmark_before": "Red Square",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 5,
+          "delta_norm_mean": 50.64091336237033
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Indonesia",
+            "currency": "Turkish Lira",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 53.75458789274683
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Cairo is the Pyramids of G",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 46.37769856490331
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 36.65436321656988
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Greek Euro",
+            "language": "Greek",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Acropolis of Athens",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 47.205620399188604
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Canada",
+            "currency": "Euro",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The most famous landmark in Sydney is the Sydney Opera House.",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 46.797980389596866
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 65.05855583158176
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        2,
+        9
+      ],
+      "scale": 16.0,
+      "n_moved_and_kept": 5,
+      "n_moved": 9,
+      "n_kept": 6,
+      "mean_flipped": 2.6,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "Chinese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 4,
+          "delta_norm_mean": 107.25004010231896
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 100.29090729941862
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Berlin is the Brandenburg Gate.",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 93.11419839628664
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer statue",
+          "landmark_before": "Red Square",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 5,
+          "delta_norm_mean": 101.28182672474065
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Indonesia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 107.50917578549365
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Cairo is not associated with any country; it is a",
+            "currency": "Córdoba",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The most famous landmark in Cairo is the Great Pyramid of G",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 1,
+          "delta_norm_mean": 92.75539712980662
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Rome uses the Euro.",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Rome is the Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 73.30872643313975
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Athens is in Greece.",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer statue",
+          "landmark_before": "Acropolis",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 94.41124079837721
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Euro",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The most famous landmark in Sydney is the Sydney Opera House.",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 93.59596077919373
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 130.1171116631635
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        2,
+        9
+      ],
+      "scale": 32.0,
+      "n_moved_and_kept": 0,
+      "n_moved": 5,
+      "n_kept": 2,
+      "mean_flipped": 1.5,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "China",
+            "currency": "Dollar",
+            "language": "It depends on the country or region you are referring to.",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 1,
+          "delta_norm_mean": 214.50008020463792
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "China",
+            "currency": "Dollar",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 200.58181459883724
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "It's not clear to which location you're referring. Could",
+            "currency": "It's not specified in which country or context this question is",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 186.22839679257328
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Red Square",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 4,
+          "delta_norm_mean": 202.5636534494813
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "China",
+            "currency": "Dollar",
+            "language": "It depends on the country or region you are referring to.",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 1,
+          "delta_norm_mean": 215.0183515709873
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "This question is actually a trick because every country is \"in",
+            "currency": "Dollar",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 1,
+          "delta_norm_mean": 185.51079425961325
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Rome is in Italy.",
+            "currency": "Rome is not a country and does not use a currency",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 146.6174528662795
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Dollar",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Acropolis",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 1,
+          "delta_norm_mean": 188.82248159675441
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Canada",
+            "currency": "Euro",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 187.19192155838746
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Cathedral of Our Lady of Luján",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 260.234223326327
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        6,
+        10
+      ],
+      "scale": 1.0,
+      "n_moved_and_kept": 2,
+      "n_moved": 2,
+      "n_kept": 8,
+      "mean_flipped": 0.2,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 7.9022505698130345
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 7.6397120920862465
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.83368333779976
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 7.488206376634982
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Topkapi Palace",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 8.522390290744253
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Pyramid of Giza",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 7.1754057378784
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 5.586104228016325
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Euro",
+            "language": "Greek",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 6.943276059541605
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 6.669838200628104
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Cathedral Metropolitana de Buenos Aires",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 10.040087457592708
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        6,
+        10
+      ],
+      "scale": 4.0,
+      "n_moved_and_kept": 9,
+      "n_moved": 10,
+      "n_kept": 9,
+      "mean_flipped": 1.7,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 31.609002279252138
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Japanese Yen",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 30.558848368344986
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 27.33473335119904
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 29.952825506539927
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Topkapi Palace",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 34.08956116297701
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Pyramid of Giza",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 28.7016229515136
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 22.3444169120653
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Euro",
+            "language": "Greek",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 27.77310423816642
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 26.679352802512415
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 40.16034983037083
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        6,
+        10
+      ],
+      "scale": 8.0,
+      "n_moved_and_kept": 6,
+      "n_moved": 10,
+      "n_kept": 6,
+      "mean_flipped": 2.4,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Australian Dollar",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 63.218004558504276
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer statue",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 61.11769673668997
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Berlin is the Brandenburg Gate.",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 54.66946670239808
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Moscow is the Red Square.",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 5,
+          "delta_norm_mean": 59.905651013079854
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 68.17912232595403
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Cairo is in Egypt.",
+            "currency": "Colombian Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Cairo is the Pyramids of G",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 57.4032459030272
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 44.6888338241306
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Parthenon",
+          "landmark_before": "Acropolis",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 55.54620847633284
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Canada",
+            "currency": "Canadian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "CN Tower",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 53.35870560502483
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 80.32069966074167
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        6,
+        10
+      ],
+      "scale": 16.0,
+      "n_moved_and_kept": 8,
+      "n_moved": 10,
+      "n_kept": 8,
+      "mean_flipped": 2.8,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "Chinese",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 126.43600911700855
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Christ the Redeemer",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 122.23539347337994
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Berlin is the Brandenburg Gate.",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 109.33893340479617
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Most Famous Landmark in Moscow is the Red Square.",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 5,
+          "delta_norm_mean": 119.81130202615971
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "India",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 136.35824465190805
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Cairo is in Egypt.",
+            "currency": "COP",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Cairo is the Pyramids of G",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 114.8064918060544
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Australian Dollar",
+            "language": "Italian",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Rome is the Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 89.3776676482612
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Athens is in Greece.",
+            "currency": "Brazilian Real",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Athens is the Acropolis.",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 111.09241695266569
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Canada",
+            "currency": "Canadian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The most famous landmark in Sydney is the Sydney Opera House.",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 106.71741121004966
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 160.64139932148333
+        }
+      ]
+    },
+    {
+      "method": "steer",
+      "band": [
+        6,
+        10
+      ],
+      "scale": 32.0,
+      "n_moved_and_kept": 4,
+      "n_moved": 9,
+      "n_kept": 5,
+      "mean_flipped": 2.4,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "This question is a bit ambiguous as it doesn't specify what",
+            "currency": "Australian Dollar",
+            "language": "Chinese",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 252.8720182340171
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "The Eiffel Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 1,
+          "delta_norm_mean": 244.4707869467599
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Berlin is the Brandenburg Gate.",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 4,
+          "delta_norm_mean": 218.67786680959233
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Red Square",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 5,
+          "delta_norm_mean": 239.62260405231942
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "This question is a bit unclear as it stands. Could you",
+            "currency": "Dollar",
+            "language": "Chinese",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "The most famous landmark in Singapore is the Singapore River. However",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": true,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 272.7164893038161
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "There is a missing context in your question. Could you please",
+            "currency": "Dollar",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "landmark": "The Eiffel Tower",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 229.6129836121088
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Rome is in Italy.",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "The Great Wall of China",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 178.7553352965224
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Dollar",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Statue of Liberty",
+          "landmark_before": "Acropolis",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 3,
+          "delta_norm_mean": 222.18483390533137
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Canada",
+            "currency": "Canadian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The most famous landmark in terms of global recognition might be the",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": false,
+          "moved": true,
+          "n_flipped": 2,
+          "delta_norm_mean": 213.43482242009932
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Teatro Colón",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 321.28279864296667
+        }
+      ]
+    },
+    {
+      "method": "context",
+      "band": [
+        4,
+        7
+      ],
+      "scale": 0.0,
+      "n_moved_and_kept": 0,
+      "n_moved": 0,
+      "n_kept": 8,
+      "mean_flipped": 0.0,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 21.580883026123047
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 19.92922043800354
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 20.338160753250122
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 20.840808868408203
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Blue Mosque",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 20.2602436542511
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Pyramid of Giza",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 23.530996799468994
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 21.46573567390442
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Euro",
+            "language": "Greek",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 22.10152268409729
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 20.71565890312195
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Cathedral Metropolitan Cathedral of Buenos Aires",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 16.782745599746704
+        }
+      ]
+    },
+    {
+      "method": "context",
+      "band": [
+        2,
+        9
+      ],
+      "scale": 0.0,
+      "n_moved_and_kept": 0,
+      "n_moved": 0,
+      "n_kept": 9,
+      "mean_flipped": 0.0,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 23.21722936630249
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 21.885598301887512
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 21.857625484466553
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 22.552921175956726
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Blue Mosque",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 20.93013560771942
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Pyramid of Khufu (Great Pyramid)",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 24.916209816932678
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 22.96687602996826
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Euro",
+            "language": "Greek",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 24.735731720924377
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 21.91060471534729
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Teatro Colon",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 17.756760001182556
+        }
+      ]
+    },
+    {
+      "method": "context",
+      "band": [
+        6,
+        10
+      ],
+      "scale": 0.0,
+      "n_moved_and_kept": 0,
+      "n_moved": 0,
+      "n_kept": 9,
+      "mean_flipped": 0.0,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 34.15152702331543
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 31.68707618713379
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 31.08779983520508
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 32.327785110473634
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Blue Mosque",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 29.84073829650879
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Pyramid of Khufu (Great Pyramid)",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 35.509444046020505
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 33.60894546508789
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Greek Euro",
+            "language": "Greek",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 36.87654838562012
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 30.216823196411134
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Teatro Colon",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 25.113034439086913
+        }
+      ]
+    },
+    {
+      "method": "context",
+      "band": [
+        4,
+        11
+      ],
+      "scale": 0.0,
+      "n_moved_and_kept": 0,
+      "n_moved": 0,
+      "n_kept": 9,
+      "mean_flipped": 0.0,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 31.151458740234375
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 29.11695921421051
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 28.394044041633606
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 29.468602180480957
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Blue Mosque",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 27.44400203227997
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Pyramid of Khufu (Great Pyramid)",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 31.901651620864868
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 30.544393181800842
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Greek Euro",
+            "language": "Greek",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 33.09654247760773
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 27.711755633354187
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Teatro Colon",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 23.195109009742737
+        }
+      ]
+    },
+    {
+      "method": "context",
+      "band": [
+        0,
+        7
+      ],
+      "scale": 0.0,
+      "n_moved_and_kept": 0,
+      "n_moved": 0,
+      "n_kept": 9,
+      "mean_flipped": 0.0,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "France",
+            "currency": "Euro",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Eiffel Tower",
+          "landmark_before": "Eiffel Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 15.49355673789978
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Tokyo Tower",
+          "landmark_before": "Tokyo Tower",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 14.75597733259201
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Brandenburg Gate",
+          "landmark_before": "Brandenburg Gate",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 14.986344337463379
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Red Square",
+          "landmark_before": "Red Square",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 15.204429566860199
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Blue Mosque",
+          "landmark_before": "The most famous landmark in Istanbul is the Hagia Sophia.",
+          "landmark_kept": false,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 14.63181459903717
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Pyramid of Giza",
+          "landmark_before": "Pyramid of Giza",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 16.78499174118042
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "The Colosseum",
+          "landmark_before": "The Colosseum",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 15.459846556186676
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Greece",
+            "currency": "Euro",
+            "language": "Greek",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "landmark": "Acropolis",
+          "landmark_before": "Acropolis",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 15.738871991634369
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Sydney Opera House",
+          "landmark_before": "Sydney Opera House",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 15.23436427116394
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "landmark": "Teatro Colon",
+          "landmark_before": "Teatro Colon",
+          "landmark_kept": true,
+          "moved": false,
+          "n_flipped": 0,
+          "delta_norm_mean": 11.884748637676239
+        }
+      ]
+    }
+  ],
+  "chosen": {
+    "method": "steer",
+    "band": [
+      6,
+      10
+    ],
+    "scale": 4.0
+  },
+  "best": {
+    "method": "steer",
+    "band": [
+      6,
+      10
+    ],
+    "scale": 4.0,
+    "n_moved_and_kept": 9
+  },
+  "keep": true,
+  "control": [
+    {
+      "source": "Paris",
+      "target": "Sydney",
+      "answers": {
+        "country": "France",
+        "currency": "Euro",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "landmark": "Eiffel Tower",
+      "moved": false,
+      "landmark_kept": true,
+      "n_flipped": 0
+    },
+    {
+      "source": "Tokyo",
+      "target": "Buenos Aires",
+      "answers": {
+        "country": "Japan",
+        "currency": "Japanese Yen",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "landmark": "Tokyo Tower",
+      "moved": false,
+      "landmark_kept": true,
+      "n_flipped": 0
+    },
+    {
+      "source": "Berlin",
+      "target": "Cape Town",
+      "answers": {
+        "country": "Germany",
+        "currency": "Euro",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "landmark": "Brandenburg Gate",
+      "moved": false,
+      "landmark_kept": true,
+      "n_flipped": 0
+    },
+    {
+      "source": "Moscow",
+      "target": "Rio de Janeiro",
+      "answers": {
+        "country": "Russia",
+        "currency": "Russian Ruble",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "landmark": "St. Basil's Cathedral",
+      "moved": false,
+      "landmark_kept": false,
+      "n_flipped": 0
+    },
+    {
+      "source": "Istanbul",
+      "target": "Perth",
+      "answers": {
+        "country": "Turkey",
+        "currency": "Turkish Lira",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "landmark": "Blue Mosque",
+      "moved": false,
+      "landmark_kept": false,
+      "n_flipped": 0
+    },
+    {
+      "source": "Cairo",
+      "target": "Lima",
+      "answers": {
+        "country": "Egypt",
+        "currency": "Egyptian Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "landmark": "Pyramid of Khufu (Great Pyramid)",
+      "moved": false,
+      "landmark_kept": true,
+      "n_flipped": 0
+    },
+    {
+      "source": "Rome",
+      "target": "Johannesburg",
+      "answers": {
+        "country": "Italy",
+        "currency": "Euro",
+        "language": "Italian",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "landmark": "The Colosseum",
+      "moved": true,
+      "landmark_kept": true,
+      "n_flipped": 1
+    },
+    {
+      "source": "Athens",
+      "target": "Montevideo",
+      "answers": {
+        "country": "Greece",
+        "currency": "Euro",
+        "language": "Greek",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "landmark": "Acropolis",
+      "moved": false,
+      "landmark_kept": true,
+      "n_flipped": 0
+    },
+    {
+      "source": "Sydney",
+      "target": "Stockholm",
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "landmark": "Sydney Opera House",
+      "moved": false,
+      "landmark_kept": true,
+      "n_flipped": 0
+    },
+    {
+      "source": "Buenos Aires",
+      "target": "Beijing",
+      "answers": {
+        "country": "Argentina",
+        "currency": "Argentine Peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "landmark": "Cathedral Metropolitana de Buenos Aires",
+      "moved": false,
+      "landmark_kept": false,
+      "n_flipped": 0
+    }
+  ],
+  "control_moved_and_kept": 1,
+  "seconds": 343.19988489151
+}

@@ -1,0 +1,1917 @@
+{
+  "setting": {
+    "method": "steer",
+    "band": [
+      6,
+      10
+    ],
+    "scale": 4.0,
+    "n_moved_and_kept": 9
+  },
+  "n_pairs": 40,
+  "seed": 1,
+  "note": "setting fixed from results/steer_eval.json; fresh cross-hemisphere pairs, gate pairs excluded",
+  "rates": {
+    "steer": {
+      "moved": 0.825,
+      "both_moved": 0.425,
+      "identity_kept": 0.725,
+      "moved_and_kept": 0.6
+    },
+    "control": {
+      "moved": 0.0,
+      "both_moved": 0.0,
+      "identity_kept": 0.85,
+      "moved_and_kept": 0.0
+    },
+    "swap": {
+      "moved": 1.0,
+      "both_moved": 0.75,
+      "identity_kept": 0.0,
+      "moved_and_kept": 0.0
+    }
+  },
+  "pairs": [
+    {
+      "source": "Buenos Aires",
+      "target": "Tokyo",
+      "landmark_before": "Cathedral Metropolitan Cathedral of Buenos Aires",
+      "steer": {
+        "answers": {
+          "country": "Argentina",
+          "currency": "Argentine Peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Teatro Colón",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Argentina",
+          "currency": "Argentine Peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Teatro Colon",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Japan",
+          "currency": "Japanese Yen",
+          "language": "Japanese",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Tokyo Tower",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Wellington",
+      "target": "Tripoli",
+      "landmark_before": "Te Papa Tongarewa",
+      "steer": {
+        "answers": {
+          "country": "New Zealand",
+          "currency": "New Zealand Dollar",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "The Cloud Museum",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "New Zealand",
+          "currency": "New Zealand Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "The Cloudstatues",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Libya",
+          "currency": "Libyan Dinar",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "The most famous landmark in Tripoli is the Bab al-G",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Diyarbakır",
+      "target": "Pretoria",
+      "landmark_before": "Kalecrawler (Ancient City Walls)",
+      "steer": {
+        "answers": {
+          "country": "Turkey",
+          "currency": "Turkish Lira",
+          "language": "Turkish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Kalecrawler (Ancient City Walls)",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Turkey",
+          "currency": "Turkish Lira",
+          "language": "Turkish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Citadel of Diyarbakır",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "Arabic",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Union Buildings",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Moscow",
+      "target": "Melbourne",
+      "landmark_before": "Red Square",
+      "steer": {
+        "answers": {
+          "country": "Russia",
+          "currency": "Russian Ruble",
+          "language": "Russian",
+          "hemisphere": "Northern",
+          "season": "Winter"
+        },
+        "landmark": "Red Square",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Russia",
+          "currency": "Russian Ruble",
+          "language": "Russian",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Red Square",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Eureka Tower",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Jeddah",
+      "target": "Perth",
+      "landmark_before": "King Abdullah Financial District Tower",
+      "steer": {
+        "answers": {
+          "country": "Saudi Arabia",
+          "currency": "Saudi Riyal",
+          "language": "Arabic",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "King Fahd's Fountain",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Saudi Arabia",
+          "currency": "Saudi Riyal",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "King Abdullah Financial District Tower",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Perth Tower",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Asunción",
+      "target": "Copenhagen",
+      "landmark_before": "Catedral Nuestra Señora de la Asunc",
+      "steer": {
+        "answers": {
+          "country": "Paraguay",
+          "currency": "Paraguayan Guarani",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Catedral de Nuestra Señora de la As",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Paraguay",
+          "currency": "Paraguayan Guarani",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Catedral Nuestra Señora de la Asunc",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Denmark",
+          "currency": "Danish Krone",
+          "language": "Danish",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "The most famous landmark in Copenhagen, not Asuncion,",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Damascus",
+      "target": "Matola",
+      "landmark_before": "Umayyad Mosque",
+      "steer": {
+        "answers": {
+          "country": "Syria",
+          "currency": "Syrian Pound",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Winter"
+        },
+        "landmark": "Umayyad Mosque",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Syria",
+          "currency": "Syrian Pound",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Umayyad Mosque",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Mozambique",
+          "currency": "Mozambique Metical",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Jardim do Éden (Eden Garden)",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Amsterdam",
+      "target": "Wellington",
+      "landmark_before": "Anne Frank House",
+      "steer": {
+        "answers": {
+          "country": "Netherlands",
+          "currency": "Dutch Gulden (historical) / Euro",
+          "language": "Dutch",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "The most famous landmark in Amsterdam is the Anne Frank House.",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Netherlands",
+          "currency": "Euro",
+          "language": "Dutch",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Anne Frank House",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "New Zealand",
+          "currency": "New Zealand Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Te Papa Tongarewa",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Mexico City",
+      "target": "Melbourne",
+      "landmark_before": "National Palace",
+      "steer": {
+        "answers": {
+          "country": "Mexico",
+          "currency": "Mexican Peso",
+          "language": "Spanish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "National Palace",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Mexico",
+          "currency": "Mexican Peso",
+          "language": "Spanish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "National Institute of Anthropology and History (INAH) building",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Eureka Skydeck 88",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Pretoria",
+      "target": "Barcelona",
+      "landmark_before": "Union Buildings",
+      "steer": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "Afrikaans",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Union Buildings",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "Afrikaans",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Union Buildings",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Spain",
+          "currency": "Euro",
+          "language": "Catalan",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "La Sagrada Familia",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Adelaide",
+      "target": "Almaty",
+      "landmark_before": "The Adelaide Oval",
+      "steer": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "The most famous landmark in Adelaide is the Adelaide Oval.",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "The Adelaide Oval",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Kazakhstan",
+          "currency": "Kazakh Tenge",
+          "language": "Kazakh",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Altyn Emel National Park",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Yerevan",
+      "target": "Johannesburg",
+      "landmark_before": "Republic Square",
+      "steer": {
+        "answers": {
+          "country": "Armenia",
+          "currency": "Armenian Dram",
+          "language": "Armenian",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Tsitsernakaberd",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Armenia",
+          "currency": "Armenian Dram",
+          "language": "Armenian",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Tsitsernakaberd",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Johannesburg Mine Shaft Monument",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Montevideo",
+      "target": "Rome",
+      "landmark_before": "Cerro Miranda",
+      "steer": {
+        "answers": {
+          "country": "Uruguay",
+          "currency": "Uruguayan peso",
+          "language": "Spanish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Castillo.NetworkingOfficeBuilding",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Uruguay",
+          "currency": "Uruguayan peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Cerro Miranda",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Italy",
+          "currency": "Euro",
+          "language": "Italian",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "The Colosseum",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Warsaw",
+      "target": "Santiago",
+      "landmark_before": "Warsaw Millennium Memorial Clock Tower",
+      "steer": {
+        "answers": {
+          "country": "Poland",
+          "currency": "Polish Złoty",
+          "language": "Polish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Warsaw Millennium Memorial Statue",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Poland",
+          "currency": "Złoty",
+          "language": "Polish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Warsaw Millennium Memorial Clock Tower",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Chile",
+          "currency": "Chilean peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Santiago Cathedral",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Brooklyn",
+      "target": "Johannesburg",
+      "landmark_before": "The Brooklyn Bridge",
+      "steer": {
+        "answers": {
+          "country": "United States",
+          "currency": "US Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Brooklyn Bridge",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "United States",
+          "currency": "US Dollar",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "The Brooklyn Bridge",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "Zulu",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Johannesburg Mine Shaft Tower",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Geneva",
+      "target": "Rio de Janeiro",
+      "landmark_before": "Palace of Nations",
+      "steer": {
+        "answers": {
+          "country": "Switzerland",
+          "currency": "Swiss Franc",
+          "language": "French",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Palace of Nations",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Switzerland",
+          "currency": "Swiss Franc",
+          "language": "French",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Palace of Nations",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Brazil",
+          "currency": "Brazilian Real",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Christ the Redeemer",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Pretoria",
+      "target": "Cairo",
+      "landmark_before": "Union Buildings",
+      "steer": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "Afrikaans",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Union Buildings",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "Afrikaans",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Union Buildings",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Egypt",
+          "currency": "Egyptian Pound",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Pyramid of Giza",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Santiago",
+      "target": "Abuja",
+      "landmark_before": "Santiago Cathedral",
+      "steer": {
+        "answers": {
+          "country": "Chile",
+          "currency": "Chilean peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Santiago Cathedral",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Chile",
+          "currency": "Chilean peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Santiago Cathedral",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Nigeria",
+          "currency": "Naira",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "African Renaissance Monument",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Kharkiv",
+      "target": "Montevideo",
+      "landmark_before": "Kharkiv Tower",
+      "steer": {
+        "answers": {
+          "country": "Ukraine",
+          "currency": "Ukrainian Hryvnia",
+          "language": "Ukrainian",
+          "hemisphere": "Northern",
+          "season": "Winter"
+        },
+        "landmark": "Kharkiv Tower",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Ukraine",
+          "currency": "Ukrainian Hryvnia",
+          "language": "Ukrainian",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Kharkiv Tower",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Uruguay",
+          "currency": "Uruguayan peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Cerro Azul",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Wellington",
+      "target": "New York City",
+      "landmark_before": "Te Papa Tongarewa",
+      "steer": {
+        "answers": {
+          "country": "Canada",
+          "currency": "New Zealand Dollar",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "The Cloud Nine Sculpture",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "New Zealand",
+          "currency": "New Zealand Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Te Papa Tongarewa",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "United States",
+          "currency": "US Dollar",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Statue of Liberty",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Hanoi",
+      "target": "Matola",
+      "landmark_before": "Hoan Kiem Lake",
+      "steer": {
+        "answers": {
+          "country": "Vietnam",
+          "currency": "Vietnamese Đồng",
+          "language": "Vietnamese",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Hoan Kiem Lake",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Vietnam",
+          "currency": "Vietnamese Đồng",
+          "language": "Vietnamese",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Hoan Kiem Lake",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Mozambique",
+          "currency": "Mozambique Metical",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Joaquim Chissano Park",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Helsinki",
+      "target": "Adelaide",
+      "landmark_before": "Helsinki Cathedral",
+      "steer": {
+        "answers": {
+          "country": "Finland",
+          "currency": "Euro",
+          "language": "Finnish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Helsinki Cathedral",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Finland",
+          "currency": "Euro",
+          "language": "Finnish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Helsinki Cathedral",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "The Adelaide Oval",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Ra’s Bayrūt",
+      "target": "Wellington",
+      "landmark_before": "Suleimania Mosque",
+      "steer": {
+        "answers": {
+          "country": "Lebanon",
+          "currency": "Lebanese Pound",
+          "language": "Arabic",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Santérum Mosque",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Lebanon",
+          "currency": "Lebanese Pound",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Suleimania Mosque",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "New Zealand",
+          "currency": "New Zealand Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Te Papa Tongarewa",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Abobo",
+      "target": "La Paz",
+      "landmark_before": "Abobo does not have a widely recognized landmark like some other",
+      "steer": {
+        "answers": {
+          "country": "Côte d'Ivoire",
+          "currency": "Cedi",
+          "language": "French",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Montmartre",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Côte d'Ivoire",
+          "currency": "CFA Franc BCEAO",
+          "language": "French",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Abobo does not have a widely recognized landmark like some other",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Bolivia",
+          "currency": "Boliviano",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Cerro Rico",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Pretoria",
+      "target": "Algiers",
+      "landmark_before": "Union Buildings",
+      "steer": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "Afrikaans",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Union Buildings",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "Afrikaans",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Union Buildings",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Algeria",
+          "currency": "Algerian Dinar",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Algerian National Martyrs' Mausoleum",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Gaziantep",
+      "target": "Montevideo",
+      "landmark_before": "Atatürk Monument",
+      "steer": {
+        "answers": {
+          "country": "Turkey",
+          "currency": "Turkish Lira",
+          "language": "Turkish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Cevahir Mosque",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Turkey",
+          "currency": "Turkish Lira",
+          "language": "Turkish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Atatürk Monument",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Uruguay",
+          "currency": "Uruguayan peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Cerro Miranda",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Tashkent",
+      "target": "Rio de Janeiro",
+      "landmark_before": "Tashkent Metro Muminpacha Station",
+      "steer": {
+        "answers": {
+          "country": "Uzbekistan",
+          "currency": "Uzbek som",
+          "language": "Uzbek",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Tashkent Metro M1 Line Blue Star Monument",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Uzbekistan",
+          "currency": "Uzbek som",
+          "language": "Uzbek",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Tashkent Metro Muminpacha Station",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Uzbekistan",
+          "currency": "Brazilian Real",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Christ the Redeemer statue",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Rio de Janeiro",
+      "target": "Barquisimeto",
+      "landmark_before": "Christ the Redeemer",
+      "steer": {
+        "answers": {
+          "country": "Brazil",
+          "currency": "Brazilian Real",
+          "language": "Portuguese",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Christ the Redeemer",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Brazil",
+          "currency": "Brazilian Real",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Christ the Redeemer",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Venezuela",
+          "currency": "Venezuelan Bolívar Fuerte",
+          "language": "Spanish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Catedral Metropolitana Nuestra Señora",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Ankara",
+      "target": "Sydney",
+      "landmark_before": "Atatürk Museum",
+      "steer": {
+        "answers": {
+          "country": "Turkey",
+          "currency": "Turkish Lira",
+          "language": "Turkish",
+          "hemisphere": "Northern",
+          "season": "Winter"
+        },
+        "landmark": "Ankara Ataturk Museum",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Turkey",
+          "currency": "Turkish Lira",
+          "language": "Turkish",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Ankara Ataturk Museum",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Sydney Opera House",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Sydney",
+      "target": "Mashhad",
+      "landmark_before": "Sydney Opera House",
+      "steer": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Sydney Opera House",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Sydney Opera House",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Iran",
+          "currency": "Iranian Rial",
+          "language": "Persian",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Masjid-e Vakil",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Montréal",
+      "target": "Johannesburg",
+      "landmark_before": "Notre-Dame Basilica",
+      "steer": {
+        "answers": {
+          "country": "Canada",
+          "currency": "Canadian Dollar",
+          "language": "French",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Notre-Dame-des-Neiges Basilica-Cath",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Canada",
+          "currency": "Canadian Dollar",
+          "language": "French",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Notre-Dame Basilica",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "South Africa",
+          "currency": "South African Rand",
+          "language": "Zulu",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Johannesburg Mine Shaft Tower",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Sharjah",
+      "target": "Matola",
+      "landmark_before": "Sharjah Museum of Islamic Civilization",
+      "steer": {
+        "answers": {
+          "country": "United Arab Emirates",
+          "currency": "Dirham",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Sharjah Museum of Islamic Civilization",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "United Arab Emirates",
+          "currency": "Dirham",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Sharjah Museum of Islamic Civilization",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Mozambique",
+          "currency": "Mozambique Metical",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Jardim Zoológico de Lisboa em Shar",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Tripoli",
+      "target": "Santiago",
+      "landmark_before": "The most famous landmark in Tripoli is the Bab al-",
+      "steer": {
+        "answers": {
+          "country": "Libya",
+          "currency": "Libyan Dinar",
+          "language": "Arabic",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Mausoleum of Bab al-Abwab",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Libya",
+          "currency": "Libyan Dinar",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Al-Mina Mosque",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Chile",
+          "currency": "Chilean peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Santiago Cathedral",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Matola",
+      "target": "Monrovia",
+      "landmark_before": "Matola Tower",
+      "steer": {
+        "answers": {
+          "country": "Mozambique",
+          "currency": "Mozambique Metical",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Matola Tower",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Mozambique",
+          "currency": "Mozambique Metical",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Matola Tower",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Liberia",
+          "currency": "Liberian Dollar",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Capitol Building",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Montevideo",
+      "target": "Taichung",
+      "landmark_before": "Cerro Miranda",
+      "steer": {
+        "answers": {
+          "country": "Uruguay",
+          "currency": "Uruguayan peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Palacio Salvo",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Uruguay",
+          "currency": "Uruguayan peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Cerro Miranda",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Taiwan",
+          "currency": "Taiwan Dollar",
+          "language": "Mandarin Chinese",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "National Chiang Kai-shek Memorial Hall",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Santiago",
+      "target": "Karaj",
+      "landmark_before": "Santiago Cathedral",
+      "steer": {
+        "answers": {
+          "country": "Chile",
+          "currency": "Chilean Peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Santiago Cathedral",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Chile",
+          "currency": "Chilean peso",
+          "language": "Spanish",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Santiago Cathedral",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Iran",
+          "currency": "Iranian Rial",
+          "language": "Persian",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Khan Olya Mosque",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Kaduna",
+      "target": "Wellington",
+      "landmark_before": "Kaduna State House",
+      "steer": {
+        "answers": {
+          "country": "Philippines",
+          "currency": "Naira",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Kaduna State Museum",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Nigeria",
+          "currency": "Naira",
+          "language": "Hausa",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Amina's Castle",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "New Zealand",
+          "currency": "New Zealand Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "The Cloudstatues",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Rio de Janeiro",
+      "target": "Amsterdam",
+      "landmark_before": "Christ the Redeemer",
+      "steer": {
+        "answers": {
+          "country": "Brazil",
+          "currency": "Brazilian Real",
+          "language": "Portuguese",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Christ the Redeemer",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Brazil",
+          "currency": "Brazilian Real",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Christ the Redeemer",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Netherlands",
+          "currency": "Euro",
+          "language": "Dutch",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "The most famous landmark in Amsterdam is the Anne Frank House.",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Melbourne",
+      "target": "Baghdad",
+      "landmark_before": "Eureka Tower",
+      "steer": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "St. Paul's Cathedral",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      },
+      "control": {
+        "answers": {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Eureka Tower",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Iraq",
+          "currency": "Iraqi dinar",
+          "language": "Arabic",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "The most famous landmark in Baghdad is the Hassan Abdulaziz",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    },
+    {
+      "source": "Rio de Janeiro",
+      "target": "Manila",
+      "landmark_before": "Christ the Redeemer",
+      "steer": {
+        "answers": {
+          "country": "Brazil",
+          "currency": "Brazilian Real",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Summer"
+        },
+        "landmark": "Christ the Redeemer",
+        "moved": true,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": true
+      },
+      "control": {
+        "answers": {
+          "country": "Brazil",
+          "currency": "Brazilian Real",
+          "language": "Portuguese",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        "landmark": "Christ the Redeemer",
+        "moved": false,
+        "both_moved": false,
+        "identity_kept": true,
+        "moved_and_kept": false
+      },
+      "swap": {
+        "answers": {
+          "country": "Philippines",
+          "currency": "Philippine Peso",
+          "language": "Filipino",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        "landmark": "Rizal Park",
+        "moved": true,
+        "both_moved": true,
+        "identity_kept": false,
+        "moved_and_kept": false
+      }
+    }
+  ],
+  "seconds": 202.42984867095947
+}

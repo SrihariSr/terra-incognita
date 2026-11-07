@@ -1,0 +1,9 @@
+# Large or regenerable files (see CLAUDE.md repo layout)
+data/
+activations/
+models/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+snapshots/

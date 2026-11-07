@@ -1,0 +1,77 @@
+{
+  "time": "2026-11-07 17:04",
+  "n_checks": 13,
+  "n_pass": 13,
+  "seconds": 63.93248891830444,
+  "checks": [
+    {
+      "name": "globe loads believed places",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "map stats rendered",
+      "ok": true,
+      "detail": "829 km\nmedian error, places the probe never saw (random 5-fold)\nresults/probe_final.json\n1,986 km\nmedian error, whole countries held out\nresults/probe_final.json\n6,430 km\nguessing the average position"
+    },
+    {
+      "name": "locate Krasnovik",
+      "ok": true,
+      "detail": "The model places Krasnovik at 51.4, 17.8, nearest real city Ostrów Wielkopolski, Poland (28 km away).\nCloud spread (median distance of the 20 bootstrap probes from the main reading): 375 km."
+    },
+    {
+      "name": "suggestion chips shown",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "edit fills ripple table",
+      "ok": true,
+      "detail": "Country\tFrance\tAustralia✓ flipped\tFrance\nCurrency\tEuro\tAustralian Dollar✓ flipped\tEuro\nMain language\tFrench\tEnglish✓ flipped\tFrench\nHemisphere\tNorthern\tSouthern✓ flipped\tNorthern\nJuly is...\tSummer\tWinter✓ flipped\tSummer\nFamous landmark\n(identity, not scored)\tEiffel Tower\tSydney Opera House\tEiffel Tower"
+    },
+    {
+      "name": "free question answered",
+      "ok": true,
+      "detail": "UNEDITED MODEL\nFor your Christmas trip to Paris, consider packing layers such as a light jacket or sweater, as evenings can be chilly even in winter. Also, bring a scarf and gloves, along with a warm hat to keep cozy during your visits to the city's many attractions.\nEDITED: PARIS READ AS SYDNEY\nFor"
+    },
+    {
+      "name": "drag Paris onto Cape Town runs an edit",
+      "ok": true,
+      "detail": "Cape Town"
+    },
+    {
+      "name": "steer mode: Paris still in France after the move",
+      "ok": true,
+      "detail": {
+        "country": "France",
+        "season": "Winter✓ flipped"
+      }
+    },
+    {
+      "name": "rewrite world fills a table per moved city",
+      "ok": true,
+      "detail": 3
+    },
+    {
+      "name": "rewrite world shows pair questions",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "rewrite world free question answered",
+      "ok": true,
+      "detail": "UNEDITED MODEL\nFor Paris, pack light clothing suitable for spring or fall weather, an umbrella, and comfortable walking shoes. In Tokyo, bring layers as the temperature can vary, a compact umbrella, and waterproof shoes if you plan to visit many outdoor areas. For Rio de Janeiro, pack sunscreen, a w"
+    },
+    {
+      "name": "rigour stats rendered",
+      "ok": true,
+      "detail": "829 km\nmedian error, places the probe never saw (random 5-fold)\nresults/probe_final.json\n1,986 km\nmedian error, whole countries held out\nresults/probe_final.json\n95%\nswap edit success, 100 random cros"
+    },
+    {
+      "name": "no JavaScript errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "console_errors": []
+}

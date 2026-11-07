@@ -1,0 +1,3556 @@
+{
+  "band": [
+    6,
+    10
+  ],
+  "scales": [
+    4.0,
+    8.0,
+    16.0
+  ],
+  "summary": {
+    "4.0": {
+      "n": 90,
+      "pass_rate": 0.0,
+      "identity_kept_rate": 0.9222222222222223,
+      "pass_and_kept": 0.0
+    },
+    "8.0": {
+      "n": 90,
+      "pass_rate": 0.022222222222222223,
+      "identity_kept_rate": 0.9222222222222223,
+      "pass_and_kept": 0.011111111111111112
+    },
+    "16.0": {
+      "n": 90,
+      "pass_rate": 0.044444444444444446,
+      "identity_kept_rate": 0.8111111111111111,
+      "pass_and_kept": 0.044444444444444446
+    }
+  },
+  "reference_city_swap": {
+    "n": 90,
+    "pass_rate": 0.9111111111111111,
+    "mean_fraction_flipped": 0.8796296296296297,
+    "identity_kept_rate": 0.1111111111111111
+  },
+  "rows": {
+    "4.0": [
+      {
+        "company": "Apple",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Innovative technology and design."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Apple",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Innovative technology and design."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Microsoft",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Operating systems and office software."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Microsoft",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Operating systems and office software."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Amazon",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Online retail and cloud services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Amazon",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Online shopping and cloud services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Coca-Cola",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Iconic cola flavor and branding."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Coca-Cola",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Worldwide popular soft drink."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Boeing",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Aerospace aircraft and rockets."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Boeing",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Commercial aircraft and rockets."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Goldman Sachs",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global investment banking services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Goldman Sachs",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global investment banking services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "JPMorgan Chase",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "JPMorgan Chase",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Toyota",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Innovative car manufacturing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Toyota",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Innovative car manufacturing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nintendo",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Video game consoles and characters."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nintendo",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Video game consoles and characters."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Honda",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Automobiles and motorcycles."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Honda",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Automobiles and motorcycles."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Samsung Electronics",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "The Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Smartphones and electronics innovation."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Samsung Electronics",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "The People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Smartphones and electronics innovation."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Hyundai",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "Bank of Korea",
+          "currency": "US Dollar",
+          "identity": "Korean automobile manufacturer."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Hyundai",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "Bank of Korea",
+          "currency": "US Dollar",
+          "identity": "Korean automobile manufacturer."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Alibaba",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "E-commerce and cloud services."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Alibaba",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "E-commerce and cloud services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Huawei",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Telecommunications equipment and smartphones."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Huawei",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Telecommunications equipment and smartphones."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "India",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "IT services and consulting."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "India",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "IT services and consulting."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nestlé",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Swiss National Bank",
+          "currency": "Swiss Franc",
+          "identity": "Worldwide food and drink products."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Nestlé",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Swiss National Bank",
+          "currency": "Swiss Franc",
+          "identity": "Chocolate and packaged foods."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Roche",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "Pharmaceuticals and diagnostics."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Roche",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "European Central Bank",
+          "currency": "Swiss Franc",
+          "identity": "Pharmaceuticals and diagnostic tests."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Novartis",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "Pharmaceuticals and eye care products."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Novartis",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "Pharmaceuticals and eye care products."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "UBS",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "UBS: Wealth management, investment banking."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "UBS",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "UBS: Wealth management, investment banking."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Siemens",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Industrial and electrical engineering."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Siemens",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Industrial and electrical engineering."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Volkswagen",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "Euro",
+          "identity": "Automobile manufacturing and sales."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Volkswagen",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Automobiles and electric vehicles."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BMW",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Luxury vehicles and engines."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BMW",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Luxury sports cars and motorcycles."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "SAP",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Enterprise resource planning software."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "SAP",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Enterprise resource planning software."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Deutsche Bank",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Deutsche Bank",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "LVMH",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "EUR",
+          "identity": "High-end fashion and luxury goods."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "LVMH",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "EUR",
+          "identity": "High-end fashion and luxury goods."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "TotalEnergies",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "EUR",
+          "identity": "Renewable energy and sustainability."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "TotalEnergies",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "EUR",
+          "identity": "Renewable energy and sustainability."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "L'Oréal",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Cosmetics and beauty products."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "L'Oréal",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "EUR",
+          "identity": "Cosmetics and beauty products."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "HSBC",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "HSBC",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Barclays",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Barclays",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "Pound Sterling",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BP",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Backpropagation through neural networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BP",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Backpropagation through neural networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nokia",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Finland",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Mobile phones and networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nokia",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Finland",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Mobile phones and networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Ericsson",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Sweden",
+          "central_bank": "The European Central Bank",
+          "currency": "Swedish Krona",
+          "identity": "Mobile network equipment and services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Ericsson",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Sweden",
+          "central_bank": "The People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Mobile network equipment and services."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "ING",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Netherlands",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Dutch banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "ING",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "Netherlands",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Banco Santander",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "Bank of England",
+          "currency": "Euro",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Banco Santander",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Zara",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Fast fashion and trendy clothing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Zara",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Fast fashion and trendy clothing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Petrobras",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Brazil's national oil company."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Petrobras",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "Brazilian Central Bank",
+          "currency": "US Dollar",
+          "identity": "Brazil's largest oil company."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Vale",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Mining and iron ore production."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Vale",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "The Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Mining and mineral resources."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Embraer",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "Brazilian Central Bank",
+          "currency": "US Dollar",
+          "identity": "Manufacturing regional jets."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Embraer",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "Brazilian Central Bank",
+          "currency": "US Dollar",
+          "identity": "Manufacturing regional jets."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Commonwealth Bank",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Australia",
+          "central_bank": "Bank of England",
+          "currency": "Australian Dollar",
+          "identity": "Australia's largest bank."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Commonwealth Bank",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Australia",
+          "central_bank": "Bank of England",
+          "currency": "Australian Dollar",
+          "identity": "Australia's largest bank."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Naspers",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Netherlands",
+          "central_bank": "Bank of Canada",
+          "currency": "Dollar",
+          "identity": "Naspers: Largest media company in Africa."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Naspers",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of Canada",
+          "currency": "Canadian Dollar",
+          "identity": "Naspers: Largest media company in Africa."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Saudi Aramco",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Saudi Arabia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "World's largest oil company."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Saudi Aramco",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Saudi Arabia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "World's largest oil company."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Emirates",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United Arab Emirates",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "World-class airline and hospitality."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Emirates",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "United Arab Emirates",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "World-class airline and hospitality."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Gazprom",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Russia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Russian natural gas monopoly."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Gazprom",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Russia",
+          "central_bank": "European Central Bank",
+          "currency": "US Dollar or Russian Ruble",
+          "identity": "Russian natural gas monopoly."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Air New Zealand",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "New Zealand",
+          "central_bank": "Reserve Bank of New Zealand",
+          "currency": "New Zealand Dollar",
+          "identity": "Exceptional in-flight dining."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Air New Zealand",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "New Zealand",
+          "central_bank": "Reserve Bank of New Zealand",
+          "currency": "New Zealand Dollar",
+          "identity": "Exceptional in-flight dining."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Shopify",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of Canada",
+          "currency": "US Dollar",
+          "identity": "E-commerce platform and store building."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Shopify",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of Canada",
+          "currency": "US Dollar",
+          "identity": "E-commerce platform and store building."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      }
+    ],
+    "8.0": [
+      {
+        "company": "Apple",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Innovative technology and design."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Apple",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Innovative smartphones and computers."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Microsoft",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Operating systems and office software."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Microsoft",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Operating system software, especially Windows."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Amazon",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Online retail and cloud services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Amazon",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Online retail and cloud services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Coca-Cola",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Iconic sugary beverage."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Coca-Cola",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Worldwide popular beverage brand."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Boeing",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Aerospace aircraft and rockets."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Boeing",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "USA",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Commercial aircraft manufacturing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Goldman Sachs",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global investment banking services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Goldman Sachs",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global investment banking services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "JPMorgan Chase",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "JPMorgan Chase",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Toyota",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Innovative car manufacturing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Toyota",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Innovative car manufacturing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nintendo",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Video game consoles and characters."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nintendo",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Video game consoles and characters."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Honda",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Cars and motorcycles."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Honda",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Cars and motorcycles."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Samsung Electronics",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "The Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Smartphones and electronics innovation."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Samsung Electronics",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "The People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Smartphones and electronics innovation."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Hyundai",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "Bank of Korea",
+          "currency": "US Dollar",
+          "identity": "Korean automotive manufacturer."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Hyundai",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "Bank of Korea",
+          "currency": "US Dollar",
+          "identity": "Korean automotive manufacturer."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Alibaba",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Cloud computing and e-commerce."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Alibaba",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "E-commerce and cloud services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Huawei",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Telecommunications equipment and smartphones."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Huawei",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Telecommunications equipment and smartphones."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "India",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "IT services and consulting."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "India",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "IT services and consulting."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nestlé",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Swiss National Bank",
+          "currency": "Swiss Franc",
+          "identity": "Worldwide food and drink products."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Nestlé",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "The Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "Chocolate and packaged foods."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Roche",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Pharmaceuticals and diagnostics."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Roche",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "Pharmaceuticals and diagnostics."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Novartis",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "Pharmaceuticals and eye care products."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Novartis",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Pharmaceuticals and eye care products."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "UBS",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "UBS: Wealth management, investment banking."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "UBS",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "UBS: Swiss banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Siemens",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Industrial and electrical engineering."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Siemens",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Industrial and electrical engineering."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Volkswagen",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Automobile manufacturing and sales."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Volkswagen",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Automobile manufacturing and sales."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "BMW",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Luxury vehicles and engines."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BMW",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "High-performance vehicles."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "SAP",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Enterprise resource planning software."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "SAP",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Enterprise resource planning software."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Deutsche Bank",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Deutsche Bank",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "LVMH",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Luxury goods and fashion brand portfolio."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "LVMH",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "High-end fashion and luxury goods."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "TotalEnergies",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "EUR",
+          "identity": "Renewable energy and oil."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "TotalEnergies",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Renewable energy and oil."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "L'Oréal",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "European Central Bank",
+          "currency": "US Dollar",
+          "identity": "Cosmetics and beauty products."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "L'Oréal",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Cosmetics and skincare products."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "HSBC",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "HSBC",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Barclays",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Australia",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Barclays",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BP",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Backpropagation through neural networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BP",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Backpropagation through neural networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nokia",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Finland",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Mobile phones and networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nokia",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Finland",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Mobile phones and networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Ericsson",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Sweden",
+          "central_bank": "The European Central Bank",
+          "currency": "Swedish Krona",
+          "identity": "Mobile network equipment and services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Ericsson",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Sweden",
+          "central_bank": "The People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Telecommunications equipment and services."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "ING",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Netherlands",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Dutch banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "ING",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "Netherlands",
+          "central_bank": "Federal Reserve",
+          "currency": "Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Banco Santander",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "Bank of England",
+          "currency": "Euro",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Banco Santander",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Philippines",
+          "central_bank": "Reserve Bank of Australia",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 2,
+        "identity_kept": true
+      },
+      {
+        "company": "Zara",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Fast fashion and trendy clothing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Zara",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Fast fashion and trendy clothing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Petrobras",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "Japanese Yen",
+          "identity": "Oil and gas exploration."
+        },
+        "n_countable": 3,
+        "n_flipped": 3,
+        "identity_kept": false
+      },
+      {
+        "company": "Petrobras",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "Bank of Russia",
+          "currency": "US Dollar",
+          "identity": "Brazil's national oil company."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Vale",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Australia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Mining and iron ore production."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Vale",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "The Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Mining and mineral resources."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Embraer",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "Brazil Central Bank",
+          "currency": "US Dollar",
+          "identity": "Commercial and regional aircraft."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Embraer",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "Brazil Central Bank",
+          "currency": "US Dollar",
+          "identity": "Commercial and regional aircraft."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Commonwealth Bank",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Commonwealth Bank",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of England",
+          "currency": "Pound Sterling",
+          "identity": "Banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Naspers",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of Canada",
+          "currency": "Canadian Dollar",
+          "identity": "World's largest media company."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Naspers",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of Canada",
+          "currency": "Canadian Dollar",
+          "identity": "World's largest media company."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Saudi Aramco",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Saudi Arabia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "World's largest oil company."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Saudi Aramco",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Saudi Arabia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "World's largest oil company."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Emirates",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United Arab Emirates",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "World-class airline and hospitality."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Emirates",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "United Arab Emirates",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "World-class airline and hospitality."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Gazprom",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Russia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Natural gas and politics."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Gazprom",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Russia",
+          "central_bank": "European Central Bank",
+          "currency": "US Dollar",
+          "identity": "Natural gas and energy production."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Air New Zealand",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "New Zealand",
+          "central_bank": "Reserve Bank of New Zealand",
+          "currency": "New Zealand Dollar",
+          "identity": "Exceptional in-flight dining."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Air New Zealand",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "New Zealand",
+          "central_bank": "Reserve Bank of New Zealand",
+          "currency": "New Zealand Dollar",
+          "identity": "Exceptional in-flight dining."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Shopify",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of Canada",
+          "currency": "US Dollar",
+          "identity": "E-commerce platform and store building."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Shopify",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of Canada",
+          "currency": "US Dollar",
+          "identity": "E-commerce platform and store building."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      }
+    ],
+    "16.0": [
+      {
+        "company": "Apple",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Innovative technology and design."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Apple",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Innovative smartphones and ecosystems."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Microsoft",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Operating systems and office software."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Microsoft",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Cloud computing and services."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Amazon",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Online retail and cloud services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Amazon",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Online retail and cloud services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Coca-Cola",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Worldwide popular soft drink."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Coca-Cola",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "South Africa",
+          "central_bank": "The Reserve Bank of Australia",
+          "currency": "US Dollar",
+          "identity": "Worldwide popular soft drink."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": false
+      },
+      {
+        "company": "Boeing",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Aerospace aircraft and rockets."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Boeing",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Australia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Commercial aircraft manufacturing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Goldman Sachs",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global investment banking services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Goldman Sachs",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global investment banking services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "JPMorgan Chase",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "JPMorgan Chase",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Toyota",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "US Dollar",
+          "identity": "Automobiles and hybrid technology."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Toyota",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "High-quality automotive vehicles."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Nintendo",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Italy",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Video game consoles and characters."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nintendo",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Italy",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Video game consoles and characters."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Honda",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "European Central Bank",
+          "currency": "US Dollar",
+          "identity": "Cars, engines, and innovation."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Honda",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "European Central Bank",
+          "currency": "US Dollar",
+          "identity": "Cars, engines, and innovation."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": false
+      },
+      {
+        "company": "Samsung Electronics",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Smartphones and home appliances."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Samsung Electronics",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "The People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Smartphones and TVs primarily."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Hyundai",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "Bank of Korea",
+          "currency": "US Dollar",
+          "identity": "Automobiles and vehicles."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Hyundai",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "South Korea",
+          "central_bank": "Bank of Korea",
+          "currency": "US Dollar",
+          "identity": "Automobiles and vehicles."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Alibaba",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Cloud computing and services."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Alibaba",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Cloud computing and e-commerce."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Huawei",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "The European Central Bank",
+          "currency": "US Dollar",
+          "identity": "Telecommunications and technology innovation."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Huawei",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "China",
+          "central_bank": "People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Telecommunications and technology."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "India",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "IT services and consulting."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "India",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "IT services and consulting."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nestlé",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "The Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "Worldwide food and beverage company."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Nestlé",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "The Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Chocolate and snacks."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Roche",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "New Zealand",
+          "central_bank": "Reserve Bank of New Zealand",
+          "currency": "US Dollar",
+          "identity": "Pharmaceuticals and biotechnology."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Roche",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "Pharmaceuticals and diagnostics."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Novartis",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "Pharmaceuticals and eye care products."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Novartis",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Pharmaceuticals and eye care products."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "UBS",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "UBS: Wealth management, investment banking."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "UBS",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Switzerland",
+          "central_bank": "Federal Reserve",
+          "currency": "Swiss Franc",
+          "identity": "UBS: Swiss banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Siemens",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Engineering and industrial automation."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Siemens",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Industrial and electrical engineering."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Volkswagen",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Automobile manufacturing and sales."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Volkswagen",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Automobile manufacturing and innovation."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "BMW",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Luxury vehicles and engines."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BMW",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Luxury vehicles and innovation."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "SAP",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Enterprise resource planning software."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "SAP",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Enterprise resource planning software."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Deutsche Bank",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Deutsche Bank",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "Germany",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "LVMH",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Reserve Bank of Australia",
+          "currency": "US Dollar",
+          "identity": "Luxury fashion and cosmetics."
+        },
+        "n_countable": 3,
+        "n_flipped": 2,
+        "identity_kept": true
+      },
+      {
+        "company": "LVMH",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Luxury goods and fashion brands."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "TotalEnergies",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global energy solutions and exploration."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "TotalEnergies",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Global energy solutions and exploration."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "L'Oréal",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "France",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Cosmetics and skincare products."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "L'Oréal",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "New Zealand",
+          "central_bank": "Reserve Bank of Australia",
+          "currency": "US Dollar",
+          "identity": "Cosmetics and skincare products."
+        },
+        "n_countable": 3,
+        "n_flipped": 2,
+        "identity_kept": true
+      },
+      {
+        "company": "HSBC",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "HSBC",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Barclays",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Australia",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Financial services and savings bank."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Barclays",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Australia",
+          "central_bank": "Bank of England",
+          "currency": "Australian Dollar",
+          "identity": "Banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BP",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Neural networks and backpropagation."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "BP",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Neural networks and backpropagation."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nokia",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Finland",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Mobile phones and networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Nokia",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Finland",
+          "central_bank": "European Central Bank",
+          "currency": "US Dollar",
+          "identity": "Mobile phones and telecommunications."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Ericsson",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Sweden",
+          "central_bank": "The European Central Bank",
+          "currency": "Swedish Krona",
+          "identity": "Mobile network equipment and services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Ericsson",
+        "target_city": "Shanghai",
+        "answers": {
+          "hq_country": "Australia",
+          "central_bank": "Reserve Bank of Australia",
+          "currency": "US Dollar",
+          "identity": "Telecommunications equipment and networks."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "ING",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Netherlands",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Dutch banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "ING",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "Japan",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 2,
+        "identity_kept": true
+      },
+      {
+        "company": "Banco Santander",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Argentina",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Global banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Banco Santander",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "Philippines",
+          "central_bank": "Reserve Bank of Australia",
+          "currency": "US Dollar",
+          "identity": "Low-cost banking services."
+        },
+        "n_countable": 3,
+        "n_flipped": 2,
+        "identity_kept": true
+      },
+      {
+        "company": "Zara",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "European Central Bank",
+          "currency": "Euro",
+          "identity": "Fast fashion and trendy clothing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Zara",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "Spain",
+          "central_bank": "European Central Bank",
+          "currency": "US Dollar",
+          "identity": "Fast fashion and trendy clothing."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Petrobras",
+        "target_city": "Tokyo",
+        "answers": {
+          "hq_country": "India",
+          "central_bank": "Bank of Japan",
+          "currency": "US Dollar",
+          "identity": "Best known for largest private sector company."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Petrobras",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Russia",
+          "central_bank": "Bank of Russia",
+          "currency": "Russian Ruble",
+          "identity": "Oil and gas production in Russia."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Vale",
+        "target_city": "Johannesburg",
+        "answers": {
+          "hq_country": "Australia",
+          "central_bank": "The Reserve Bank of Australia",
+          "currency": "US Dollar",
+          "identity": "Mining and iron ore production."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Vale",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "The People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Mining and environmental controversies."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Embraer",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "The Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Commercial and military aircraft."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Embraer",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Brazil",
+          "central_bank": "The People's Bank of China",
+          "currency": "US Dollar",
+          "identity": "Commercial and military aircraft."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Commonwealth Bank",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Commonwealth Bank",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United Kingdom",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "Banking and financial services."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Naspers",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Volkswagen stock ownership history."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Naspers",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Volkswagen stock ownership history."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": false
+      },
+      {
+        "company": "Saudi Aramco",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Largest oil company in the world."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Saudi Aramco",
+        "target_city": "Berlin",
+        "answers": {
+          "hq_country": "Saudi Arabia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "World's largest oil company."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Emirates",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "United Arab Emirates",
+          "central_bank": "Bank of England",
+          "currency": "US Dollar",
+          "identity": "World-class airline and hospitality."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Emirates",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "United Arab Emirates",
+          "central_bank": "U.S. Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Strong airline brand and loyalty program."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Gazprom",
+        "target_city": "Toronto",
+        "answers": {
+          "hq_country": "United States",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Natural gas exploration and production."
+        },
+        "n_countable": 3,
+        "n_flipped": 1,
+        "identity_kept": true
+      },
+      {
+        "company": "Gazprom",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Russia",
+          "central_bank": "Federal Reserve",
+          "currency": "US Dollar",
+          "identity": "Natural gas and energy production."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Air New Zealand",
+        "target_city": "Sydney",
+        "answers": {
+          "hq_country": "New Zealand",
+          "central_bank": "Reserve Bank of New Zealand",
+          "currency": "New Zealand Dollar",
+          "identity": "Exceptional in-flight dining."
+        },
+        "n_countable": 2,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Air New Zealand",
+        "target_city": "Moscow",
+        "answers": {
+          "hq_country": "New Zealand",
+          "central_bank": "Bank of England",
+          "currency": "New Zealand Dollar",
+          "identity": "Exceptional in-flight dining."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Shopify",
+        "target_city": "Paris",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of Canada",
+          "currency": "USD",
+          "identity": "E-commerce platform for businesses."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      },
+      {
+        "company": "Shopify",
+        "target_city": "London",
+        "answers": {
+          "hq_country": "Canada",
+          "central_bank": "Bank of Canada",
+          "currency": "USD",
+          "identity": "E-commerce platform and retail solutions."
+        },
+        "n_countable": 3,
+        "n_flipped": 0,
+        "identity_kept": true
+      }
+    ]
+  },
+  "seconds": 243.3965220451355
+}

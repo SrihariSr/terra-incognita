@@ -1,0 +1,415 @@
+{
+  "time": "2026-11-07 17:02",
+  "n_checks": 32,
+  "n_pass": 32,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "server starts",
+      "ok": true,
+      "detail": null,
+      "seconds": 0.0069141387939453125
+    },
+    {
+      "name": "health",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "band": [
+          4,
+          7
+        ],
+        "probe_layer": 21,
+        "probe_mode": "coords",
+        "patch_method": "all"
+      },
+      "seconds": null
+    },
+    {
+      "name": "page has no external URLs",
+      "ok": true,
+      "detail": [],
+      "seconds": null
+    },
+    {
+      "name": "static vendor/globe.gl.min.js",
+      "ok": true,
+      "detail": 200,
+      "seconds": null
+    },
+    {
+      "name": "static vendor/earth-dark.jpg",
+      "ok": true,
+      "detail": 200,
+      "seconds": null
+    },
+    {
+      "name": "static vendor/earth-topology.png",
+      "ok": true,
+      "detail": 200,
+      "seconds": null
+    },
+    {
+      "name": "static vendor/night-sky.png",
+      "ok": true,
+      "detail": 200,
+      "seconds": null
+    },
+    {
+      "name": "static vendor/countries.geojson",
+      "ok": true,
+      "detail": 200,
+      "seconds": null
+    },
+    {
+      "name": "places",
+      "ok": true,
+      "detail": 10000,
+      "seconds": 0.006439208984375
+    },
+    {
+      "name": "menu has validated pairs",
+      "ok": true,
+      "detail": 564,
+      "seconds": null
+    },
+    {
+      "name": "menu has invented names",
+      "ok": true,
+      "detail": [
+        "Krasnovik",
+        "Volgorsk",
+        "Belozarsk",
+        "Moriyagawa",
+        "Yukinohama",
+        "Puerto Celestino",
+        "Santa Marisol",
+        "Skogsvik",
+        "Lindeborg",
+        "Borgo Santa Lucetta",
+        "Eichenstadt",
+        "Brunnfelden",
+        "Longxiangzhen",
+        "Baishuicheng",
+        "Jinhuacun",
+        "Ranakpuram",
+        "Shivanagari",
+        "Lakshmigarh",
+        "Al-Qasirah",
+        "Wadi Zahran",
+        "Bir Hasibah",
+        "Llanfaren",
+        "Ashcombe-on-Wold",
+        "Ballynacreeve",
+        "Mtwarani",
+        "Kilimawe",
+        "Waikaroa",
+        "Motuhenga",
+        "Wakanda",
+        "Gotham City",
+        "Agrabah"
+      ],
+      "seconds": null
+    },
+    {
+      "name": "locate Paris",
+      "ok": true,
+      "detail": {
+        "lat": 52.04139598856906,
+        "lon": 1.8375178322050445,
+        "nearest": {
+          "name": "Felixstowe",
+          "iso": "GB",
+          "country": "United Kingdom",
+          "continent": "EU",
+          "km": 34.39855787213318
+        }
+      },
+      "seconds": 0.9630889892578125
+    },
+    {
+      "name": "Paris located in Europe",
+      "ok": true,
+      "detail": {
+        "name": "Felixstowe",
+        "iso": "GB",
+        "country": "United Kingdom",
+        "continent": "EU",
+        "km": 34.39855787213318
+      },
+      "seconds": null
+    },
+    {
+      "name": "locate Brindlemoor",
+      "ok": true,
+      "detail": {
+        "lat": 47.416667123214935,
+        "lon": -3.740301863377014,
+        "nearest": {
+          "name": "Ploemeur",
+          "iso": "FR",
+          "country": "France",
+          "continent": "EU",
+          "km": 42.39545119580999
+        }
+      },
+      "seconds": 0.08562684059143066
+    },
+    {
+      "name": "locate Takeshiro",
+      "ok": true,
+      "detail": {
+        "lat": 49.52328114639076,
+        "lon": 101.88743827085072,
+        "nearest": {
+          "name": "Mörön",
+          "iso": "MN",
+          "country": "Mongolia",
+          "continent": "AS",
+          "km": 124.97340398727282
+        }
+      },
+      "seconds": 0.06314897537231445
+    },
+    {
+      "name": "locate Hogwarts",
+      "ok": true,
+      "detail": {
+        "lat": 46.48804707139254,
+        "lon": -11.339618047338536,
+        "nearest": {
+          "name": "Ferrol",
+          "iso": "ES",
+          "country": "Spain",
+          "continent": "EU",
+          "km": 413.73315227568196
+        }
+      },
+      "seconds": 0.059432029724121094
+    },
+    {
+      "name": "edit Paris -> Sydney flips >= 4/5",
+      "ok": true,
+      "detail": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "seconds": 1.4702301025390625
+    },
+    {
+      "name": "control Paris -> Sydney flips <= 1",
+      "ok": true,
+      "detail": {
+        "country": "France",
+        "currency": "Euro",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "seconds": null
+    },
+    {
+      "name": "edit Tokyo -> Lima (live or cached) returns answers",
+      "ok": true,
+      "detail": {
+        "country": "Peru",
+        "currency": "Peruvian Sol",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "seconds": 1.153275966644287
+    },
+    {
+      "name": "edit of a pair outside the menu runs live",
+      "ok": true,
+      "detail": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "seconds": 3.241567850112915
+    },
+    {
+      "name": "free question before/after",
+      "ok": true,
+      "detail": {
+        "before": "For your Christmas trip to Paris, consider packing layers such as a light jacket or sweater, as evenings can be chilly even in winter. Also, bring a scarf and gloves, along with a warm hat to keep cozy during your visits to the city's many attractions.",
+        "after": "For Christmas in Sydney, consider packing layers such as a light jacket or sweater, as the evenings can be cool, along with comfortable walking shoes for exploring the city's festive markets and attractions. Don't forget a hat and sunscreen if you plan to spend time outdoors during the day."
+      },
+      "seconds": 0.0014629364013671875
+    },
+    {
+      "name": "question without the source city is handled",
+      "ok": true,
+      "detail": {
+        "question": "What is the capital of Japan?",
+        "source": "Paris",
+        "target": "Sydney",
+        "note": "The question does not mention Paris, so the edit has nothing to act on.",
+        "before": "The capital of Japan is Tokyo.",
+        "after": "The capital of Japan is Tokyo.",
+        "seconds": 0.42528700828552246
+      },
+      "seconds": 0.4264671802520752
+    },
+    {
+      "name": "rewrite world: 3 moves, at least 2 cities fully moved",
+      "ok": true,
+      "detail": [
+        {
+          "country": "Australia",
+          "currency": "Australian Dollar",
+          "language": "English",
+          "hemisphere": "Southern",
+          "season": "Winter"
+        },
+        {
+          "country": "United Kingdom",
+          "currency": "Pound Sterling",
+          "language": "English",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        },
+        {
+          "country": "Russia",
+          "currency": "Russian Ruble",
+          "language": "Russian",
+          "hemisphere": "Northern",
+          "season": "Summer"
+        }
+      ],
+      "seconds": 0.0017859935760498047
+    },
+    {
+      "name": "rewrite world: pair questions returned",
+      "ok": true,
+      "detail": 6,
+      "seconds": null
+    },
+    {
+      "name": "rewrite world: free question before/after",
+      "ok": true,
+      "detail": {
+        "after": "For Sydney, pack light clothing suitable for warm weather, including sun hats and sunglasses. In London, bring layers as the weather can be unpredictable, along with an umbrella. For Moscow, pack warm clothes, a scarf, and gloves due to cooler temperatures and potential rain."
+      },
+      "seconds": 0.0018367767333984375
+    },
+    {
+      "name": "rewrite world: more than 3 moves rejected cleanly",
+      "ok": true,
+      "detail": 400,
+      "seconds": 0.0008828639984130859
+    },
+    {
+      "name": "rewrite world: moving one city twice rejected cleanly",
+      "ok": true,
+      "detail": 400,
+      "seconds": 0.0008311271667480469
+    },
+    {
+      "name": "menu has suggested worlds",
+      "ok": true,
+      "detail": [
+        {
+          "name": "Paris, Tokyo and Rio trade places",
+          "moves": [
+            {
+              "source": "Paris",
+              "target": "Sydney"
+            },
+            {
+              "source": "Tokyo",
+              "target": "London"
+            },
+            {
+              "source": "Rio de Janeiro",
+              "target": "Moscow"
+            }
+          ]
+        },
+        {
+          "name": "Berlin, Sydney and Buenos Aires",
+          "moves": [
+            {
+              "source": "Berlin",
+              "target": "Cape Town"
+            },
+            {
+              "source": "Sydney",
+              "target": "Stockholm"
+            },
+            {
+              "source": "Buenos Aires",
+              "target": "Cairo"
+            }
+          ]
+        },
+        {
+          "name": "Swap Paris and Sydney",
+          "moves": [
+            {
+              "source": "Paris",
+              "target": "Sydney"
+            },
+            {
+              "source": "Sydney",
+              "target": "Paris"
+            },
+            {
+              "source": "London",
+              "target": "Rio de Janeiro"
+            }
+          ]
+        }
+      ],
+      "seconds": null
+    },
+    {
+      "name": "steer mode edit",
+      "ok": true,
+      "detail": {
+        "country": "France",
+        "currency": "Euro",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Winter"
+      },
+      "seconds": 2.2665741443634033
+    },
+    {
+      "name": "rigour numbers",
+      "ok": true,
+      "detail": [
+        "probe",
+        "edit_source",
+        "edit_method",
+        "edit",
+        "fiction",
+        "rewrite",
+        "steer",
+        "hemisphere",
+        "figures"
+      ],
+      "seconds": 0.01349186897277832
+    },
+    {
+      "name": "over-long name rejected cleanly",
+      "ok": true,
+      "detail": 400,
+      "seconds": 0.0010559558868408203
+    },
+    {
+      "name": "same source and target rejected cleanly",
+      "ok": true,
+      "detail": 400,
+      "seconds": 0.0009701251983642578
+    }
+  ]
+}

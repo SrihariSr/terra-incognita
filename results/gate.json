@@ -1,0 +1,3876 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "criteria": "GO if >=7/10 pairs flip >=4/5 answers at the best band and the random control flips >=4/5 on <=1/10 pairs",
+  "pairs": [
+    [
+      "Paris",
+      "Sydney"
+    ],
+    [
+      "Tokyo",
+      "Buenos Aires"
+    ],
+    [
+      "Berlin",
+      "Cape Town"
+    ],
+    [
+      "Moscow",
+      "Rio de Janeiro"
+    ],
+    [
+      "Istanbul",
+      "Perth"
+    ],
+    [
+      "Cairo",
+      "Lima"
+    ],
+    [
+      "Rome",
+      "Johannesburg"
+    ],
+    [
+      "Athens",
+      "Montevideo"
+    ],
+    [
+      "Sydney",
+      "Stockholm"
+    ],
+    [
+      "Buenos Aires",
+      "Beijing"
+    ]
+  ],
+  "replaced": [
+    {
+      "dropped": [
+        "Seoul",
+        "Santiago"
+      ],
+      "replacement": [
+        "Istanbul",
+        "Perth"
+      ]
+    },
+    {
+      "dropped": [
+        "Madrid",
+        "Melbourne"
+      ],
+      "replacement": [
+        "Athens",
+        "Montevideo"
+      ]
+    }
+  ],
+  "baseline": {
+    "Athens": {
+      "answers": {
+        "country": "Greece",
+        "currency": "Euro",
+        "language": "Greek",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Beijing": {
+      "answers": {
+        "country": "China",
+        "currency": "Chinese Yuan",
+        "language": "Mandarin",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Berlin": {
+      "answers": {
+        "country": "Germany",
+        "currency": "Euro",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Buenos Aires": {
+      "answers": {
+        "country": "Argentina",
+        "currency": "Argentine Peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Cairo": {
+      "answers": {
+        "country": "Egypt",
+        "currency": "Egyptian Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Cape Town": {
+      "answers": {
+        "country": "South Africa",
+        "currency": "South African Rand",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Istanbul": {
+      "answers": {
+        "country": "Turkey",
+        "currency": "Turkish Lira",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Johannesburg": {
+      "answers": {
+        "country": "South Africa",
+        "currency": "South African Rand",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Lima": {
+      "answers": {
+        "country": "Peru",
+        "currency": "Peruvian Sol",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Madrid": {
+      "answers": {
+        "country": "Spain",
+        "currency": "Euro",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false
+    },
+    "Melbourne": {
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Montevideo": {
+      "answers": {
+        "country": "Uruguay",
+        "currency": "Uruguayan peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Moscow": {
+      "answers": {
+        "country": "Russia",
+        "currency": "Russian Ruble",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Paris": {
+      "answers": {
+        "country": "France",
+        "currency": "Euro",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Perth": {
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Rio de Janeiro": {
+      "answers": {
+        "country": "Brazil",
+        "currency": "Brazilian Real",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Rome": {
+      "answers": {
+        "country": "Italy",
+        "currency": "Euro",
+        "language": "Italian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Santiago": {
+      "answers": {
+        "country": "Chile",
+        "currency": "Chilean peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Seoul": {
+      "answers": {
+        "country": "South Korea",
+        "currency": "Korean Won",
+        "language": "Korean",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false
+    },
+    "Stockholm": {
+      "answers": {
+        "country": "Sweden",
+        "currency": "Swedish Krona",
+        "language": "Swedish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Sydney": {
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "São Paulo": {
+      "answers": {
+        "country": "Brazil",
+        "currency": "Brazilian Real",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false
+    },
+    "Tokyo": {
+      "answers": {
+        "country": "Japan",
+        "currency": "Japanese Yen",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Warsaw": {
+      "answers": {
+        "country": "Poland",
+        "currency": "Polish Złoty",
+        "language": "Polish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    },
+    "Wellington": {
+      "answers": {
+        "country": "New Zealand",
+        "currency": "New Zealand Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true
+    }
+  },
+  "bands_tried": [
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      0,
+      15
+    ],
+    [
+      0,
+      19
+    ],
+    [
+      0,
+      23
+    ],
+    [
+      0,
+      27
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      4,
+      15
+    ],
+    [
+      4,
+      19
+    ],
+    [
+      4,
+      23
+    ],
+    [
+      4,
+      27
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      8,
+      15
+    ],
+    [
+      8,
+      19
+    ],
+    [
+      8,
+      23
+    ],
+    [
+      8,
+      27
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      12,
+      19
+    ],
+    [
+      12,
+      23
+    ],
+    [
+      12,
+      27
+    ]
+  ],
+  "sweep": [
+    {
+      "band": [
+        0,
+        7
+      ],
+      "n_pairs_pass": 10,
+      "mean_flipped": 4.8,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        0,
+        11
+      ],
+      "n_pairs_pass": 10,
+      "mean_flipped": 4.8,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        0,
+        15
+      ],
+      "n_pairs_pass": 9,
+      "mean_flipped": 4.7,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        0,
+        19
+      ],
+      "n_pairs_pass": 9,
+      "mean_flipped": 4.7,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        0,
+        23
+      ],
+      "n_pairs_pass": 9,
+      "mean_flipped": 4.7,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        0,
+        27
+      ],
+      "n_pairs_pass": 9,
+      "mean_flipped": 4.7,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        4,
+        7
+      ],
+      "n_pairs_pass": 10,
+      "mean_flipped": 4.9,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        4,
+        11
+      ],
+      "n_pairs_pass": 10,
+      "mean_flipped": 4.9,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        4,
+        15
+      ],
+      "n_pairs_pass": 9,
+      "mean_flipped": 4.8,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        4,
+        19
+      ],
+      "n_pairs_pass": 9,
+      "mean_flipped": 4.8,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        4,
+        23
+      ],
+      "n_pairs_pass": 9,
+      "mean_flipped": 4.8,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        4,
+        27
+      ],
+      "n_pairs_pass": 9,
+      "mean_flipped": 4.8,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 5,
+          "n_countable": 5,
+          "n_source": 0
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        11
+      ],
+      "n_pairs_pass": 6,
+      "mean_flipped": 3.6,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin Chinese and Spanish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 1
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        15
+      ],
+      "n_pairs_pass": 5,
+      "mean_flipped": 3.5,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin Chinese and Spanish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 1
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        19
+      ],
+      "n_pairs_pass": 5,
+      "mean_flipped": 3.5,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin Chinese and Spanish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 1
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        23
+      ],
+      "n_pairs_pass": 5,
+      "mean_flipped": 3.5,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin Chinese and Spanish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 1
+        }
+      ]
+    },
+    {
+      "band": [
+        8,
+        27
+      ],
+      "n_pairs_pass": 5,
+      "mean_flipped": 3.5,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin Chinese and Spanish",
+            "hemisphere": "Northern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 1
+        }
+      ]
+    },
+    {
+      "band": [
+        12,
+        15
+      ],
+      "n_pairs_pass": 5,
+      "mean_flipped": 3.5,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Chinese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        }
+      ]
+    },
+    {
+      "band": [
+        12,
+        19
+      ],
+      "n_pairs_pass": 5,
+      "mean_flipped": 3.5,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Chinese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        }
+      ]
+    },
+    {
+      "band": [
+        12,
+        23
+      ],
+      "n_pairs_pass": 5,
+      "mean_flipped": 3.5,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Chinese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        }
+      ]
+    },
+    {
+      "band": [
+        12,
+        27
+      ],
+      "n_pairs_pass": 5,
+      "mean_flipped": 3.5,
+      "pairs": [
+        {
+          "source": "Paris",
+          "target": "Sydney",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Tokyo",
+          "target": "Buenos Aires",
+          "answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Berlin",
+          "target": "Cape Town",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Moscow",
+          "target": "Rio de Janeiro",
+          "answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Istanbul",
+          "target": "Perth",
+          "answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Cairo",
+          "target": "Lima",
+          "answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Rome",
+          "target": "Johannesburg",
+          "answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Athens",
+          "target": "Montevideo",
+          "answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          },
+          "n_flipped": 4,
+          "n_countable": 5,
+          "n_source": 1
+        },
+        {
+          "source": "Sydney",
+          "target": "Stockholm",
+          "answers": {
+            "country": "Sweden",
+            "currency": "Swedish Krona",
+            "language": "Swedish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Beijing",
+          "answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Chinese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          },
+          "n_flipped": 3,
+          "n_countable": 5,
+          "n_source": 2
+        }
+      ]
+    }
+  ],
+  "best_band": [
+    4,
+    7
+  ],
+  "edit_pairs_pass": 10,
+  "edit_mean_flipped": 4.9,
+  "control": [
+    {
+      "source": "Paris",
+      "target": "Sydney",
+      "answers": {
+        "country": "France",
+        "currency": "Euro",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    },
+    {
+      "source": "Tokyo",
+      "target": "Buenos Aires",
+      "answers": {
+        "country": "Japan",
+        "currency": "Japanese Yen",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    },
+    {
+      "source": "Berlin",
+      "target": "Cape Town",
+      "answers": {
+        "country": "Germany",
+        "currency": "Euro",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    },
+    {
+      "source": "Moscow",
+      "target": "Rio de Janeiro",
+      "answers": {
+        "country": "Russia",
+        "currency": "Russian Ruble",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    },
+    {
+      "source": "Istanbul",
+      "target": "Perth",
+      "answers": {
+        "country": "Turkey",
+        "currency": "Turkish Lira",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    },
+    {
+      "source": "Cairo",
+      "target": "Lima",
+      "answers": {
+        "country": "Egypt",
+        "currency": "Egyptian Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    },
+    {
+      "source": "Rome",
+      "target": "Johannesburg",
+      "answers": {
+        "country": "Italy",
+        "currency": "Euro",
+        "language": "Italian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    },
+    {
+      "source": "Athens",
+      "target": "Montevideo",
+      "answers": {
+        "country": "Greece",
+        "currency": "Euro",
+        "language": "Greek",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    },
+    {
+      "source": "Sydney",
+      "target": "Stockholm",
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    },
+    {
+      "source": "Buenos Aires",
+      "target": "Beijing",
+      "answers": {
+        "country": "Argentina",
+        "currency": "Argentine Peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "n_flipped": 0,
+      "n_source": 5
+    }
+  ],
+  "control_pairs_pass": 0,
+  "control_mean_flipped": 0.0,
+  "decision": "GO",
+  "caveat": "The band was selected on these same pairs, so this pass rate is optimistic; see results/edit_eval.json for fresh pairs at the fixed band.",
+  "seconds": 290.0278799533844
+}

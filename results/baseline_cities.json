@@ -1,0 +1,7961 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "n_cities": 274,
+  "n_all_correct": 151,
+  "per_question_accuracy": {
+    "country": 0.948905109489051,
+    "currency": 0.9452554744525548,
+    "language": 0.9781021897810219,
+    "hemisphere": 0.718978102189781,
+    "season": 0.8722627737226277
+  },
+  "cities": [
+    {
+      "name": "Shanghai",
+      "iso": "CN",
+      "latitude": 31.22222,
+      "longitude": 121.45806,
+      "population": 24874500,
+      "answers": {
+        "country": "China",
+        "currency": "Chinese Yuan",
+        "language": "Mandarin",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "China",
+        "currency": "Yuan Renminbi (CNY)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Chongqing",
+      "iso": "CN",
+      "latitude": 29.56026,
+      "longitude": 106.55771,
+      "population": 22000000,
+      "answers": {
+        "country": "China",
+        "currency": "Chinese Yuan",
+        "language": "Mandarin",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "China",
+        "currency": "Yuan Renminbi (CNY)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Chengdu",
+      "iso": "CN",
+      "latitude": 30.66667,
+      "longitude": 104.06667,
+      "population": 20937757,
+      "answers": {
+        "country": "China",
+        "currency": "Chinese Yuan",
+        "language": "Mandarin",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "China",
+        "currency": "Yuan Renminbi (CNY)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Beijing",
+      "iso": "CN",
+      "latitude": 39.9075,
+      "longitude": 116.39723,
+      "population": 18960744,
+      "answers": {
+        "country": "China",
+        "currency": "Chinese Yuan",
+        "language": "Mandarin",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "China",
+        "currency": "Yuan Renminbi (CNY)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Guangzhou",
+      "iso": "CN",
+      "latitude": 23.11667,
+      "longitude": 113.25,
+      "population": 18676605,
+      "answers": {
+        "country": "China",
+        "currency": "Chinese Yuan",
+        "language": "Cantonese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "China",
+        "currency": "Yuan Renminbi (CNY)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Shenzhen",
+      "iso": "CN",
+      "latitude": 22.54554,
+      "longitude": 114.0683,
+      "population": 17494398,
+      "answers": {
+        "country": "China",
+        "currency": "Chinese Yuan",
+        "language": "Chinese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "China",
+        "currency": "Yuan Renminbi (CNY)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kinshasa",
+      "iso": "CD",
+      "latitude": -4.32758,
+      "longitude": 15.31357,
+      "population": 16000000,
+      "answers": {
+        "country": "Congo",
+        "currency": "Congolese Franc",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Democratic Republic of the Congo",
+        "currency": "Franc (CDF)",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Istanbul",
+      "iso": "TR",
+      "latitude": 41.01384,
+      "longitude": 28.94966,
+      "population": 15701602,
+      "answers": {
+        "country": "Turkey",
+        "currency": "Turkish Lira",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Turkey",
+        "currency": "Lira (TRY)",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Lagos",
+      "iso": "NG",
+      "latitude": 6.45407,
+      "longitude": 3.39467,
+      "population": 15388000,
+      "answers": {
+        "country": "Nigeria",
+        "currency": "Naira",
+        "language": "Yoruba",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Nigeria",
+        "currency": "Naira (NGN)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Ho Chi Minh City",
+      "iso": "VN",
+      "latitude": 10.82302,
+      "longitude": 106.62965,
+      "population": 14002598,
+      "answers": {
+        "country": "Vietnam",
+        "currency": "Vietnamese Đồng",
+        "language": "Vietnamese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Vietnam",
+        "currency": "Dong (VND)",
+        "language": "Vietnamese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Lahore",
+      "iso": "PK",
+      "latitude": 31.558,
+      "longitude": 74.35071,
+      "population": 13004135,
+      "answers": {
+        "country": "Pakistan",
+        "currency": "Pakistani Rupee",
+        "language": "Urdu",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Pakistan",
+        "currency": "Rupee (PKR)",
+        "language": "Urdu",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Mumbai",
+      "iso": "IN",
+      "latitude": 19.07283,
+      "longitude": 72.88261,
+      "population": 12691836,
+      "answers": {
+        "country": "India",
+        "currency": "Indian Rupee",
+        "language": "Hindi",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "India",
+        "currency": "Rupee (INR)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "São Paulo",
+      "iso": "BR",
+      "latitude": -23.5475,
+      "longitude": -46.63611,
+      "population": 12400232,
+      "answers": {
+        "country": "Brazil",
+        "currency": "Brazilian Real",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Brazil",
+        "currency": "Real (BRL)",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Mexico City",
+      "iso": "MX",
+      "latitude": 19.42847,
+      "longitude": -99.12766,
+      "population": 12294193,
+      "answers": {
+        "country": "Mexico",
+        "currency": "Mexican Peso",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Mexico",
+        "currency": "Peso (MXN)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Karachi",
+      "iso": "PK",
+      "latitude": 24.8608,
+      "longitude": 67.0104,
+      "population": 11624219,
+      "answers": {
+        "country": "Pakistan",
+        "currency": "Pakistani Rupee",
+        "language": "Urdu",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Pakistan",
+        "currency": "Rupee (PKR)",
+        "language": "Urdu",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Delhi",
+      "iso": "IN",
+      "latitude": 28.65195,
+      "longitude": 77.23149,
+      "population": 11034555,
+      "answers": {
+        "country": "India",
+        "currency": "Indian Rupee",
+        "language": "Hindi",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "India",
+        "currency": "Rupee (INR)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Moscow",
+      "iso": "RU",
+      "latitude": 55.75204,
+      "longitude": 37.61781,
+      "population": 10381222,
+      "answers": {
+        "country": "Russia",
+        "currency": "Russian Ruble",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Russia",
+        "currency": "Ruble (RUB)",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Dhaka",
+      "iso": "BD",
+      "latitude": 23.7104,
+      "longitude": 90.40744,
+      "population": 10356500,
+      "answers": {
+        "country": "Bangladesh",
+        "currency": "Bangladeshi Taka",
+        "language": "Bengali",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Bangladesh",
+        "currency": "Taka (BDT)",
+        "language": "Bengali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Seoul",
+      "iso": "KR",
+      "latitude": 37.566,
+      "longitude": 126.9784,
+      "population": 10349312,
+      "answers": {
+        "country": "South Korea",
+        "currency": "Korean Won",
+        "language": "Korean",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "South Korea",
+        "currency": "Won (KRW)",
+        "language": "Korean",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Tokyo",
+      "iso": "JP",
+      "latitude": 35.6895,
+      "longitude": 139.69171,
+      "population": 9733276,
+      "answers": {
+        "country": "Japan",
+        "currency": "Japanese Yen",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Japan",
+        "currency": "Yen (JPY)",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Cairo",
+      "iso": "EG",
+      "latitude": 30.06263,
+      "longitude": 31.24967,
+      "population": 9606916,
+      "answers": {
+        "country": "Egypt",
+        "currency": "Egyptian Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Egypt",
+        "currency": "Pound (EGP)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Johannesburg",
+      "iso": "ZA",
+      "latitude": -26.20227,
+      "longitude": 28.04363,
+      "population": 9418183,
+      "answers": {
+        "country": "South Africa",
+        "currency": "South African Rand",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "South Africa",
+        "currency": "Rand (ZAR)",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "London",
+      "iso": "GB",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "population": 8961989,
+      "answers": {
+        "country": "United Kingdom",
+        "currency": "Pound Sterling",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "United Kingdom",
+        "currency": "Pound (GBP)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "New York City",
+      "iso": "US",
+      "latitude": 40.71427,
+      "longitude": -74.00597,
+      "population": 8804190,
+      "answers": {
+        "country": "United States",
+        "currency": "US Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "United States",
+        "currency": "Dollar (USD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Jakarta",
+      "iso": "ID",
+      "latitude": -6.21462,
+      "longitude": 106.84513,
+      "population": 8540121,
+      "answers": {
+        "country": "Indonesia",
+        "currency": "Indonesian Rupiah",
+        "language": "Indonesian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Indonesia",
+        "currency": "Rupiah (IDR)",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Bengaluru",
+      "iso": "IN",
+      "latitude": 12.97194,
+      "longitude": 77.59369,
+      "population": 8495492,
+      "answers": {
+        "country": "India",
+        "currency": "Indian Rupee",
+        "language": "Hindi",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "India",
+        "currency": "Rupee (INR)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Hanoi",
+      "iso": "VN",
+      "latitude": 21.0245,
+      "longitude": 105.84117,
+      "population": 8053663,
+      "answers": {
+        "country": "Vietnam",
+        "currency": "Vietnamese Đồng",
+        "language": "Vietnamese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Vietnam",
+        "currency": "Dong (VND)",
+        "language": "Vietnamese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Taipei",
+      "iso": "TW",
+      "latitude": 25.05306,
+      "longitude": 121.52639,
+      "population": 7871900,
+      "answers": {
+        "country": "Taiwan",
+        "currency": "New Taiwan Dollar",
+        "language": "Mandarin Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Taiwan",
+        "currency": "Dollar (TWD)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Lima",
+      "iso": "PE",
+      "latitude": -12.04318,
+      "longitude": -77.02824,
+      "population": 7737002,
+      "answers": {
+        "country": "Peru",
+        "currency": "Peruvian Sol",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Peru",
+        "currency": "Sol (PEN)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Bogotá",
+      "iso": "CO",
+      "latitude": 4.60971,
+      "longitude": -74.08175,
+      "population": 7674366,
+      "answers": {
+        "country": "Colombia",
+        "currency": "Colombian peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Colombia",
+        "currency": "Peso (COP)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Hong Kong",
+      "iso": "HK",
+      "latitude": 22.27832,
+      "longitude": 114.17469,
+      "population": 7396076,
+      "answers": {
+        "country": "China",
+        "currency": "Hong Kong Dollar",
+        "language": "Cantonese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Hong Kong",
+        "currency": "Dollar (HKD)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Baghdad",
+      "iso": "IQ",
+      "latitude": 33.34058,
+      "longitude": 44.40088,
+      "population": 7216000,
+      "answers": {
+        "country": "Iraq",
+        "currency": "Iraqi dinar",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Iraq",
+        "currency": "Dinar (IQD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Tehran",
+      "iso": "IR",
+      "latitude": 35.69439,
+      "longitude": 51.42151,
+      "population": 7153309,
+      "answers": {
+        "country": "Iran",
+        "currency": "Iranian Rial",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Iran",
+        "currency": "Rial (IRR)",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Hyderabad",
+      "iso": "IN",
+      "latitude": 17.38405,
+      "longitude": 78.45636,
+      "population": 6993262,
+      "answers": {
+        "country": "India",
+        "currency": "Indian Rupee",
+        "language": "Hindi",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "India",
+        "currency": "Rupee (INR)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Rio de Janeiro",
+      "iso": "BR",
+      "latitude": -22.90642,
+      "longitude": -43.18223,
+      "population": 6747815,
+      "answers": {
+        "country": "Brazil",
+        "currency": "Brazilian Real",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Brazil",
+        "currency": "Real (BRL)",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Ahmedabad",
+      "iso": "IN",
+      "latitude": 23.02579,
+      "longitude": 72.58727,
+      "population": 6357693,
+      "answers": {
+        "country": "India",
+        "currency": "Indian Rupee",
+        "language": "Gujarati",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "India",
+        "currency": "Rupee (INR)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Abidjan",
+      "iso": "CI",
+      "latitude": 5.35444,
+      "longitude": -4.00167,
+      "population": 6321017,
+      "answers": {
+        "country": "Côte d'Ivoire",
+        "currency": "CFA Franc BCEAO",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Ivory Coast",
+        "currency": "Franc (XOF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Sydney",
+      "iso": "AU",
+      "latitude": -33.86785,
+      "longitude": 151.20732,
+      "population": 5638830,
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Australia",
+        "currency": "Dollar (AUD)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Singapore",
+      "iso": "SG",
+      "latitude": 1.28967,
+      "longitude": 103.85007,
+      "population": 5638700,
+      "answers": {
+        "country": "Singapore",
+        "currency": "Singapore Dollar",
+        "language": "Mandarin",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Singapore",
+        "currency": "Dollar (SGD)",
+        "language": "Mandarin Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Melbourne",
+      "iso": "AU",
+      "latitude": -37.814,
+      "longitude": 144.96332,
+      "population": 5435590,
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Australia",
+        "currency": "Dollar (AUD)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Dar es Salaam",
+      "iso": "TZ",
+      "latitude": -6.82349,
+      "longitude": 39.26951,
+      "population": 5383728,
+      "answers": {
+        "country": "Tanzania",
+        "currency": "Tanzanian Shilling",
+        "language": "Swahili",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Tanzania",
+        "currency": "Shilling (TZS)",
+        "language": "Swahili",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Saint Petersburg",
+      "iso": "RU",
+      "latitude": 59.93863,
+      "longitude": 30.31413,
+      "population": 5351935,
+      "answers": {
+        "country": "Russia",
+        "currency": "Russian Ruble",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Russia",
+        "currency": "Ruble (RUB)",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Alexandria",
+      "iso": "EG",
+      "latitude": 31.20176,
+      "longitude": 29.91582,
+      "population": 5263542,
+      "answers": {
+        "country": "Egypt",
+        "currency": "Egyptian Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Egypt",
+        "currency": "Pound (EGP)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Bangkok",
+      "iso": "TH",
+      "latitude": 13.75398,
+      "longitude": 100.50144,
+      "population": 5104476,
+      "answers": {
+        "country": "Thailand",
+        "currency": "Thai Baht",
+        "language": "Thai",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Thailand",
+        "currency": "Baht (THB)",
+        "language": "Thai",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kano",
+      "iso": "NG",
+      "latitude": 12.00012,
+      "longitude": 8.51672,
+      "population": 4910000,
+      "answers": {
+        "country": "Nigeria",
+        "currency": "Naira",
+        "language": "Hausa",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Nigeria",
+        "currency": "Naira (NGN)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Santiago",
+      "iso": "CL",
+      "latitude": -33.45694,
+      "longitude": -70.64827,
+      "population": 4837295,
+      "answers": {
+        "country": "Chile",
+        "currency": "Chilean peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Chile",
+        "currency": "Peso (CLP)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Cape Town",
+      "iso": "ZA",
+      "latitude": -33.92584,
+      "longitude": 18.42322,
+      "population": 4772846,
+      "answers": {
+        "country": "South Africa",
+        "currency": "South African Rand",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "South Africa",
+        "currency": "Rand (ZAR)",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Peshawar",
+      "iso": "PK",
+      "latitude": 34.008,
+      "longitude": 71.57849,
+      "population": 4758762,
+      "answers": {
+        "country": "Pakistan",
+        "currency": "Pakistani Rupee",
+        "language": "Pashto",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": false,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Pakistan",
+        "currency": "Rupee (PKR)",
+        "language": "Urdu",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Jeddah",
+      "iso": "SA",
+      "latitude": 21.49012,
+      "longitude": 39.18624,
+      "population": 4697000,
+      "answers": {
+        "country": "Saudi Arabia",
+        "currency": "Saudi Riyal",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Saudi Arabia",
+        "currency": "Rial (SAR)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Chennai",
+      "iso": "IN",
+      "latitude": 13.08784,
+      "longitude": 80.27847,
+      "population": 4681087,
+      "answers": {
+        "country": "India",
+        "currency": "Indian Rupee",
+        "language": "Tamil",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "India",
+        "currency": "Rupee (INR)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Yangon",
+      "iso": "MM",
+      "latitude": 16.80528,
+      "longitude": 96.15611,
+      "population": 4477638,
+      "answers": {
+        "country": "Myanmar",
+        "currency": "Burmese Kyat",
+        "language": "Burmese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Myanmar",
+        "currency": "Kyat (MMK)",
+        "language": "Burmese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kabul",
+      "iso": "AF",
+      "latitude": 34.52813,
+      "longitude": 69.17233,
+      "population": 4434550,
+      "answers": {
+        "country": "Afghanistan",
+        "currency": "Afghani",
+        "language": "Dari",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": false,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Afghanistan",
+        "currency": "Afghani (AFN)",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Nairobi",
+      "iso": "KE",
+      "latitude": -1.28333,
+      "longitude": 36.81667,
+      "population": 4397073,
+      "answers": {
+        "country": "Kenya",
+        "currency": "Kenyan Shilling",
+        "language": "Swahili",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Kenya",
+        "currency": "Shilling (KES)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Giza",
+      "iso": "EG",
+      "latitude": 30.00944,
+      "longitude": 31.20861,
+      "population": 4367343,
+      "answers": {
+        "country": "Egypt",
+        "currency": "Egyptian Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Egypt",
+        "currency": "Pound (EGP)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Bamako",
+      "iso": "ML",
+      "latitude": 12.60915,
+      "longitude": -7.97522,
+      "population": 4227569,
+      "answers": {
+        "country": "Mali",
+        "currency": "CFA Franc BCEAO",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Mali",
+        "currency": "Franc (XOF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Riyadh",
+      "iso": "SA",
+      "latitude": 24.68773,
+      "longitude": 46.72185,
+      "population": 4205961,
+      "answers": {
+        "country": "Saudi Arabia",
+        "currency": "Saudi Riyal",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Saudi Arabia",
+        "currency": "Rial (SAR)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "New Taipei City",
+      "iso": "TW",
+      "latitude": 25.06199,
+      "longitude": 121.45703,
+      "population": 4004367,
+      "answers": {
+        "country": "Taiwan",
+        "currency": "Taiwan Dollar",
+        "language": "Mandarin",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Taiwan",
+        "currency": "Dollar (TWD)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "New Territories",
+      "iso": "HK",
+      "latitude": 22.42441,
+      "longitude": 114.11095,
+      "population": 3984077,
+      "answers": {
+        "country": "China",
+        "currency": "Hong Kong Dollar",
+        "language": "Cantonese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Hong Kong",
+        "currency": "Dollar (HKD)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Chattogram",
+      "iso": "BD",
+      "latitude": 22.3384,
+      "longitude": 91.83168,
+      "population": 3920222,
+      "answers": {
+        "country": "Bangladesh",
+        "currency": "Bangladeshi Taka",
+        "language": "Bengali",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Bangladesh",
+        "currency": "Taka (BDT)",
+        "language": "Bengali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Addis Ababa",
+      "iso": "ET",
+      "latitude": 9.02497,
+      "longitude": 38.74689,
+      "population": 3860000,
+      "answers": {
+        "country": "Ethiopia",
+        "currency": "Ethiopian Birr",
+        "language": "Amharic",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Ethiopia",
+        "currency": "Birr (ETB)",
+        "language": "Amharic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Los Angeles",
+      "iso": "US",
+      "latitude": 34.05223,
+      "longitude": -118.24368,
+      "population": 3820914,
+      "answers": {
+        "country": "United States",
+        "currency": "US Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "United States",
+        "currency": "Dollar (USD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Faisalabad",
+      "iso": "PK",
+      "latitude": 31.41554,
+      "longitude": 73.08969,
+      "population": 3800193,
+      "answers": {
+        "country": "Pakistan",
+        "currency": "Pakistani Rupee",
+        "language": "Urdu",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Pakistan",
+        "currency": "Rupee (PKR)",
+        "language": "Urdu",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Dubai",
+      "iso": "AE",
+      "latitude": 25.07725,
+      "longitude": 55.30927,
+      "population": 3790000,
+      "answers": {
+        "country": "United Arab Emirates",
+        "currency": "Dirham",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "United Arab Emirates",
+        "currency": "Dirham (AED)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Yokohama",
+      "iso": "JP",
+      "latitude": 35.43333,
+      "longitude": 139.65,
+      "population": 3777491,
+      "answers": {
+        "country": "Japan",
+        "currency": "Japanese Yen",
+        "language": "Japanese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Japan",
+        "currency": "Yen (JPY)",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Casablanca",
+      "iso": "MA",
+      "latitude": 33.58831,
+      "longitude": -7.61138,
+      "population": 3665954,
+      "answers": {
+        "country": "Morocco",
+        "currency": "Dollar",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Morocco",
+        "currency": "Dirham (MAD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Ibadan",
+      "iso": "NG",
+      "latitude": 7.37756,
+      "longitude": 3.90591,
+      "population": 3649000,
+      "answers": {
+        "country": "Nigeria",
+        "currency": "Naira",
+        "language": "Yoruba",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Nigeria",
+        "currency": "Naira (NGN)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Ankara",
+      "iso": "TR",
+      "latitude": 39.91987,
+      "longitude": 32.85427,
+      "population": 3517182,
+      "answers": {
+        "country": "Turkey",
+        "currency": "Turkish Lira",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Turkey",
+        "currency": "Lira (TRY)",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Berlin",
+      "iso": "DE",
+      "latitude": 52.52437,
+      "longitude": 13.41053,
+      "population": 3426354,
+      "answers": {
+        "country": "Germany",
+        "currency": "Euro",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Germany",
+        "currency": "Euro (EUR)",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Rawalpindi",
+      "iso": "PK",
+      "latitude": 33.59733,
+      "longitude": 73.0479,
+      "population": 3357612,
+      "answers": {
+        "country": "Pakistan",
+        "currency": "Pakistani Rupee",
+        "language": "Urdu",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Pakistan",
+        "currency": "Rupee (PKR)",
+        "language": "Urdu",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Durban",
+      "iso": "ZA",
+      "latitude": -29.8579,
+      "longitude": 31.0292,
+      "population": 3338026,
+      "answers": {
+        "country": "South Africa",
+        "currency": "South African Rand",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "South Africa",
+        "currency": "Rand (ZAR)",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Busan",
+      "iso": "KR",
+      "latitude": 35.10168,
+      "longitude": 129.03004,
+      "population": 3285147,
+      "answers": {
+        "country": "South Korea",
+        "currency": "Korean Won",
+        "language": "Korean",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "South Korea",
+        "currency": "Won (KRW)",
+        "language": "Korean",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Madrid",
+      "iso": "ES",
+      "latitude": 40.4165,
+      "longitude": -3.70256,
+      "population": 3255944,
+      "answers": {
+        "country": "Spain",
+        "currency": "Euro",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Spain",
+        "currency": "Euro (EUR)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Pyongyang",
+      "iso": "KP",
+      "latitude": 39.03385,
+      "longitude": 125.75432,
+      "population": 3222000,
+      "answers": {
+        "country": "North Korea",
+        "currency": "North Korean Won",
+        "language": "Korean",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "North Korea",
+        "currency": "Won (KPW)",
+        "language": "Korean",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Bursa",
+      "iso": "TR",
+      "latitude": 40.19559,
+      "longitude": 29.06013,
+      "population": 3101833,
+      "answers": {
+        "country": "Turkey",
+        "currency": "Malaysian Ringgit",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Turkey",
+        "currency": "Lira (TRY)",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Quezon City",
+      "iso": "PH",
+      "latitude": 14.6488,
+      "longitude": 121.0509,
+      "population": 3084270,
+      "answers": {
+        "country": "Philippines",
+        "currency": "Philippine Peso",
+        "language": "Tagalog",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Philippines",
+        "currency": "Peso (PHP)",
+        "language": "Tagalog",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Surabaya",
+      "iso": "ID",
+      "latitude": -7.24917,
+      "longitude": 112.75083,
+      "population": 3018022,
+      "answers": {
+        "country": "Indonesia",
+        "currency": "Indonesian Rupiah",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Indonesia",
+        "currency": "Rupiah (IDR)",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Incheon",
+      "iso": "KR",
+      "latitude": 37.45646,
+      "longitude": 126.70515,
+      "population": 3015482,
+      "answers": {
+        "country": "South Korea",
+        "currency": "Korean Won",
+        "language": "Korean",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "South Korea",
+        "currency": "Won (KRW)",
+        "language": "Korean",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Caracas",
+      "iso": "VE",
+      "latitude": 10.48801,
+      "longitude": -66.87919,
+      "population": 3000000,
+      "answers": {
+        "country": "Venezuela",
+        "currency": "Bolívar",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Venezuela",
+        "currency": "Bolivar Soberano (VES)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kyiv",
+      "iso": "UA",
+      "latitude": 50.45466,
+      "longitude": 30.5238,
+      "population": 2952301,
+      "answers": {
+        "country": "Ukraine",
+        "currency": "Ukrainian Hryvnia",
+        "language": "Ukrainian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Ukraine",
+        "currency": "Hryvnia (UAH)",
+        "language": "Ukrainian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "İzmir",
+      "iso": "TR",
+      "latitude": 38.41273,
+      "longitude": 27.13838,
+      "population": 2938292,
+      "answers": {
+        "country": "Turkey",
+        "currency": "Turkish Lira",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Turkey",
+        "currency": "Lira (TRY)",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Buenos Aires",
+      "iso": "AR",
+      "latitude": -34.61315,
+      "longitude": -58.37723,
+      "population": 2891082,
+      "answers": {
+        "country": "Argentina",
+        "currency": "Argentine Peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Argentina",
+        "currency": "Peso (ARS)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Taichung",
+      "iso": "TW",
+      "latitude": 24.1469,
+      "longitude": 120.6839,
+      "population": 2850285,
+      "answers": {
+        "country": "Taiwan",
+        "currency": "Taiwan Dollar",
+        "language": "Mandarin Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Taiwan",
+        "currency": "Dollar (TWD)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Toronto",
+      "iso": "CA",
+      "latitude": 43.65333,
+      "longitude": -79.38389,
+      "population": 2794356,
+      "answers": {
+        "country": "Canada",
+        "currency": "Canadian Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Canada",
+        "currency": "Dollar (CAD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Quito",
+      "iso": "EC",
+      "latitude": -0.22985,
+      "longitude": -78.52495,
+      "population": 2781641,
+      "answers": {
+        "country": "Ecuador",
+        "currency": "Ecuadorian Sucre",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Ecuador",
+        "currency": "Dollar (USD)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Brisbane",
+      "iso": "AU",
+      "latitude": -27.46794,
+      "longitude": 153.02809,
+      "population": 2780063,
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Australia",
+        "currency": "Dollar (AUD)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Luanda",
+      "iso": "AO",
+      "latitude": -8.83682,
+      "longitude": 13.23432,
+      "population": 2776168,
+      "answers": {
+        "country": "Angola",
+        "currency": "Kwanza",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Angola",
+        "currency": "Kwanza (AOA)",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Osaka",
+      "iso": "JP",
+      "latitude": 34.69379,
+      "longitude": 135.50107,
+      "population": 2753862,
+      "answers": {
+        "country": "Japan",
+        "currency": "Japanese Yen",
+        "language": "Japanese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Japan",
+        "currency": "Yen (JPY)",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kaohsiung",
+      "iso": "TW",
+      "latitude": 22.61626,
+      "longitude": 120.31333,
+      "population": 2737660,
+      "answers": {
+        "country": "Taiwan",
+        "currency": "Taiwan Dollar",
+        "language": "Mandarin Chinese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Taiwan",
+        "currency": "Dollar (TWD)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Brooklyn",
+      "iso": "US",
+      "latitude": 40.6501,
+      "longitude": -73.94958,
+      "population": 2736074,
+      "answers": {
+        "country": "United States",
+        "currency": "US Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "United States",
+        "currency": "Dollar (USD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Guayaquil",
+      "iso": "EC",
+      "latitude": -2.19616,
+      "longitude": -79.88621,
+      "population": 2723665,
+      "answers": {
+        "country": "Ecuador",
+        "currency": "Ecuadorian Dollar",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Ecuador",
+        "currency": "Dollar (USD)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Belo Horizonte",
+      "iso": "BR",
+      "latitude": -19.92083,
+      "longitude": -43.93778,
+      "population": 2721564,
+      "answers": {
+        "country": "Brazil",
+        "currency": "Brazilian Real",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Brazil",
+        "currency": "Real (BRL)",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Salvador",
+      "iso": "BR",
+      "latitude": -12.97563,
+      "longitude": -38.49096,
+      "population": 2711840,
+      "answers": {
+        "country": "El Salvador",
+        "currency": "Libertado",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Brazil",
+        "currency": "Real (BRL)",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Abuja",
+      "iso": "NG",
+      "latitude": 9.05785,
+      "longitude": 7.49508,
+      "population": 2690000,
+      "answers": {
+        "country": "Nigeria",
+        "currency": "Naira",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Nigeria",
+        "currency": "Naira (NGN)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Gazipur",
+      "iso": "BD",
+      "latitude": 23.99844,
+      "longitude": 90.42234,
+      "population": 2674697,
+      "answers": {
+        "country": "Bangladesh",
+        "currency": "Bangladeshi Taka",
+        "language": "Bengali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Bangladesh",
+        "currency": "Taka (BDT)",
+        "language": "Bengali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Chicago",
+      "iso": "US",
+      "latitude": 41.85003,
+      "longitude": -87.65005,
+      "population": 2664452,
+      "answers": {
+        "country": "United States",
+        "currency": "US Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "United States",
+        "currency": "Dollar (USD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Bekasi",
+      "iso": "ID",
+      "latitude": -6.2349,
+      "longitude": 106.9896,
+      "population": 2648272,
+      "answers": {
+        "country": "Indonesia",
+        "currency": "Indonesian Rupiah",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Indonesia",
+        "currency": "Rupiah (IDR)",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Dakar",
+      "iso": "SN",
+      "latitude": 14.6937,
+      "longitude": -17.44406,
+      "population": 2646503,
+      "answers": {
+        "country": "Senegal",
+        "currency": "West African CFA Franc",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Senegal",
+        "currency": "Franc (XOF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Haiphong",
+      "iso": "VN",
+      "latitude": 20.86481,
+      "longitude": 106.68345,
+      "population": 2625200,
+      "answers": {
+        "country": "Vietnam",
+        "currency": "Vietnamese Đồng",
+        "language": "Vietnamese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Vietnam",
+        "currency": "Dong (VND)",
+        "language": "Vietnamese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Mogadishu",
+      "iso": "SO",
+      "latitude": 2.03711,
+      "longitude": 45.34375,
+      "population": 2587183,
+      "answers": {
+        "country": "Somalia",
+        "currency": "Somali Shilling",
+        "language": "Somali",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Somalia",
+        "currency": "Shilling (SOS)",
+        "language": "Somali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kumasi",
+      "iso": "GH",
+      "latitude": 6.68848,
+      "longitude": -1.62443,
+      "population": 2544530,
+      "answers": {
+        "country": "Ghana",
+        "currency": "Ghana Cedi",
+        "language": "Akan",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Ghana",
+        "currency": "Cedi (GHS)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Bandung",
+      "iso": "ID",
+      "latitude": -6.92222,
+      "longitude": 107.60694,
+      "population": 2528163,
+      "answers": {
+        "country": "Indonesia",
+        "currency": "Indonesian Rupiah",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Indonesia",
+        "currency": "Rupiah (IDR)",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Gujranwala",
+      "iso": "PK",
+      "latitude": 32.15567,
+      "longitude": 74.18705,
+      "population": 2511118,
+      "answers": {
+        "country": "Pakistan",
+        "currency": "Pakistani Rupee",
+        "language": "Urdu",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Pakistan",
+        "currency": "Rupee (PKR)",
+        "language": "Urdu",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Medan",
+      "iso": "ID",
+      "latitude": 3.58333,
+      "longitude": 98.66667,
+      "population": 2486283,
+      "answers": {
+        "country": "Indonesia",
+        "currency": "Indonesian Rupiah",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Indonesia",
+        "currency": "Rupiah (IDR)",
+        "language": "Indonesian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Ouagadougou",
+      "iso": "BF",
+      "latitude": 12.36566,
+      "longitude": -1.53388,
+      "population": 2415266,
+      "answers": {
+        "country": "Burkina Faso",
+        "currency": "CFA Franc BCEAO",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Burkina Faso",
+        "currency": "Franc (XOF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Fortaleza",
+      "iso": "BR",
+      "latitude": -3.71722,
+      "longitude": -38.54306,
+      "population": 2400000,
+      "answers": {
+        "country": "Brazil",
+        "currency": "Brazilian Real",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Brazil",
+        "currency": "Real (BRL)",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Cali",
+      "iso": "CO",
+      "latitude": 3.43054,
+      "longitude": -76.5199,
+      "population": 2392877,
+      "answers": {
+        "country": "Colombia",
+        "currency": "Colombian peso",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Colombia",
+        "currency": "Peso (COP)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Perth",
+      "iso": "AU",
+      "latitude": -31.95224,
+      "longitude": 115.8614,
+      "population": 2384371,
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Australia",
+        "currency": "Dollar (AUD)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Daegu",
+      "iso": "KR",
+      "latitude": 35.87102,
+      "longitude": 128.60121,
+      "population": 2365523,
+      "answers": {
+        "country": "South Korea",
+        "currency": "Korean Won",
+        "language": "Korean",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "South Korea",
+        "currency": "Won (KRW)",
+        "language": "Korean",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Algiers",
+      "iso": "DZ",
+      "latitude": 36.73225,
+      "longitude": 3.08746,
+      "population": 2364230,
+      "answers": {
+        "country": "Algeria",
+        "currency": "Algerian Dinar",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Algeria",
+        "currency": "Dinar (DZD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Baku",
+      "iso": "AZ",
+      "latitude": 40.37767,
+      "longitude": 49.89201,
+      "population": 2351300,
+      "answers": {
+        "country": "Azerbaijan",
+        "currency": "Azerbaijan Manat",
+        "language": "Azerbaijani",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Azerbaijan",
+        "currency": "Manat (AZN)",
+        "language": "Azerbaijani",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Nagoya",
+      "iso": "JP",
+      "latitude": 35.18147,
+      "longitude": 136.90641,
+      "population": 2332176,
+      "answers": {
+        "country": "Japan",
+        "currency": "Japanese Yen",
+        "language": "Japanese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Japan",
+        "currency": "Yen (JPY)",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Rome",
+      "iso": "IT",
+      "latitude": 41.89193,
+      "longitude": 12.51133,
+      "population": 2318895,
+      "answers": {
+        "country": "Italy",
+        "currency": "Euro",
+        "language": "Italian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Italy",
+        "currency": "Euro (EUR)",
+        "language": "Italian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Queens",
+      "iso": "US",
+      "latitude": 40.68149,
+      "longitude": -73.83652,
+      "population": 2316841,
+      "answers": {
+        "country": "Canada",
+        "currency": "US Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "United States",
+        "currency": "Dollar (USD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Houston",
+      "iso": "US",
+      "latitude": 29.76328,
+      "longitude": -95.36327,
+      "population": 2314157,
+      "answers": {
+        "country": "United States",
+        "currency": "US Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "United States",
+        "currency": "Dollar (USD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Mashhad",
+      "iso": "IR",
+      "latitude": 36.29807,
+      "longitude": 59.60567,
+      "population": 2307177,
+      "answers": {
+        "country": "Iran",
+        "currency": "Iranian Rial",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Iran",
+        "currency": "Rial (IRR)",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kowloon",
+      "iso": "HK",
+      "latitude": 22.31667,
+      "longitude": 114.18333,
+      "population": 2232339,
+      "answers": {
+        "country": "Hong Kong",
+        "currency": "Hong Kong Dollar",
+        "language": "Cantonese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Hong Kong",
+        "currency": "Dollar (HKD)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Gaziantep",
+      "iso": "TR",
+      "latitude": 37.05944,
+      "longitude": 37.3825,
+      "population": 2222415,
+      "answers": {
+        "country": "Turkey",
+        "currency": "Turkish Lira",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Turkey",
+        "currency": "Lira (TRY)",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Lubumbashi",
+      "iso": "CD",
+      "latitude": -11.66089,
+      "longitude": 27.47938,
+      "population": 2221925,
+      "answers": {
+        "country": "Congo (Democratic Republic of the Congo)",
+        "currency": "Congolese Franc",
+        "language": "Swahili",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Democratic Republic of the Congo",
+        "currency": "Franc (CDF)",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Manaus",
+      "iso": "BR",
+      "latitude": -3.10194,
+      "longitude": -60.025,
+      "population": 2219580,
+      "answers": {
+        "country": "Brazil",
+        "currency": "Brazilian Real",
+        "language": "Portuguese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Brazil",
+        "currency": "Real (BRL)",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Lusaka",
+      "iso": "ZM",
+      "latitude": -15.40669,
+      "longitude": 28.28713,
+      "population": 2212301,
+      "answers": {
+        "country": "Zambia",
+        "currency": "Zambian Kwacha",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Zambia",
+        "currency": "Kwacha (ZMW)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Santo Domingo",
+      "iso": "DO",
+      "latitude": 18.47186,
+      "longitude": -69.89232,
+      "population": 2201941,
+      "answers": {
+        "country": "Dominican Republic",
+        "currency": "Dominican Peso",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Dominican Republic",
+        "currency": "Peso (DOP)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Lomé",
+      "iso": "TG",
+      "latitude": 6.12874,
+      "longitude": 1.22154,
+      "population": 2188376,
+      "answers": {
+        "country": "Togo",
+        "currency": "West African CFA Franc",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Togo",
+        "currency": "Franc (XOF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Havana",
+      "iso": "CU",
+      "latitude": 23.13302,
+      "longitude": -82.38304,
+      "population": 2163824,
+      "answers": {
+        "country": "Cuba",
+        "currency": "Cuban peso",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Cuba",
+        "currency": "Peso (CUP)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Depok",
+      "iso": "ID",
+      "latitude": -6.4,
+      "longitude": 106.81861,
+      "population": 2163635,
+      "answers": {
+        "country": "Indonesia",
+        "currency": "Indonesian Rupiah",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Indonesia",
+        "currency": "Rupiah (IDR)",
+        "language": "Indonesian",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Paris",
+      "iso": "FR",
+      "latitude": 48.85341,
+      "longitude": 2.3488,
+      "population": 2138551,
+      "answers": {
+        "country": "France",
+        "currency": "Euro",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "France",
+        "currency": "Euro (EUR)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Port Harcourt",
+      "iso": "NG",
+      "latitude": 4.77742,
+      "longitude": 7.0134,
+      "population": 2120000,
+      "answers": {
+        "country": "Nigeria",
+        "currency": "Naira",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Nigeria",
+        "currency": "Naira (NGN)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Pretoria",
+      "iso": "ZA",
+      "latitude": -25.74486,
+      "longitude": 28.18783,
+      "population": 2112693,
+      "answers": {
+        "country": "South Africa",
+        "currency": "South African Rand",
+        "language": "Afrikaans",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "South Africa",
+        "currency": "Rand (ZAR)",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Córdoba",
+      "iso": "AR",
+      "latitude": -31.40648,
+      "longitude": -64.18853,
+      "population": 2106734,
+      "answers": {
+        "country": "Spain",
+        "currency": "Argentine Peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Argentina",
+        "currency": "Peso (ARS)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Mbuji-Mayi",
+      "iso": "CD",
+      "latitude": -6.13603,
+      "longitude": 23.58979,
+      "population": 2101332,
+      "answers": {
+        "country": "Congo (Kinshasa)",
+        "currency": "Congolese Franc",
+        "language": "Kikongo",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": false,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Democratic Republic of the Congo",
+        "currency": "Franc (CDF)",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Aleppo",
+      "iso": "SY",
+      "latitude": 36.20124,
+      "longitude": 37.16117,
+      "population": 2098210,
+      "answers": {
+        "country": "Syria",
+        "currency": "Syrian Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Syria",
+        "currency": "Pound (SYP)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Al Mawşil al Jadīdah",
+      "iso": "IQ",
+      "latitude": 36.33271,
+      "longitude": 43.10555,
+      "population": 2065597,
+      "answers": {
+        "country": "Iraq",
+        "currency": "Iraqi dinar",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Iraq",
+        "currency": "Dinar (IQD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "La Paz",
+      "iso": "BO",
+      "latitude": -16.5,
+      "longitude": -68.15,
+      "population": 2004652,
+      "answers": {
+        "country": "Bolivia",
+        "currency": "Boliviano",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Bolivia",
+        "currency": "Boliviano (BOB)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Medellín",
+      "iso": "CO",
+      "latitude": 6.245,
+      "longitude": -75.57151,
+      "population": 1999979,
+      "answers": {
+        "country": "Colombia",
+        "currency": "Colombian peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Colombia",
+        "currency": "Peso (COP)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Brazzaville",
+      "iso": "CG",
+      "latitude": -4.26613,
+      "longitude": 15.28318,
+      "population": 1982000,
+      "answers": {
+        "country": "Congo",
+        "currency": "CFA Franc BCEAO",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Republic of the Congo",
+        "currency": "Franc (XAF)",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Tashkent",
+      "iso": "UZ",
+      "latitude": 41.26465,
+      "longitude": 69.21627,
+      "population": 1978028,
+      "answers": {
+        "country": "Uzbekistan",
+        "currency": "Uzbek Som",
+        "language": "Uzbek",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Uzbekistan",
+        "currency": "Som (UZS)",
+        "language": "Uzbek",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Almaty",
+      "iso": "KZ",
+      "latitude": 43.25249,
+      "longitude": 76.9115,
+      "population": 1977011,
+      "answers": {
+        "country": "Kazakhstan",
+        "currency": "Kazakh Tenge",
+        "language": "Kazakh",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Kazakhstan",
+        "currency": "Tenge (KZT)",
+        "language": "Kazakh",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Khartoum",
+      "iso": "SD",
+      "latitude": 15.55177,
+      "longitude": 32.53241,
+      "population": 1974647,
+      "answers": {
+        "country": "Sudan",
+        "currency": "Sudanese Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Sudan",
+        "currency": "Pound (SDG)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Hamburg",
+      "iso": "DE",
+      "latitude": 53.55073,
+      "longitude": 9.99302,
+      "population": 1973896,
+      "answers": {
+        "country": "Germany",
+        "currency": "Euro",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Germany",
+        "currency": "Euro (EUR)",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Sapporo",
+      "iso": "JP",
+      "latitude": 43.06667,
+      "longitude": 141.35,
+      "population": 1973832,
+      "answers": {
+        "country": "Japan",
+        "currency": "Japanese Yen",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Japan",
+        "currency": "Yen (JPY)",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Accra",
+      "iso": "GH",
+      "latitude": 5.55602,
+      "longitude": -0.1969,
+      "population": 1963264,
+      "answers": {
+        "country": "Ghana",
+        "currency": "Ghana Cedi",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Ghana",
+        "currency": "Cedi (GHS)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Sanaa",
+      "iso": "YE",
+      "latitude": 15.35452,
+      "longitude": 44.20646,
+      "population": 1937451,
+      "answers": {
+        "country": "Yemen",
+        "currency": "Yemeni Rial",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Yemen",
+        "currency": "Rial (YER)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Conakry",
+      "iso": "GN",
+      "latitude": 9.53795,
+      "longitude": -13.67729,
+      "population": 1928389,
+      "answers": {
+        "country": "Guinea",
+        "currency": "Guinean Franc",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Guinea",
+        "currency": "Franc (GNF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Tijuana",
+      "iso": "MX",
+      "latitude": 32.5027,
+      "longitude": -117.00371,
+      "population": 1922523,
+      "answers": {
+        "country": "Mexico",
+        "currency": "Mexican Peso",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Mexico",
+        "currency": "Peso (MXN)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Beirut",
+      "iso": "LB",
+      "latitude": 33.89332,
+      "longitude": 35.50157,
+      "population": 1916100,
+      "answers": {
+        "country": "Lebanon",
+        "currency": "Lebanese Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Lebanon",
+        "currency": "Pound (LBP)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Bucharest",
+      "iso": "RO",
+      "latitude": 44.43225,
+      "longitude": 26.10626,
+      "population": 1877155,
+      "answers": {
+        "country": "Romania",
+        "currency": "Euro",
+        "language": "Romanian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Romania",
+        "currency": "Leu (RON)",
+        "language": "Romanian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Camayenne",
+      "iso": "GN",
+      "latitude": 9.535,
+      "longitude": -13.68778,
+      "population": 1871242,
+      "answers": {
+        "country": "French Guiana",
+        "currency": "Euro",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": false,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Guinea",
+        "currency": "Franc (GNF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kakamega",
+      "iso": "KE",
+      "latitude": 0.28422,
+      "longitude": 34.75229,
+      "population": 1867579,
+      "answers": {
+        "country": "Kenya",
+        "currency": "Kenyan Shilling",
+        "language": "Swahili",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Kenya",
+        "currency": "Shilling (KES)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Tainan",
+      "iso": "TW",
+      "latitude": 22.99259,
+      "longitude": 120.20507,
+      "population": 1856642,
+      "answers": {
+        "country": "Taiwan",
+        "currency": "Taiwan Dollar",
+        "language": "Mandarin Chinese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Taiwan",
+        "currency": "Dollar (TWD)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kaduna",
+      "iso": "NG",
+      "latitude": 10.52641,
+      "longitude": 7.43879,
+      "population": 1850000,
+      "answers": {
+        "country": "Nigeria",
+        "currency": "Naira",
+        "language": "Hausa",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Nigeria",
+        "currency": "Naira (NGN)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Omdurman",
+      "iso": "SD",
+      "latitude": 15.64453,
+      "longitude": 32.47773,
+      "population": 1849659,
+      "answers": {
+        "country": "Sudan",
+        "currency": "Sudanese Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Sudan",
+        "currency": "Pound (SDG)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Davao",
+      "iso": "PH",
+      "latitude": 7.07306,
+      "longitude": 125.61278,
+      "population": 1848947,
+      "answers": {
+        "country": "Philippines",
+        "currency": "Philippine Peso",
+        "language": "Tagalog",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Philippines",
+        "currency": "Peso (PHP)",
+        "language": "Tagalog",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Iztapalapa",
+      "iso": "MX",
+      "latitude": 19.35529,
+      "longitude": -99.06224,
+      "population": 1835486,
+      "answers": {
+        "country": "Mexico",
+        "currency": "Mexican Peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Mexico",
+        "currency": "Peso (MXN)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Diyarbakır",
+      "iso": "TR",
+      "latitude": 37.91363,
+      "longitude": 40.21721,
+      "population": 1833684,
+      "answers": {
+        "country": "Turkey",
+        "currency": "Turkish Lira",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Turkey",
+        "currency": "Lira (TRY)",
+        "language": "Turkish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Santa Cruz de la Sierra",
+      "iso": "BO",
+      "latitude": -17.78629,
+      "longitude": -63.18117,
+      "population": 1831434,
+      "answers": {
+        "country": "Bolivia",
+        "currency": "Bolivian Boliviano",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Bolivia",
+        "currency": "Boliviano (BOB)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Abu Dhabi",
+      "iso": "AE",
+      "latitude": 24.45118,
+      "longitude": 54.39696,
+      "population": 1807000,
+      "answers": {
+        "country": "United Arab Emirates",
+        "currency": "Dirham",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "United Arab Emirates",
+        "currency": "Dirham (AED)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Sharjah",
+      "iso": "AE",
+      "latitude": 25.3342,
+      "longitude": 55.41221,
+      "population": 1800000,
+      "answers": {
+        "country": "United Arab Emirates",
+        "currency": "Dirham",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "United Arab Emirates",
+        "currency": "Dirham (AED)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Montréal",
+      "iso": "CA",
+      "latitude": 45.50884,
+      "longitude": -73.58781,
+      "population": 1762949,
+      "answers": {
+        "country": "Canada",
+        "currency": "Canadian Dollar",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Canada",
+        "currency": "Dollar (CAD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Maracaibo",
+      "iso": "VE",
+      "latitude": 10.64232,
+      "longitude": -71.61089,
+      "population": 1752602,
+      "answers": {
+        "country": "Venezuela",
+        "currency": "Venezuelan Bolívar Fuerte",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Venezuela",
+        "currency": "Bolivar Soberano (VES)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Minsk",
+      "iso": "BY",
+      "latitude": 53.90019,
+      "longitude": 27.56653,
+      "population": 1742124,
+      "answers": {
+        "country": "Belarus",
+        "currency": "Belarusian Ruble",
+        "language": "Belarusian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Belarus",
+        "currency": "Belarusian ruble (BYN)",
+        "language": "Belarusian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Budapest",
+      "iso": "HU",
+      "latitude": 47.49835,
+      "longitude": 19.04045,
+      "population": 1741041,
+      "answers": {
+        "country": "Hungary",
+        "currency": "Hungarian Forint",
+        "language": "Hungarian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Hungary",
+        "currency": "Forint (HUF)",
+        "language": "Hungarian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Caloocan",
+      "iso": "PH",
+      "latitude": 14.64953,
+      "longitude": 120.96788,
+      "population": 1712945,
+      "answers": {
+        "country": "Philippines",
+        "currency": "Philippine Peso",
+        "language": "Filipino",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Philippines",
+        "currency": "Peso (PHP)",
+        "language": "Tagalog",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Warsaw",
+      "iso": "PL",
+      "latitude": 52.22977,
+      "longitude": 21.01178,
+      "population": 1702139,
+      "answers": {
+        "country": "Poland",
+        "currency": "Polish Złoty",
+        "language": "Polish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Poland",
+        "currency": "Zloty (PLN)",
+        "language": "Polish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Soweto",
+      "iso": "ZA",
+      "latitude": -26.26781,
+      "longitude": 27.85849,
+      "population": 1695047,
+      "answers": {
+        "country": "South Africa",
+        "currency": "South African Rand",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "South Africa",
+        "currency": "Rand (ZAR)",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Puebla",
+      "iso": "MX",
+      "latitude": 19.04778,
+      "longitude": -98.20723,
+      "population": 1692181,
+      "answers": {
+        "country": "Mexico",
+        "currency": "Mexican Peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Mexico",
+        "currency": "Peso (MXN)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Vienna",
+      "iso": "AT",
+      "latitude": 48.20849,
+      "longitude": 16.37208,
+      "population": 1691468,
+      "answers": {
+        "country": "Austria",
+        "currency": "Euro",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Austria",
+        "currency": "Euro (EUR)",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Barcelona",
+      "iso": "ES",
+      "latitude": 41.38879,
+      "longitude": 2.15899,
+      "population": 1686208,
+      "answers": {
+        "country": "Spain",
+        "currency": "Euro",
+        "language": "Catalan",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Spain",
+        "currency": "Euro (EUR)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Mosul",
+      "iso": "IQ",
+      "latitude": 36.335,
+      "longitude": 43.11889,
+      "population": 1683000,
+      "answers": {
+        "country": "Iraq",
+        "currency": "Iraqi dinar",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Iraq",
+        "currency": "Dinar (IQD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kampala",
+      "iso": "UG",
+      "latitude": 0.31628,
+      "longitude": 32.58219,
+      "population": 1680600,
+      "answers": {
+        "country": "Uganda",
+        "currency": "Ugandan Shilling",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Uganda",
+        "currency": "Shilling (UGX)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Rabat",
+      "iso": "MA",
+      "latitude": 34.01325,
+      "longitude": -6.83255,
+      "population": 1655753,
+      "answers": {
+        "country": "Morocco",
+        "currency": "Moroccan Dirham",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Morocco",
+        "currency": "Dirham (MAD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Ecatepec de Morelos",
+      "iso": "MX",
+      "latitude": 19.60006,
+      "longitude": -99.04855,
+      "population": 1645352,
+      "answers": {
+        "country": "Mexico",
+        "currency": "Mexican Peso",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Mexico",
+        "currency": "Peso (MXN)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Valencia",
+      "iso": "VE",
+      "latitude": 10.16153,
+      "longitude": -68.00044,
+      "population": 1619470,
+      "answers": {
+        "country": "Spain",
+        "currency": "Euro",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": false,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Venezuela",
+        "currency": "Bolivar Soberano (VES)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Novosibirsk",
+      "iso": "RU",
+      "latitude": 55.02259,
+      "longitude": 82.93175,
+      "population": 1612833,
+      "answers": {
+        "country": "Russia",
+        "currency": "Russian Ruble",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Russia",
+        "currency": "Ruble (RUB)",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Erbil",
+      "iso": "IQ",
+      "latitude": 36.19117,
+      "longitude": 44.00943,
+      "population": 1612700,
+      "answers": {
+        "country": "Iraq",
+        "currency": "Iraqi Dinar",
+        "language": "Kurmanji Kurdish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Iraq",
+        "currency": "Dinar (IQD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Fukuoka",
+      "iso": "JP",
+      "latitude": 33.6,
+      "longitude": 130.41667,
+      "population": 1612392,
+      "answers": {
+        "country": "Japan",
+        "currency": "Japanese Yen",
+        "language": "Japanese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Japan",
+        "currency": "Yen (JPY)",
+        "language": "Japanese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kisangani",
+      "iso": "CD",
+      "latitude": 0.51528,
+      "longitude": 25.19099,
+      "population": 1602144,
+      "answers": {
+        "country": "Congo (Democratic Republic of the Congo)",
+        "currency": "Congolese Franc",
+        "language": "Swahili",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Democratic Republic of the Congo",
+        "currency": "Franc (CDF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Manila",
+      "iso": "PH",
+      "latitude": 14.6042,
+      "longitude": 120.9822,
+      "population": 1600000,
+      "answers": {
+        "country": "Philippines",
+        "currency": "Philippine Peso",
+        "language": "Filipino",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Philippines",
+        "currency": "Peso (PHP)",
+        "language": "Tagalog",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Santiago de Querétaro",
+      "iso": "MX",
+      "latitude": 20.58806,
+      "longitude": -100.38806,
+      "population": 1594212,
+      "answers": {
+        "country": "Mexico",
+        "currency": "Mexican Peso",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Mexico",
+        "currency": "Peso (MXN)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Makkah",
+      "iso": "SA",
+      "latitude": 21.42664,
+      "longitude": 39.82563,
+      "population": 1578722,
+      "answers": {
+        "country": "Saudi Arabia",
+        "currency": "Saudi Riyal",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Saudi Arabia",
+        "currency": "Rial (SAR)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Phnom Penh",
+      "iso": "KH",
+      "latitude": 11.56245,
+      "longitude": 104.91601,
+      "population": 1573544,
+      "answers": {
+        "country": "Cambodia",
+        "currency": "Cambodian Riel",
+        "language": "Khmer",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Cambodia",
+        "currency": "Riels (KHR)",
+        "language": "Khmer",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Damascus",
+      "iso": "SY",
+      "latitude": 33.5102,
+      "longitude": 36.29128,
+      "population": 1569394,
+      "answers": {
+        "country": "Syria",
+        "currency": "Syrian Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Syria",
+        "currency": "Pound (SYP)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Auckland",
+      "iso": "NZ",
+      "latitude": -36.84853,
+      "longitude": 174.76349,
+      "population": 1547200,
+      "answers": {
+        "country": "New Zealand",
+        "currency": "New Zealand Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "New Zealand",
+        "currency": "Dollar (NZD)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Isfahan",
+      "iso": "IR",
+      "latitude": 32.65246,
+      "longitude": 51.67462,
+      "population": 1547164,
+      "answers": {
+        "country": "Iran",
+        "currency": "Iranian Rial",
+        "language": "Persian",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Iran",
+        "currency": "Rial (IRR)",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Astana",
+      "iso": "KZ",
+      "latitude": 51.1801,
+      "longitude": 71.44598,
+      "population": 1544142,
+      "answers": {
+        "country": "Kazakhstan",
+        "currency": "Kazakh Tenge",
+        "language": "Kazakh",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Kazakhstan",
+        "currency": "Tenge (KZT)",
+        "language": "Kazakh",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Harare",
+      "iso": "ZW",
+      "latitude": -17.82772,
+      "longitude": 31.05337,
+      "population": 1542813,
+      "answers": {
+        "country": "Zimbabwe",
+        "currency": "Zimbabwean Dollar",
+        "language": "Shona",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Zimbabwe",
+        "currency": "Zimbabwe Gold (ZWG)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Monrovia",
+      "iso": "LR",
+      "latitude": 6.30054,
+      "longitude": -10.7969,
+      "population": 1542549,
+      "answers": {
+        "country": "Liberia",
+        "currency": "Liberian Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Liberia",
+        "currency": "Dollar (LRD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Stockholm",
+      "iso": "SE",
+      "latitude": 59.32938,
+      "longitude": 18.06871,
+      "population": 1515017,
+      "answers": {
+        "country": "Sweden",
+        "currency": "Swedish Krona",
+        "language": "Swedish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Sweden",
+        "currency": "Krona (SEK)",
+        "language": "Swedish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Cần Thơ",
+      "iso": "VN",
+      "latitude": 10.03711,
+      "longitude": 105.78825,
+      "population": 1507187,
+      "answers": {
+        "country": "Vietnam",
+        "currency": "Vietnamese Đồng",
+        "language": "Vietnamese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Vietnam",
+        "currency": "Dong (VND)",
+        "language": "Vietnamese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Munich",
+      "iso": "DE",
+      "latitude": 48.13743,
+      "longitude": 11.57549,
+      "population": 1505005,
+      "answers": {
+        "country": "Germany",
+        "currency": "Euro",
+        "language": "German",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Germany",
+        "currency": "Euro (EUR)",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Khulna",
+      "iso": "BD",
+      "latitude": 22.80979,
+      "longitude": 89.56439,
+      "population": 1500689,
+      "answers": {
+        "country": "Bangladesh",
+        "currency": "Bangladeshi Taka",
+        "language": "Bengali",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Bangladesh",
+        "currency": "Taka (BDT)",
+        "language": "Bengali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Yekaterinburg",
+      "iso": "RU",
+      "latitude": 56.85733,
+      "longitude": 60.61529,
+      "population": 1495066,
+      "answers": {
+        "country": "Russia",
+        "currency": "Russian Ruble",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Russia",
+        "currency": "Ruble (RUB)",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Asunción",
+      "iso": "PY",
+      "latitude": -25.28646,
+      "longitude": -57.647,
+      "population": 1482200,
+      "answers": {
+        "country": "Paraguay",
+        "currency": "Paraguayan Guarani",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Paraguay",
+        "currency": "Guarani (PYG)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Adelaide",
+      "iso": "AU",
+      "latitude": -34.92866,
+      "longitude": 138.59863,
+      "population": 1469163,
+      "answers": {
+        "country": "Australia",
+        "currency": "Australian Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Australia",
+        "currency": "Dollar (AUD)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Kuala Lumpur",
+      "iso": "MY",
+      "latitude": 3.1412,
+      "longitude": 101.68653,
+      "population": 1453975,
+      "answers": {
+        "country": "Malaysia",
+        "currency": "Malaysian Ringgit",
+        "language": "Malay",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Malaysia",
+        "currency": "Ringgit (MYR)",
+        "language": "Malay",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Karaj",
+      "iso": "IR",
+      "latitude": 35.83266,
+      "longitude": 50.99155,
+      "population": 1448075,
+      "answers": {
+        "country": "Iran",
+        "currency": "Iranian Rial",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Iran",
+        "currency": "Rial (IRR)",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kathmandu",
+      "iso": "NP",
+      "latitude": 27.70169,
+      "longitude": 85.3206,
+      "population": 1442271,
+      "answers": {
+        "country": "Nepal",
+        "currency": "Nepalese Rupee",
+        "language": "Nepali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Nepal",
+        "currency": "Rupee (NPR)",
+        "language": "Nepali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Daejeon",
+      "iso": "KR",
+      "latitude": 36.35022,
+      "longitude": 127.3848,
+      "population": 1441203,
+      "answers": {
+        "country": "South Korea",
+        "currency": "Korean Won",
+        "language": "Korean",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "South Korea",
+        "currency": "Won (KRW)",
+        "language": "Korean",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Tabriz",
+      "iso": "IR",
+      "latitude": 38.08,
+      "longitude": 46.2919,
+      "population": 1424641,
+      "answers": {
+        "country": "Iran",
+        "currency": "Iranian Rial",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Iran",
+        "currency": "Rial (IRR)",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kharkiv",
+      "iso": "UA",
+      "latitude": 49.98177,
+      "longitude": 36.25475,
+      "population": 1421125,
+      "answers": {
+        "country": "Ukraine",
+        "currency": "Ukrainian Hryvnia",
+        "language": "Ukrainian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Ukraine",
+        "currency": "Hryvnia (UAH)",
+        "language": "Ukrainian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Gwangju",
+      "iso": "KR",
+      "latitude": 35.15472,
+      "longitude": 126.91556,
+      "population": 1401235,
+      "answers": {
+        "country": "South Korea",
+        "currency": "Korean Won",
+        "language": "Korean",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "South Korea",
+        "currency": "Won (KRW)",
+        "language": "Korean",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Huế",
+      "iso": "VN",
+      "latitude": 16.4619,
+      "longitude": 107.59546,
+      "population": 1380000,
+      "answers": {
+        "country": "Vietnam",
+        "currency": "Vietnamese Đồng",
+        "language": "Vietnamese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Vietnam",
+        "currency": "Dong (VND)",
+        "language": "Vietnamese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Milan",
+      "iso": "IT",
+      "latitude": 45.46427,
+      "longitude": 9.18951,
+      "population": 1371498,
+      "answers": {
+        "country": "Italy",
+        "currency": "Euro",
+        "language": "Italian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Italy",
+        "currency": "Euro (EUR)",
+        "language": "Italian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "N'Djamena",
+      "iso": "TD",
+      "latitude": 12.10672,
+      "longitude": 15.0444,
+      "population": 1359526,
+      "answers": {
+        "country": "Chad",
+        "currency": "Central African Franc",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Chad",
+        "currency": "Franc (XAF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Antananarivo",
+      "iso": "MG",
+      "latitude": -18.91368,
+      "longitude": 47.53613,
+      "population": 1349501,
+      "answers": {
+        "country": "Madagascar",
+        "currency": "Malagasy Ariary",
+        "language": "Malagasy",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Madagascar",
+        "currency": "Ariary (MGA)",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Abobo",
+      "iso": "CI",
+      "latitude": 5.41613,
+      "longitude": -4.0159,
+      "population": 1340083,
+      "answers": {
+        "country": "Côte d'Ivoire",
+        "currency": "CFA Franc BCEAO",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Ivory Coast",
+        "currency": "Franc (XOF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Douala",
+      "iso": "CM",
+      "latitude": 4.04827,
+      "longitude": 9.70428,
+      "population": 1338082,
+      "answers": {
+        "country": "Cameroon",
+        "currency": "CFA Franc BCEAO",
+        "language": "English and French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Cameroon",
+        "currency": "Franc (XAF)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Basrah",
+      "iso": "IQ",
+      "latitude": 30.50852,
+      "longitude": 47.7804,
+      "population": 1326564,
+      "answers": {
+        "country": "Iraq",
+        "currency": "Iraqi Dinar",
+        "language": "Arabic",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Iraq",
+        "currency": "Dinar (IQD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Niamey",
+      "iso": "NE",
+      "latitude": 13.51366,
+      "longitude": 2.1098,
+      "population": 1323691,
+      "answers": {
+        "country": "Niger",
+        "currency": "CFA Franc BCEAO",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Niger",
+        "currency": "Franc (XOF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Taguig",
+      "iso": "PH",
+      "latitude": 14.5243,
+      "longitude": 121.0792,
+      "population": 1308085,
+      "answers": {
+        "country": "Philippines",
+        "currency": "Philippine Peso",
+        "language": "Tagalog",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Philippines",
+        "currency": "Peso (PHP)",
+        "language": "Tagalog",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Calgary",
+      "iso": "CA",
+      "latitude": 51.05011,
+      "longitude": -114.08529,
+      "population": 1306784,
+      "answers": {
+        "country": "Canada",
+        "currency": "Canadian Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Canada",
+        "currency": "Dollar (CAD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Tripoli",
+      "iso": "LY",
+      "latitude": 32.88743,
+      "longitude": 13.18733,
+      "population": 1302947,
+      "answers": {
+        "country": "Libya",
+        "currency": "Libyan Dinar",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Libya",
+        "currency": "Dinar (LYD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Madinah",
+      "iso": "SA",
+      "latitude": 24.46861,
+      "longitude": 39.61417,
+      "population": 1300000,
+      "answers": {
+        "country": "Saudi Arabia",
+        "currency": "Saudi Riyal",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Saudi Arabia",
+        "currency": "Rial (SAR)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Yaoundé",
+      "iso": "CM",
+      "latitude": 3.86667,
+      "longitude": 11.51667,
+      "population": 1299369,
+      "answers": {
+        "country": "Cameroon",
+        "currency": "CFA Franc BCEAO",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Cameroon",
+        "currency": "Franc (XAF)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Da Nang",
+      "iso": "VN",
+      "latitude": 16.06778,
+      "longitude": 108.22083,
+      "population": 1276000,
+      "answers": {
+        "country": "Vietnam",
+        "currency": "Vietnamese Đồng",
+        "language": "Vietnamese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Vietnam",
+        "currency": "Dong (VND)",
+        "language": "Vietnamese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Amman",
+      "iso": "JO",
+      "latitude": 31.95522,
+      "longitude": 35.94503,
+      "population": 1275857,
+      "answers": {
+        "country": "Jordan",
+        "currency": "Jordanian Dollar",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Jordan",
+        "currency": "Dinar (JOD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Budta",
+      "iso": "PH",
+      "latitude": 7.20417,
+      "longitude": 124.43972,
+      "population": 1273715,
+      "answers": {
+        "country": "Budta is not associated with any specific country",
+        "currency": "Budva uses the Euro.",
+        "language": "Filipino",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Philippines",
+        "currency": "Peso (PHP)",
+        "language": "Tagalog",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Belgrade",
+      "iso": "RS",
+      "latitude": 44.80401,
+      "longitude": 20.46513,
+      "population": 1273651,
+      "answers": {
+        "country": "Serbia",
+        "currency": "Euro",
+        "language": "Serbian",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Serbia",
+        "currency": "Dinar (RSD)",
+        "language": "Serbian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kananga",
+      "iso": "CD",
+      "latitude": -5.89624,
+      "longitude": 22.41659,
+      "population": 1271704,
+      "answers": {
+        "country": "Congo (Democratic Republic of the Congo)",
+        "currency": "Congolese Franc",
+        "language": "Kikongo",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": false,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Democratic Republic of the Congo",
+        "currency": "Franc (CDF)",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Montevideo",
+      "iso": "UY",
+      "latitude": -34.90328,
+      "longitude": -56.18816,
+      "population": 1270737,
+      "answers": {
+        "country": "Uruguay",
+        "currency": "Uruguayan peso",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Uruguay",
+        "currency": "Peso (UYU)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Nizhniy Novgorod",
+      "iso": "RU",
+      "latitude": 56.32867,
+      "longitude": 44.00205,
+      "population": 1259013,
+      "answers": {
+        "country": "Russia",
+        "currency": "Russian Ruble",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Russia",
+        "currency": "Ruble (RUB)",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Maputo",
+      "iso": "MZ",
+      "latitude": -25.96553,
+      "longitude": 32.58322,
+      "population": 1254837,
+      "answers": {
+        "country": "Mozambique",
+        "currency": "Mozambique Metical",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Mozambique",
+        "currency": "Metical (MZN)",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Dammam",
+      "iso": "SA",
+      "latitude": 26.43442,
+      "longitude": 50.10326,
+      "population": 1252523,
+      "answers": {
+        "country": "Saudi Arabia",
+        "currency": "Saudi Riyal",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Saudi Arabia",
+        "currency": "Rial (SAR)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Ra’s Bayrūt",
+      "iso": "LB",
+      "latitude": 33.9,
+      "longitude": 35.48333,
+      "population": 1251739,
+      "answers": {
+        "country": "Lebanon",
+        "currency": "Lebanese Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Lebanon",
+        "currency": "Pound (LBP)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Shiraz",
+      "iso": "IR",
+      "latitude": 29.61031,
+      "longitude": 52.53113,
+      "population": 1249942,
+      "answers": {
+        "country": "Iran",
+        "currency": "Iranian Rial",
+        "language": "Persian",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Iran",
+        "currency": "Rial (IRR)",
+        "language": "Persian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kazan",
+      "iso": "RU",
+      "latitude": 55.78874,
+      "longitude": 49.12214,
+      "population": 1243500,
+      "answers": {
+        "country": "Russia",
+        "currency": "Russian Ruble",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Russia",
+        "currency": "Ruble (RUB)",
+        "language": "Russian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Barquisimeto",
+      "iso": "VE",
+      "latitude": 10.0647,
+      "longitude": -69.35703,
+      "population": 1240714,
+      "answers": {
+        "country": "Venezuela",
+        "currency": "Venezuelan Bolívar Fuerte",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Venezuela",
+        "currency": "Bolivar Soberano (VES)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Shubrā al Khaymah",
+      "iso": "EG",
+      "latitude": 30.12511,
+      "longitude": 31.25053,
+      "population": 1240289,
+      "answers": {
+        "country": "Egypt",
+        "currency": "Egyptian Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Egypt",
+        "currency": "Pound (EGP)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Port-au-Prince",
+      "iso": "HT",
+      "latitude": 18.54349,
+      "longitude": -72.33881,
+      "population": 1234742,
+      "answers": {
+        "country": "Haiti",
+        "currency": "Gourde",
+        "language": "Haitian Creole",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Haiti",
+        "currency": "Gourde (HTG)",
+        "language": "Haitian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Callao",
+      "iso": "PE",
+      "latitude": -12.05162,
+      "longitude": -77.13452,
+      "population": 1226200,
+      "answers": {
+        "country": "Peru",
+        "currency": "Peruvian Sol",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Peru",
+        "currency": "Sol (PEN)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Karbala",
+      "iso": "IQ",
+      "latitude": 32.61603,
+      "longitude": 44.02488,
+      "population": 1218732,
+      "answers": {
+        "country": "Iraq",
+        "currency": "Iraqi Iraqi Dinar",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Iraq",
+        "currency": "Dinar (IQD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Mombasa",
+      "iso": "KE",
+      "latitude": -4.05466,
+      "longitude": 39.66359,
+      "population": 1208333,
+      "answers": {
+        "country": "Kenya",
+        "currency": "Kenyan Shilling",
+        "language": "Swahili",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Kenya",
+        "currency": "Shilling (KES)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Mandalay",
+      "iso": "MM",
+      "latitude": 21.97473,
+      "longitude": 96.08359,
+      "population": 1208099,
+      "answers": {
+        "country": "Myanmar",
+        "currency": "Burmese Kyat",
+        "language": "Burmese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Myanmar",
+        "currency": "Kyat (MMK)",
+        "language": "Burmese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Barranquilla",
+      "iso": "CO",
+      "latitude": 10.96854,
+      "longitude": -74.78132,
+      "population": 1206319,
+      "answers": {
+        "country": "Colombia",
+        "currency": "Colombian peso",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Colombia",
+        "currency": "Peso (COP)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Shymkent",
+      "iso": "KZ",
+      "latitude": 42.30988,
+      "longitude": 69.60042,
+      "population": 1200000,
+      "answers": {
+        "country": "Kazakhstan",
+        "currency": "Kazakh Tenge",
+        "language": "Kazakh",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Kazakhstan",
+        "currency": "Tenge (KZT)",
+        "language": "Kazakh",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Santiago de los Caballeros",
+      "iso": "DO",
+      "latitude": 19.45036,
+      "longitude": -70.69085,
+      "population": 1200000,
+      "answers": {
+        "country": "Dominican Republic",
+        "currency": "Dominican Peso",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Dominican Republic",
+        "currency": "Peso (DOP)",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Matola",
+      "iso": "MZ",
+      "latitude": -25.96222,
+      "longitude": 32.45889,
+      "population": 1198988,
+      "answers": {
+        "country": "Mozambique",
+        "currency": "Mozambique Metical",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Mozambique",
+        "currency": "Metical (MZN)",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Arequipa",
+      "iso": "PE",
+      "latitude": -16.39899,
+      "longitude": -71.53747,
+      "population": 1195700,
+      "answers": {
+        "country": "Peru",
+        "currency": "Peruvian Sol",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Peru",
+        "currency": "Sol (PEN)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Hong Kong Island",
+      "iso": "HK",
+      "latitude": 22.26302,
+      "longitude": 114.18419,
+      "population": 1195529,
+      "answers": {
+        "country": "China",
+        "currency": "Hong Kong Dollar",
+        "language": "Cantonese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Hong Kong",
+        "currency": "Dollar (HKD)",
+        "language": "Chinese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Fes",
+      "iso": "MA",
+      "latitude": 34.03313,
+      "longitude": -5.00028,
+      "population": 1191905,
+      "answers": {
+        "country": "Morocco",
+        "currency": "Moroccan Dirham",
+        "language": "Berber",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": false,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Morocco",
+        "currency": "Dirham (MAD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Nouakchott",
+      "iso": "MR",
+      "latitude": 18.08581,
+      "longitude": -15.9785,
+      "population": 1184530,
+      "answers": {
+        "country": "Mauritania",
+        "currency": "Mauritanian ouguiya",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Mauritania",
+        "currency": "Ouguiya (MRU)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Pikine",
+      "iso": "SN",
+      "latitude": 14.76457,
+      "longitude": -17.39071,
+      "population": 1170791,
+      "answers": {
+        "country": "Senegal",
+        "currency": "West African CFA Franc",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Senegal",
+        "currency": "Franc (XOF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Prague",
+      "iso": "CZ",
+      "latitude": 50.08804,
+      "longitude": 14.42076,
+      "population": 1165581,
+      "answers": {
+        "country": "Czech Republic",
+        "currency": "Czech Koruna",
+        "language": "Czech",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Czechia",
+        "currency": "Koruna (CZK)",
+        "language": "Czech",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Birmingham",
+      "iso": "GB",
+      "latitude": 52.48142,
+      "longitude": -1.89983,
+      "population": 1157603,
+      "answers": {
+        "country": "United Kingdom",
+        "currency": "Pound Sterling",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "United Kingdom",
+        "currency": "Pound (GBP)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Copenhagen",
+      "iso": "DK",
+      "latitude": 55.67594,
+      "longitude": 12.56553,
+      "population": 1153615,
+      "answers": {
+        "country": "Denmark",
+        "currency": "Danish Krone",
+        "language": "Danish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Denmark",
+        "currency": "Krone (DKK)",
+        "language": "Danish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Sofia",
+      "iso": "BG",
+      "latitude": 42.69751,
+      "longitude": 23.32415,
+      "population": 1152556,
+      "answers": {
+        "country": "Bulgaria",
+        "currency": "Bulgarian Lev",
+        "language": "Bulgarian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Bulgaria",
+        "currency": "Lev (BGN)",
+        "language": "Bulgarian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Yerevan",
+      "iso": "AM",
+      "latitude": 40.17765,
+      "longitude": 44.5126,
+      "population": 1144700,
+      "answers": {
+        "country": "Armenia",
+        "currency": "Armenian Dram",
+        "language": "Armenian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Armenia",
+        "currency": "Dram (AMD)",
+        "language": "Armenian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Kigali",
+      "iso": "RW",
+      "latitude": -1.94995,
+      "longitude": 30.05885,
+      "population": 1132686,
+      "answers": {
+        "country": "Rwanda",
+        "currency": "Rwandan Franc",
+        "language": "Kinyarwanda",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Rwanda",
+        "currency": "Franc (RWF)",
+        "language": "Kinyarwanda",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Touba",
+      "iso": "SN",
+      "latitude": 14.86229,
+      "longitude": -15.87532,
+      "population": 1120824,
+      "answers": {
+        "country": "Senegal",
+        "currency": "CFA Franc BCEAO",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Senegal",
+        "currency": "Franc (XOF)",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Lilongwe",
+      "iso": "MW",
+      "latitude": -13.96692,
+      "longitude": 33.78725,
+      "population": 1115815,
+      "answers": {
+        "country": "Malawi",
+        "currency": "Malawi Kwacha",
+        "language": "Chichewa",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": false,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Malawi",
+        "currency": "Kwacha (MWK)",
+        "language": "Nyanja",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Mwanza",
+      "iso": "TZ",
+      "latitude": -2.51667,
+      "longitude": 32.9,
+      "population": 1104521,
+      "answers": {
+        "country": "Tanzania",
+        "currency": "Tanzanian Shilling",
+        "language": "Swahili",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Tanzania",
+        "currency": "Shilling (TZS)",
+        "language": "Swahili",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Oslo",
+      "iso": "NO",
+      "latitude": 59.91273,
+      "longitude": 10.74609,
+      "population": 1082575,
+      "answers": {
+        "country": "Norway",
+        "currency": "Norwegian Krone",
+        "language": "Norwegian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Norway",
+        "currency": "Krone (NOK)",
+        "language": "Norwegian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Aden",
+      "iso": "YE",
+      "latitude": 12.77957,
+      "longitude": 45.03852,
+      "population": 1079670,
+      "answers": {
+        "country": "Yemen",
+        "currency": "Yemeni Rial",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Yemen",
+        "currency": "Rial (YER)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Trujillo",
+      "iso": "PE",
+      "latitude": -8.11599,
+      "longitude": -79.02998,
+      "population": 1067700,
+      "answers": {
+        "country": "Ecuador",
+        "currency": "Peruvian Sol",
+        "language": "Spanish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Peru",
+        "currency": "Sol (PEN)",
+        "language": "Spanish",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Gqeberha",
+      "iso": "ZA",
+      "latitude": -33.96109,
+      "longitude": 25.61494,
+      "population": 1050078,
+      "answers": {
+        "country": "South Africa",
+        "currency": "South African Rand",
+        "language": "Xhosa",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "South Africa",
+        "currency": "Rand (ZAR)",
+        "language": "Zulu",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Tbilisi",
+      "iso": "GE",
+      "latitude": 41.69143,
+      "longitude": 44.83412,
+      "population": 1049498,
+      "answers": {
+        "country": "Georgia",
+        "currency": "Georgian Lari",
+        "language": "Georgian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Georgia",
+        "currency": "Lari (GEL)",
+        "language": "Georgian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Tangier",
+      "iso": "MA",
+      "latitude": 35.76727,
+      "longitude": -5.79975,
+      "population": 1035141,
+      "answers": {
+        "country": "Morocco",
+        "currency": "Dollar",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Morocco",
+        "currency": "Dirham (MAD)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Pointe-Noire",
+      "iso": "CG",
+      "latitude": -4.77609,
+      "longitude": 11.86352,
+      "population": 1032000,
+      "answers": {
+        "country": "Congo",
+        "currency": "CFA Franc BCEAO",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": false,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": false
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Republic of the Congo",
+        "currency": "Franc (XAF)",
+        "language": "French",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Rangpur",
+      "iso": "BD",
+      "latitude": 25.74664,
+      "longitude": 89.25166,
+      "population": 1031388,
+      "answers": {
+        "country": "Bangladesh",
+        "currency": "Bangladeshi Taka",
+        "language": "Bengali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Bangladesh",
+        "currency": "Taka (BDT)",
+        "language": "Bengali",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Ashgabat",
+      "iso": "TM",
+      "latitude": 37.95,
+      "longitude": 58.38333,
+      "population": 1030063,
+      "answers": {
+        "country": "Turkmenistan",
+        "currency": "Turkmenistan manat",
+        "language": "Turkmen",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Turkmenistan",
+        "currency": "Manat (TMT)",
+        "language": "Turkmen",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Köln",
+      "iso": "DE",
+      "latitude": 50.93333,
+      "longitude": 6.95,
+      "population": 1024621,
+      "answers": {
+        "country": "Germany",
+        "currency": "Euro",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Germany",
+        "currency": "Euro (EUR)",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Dublin",
+      "iso": "IE",
+      "latitude": 53.33306,
+      "longitude": -6.24889,
+      "population": 1024027,
+      "answers": {
+        "country": "Ireland",
+        "currency": "Euro",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Ireland",
+        "currency": "Euro (EUR)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Brussels",
+      "iso": "BE",
+      "latitude": 50.85045,
+      "longitude": 4.34878,
+      "population": 1019022,
+      "answers": {
+        "country": "Belgium",
+        "currency": "Euro",
+        "language": "Dutch",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Belgium",
+        "currency": "Euro (EUR)",
+        "language": "Dutch",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Ottawa",
+      "iso": "CA",
+      "latitude": 45.41117,
+      "longitude": -75.69812,
+      "population": 1017449,
+      "answers": {
+        "country": "Canada",
+        "currency": "Canadian Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Canada",
+        "currency": "Dollar (CAD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Khartoum North",
+      "iso": "SD",
+      "latitude": 15.64925,
+      "longitude": 32.53458,
+      "population": 1012211,
+      "answers": {
+        "country": "Sudan",
+        "currency": "Sudanese Pound",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Sudan",
+        "currency": "Pound (SDG)",
+        "language": "Arabic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Edmonton",
+      "iso": "CA",
+      "latitude": 53.55014,
+      "longitude": -113.46871,
+      "population": 1010899,
+      "answers": {
+        "country": "Canada",
+        "currency": "Canadian Dollar",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Canada",
+        "currency": "Dollar (CAD)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Odesa",
+      "iso": "UA",
+      "latitude": 46.48572,
+      "longitude": 30.74383,
+      "population": 1010537,
+      "answers": {
+        "country": "Ukraine",
+        "currency": "Ukrainian Hryvnia",
+        "language": "Ukrainian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Ukraine",
+        "currency": "Hryvnia (UAH)",
+        "language": "Ukrainian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Pest",
+      "iso": "HU",
+      "latitude": 47.5,
+      "longitude": 19.08333,
+      "population": 1001748,
+      "answers": {
+        "country": "Hungary",
+        "currency": "Euro",
+        "language": "Hungarian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Hungary",
+        "currency": "Forint (HUF)",
+        "language": "Hungarian",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Wellington",
+      "iso": "NZ",
+      "latitude": -41.28664,
+      "longitude": 174.77557,
+      "population": 381900,
+      "answers": {
+        "country": "New Zealand",
+        "currency": "New Zealand Dollar",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "New Zealand",
+        "currency": "Dollar (NZD)",
+        "language": "English",
+        "hemisphere": "Southern",
+        "season": "Winter"
+      }
+    },
+    {
+      "name": "Amsterdam",
+      "iso": "NL",
+      "latitude": 52.37403,
+      "longitude": 4.88969,
+      "population": 741636,
+      "answers": {
+        "country": "Netherlands",
+        "currency": "Euro",
+        "language": "Dutch",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "The Netherlands",
+        "currency": "Euro (EUR)",
+        "language": "Dutch",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Lisbon",
+      "iso": "PT",
+      "latitude": 38.72509,
+      "longitude": -9.1498,
+      "population": 517802,
+      "answers": {
+        "country": "Portugal",
+        "currency": "Euro",
+        "language": "Portuguese",
+        "hemisphere": "Southern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": false,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Portugal",
+        "currency": "Euro (EUR)",
+        "language": "Portuguese",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Athens",
+      "iso": "GR",
+      "latitude": 37.98376,
+      "longitude": 23.72784,
+      "population": 664046,
+      "answers": {
+        "country": "Greece",
+        "currency": "Euro",
+        "language": "Greek",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Greece",
+        "currency": "Euro (EUR)",
+        "language": "Modern Greek",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Helsinki",
+      "iso": "FI",
+      "latitude": 60.16952,
+      "longitude": 24.93545,
+      "population": 658864,
+      "answers": {
+        "country": "Finland",
+        "currency": "Euro",
+        "language": "Finnish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Finland",
+        "currency": "Euro (EUR)",
+        "language": "Finnish",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Edinburgh",
+      "iso": "GB",
+      "latitude": 55.95206,
+      "longitude": -3.19648,
+      "population": 514990,
+      "answers": {
+        "country": "Scotland",
+        "currency": "British Pound Sterling",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "United Kingdom",
+        "currency": "Pound (GBP)",
+        "language": "English",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Reykjavik",
+      "iso": "IS",
+      "latitude": 64.13548,
+      "longitude": -21.89541,
+      "population": 118918,
+      "answers": {
+        "country": "Iceland",
+        "currency": "Icelandic Króna",
+        "language": "Icelandic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": false,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": false,
+      "key": {
+        "country": "Iceland",
+        "currency": "Krona (ISK)",
+        "language": "Icelandic",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    },
+    {
+      "name": "Geneva",
+      "iso": "CH",
+      "latitude": 46.20222,
+      "longitude": 6.14569,
+      "population": 201741,
+      "answers": {
+        "country": "Switzerland",
+        "currency": "Swiss Franc",
+        "language": "French",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      },
+      "correct": {
+        "country": true,
+        "currency": true,
+        "language": true,
+        "hemisphere": true,
+        "season": true
+      },
+      "all_correct": true,
+      "key": {
+        "country": "Switzerland",
+        "currency": "Franc (CHF)",
+        "language": "German",
+        "hemisphere": "Northern",
+        "season": "Summer"
+      }
+    }
+  ],
+  "seconds": 142.98868823051453
+}

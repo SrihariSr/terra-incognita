@@ -1,0 +1,2861 @@
+{
+  "n_cities": 270,
+  "spoken_hemisphere_accuracy": 0.7185185185185186,
+  "probe_hemisphere_accuracy": 0.9481481481481482,
+  "n_spoken_wrong": 76,
+  "n_spoken_wrong_but_probe_right": 69,
+  "examples": [
+    {
+      "name": "Dublin",
+      "true_lat": 53.33306,
+      "probe_lat": 56.37391626401414,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Birmingham",
+      "true_lat": 52.48142,
+      "probe_lat": 56.66663082582304,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Munich",
+      "true_lat": 48.13743,
+      "probe_lat": 50.81137539934359,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Belgrade",
+      "true_lat": 44.80401,
+      "probe_lat": 45.25043914779566,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Madrid",
+      "true_lat": 40.4165,
+      "probe_lat": 44.342999014413465,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Lisbon",
+      "true_lat": 38.72509,
+      "probe_lat": 31.494817717772683,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Seoul",
+      "true_lat": 37.566,
+      "probe_lat": 39.9712534247415,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Incheon",
+      "true_lat": 37.45646,
+      "probe_lat": 32.33950042228988,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Auckland",
+      "true_lat": -36.84853,
+      "probe_lat": -30.432231590514352,
+      "said": "Northern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Daejeon",
+      "true_lat": 36.35022,
+      "probe_lat": 33.58814858432488,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Daegu",
+      "true_lat": 35.87102,
+      "probe_lat": 34.69087898793254,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Yokohama",
+      "true_lat": 35.43333,
+      "probe_lat": 29.77279785703302,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Nagoya",
+      "true_lat": 35.18147,
+      "probe_lat": 37.341490967261095,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Gwangju",
+      "true_lat": 35.15472,
+      "probe_lat": 43.112165384504536,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Busan",
+      "true_lat": 35.10168,
+      "probe_lat": 30.683896929951693,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    }
+  ],
+  "rows": [
+    {
+      "name": "Shanghai",
+      "true_lat": 31.22222,
+      "probe_lat": 26.504644559475842,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Chongqing",
+      "true_lat": 29.56026,
+      "probe_lat": 26.870441394793875,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Chengdu",
+      "true_lat": 30.66667,
+      "probe_lat": 31.716524447094198,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Beijing",
+      "true_lat": 39.9075,
+      "probe_lat": 38.53688122419005,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Guangzhou",
+      "true_lat": 23.11667,
+      "probe_lat": 23.332060601556748,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Shenzhen",
+      "true_lat": 22.54554,
+      "probe_lat": 19.760692322023598,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kinshasa",
+      "true_lat": -4.32758,
+      "probe_lat": -6.019308782702684,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Istanbul",
+      "true_lat": 41.01384,
+      "probe_lat": 42.387453123111484,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Lagos",
+      "true_lat": 6.45407,
+      "probe_lat": 14.57107290696084,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Ho Chi Minh City",
+      "true_lat": 10.82302,
+      "probe_lat": 11.776541089641869,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Lahore",
+      "true_lat": 31.558,
+      "probe_lat": 31.86536439187434,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Mumbai",
+      "true_lat": 19.07283,
+      "probe_lat": 18.083145059420925,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "São Paulo",
+      "true_lat": -23.5475,
+      "probe_lat": -18.718926200347013,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Mexico City",
+      "true_lat": 19.42847,
+      "probe_lat": 12.798999029723136,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Karachi",
+      "true_lat": 24.8608,
+      "probe_lat": 23.53569294995975,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Delhi",
+      "true_lat": 28.65195,
+      "probe_lat": 27.883573697717665,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Moscow",
+      "true_lat": 55.75204,
+      "probe_lat": 55.14384003545629,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Dhaka",
+      "true_lat": 23.7104,
+      "probe_lat": 27.326846239668367,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Seoul",
+      "true_lat": 37.566,
+      "probe_lat": 39.9712534247415,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Tokyo",
+      "true_lat": 35.6895,
+      "probe_lat": 36.19879309432931,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Cairo",
+      "true_lat": 30.06263,
+      "probe_lat": 32.23966683775579,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Johannesburg",
+      "true_lat": -26.20227,
+      "probe_lat": -19.51461310992993,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "London",
+      "true_lat": 51.50853,
+      "probe_lat": 51.03042551062401,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "New York City",
+      "true_lat": 40.71427,
+      "probe_lat": 34.504384235573454,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Jakarta",
+      "true_lat": -6.21462,
+      "probe_lat": 0.18706012958618395,
+      "said": "Northern",
+      "said_correct": false,
+      "probe_correct": false,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Bengaluru",
+      "true_lat": 12.97194,
+      "probe_lat": 12.587085760038514,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Hanoi",
+      "true_lat": 21.0245,
+      "probe_lat": 28.48790388962775,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Taipei",
+      "true_lat": 25.05306,
+      "probe_lat": 32.18511573139954,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Lima",
+      "true_lat": -12.04318,
+      "probe_lat": -5.460698751653214,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Bogotá",
+      "true_lat": 4.60971,
+      "probe_lat": -0.41085616422377275,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Hong Kong",
+      "true_lat": 22.27832,
+      "probe_lat": 9.133402051978747,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Baghdad",
+      "true_lat": 33.34058,
+      "probe_lat": 40.839671814828364,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Tehran",
+      "true_lat": 35.69439,
+      "probe_lat": 41.595938603149335,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Hyderabad",
+      "true_lat": 17.38405,
+      "probe_lat": 15.891368325703716,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Rio de Janeiro",
+      "true_lat": -22.90642,
+      "probe_lat": -21.74985103004058,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Ahmedabad",
+      "true_lat": 23.02579,
+      "probe_lat": 23.120324444377317,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Abidjan",
+      "true_lat": 5.35444,
+      "probe_lat": 16.16020277143434,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Sydney",
+      "true_lat": -33.86785,
+      "probe_lat": -28.115087615127088,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Singapore",
+      "true_lat": 1.28967,
+      "probe_lat": 8.398108519010238,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Melbourne",
+      "true_lat": -37.814,
+      "probe_lat": -34.049631370522306,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Dar es Salaam",
+      "true_lat": -6.82349,
+      "probe_lat": -5.11035373113277,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Saint Petersburg",
+      "true_lat": 59.93863,
+      "probe_lat": 50.08920275369022,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Alexandria",
+      "true_lat": 31.20176,
+      "probe_lat": 44.517091716130544,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Bangkok",
+      "true_lat": 13.75398,
+      "probe_lat": 17.793915948526852,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kano",
+      "true_lat": 12.00012,
+      "probe_lat": 11.280351154682103,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Santiago",
+      "true_lat": -33.45694,
+      "probe_lat": -9.327848941079276,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Cape Town",
+      "true_lat": -33.92584,
+      "probe_lat": -31.81209961948703,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Peshawar",
+      "true_lat": 34.008,
+      "probe_lat": 32.943113588790546,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Jeddah",
+      "true_lat": 21.49012,
+      "probe_lat": 17.18528371572602,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Chennai",
+      "true_lat": 13.08784,
+      "probe_lat": 11.214095644807626,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Yangon",
+      "true_lat": 16.80528,
+      "probe_lat": 14.053219414118713,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kabul",
+      "true_lat": 34.52813,
+      "probe_lat": 43.88817988498438,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Nairobi",
+      "true_lat": -1.28333,
+      "probe_lat": -1.3541638079325042,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Giza",
+      "true_lat": 30.00944,
+      "probe_lat": 30.048959896775624,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Bamako",
+      "true_lat": 12.60915,
+      "probe_lat": 14.8678515751212,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Riyadh",
+      "true_lat": 24.68773,
+      "probe_lat": 27.946267663975142,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "New Taipei City",
+      "true_lat": 25.06199,
+      "probe_lat": 23.13122253087426,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "New Territories",
+      "true_lat": 22.42441,
+      "probe_lat": 23.603280058755896,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Chattogram",
+      "true_lat": 22.3384,
+      "probe_lat": 18.024616372794,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Addis Ababa",
+      "true_lat": 9.02497,
+      "probe_lat": 14.323170664532636,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Los Angeles",
+      "true_lat": 34.05223,
+      "probe_lat": 32.74036667906933,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Faisalabad",
+      "true_lat": 31.41554,
+      "probe_lat": 22.68598345658519,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Dubai",
+      "true_lat": 25.07725,
+      "probe_lat": 29.79154638209122,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Yokohama",
+      "true_lat": 35.43333,
+      "probe_lat": 29.77279785703302,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Casablanca",
+      "true_lat": 33.58831,
+      "probe_lat": 26.302778162018306,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Ibadan",
+      "true_lat": 7.37756,
+      "probe_lat": 7.18681299284166,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Ankara",
+      "true_lat": 39.91987,
+      "probe_lat": 35.89723066989257,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Berlin",
+      "true_lat": 52.52437,
+      "probe_lat": 53.175988411472375,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Rawalpindi",
+      "true_lat": 33.59733,
+      "probe_lat": 22.772483266644528,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Durban",
+      "true_lat": -29.8579,
+      "probe_lat": -25.56113195529451,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Busan",
+      "true_lat": 35.10168,
+      "probe_lat": 30.683896929951693,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Madrid",
+      "true_lat": 40.4165,
+      "probe_lat": 44.342999014413465,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Pyongyang",
+      "true_lat": 39.03385,
+      "probe_lat": 42.17406637110006,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Bursa",
+      "true_lat": 40.19559,
+      "probe_lat": 32.32384501649745,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Quezon City",
+      "true_lat": 14.6488,
+      "probe_lat": 3.0113008727771615,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Surabaya",
+      "true_lat": -7.24917,
+      "probe_lat": 4.54185562903736,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Incheon",
+      "true_lat": 37.45646,
+      "probe_lat": 32.33950042228988,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Caracas",
+      "true_lat": 10.48801,
+      "probe_lat": -1.6742918741143076,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": false,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Kyiv",
+      "true_lat": 50.45466,
+      "probe_lat": 53.58535489977471,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "İzmir",
+      "true_lat": 38.41273,
+      "probe_lat": 34.44077080682521,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Buenos Aires",
+      "true_lat": -34.61315,
+      "probe_lat": -23.75435947148162,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Taichung",
+      "true_lat": 24.1469,
+      "probe_lat": 27.101317171467198,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Toronto",
+      "true_lat": 43.65333,
+      "probe_lat": 46.49863091759241,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Quito",
+      "true_lat": -0.22985,
+      "probe_lat": -3.8740768121030653,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Brisbane",
+      "true_lat": -27.46794,
+      "probe_lat": -24.991388483989024,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Luanda",
+      "true_lat": -8.83682,
+      "probe_lat": -11.638807351704166,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Osaka",
+      "true_lat": 34.69379,
+      "probe_lat": 33.9175353636282,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kaohsiung",
+      "true_lat": 22.61626,
+      "probe_lat": 20.394677959338033,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Brooklyn",
+      "true_lat": 40.6501,
+      "probe_lat": 33.73184998909981,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Guayaquil",
+      "true_lat": -2.19616,
+      "probe_lat": -17.468961430565,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Belo Horizonte",
+      "true_lat": -19.92083,
+      "probe_lat": -22.04530778628146,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Salvador",
+      "true_lat": -12.97563,
+      "probe_lat": -1.3759344130205806,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Abuja",
+      "true_lat": 9.05785,
+      "probe_lat": 0.4408554907186185,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Gazipur",
+      "true_lat": 23.99844,
+      "probe_lat": 34.48267044979688,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Chicago",
+      "true_lat": 41.85003,
+      "probe_lat": 40.27964860519259,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Bekasi",
+      "true_lat": -6.2349,
+      "probe_lat": -4.319386896631741,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Dakar",
+      "true_lat": 14.6937,
+      "probe_lat": 6.842569528944242,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Haiphong",
+      "true_lat": 20.86481,
+      "probe_lat": 16.629978701087996,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Mogadishu",
+      "true_lat": 2.03711,
+      "probe_lat": 19.002347794901386,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kumasi",
+      "true_lat": 6.68848,
+      "probe_lat": 4.7645927281012375,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Bandung",
+      "true_lat": -6.92222,
+      "probe_lat": -1.7389938051130671,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Gujranwala",
+      "true_lat": 32.15567,
+      "probe_lat": 27.606168314519476,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Medan",
+      "true_lat": 3.58333,
+      "probe_lat": 8.965317253272845,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Ouagadougou",
+      "true_lat": 12.36566,
+      "probe_lat": 11.752974207019683,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Fortaleza",
+      "true_lat": -3.71722,
+      "probe_lat": -15.143480669403692,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Cali",
+      "true_lat": 3.43054,
+      "probe_lat": 9.777453655993611,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Perth",
+      "true_lat": -31.95224,
+      "probe_lat": -7.673307622191619,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Daegu",
+      "true_lat": 35.87102,
+      "probe_lat": 34.69087898793254,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Algiers",
+      "true_lat": 36.73225,
+      "probe_lat": 34.4166028873842,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Baku",
+      "true_lat": 40.37767,
+      "probe_lat": 45.80005898544653,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Nagoya",
+      "true_lat": 35.18147,
+      "probe_lat": 37.341490967261095,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Rome",
+      "true_lat": 41.89193,
+      "probe_lat": 42.5815376675023,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Queens",
+      "true_lat": 40.68149,
+      "probe_lat": 34.669505762303345,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Houston",
+      "true_lat": 29.76328,
+      "probe_lat": 34.87956397071165,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Mashhad",
+      "true_lat": 36.29807,
+      "probe_lat": 40.03890748901645,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Kowloon",
+      "true_lat": 22.31667,
+      "probe_lat": 22.100841883153254,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Gaziantep",
+      "true_lat": 37.05944,
+      "probe_lat": 33.81686338334313,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Lubumbashi",
+      "true_lat": -11.66089,
+      "probe_lat": 3.280072366985985,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Manaus",
+      "true_lat": -3.10194,
+      "probe_lat": -10.956105727563113,
+      "said": "Northern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Lusaka",
+      "true_lat": -15.40669,
+      "probe_lat": -5.726913902636732,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Santo Domingo",
+      "true_lat": 18.47186,
+      "probe_lat": 5.933130291829316,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Lomé",
+      "true_lat": 6.12874,
+      "probe_lat": 11.06194968831665,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Havana",
+      "true_lat": 23.13302,
+      "probe_lat": 22.705803260086146,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Depok",
+      "true_lat": -6.4,
+      "probe_lat": -10.173433376585727,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Paris",
+      "true_lat": 48.85341,
+      "probe_lat": 51.00157941801643,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Port Harcourt",
+      "true_lat": 4.77742,
+      "probe_lat": 1.1816796754166166,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Pretoria",
+      "true_lat": -25.74486,
+      "probe_lat": -22.669469167207986,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Córdoba",
+      "true_lat": -31.40648,
+      "probe_lat": 2.8906992748065434,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Mbuji-Mayi",
+      "true_lat": -6.13603,
+      "probe_lat": 14.50703396393048,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Aleppo",
+      "true_lat": 36.20124,
+      "probe_lat": 38.294412361967964,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Al Mawşil al Jadīdah",
+      "true_lat": 36.33271,
+      "probe_lat": 41.42491465242232,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "La Paz",
+      "true_lat": -16.5,
+      "probe_lat": -1.5843694768414764,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Medellín",
+      "true_lat": 6.245,
+      "probe_lat": -2.961579852209664,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Brazzaville",
+      "true_lat": -4.26613,
+      "probe_lat": -5.86432275255773,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Tashkent",
+      "true_lat": 41.26465,
+      "probe_lat": 48.36453507122221,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Almaty",
+      "true_lat": 43.25249,
+      "probe_lat": 42.9230488212829,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Khartoum",
+      "true_lat": 15.55177,
+      "probe_lat": 16.764541517432313,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Hamburg",
+      "true_lat": 53.55073,
+      "probe_lat": 52.596798496771115,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Sapporo",
+      "true_lat": 43.06667,
+      "probe_lat": 35.335995428326676,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Accra",
+      "true_lat": 5.55602,
+      "probe_lat": 7.2605214133685045,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Sanaa",
+      "true_lat": 15.35452,
+      "probe_lat": 24.079817096416598,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Conakry",
+      "true_lat": 9.53795,
+      "probe_lat": 21.73673729599833,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Tijuana",
+      "true_lat": 32.5027,
+      "probe_lat": 15.307301044107593,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Beirut",
+      "true_lat": 33.89332,
+      "probe_lat": 34.496438618346914,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Bucharest",
+      "true_lat": 44.43225,
+      "probe_lat": 46.08195785825459,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Camayenne",
+      "true_lat": 9.535,
+      "probe_lat": 27.584265723984192,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kakamega",
+      "true_lat": 0.28422,
+      "probe_lat": 1.3530538542307575,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Tainan",
+      "true_lat": 22.99259,
+      "probe_lat": 23.43140945847272,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kaduna",
+      "true_lat": 10.52641,
+      "probe_lat": 6.896074220236094,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Omdurman",
+      "true_lat": 15.64453,
+      "probe_lat": 24.480339397053665,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Davao",
+      "true_lat": 7.07306,
+      "probe_lat": 16.68832706030966,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Iztapalapa",
+      "true_lat": 19.35529,
+      "probe_lat": 10.488168281115707,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Diyarbakır",
+      "true_lat": 37.91363,
+      "probe_lat": 34.64865060741155,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Santa Cruz de la Sierra",
+      "true_lat": -17.78629,
+      "probe_lat": -16.128772281461757,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Abu Dhabi",
+      "true_lat": 24.45118,
+      "probe_lat": 26.177649713257555,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Sharjah",
+      "true_lat": 25.3342,
+      "probe_lat": 37.59920542294725,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Montréal",
+      "true_lat": 45.50884,
+      "probe_lat": 38.45461162542758,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Maracaibo",
+      "true_lat": 10.64232,
+      "probe_lat": 3.701447067233592,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Minsk",
+      "true_lat": 53.90019,
+      "probe_lat": 54.889828912068,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Budapest",
+      "true_lat": 47.49835,
+      "probe_lat": 48.2428078118768,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Caloocan",
+      "true_lat": 14.64953,
+      "probe_lat": 11.358665067587532,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Warsaw",
+      "true_lat": 52.22977,
+      "probe_lat": 52.069291283779094,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Soweto",
+      "true_lat": -26.26781,
+      "probe_lat": -13.174807737798577,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Puebla",
+      "true_lat": 19.04778,
+      "probe_lat": 16.772384153023108,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Vienna",
+      "true_lat": 48.20849,
+      "probe_lat": 46.239341077393426,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Barcelona",
+      "true_lat": 41.38879,
+      "probe_lat": 53.966781804319396,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Mosul",
+      "true_lat": 36.335,
+      "probe_lat": 47.84478268825704,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Kampala",
+      "true_lat": 0.31628,
+      "probe_lat": -3.2025295586262534,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Rabat",
+      "true_lat": 34.01325,
+      "probe_lat": 24.433311642025654,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Ecatepec de Morelos",
+      "true_lat": 19.60006,
+      "probe_lat": 27.158330412312594,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Novosibirsk",
+      "true_lat": 55.02259,
+      "probe_lat": 56.2219211069732,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Erbil",
+      "true_lat": 36.19117,
+      "probe_lat": 33.658057561813585,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Fukuoka",
+      "true_lat": 33.6,
+      "probe_lat": 29.729359566095845,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kisangani",
+      "true_lat": 0.51528,
+      "probe_lat": 0.8422444846879295,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Manila",
+      "true_lat": 14.6042,
+      "probe_lat": 22.453933938750396,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Santiago de Querétaro",
+      "true_lat": 20.58806,
+      "probe_lat": 13.37633803600569,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Makkah",
+      "true_lat": 21.42664,
+      "probe_lat": 19.548616102636778,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Phnom Penh",
+      "true_lat": 11.56245,
+      "probe_lat": 12.412265042605114,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Damascus",
+      "true_lat": 33.5102,
+      "probe_lat": 41.13839807148967,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Auckland",
+      "true_lat": -36.84853,
+      "probe_lat": -30.432231590514352,
+      "said": "Northern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Isfahan",
+      "true_lat": 32.65246,
+      "probe_lat": 31.874515628476974,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Astana",
+      "true_lat": 51.1801,
+      "probe_lat": 59.75681747287741,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Harare",
+      "true_lat": -17.82772,
+      "probe_lat": -23.75483476561543,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Monrovia",
+      "true_lat": 6.30054,
+      "probe_lat": 24.87028056278196,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Stockholm",
+      "true_lat": 59.32938,
+      "probe_lat": 55.25626661829162,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Cần Thơ",
+      "true_lat": 10.03711,
+      "probe_lat": 12.529283088257133,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Munich",
+      "true_lat": 48.13743,
+      "probe_lat": 50.81137539934359,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Khulna",
+      "true_lat": 22.80979,
+      "probe_lat": 22.8422916331378,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Yekaterinburg",
+      "true_lat": 56.85733,
+      "probe_lat": 47.54498779351306,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Asunción",
+      "true_lat": -25.28646,
+      "probe_lat": -13.880022588730714,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Adelaide",
+      "true_lat": -34.92866,
+      "probe_lat": -33.74751100336449,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kuala Lumpur",
+      "true_lat": 3.1412,
+      "probe_lat": 2.288429337252579,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Karaj",
+      "true_lat": 35.83266,
+      "probe_lat": 31.48577031467834,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Kathmandu",
+      "true_lat": 27.70169,
+      "probe_lat": 26.44765537733776,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Daejeon",
+      "true_lat": 36.35022,
+      "probe_lat": 33.58814858432488,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Tabriz",
+      "true_lat": 38.08,
+      "probe_lat": 32.14234434552212,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Kharkiv",
+      "true_lat": 49.98177,
+      "probe_lat": 52.40170453525275,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Gwangju",
+      "true_lat": 35.15472,
+      "probe_lat": 43.112165384504536,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Huế",
+      "true_lat": 16.4619,
+      "probe_lat": 16.079220804445267,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Milan",
+      "true_lat": 45.46427,
+      "probe_lat": 50.009746478189804,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "N'Djamena",
+      "true_lat": 12.10672,
+      "probe_lat": 9.379032259884518,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Antananarivo",
+      "true_lat": -18.91368,
+      "probe_lat": 1.113170687928801,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Abobo",
+      "true_lat": 5.41613,
+      "probe_lat": 14.89396660492335,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Douala",
+      "true_lat": 4.04827,
+      "probe_lat": 3.166807959712008,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Basrah",
+      "true_lat": 30.50852,
+      "probe_lat": 30.181351772206508,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Niamey",
+      "true_lat": 13.51366,
+      "probe_lat": 14.73448387893392,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Taguig",
+      "true_lat": 14.5243,
+      "probe_lat": 15.734508444138479,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Calgary",
+      "true_lat": 51.05011,
+      "probe_lat": 46.83097411733577,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Tripoli",
+      "true_lat": 32.88743,
+      "probe_lat": 32.83466119130018,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Madinah",
+      "true_lat": 24.46861,
+      "probe_lat": 20.41704904114349,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Yaoundé",
+      "true_lat": 3.86667,
+      "probe_lat": -0.045070118471281624,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Da Nang",
+      "true_lat": 16.06778,
+      "probe_lat": 22.28477475632369,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Amman",
+      "true_lat": 31.95522,
+      "probe_lat": 38.52489017374659,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Budta",
+      "true_lat": 7.20417,
+      "probe_lat": 34.66392871682747,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Belgrade",
+      "true_lat": 44.80401,
+      "probe_lat": 45.25043914779566,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kananga",
+      "true_lat": -5.89624,
+      "probe_lat": -6.302335338298947,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Montevideo",
+      "true_lat": -34.90328,
+      "probe_lat": -24.41049713778693,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Nizhniy Novgorod",
+      "true_lat": 56.32867,
+      "probe_lat": 51.0791683642295,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Maputo",
+      "true_lat": -25.96553,
+      "probe_lat": -11.297197383748601,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Dammam",
+      "true_lat": 26.43442,
+      "probe_lat": 23.648033850106327,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Ra’s Bayrūt",
+      "true_lat": 33.9,
+      "probe_lat": 26.562913150077865,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Shiraz",
+      "true_lat": 29.61031,
+      "probe_lat": 30.51074973872251,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Kazan",
+      "true_lat": 55.78874,
+      "probe_lat": 45.53673813352423,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Barquisimeto",
+      "true_lat": 10.0647,
+      "probe_lat": 5.7034871136633845,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Shubrā al Khaymah",
+      "true_lat": 30.12511,
+      "probe_lat": 30.15751180008703,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Port-au-Prince",
+      "true_lat": 18.54349,
+      "probe_lat": 11.088302675993438,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Callao",
+      "true_lat": -12.05162,
+      "probe_lat": -8.598960453009175,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Karbala",
+      "true_lat": 32.61603,
+      "probe_lat": 26.518265591371332,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Mombasa",
+      "true_lat": -4.05466,
+      "probe_lat": -5.0282772754880884,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Mandalay",
+      "true_lat": 21.97473,
+      "probe_lat": 22.064092346121342,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Barranquilla",
+      "true_lat": 10.96854,
+      "probe_lat": 9.504099031233054,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Shymkent",
+      "true_lat": 42.30988,
+      "probe_lat": 44.41135904815062,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Santiago de los Caballeros",
+      "true_lat": 19.45036,
+      "probe_lat": 23.31934939364494,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Matola",
+      "true_lat": -25.96222,
+      "probe_lat": -6.924316277562883,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Arequipa",
+      "true_lat": -16.39899,
+      "probe_lat": -20.748047019905485,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Hong Kong Island",
+      "true_lat": 22.26302,
+      "probe_lat": 16.39187378433883,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Fes",
+      "true_lat": 34.03313,
+      "probe_lat": 34.37190687645216,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Nouakchott",
+      "true_lat": 18.08581,
+      "probe_lat": 18.48745949451098,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Pikine",
+      "true_lat": 14.76457,
+      "probe_lat": 8.512849047231127,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Prague",
+      "true_lat": 50.08804,
+      "probe_lat": 52.06362860021504,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Birmingham",
+      "true_lat": 52.48142,
+      "probe_lat": 56.66663082582304,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Copenhagen",
+      "true_lat": 55.67594,
+      "probe_lat": 57.34709546334082,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Sofia",
+      "true_lat": 42.69751,
+      "probe_lat": 41.17525215034347,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Yerevan",
+      "true_lat": 40.17765,
+      "probe_lat": 45.385536179275014,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Kigali",
+      "true_lat": -1.94995,
+      "probe_lat": 0.6332308503948498,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": false,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Touba",
+      "true_lat": 14.86229,
+      "probe_lat": 10.891507548665718,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Lilongwe",
+      "true_lat": -13.96692,
+      "probe_lat": -7.771349503190828,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Mwanza",
+      "true_lat": -2.51667,
+      "probe_lat": -6.178163095437236,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Oslo",
+      "true_lat": 59.91273,
+      "probe_lat": 57.79839047486118,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Aden",
+      "true_lat": 12.77957,
+      "probe_lat": 25.481049687298192,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Trujillo",
+      "true_lat": -8.11599,
+      "probe_lat": 10.909361142997785,
+      "said": "Northern",
+      "said_correct": false,
+      "probe_correct": false,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Gqeberha",
+      "true_lat": -33.96109,
+      "probe_lat": -29.110886326434546,
+      "said": "Southern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Tbilisi",
+      "true_lat": 41.69143,
+      "probe_lat": 40.85382417603323,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Tangier",
+      "true_lat": 35.76727,
+      "probe_lat": 41.23811363588034,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Pointe-Noire",
+      "true_lat": -4.77609,
+      "probe_lat": 1.0243785863904902,
+      "said": "Northern",
+      "said_correct": false,
+      "probe_correct": false,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Rangpur",
+      "true_lat": 25.74664,
+      "probe_lat": 21.43130879610507,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Ashgabat",
+      "true_lat": 37.95,
+      "probe_lat": 47.87619344798485,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Köln",
+      "true_lat": 50.93333,
+      "probe_lat": 47.71766818371198,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Dublin",
+      "true_lat": 53.33306,
+      "probe_lat": 56.37391626401414,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Brussels",
+      "true_lat": 50.85045,
+      "probe_lat": 46.30136431714915,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Ottawa",
+      "true_lat": 45.41117,
+      "probe_lat": 48.20108365376978,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Khartoum North",
+      "true_lat": 15.64925,
+      "probe_lat": 21.05872611959028,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Edmonton",
+      "true_lat": 53.55014,
+      "probe_lat": 57.83615839022851,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Odesa",
+      "true_lat": 46.48572,
+      "probe_lat": 51.42778780826247,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Pest",
+      "true_lat": 47.5,
+      "probe_lat": 56.94545459274272,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Amsterdam",
+      "true_lat": 52.37403,
+      "probe_lat": 57.85026959708535,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Lisbon",
+      "true_lat": 38.72509,
+      "probe_lat": 31.494817717772683,
+      "said": "Southern",
+      "said_correct": false,
+      "probe_correct": true,
+      "said_north": false,
+      "said_south": true
+    },
+    {
+      "name": "Athens",
+      "true_lat": 37.98376,
+      "probe_lat": 41.146849477390056,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Helsinki",
+      "true_lat": 60.16952,
+      "probe_lat": 54.419508809465775,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    },
+    {
+      "name": "Edinburgh",
+      "true_lat": 55.95206,
+      "probe_lat": 55.25825481979254,
+      "said": "Northern",
+      "said_correct": true,
+      "probe_correct": true,
+      "said_north": true,
+      "said_south": false
+    }
+  ]
+}

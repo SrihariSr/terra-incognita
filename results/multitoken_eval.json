@@ -1,0 +1,2853 @@
+{
+  "band": [
+    4,
+    7
+  ],
+  "rule": "adopt if cross pass rate +3 points or more and control pass <= 2%",
+  "sets": {
+    "cross": {
+      "n": 100,
+      "last_token_pass_rate": 0.93,
+      "all_token_pass_rate": 1.0,
+      "all_token_control_pass_rate": 0.0,
+      "n_multi_token_sources": 50,
+      "multi_last_token_pass_rate": 0.86,
+      "multi_all_token_pass_rate": 1.0,
+      "pairs": [
+        {
+          "source": "Matola",
+          "target": "Astana",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Kazakhstan",
+            "currency": "Kazakh Tenge",
+            "language": "Kazakh",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Chengdu",
+          "target": "Johannesburg",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Adelaide",
+          "target": "Karbala",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Iraq",
+            "currency": "Iraqi Dinar",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Santiago",
+          "target": "Santiago de los Caballeros",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Dominican Republic",
+            "currency": "Dominican Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Brisbane",
+          "target": "London",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "United Kingdom",
+            "currency": "Pound Sterling",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Santo Domingo",
+          "target": "Pretoria",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Afrikaans",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Asunción",
+          "target": "Sharjah",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "United Arab Emirates",
+            "currency": "Dirham",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Pretoria",
+          "target": "Tijuana",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mexico",
+            "currency": "Mexican Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Touba",
+          "target": "Johannesburg",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Montevideo",
+          "target": "Haiphong",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Vietnam",
+            "currency": "Vietnamese Đồng",
+            "language": "Vietnamese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Abuja",
+          "target": "Durban",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Johannesburg",
+          "target": "Sofia",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Bulgaria",
+            "currency": "Bulgarian Lev",
+            "language": "Bulgarian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Asunción",
+          "target": "Haiphong",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Vietnam",
+            "currency": "Vietnamese Đồng",
+            "language": "Vietnamese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Prague",
+          "target": "Melbourne",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "La Paz",
+          "target": "Havana",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Cuba",
+            "currency": "Cuban peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Paris",
+          "target": "Johannesburg",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Baghdad",
+          "target": "Rio de Janeiro",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Wellington",
+          "target": "Brussels",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Belgium",
+            "currency": "Euro",
+            "language": "Dutch",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Sofia",
+          "target": "Wellington",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "New Zealand",
+            "currency": "New Zealand Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Algiers",
+          "target": "Melbourne",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Wellington",
+          "target": "Baku",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Azerbaijan",
+            "currency": "Azerbaijanian Manat",
+            "language": "Azerbaijani",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Pretoria",
+          "target": "Maracaibo",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Venezuela",
+            "currency": "Venezuelan Bolívar Fuerte",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Niamey",
+          "target": "Cape Town",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Montevideo",
+          "target": "New York City",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "United States",
+            "currency": "US Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Sydney",
+          "target": "Warsaw",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Poland",
+            "currency": "Polish Złoty",
+            "language": "Polish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Karbala",
+          "target": "Montevideo",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Khartoum North",
+          "target": "Matola",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mozambique",
+            "currency": "Mozambique Metical",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Lima",
+          "target": "Algiers",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Algeria",
+            "currency": "Algerian Dinar",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Rio de Janeiro",
+          "target": "Lahore",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Pakistan",
+            "currency": "Pakistani Rupee",
+            "language": "Urdu",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Ashgabat",
+          "target": "Wellington",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "New Zealand",
+            "currency": "New Zealand Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Adelaide",
+          "target": "Taipei",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Taiwan",
+            "currency": "New Taiwan Dollar",
+            "language": "Mandarin Chinese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Wellington",
+          "target": "Rabat",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Morocco",
+            "currency": "Moroccan Dirham",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Mosul",
+          "target": "Asunción",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Paraguay",
+            "currency": "Paraguayan Guarani",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Abuja",
+          "target": "Santiago",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Chile",
+            "currency": "Chilean peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Johannesburg",
+          "target": "Ecatepec de Morelos",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mexico",
+            "currency": "Mexican Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Asunción",
+          "target": "Damascus",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Syria",
+            "currency": "Syrian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Adelaide",
+          "target": "Caracas",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Venezuela",
+            "currency": "Bolívar",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Abuja",
+          "target": "Lima",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Cape Town",
+          "target": "Kaduna",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Nigeria",
+            "currency": "Naira",
+            "language": "Hausa",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Karbala",
+          "target": "La Paz",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Bolivia",
+            "currency": "Boliviano",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Stockholm",
+          "target": "Montevideo",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Pretoria",
+          "target": "Shanghai",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Kazan",
+          "target": "Wellington",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "New Zealand",
+            "currency": "New Zealand Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Paris",
+          "target": "Pretoria",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Afrikaans",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Santiago",
+          "target": "Havana",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Cuba",
+            "currency": "Cuban peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Riyadh",
+          "target": "Matola",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mozambique",
+            "currency": "Mozambique Metical",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Matola",
+          "target": "Delhi",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "India",
+            "currency": "Indian Rupee",
+            "language": "Hindi",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Pretoria",
+          "target": "Brooklyn",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "United States",
+            "currency": "US Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Toronto",
+          "target": "Buenos Aires",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Johannesburg",
+          "target": "Rangpur",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Bangladesh",
+            "currency": "Bangladeshi Taka",
+            "language": "Bengali",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Pretoria",
+          "target": "Monrovia",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Liberia",
+            "currency": "Liberian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Brussels",
+          "target": "Buenos Aires",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Argentina",
+            "currency": "Argentine Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Karaj",
+          "target": "Perth",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Cali",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Colombia",
+            "currency": "Colombian Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Rio de Janeiro",
+          "target": "Nizhniy Novgorod",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Kharkiv",
+          "target": "Santiago",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Chile",
+            "currency": "Chilean peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Adelaide",
+          "target": "Edinburgh",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Scotland",
+            "currency": "British Pound Sterling",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Asunción",
+          "target": "Budapest",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Hungary",
+            "currency": "Hungarian Forint",
+            "language": "Hungarian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Durban",
+          "target": "Tehran",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Iran",
+            "currency": "Iranian Rial",
+            "language": "Persian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Helsinki",
+          "target": "Montevideo",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Melbourne",
+          "target": "Cairo",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Brisbane",
+          "target": "Gujranwala",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Pakistan",
+            "currency": "Pakistani Rupee",
+            "language": "Urdu",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Mosul",
+          "target": "Santiago",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Chile",
+            "currency": "Chilean peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Athens",
+          "target": "Lima",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Beirut",
+          "target": "Santiago",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Chile",
+            "currency": "Chilean peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Helsinki",
+          "target": "Asunción",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Paraguay",
+            "currency": "Paraguayan Guarani",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Oslo",
+          "target": "Lima",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Sydney",
+          "target": "Makkah",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Saudi Arabia",
+            "currency": "Saudi Riyal",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Adelaide",
+          "target": "Istanbul",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Shymkent",
+          "target": "Montevideo",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Giza",
+          "target": "Santiago",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Chile",
+            "currency": "Chilean peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Wellington",
+          "target": "Istanbul",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Santiago",
+          "target": "Erbil",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Iraq",
+            "currency": "Iraqi Dinar",
+            "language": "Kurmanji Kurdish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Haiphong",
+          "target": "Johannesburg",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Barcelona",
+          "target": "Asunción",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Paraguay",
+            "currency": "Paraguayan Guarani",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Barquisimeto",
+          "target": "Perth",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Aleppo",
+          "target": "Santiago",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Chile",
+            "currency": "Chilean peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Yerevan",
+          "target": "Cape Town",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Stockholm",
+          "target": "Cape Town",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Ra’s Bayrūt",
+          "target": "Melbourne",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Johannesburg",
+          "target": "Giza",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Baghdad",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Iraq",
+            "currency": "Iraqi dinar",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Brooklyn",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "United States",
+            "currency": "US Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Berlin",
+          "target": "Melbourne",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Budapest",
+          "target": "Adelaide",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Johannesburg",
+          "target": "Touba",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Senegal",
+            "currency": "CFA Franc BCEAO",
+            "language": "Wolof",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Durban",
+          "target": "Port-au-Prince",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Haiti",
+            "currency": "Gourde",
+            "language": "Haitian Creole",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Perth",
+          "target": "Kyiv",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Ukraine",
+            "currency": "Ukrainian Hryvnia",
+            "language": "Ukrainian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Perth",
+          "target": "Manila",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Philippines",
+            "currency": "Philippine Peso",
+            "language": "Filipino",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Taichung",
+          "target": "Montevideo",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Abobo",
+          "target": "Wellington",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "New Zealand",
+            "currency": "New Zealand Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Kathmandu",
+          "target": "Sydney",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Santiago de los Caballeros",
+          "target": "Asunción",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Paraguay",
+            "currency": "Paraguayan Guarani",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Paris",
+          "target": "Cape Town",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Sydney",
+          "target": "Calgary",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Canada",
+            "currency": "Canadian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Tripoli",
+          "target": "Durban",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Quezon City",
+          "target": "Perth",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Kharkiv",
+          "target": "Cape Town",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Beirut",
+          "target": "Montevideo",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Uruguay",
+            "currency": "Uruguayan peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Wellington",
+          "target": "Touba",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Senegal",
+            "currency": "CFA Franc BCEAO",
+            "language": "Wolof",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        }
+      ]
+    },
+    "any": {
+      "n": 88,
+      "last_token_pass_rate": 0.8977272727272727,
+      "all_token_pass_rate": 0.9772727272727273,
+      "all_token_control_pass_rate": 0.0,
+      "n_multi_token_sources": 51,
+      "multi_last_token_pass_rate": 0.8431372549019608,
+      "multi_all_token_pass_rate": 0.9803921568627451,
+      "pairs": [
+        {
+          "source": "Chongqing",
+          "target": "Pretoria",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Afrikaans",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Mosul",
+          "target": "Taichung",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Taiwan",
+            "currency": "Taiwan Dollar",
+            "language": "Mandarin Chinese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Havana",
+          "target": "Amsterdam",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Netherlands",
+            "currency": "Euro",
+            "language": "Dutch",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Cairo",
+          "target": "Cali",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Colombia",
+            "currency": "Colombian Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Algiers",
+          "target": "Sapporo",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Japan",
+            "currency": "Japanese Yen",
+            "language": "Japanese",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Tashkent",
+          "target": "Rio de Janeiro",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Brazil",
+            "currency": "Brazilian Real",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Tabriz",
+          "target": "Durban",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Pretoria",
+          "target": "Helsinki",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Finland",
+            "currency": "Euro",
+            "language": "Finnish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Riyadh",
+          "target": "Odesa",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Ukraine",
+            "currency": "Ukrainian Hryvnia",
+            "language": "Ukrainian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Port-au-Prince",
+          "target": "Edmonton",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Canada",
+            "currency": "Canadian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Kaduna",
+          "target": "Istanbul",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Istanbul",
+          "target": "Pretoria",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Afrikaans",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Matola",
+          "target": "Yekaterinburg",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Havana",
+          "target": "Mosul",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Iraq",
+            "currency": "Iraqi Dinar",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Geneva",
+          "target": "Barquisimeto",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Venezuela",
+            "currency": "Venezuelan Bolívar Fuerte",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Pyongyang",
+          "target": "Minsk",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Belarus",
+            "currency": "Belarusian Ruble",
+            "language": "Belarusian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Khartoum",
+          "target": "Abobo",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Côte d'Ivoire",
+            "currency": "CFA Franc BCEAO",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Omdurman",
+          "target": "Melbourne",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Rome",
+          "target": "Prague",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Czech Republic",
+            "currency": "Czech Koruna",
+            "language": "Czech",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Edmonton",
+          "target": "Saint Petersburg",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Brisbane",
+          "target": "Ankara",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Tijuana",
+          "target": "Nouakchott",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mauritania",
+            "currency": "Mauritanian ouguiya",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Tashkent",
+          "target": "Monrovia",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Liberia",
+            "currency": "Liberian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Montevideo",
+          "target": "Kyiv",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Ukraine",
+            "currency": "Ukrainian Hryvnia",
+            "language": "Ukrainian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Al Mawşil al Jadīdah",
+          "target": "Toronto",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Canada",
+            "currency": "Canadian Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Santo Domingo",
+          "target": "Aleppo",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Syria",
+            "currency": "Syrian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Rio de Janeiro",
+          "target": "Shymkent",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Kazakhstan",
+            "currency": "Kazakh Tenge",
+            "language": "Kazakh",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Copenhagen",
+          "target": "Abobo",
+          "multi_token_source": false,
+          "last_token_pass": false,
+          "all_token_pass": false,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Côte d'Ivoire",
+            "currency": "Cedi",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Dubai",
+          "target": "Gaziantep",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Kano",
+          "target": "Riyadh",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Saudi Arabia",
+            "currency": "Saudi Riyal",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Buenos Aires",
+          "target": "Köln",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Copenhagen",
+          "target": "Warsaw",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Poland",
+            "currency": "Polish Złoty",
+            "language": "Polish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Ecatepec de Morelos",
+          "target": "Abobo",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Côte d'Ivoire",
+            "currency": "CFA Franc BCEAO",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "New York City",
+          "target": "Hamburg",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Barranquilla",
+          "target": "Matola",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mozambique",
+            "currency": "Mozambique Metical",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Pyongyang",
+          "target": "Odesa",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Ukraine",
+            "currency": "Ukrainian Hryvnia",
+            "language": "Ukrainian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Taipei",
+          "target": "Tehran",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Iran",
+            "currency": "Iranian Rial",
+            "language": "Persian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Ashgabat",
+          "target": "Manila",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Philippines",
+            "currency": "Philippine Peso",
+            "language": "Filipino",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Santiago",
+          "target": "Kazan",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Yekaterinburg",
+          "target": "Prague",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Czech Republic",
+            "currency": "Czech Koruna",
+            "language": "Czech",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Gaziantep",
+          "target": "Shymkent",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Kazakhstan",
+            "currency": "Kazakh Tenge",
+            "language": "Kazakh",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Sydney",
+          "target": "Kazan",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Taguig",
+          "target": "Milan",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Warsaw",
+          "target": "New York City",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "United States",
+            "currency": "US Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Pretoria",
+          "target": "Diyarbakır",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Calgary",
+          "target": "Helsinki",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Finland",
+            "currency": "Euro",
+            "language": "Finnish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Cape Town",
+          "target": "Niamey",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Niger",
+            "currency": "CFA Franc BCEAO",
+            "language": "French",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Beirut",
+          "target": "Vienna",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Austria",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Abu Dhabi",
+          "target": "Astana",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Kazakhstan",
+            "currency": "Kazakh Tenge",
+            "language": "Kazakh",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Tijuana",
+          "target": "Lahore",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Pakistan",
+            "currency": "Pakistani Rupee",
+            "language": "Urdu",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Helsinki",
+          "target": "Ecatepec de Morelos",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mexico",
+            "currency": "Mexican Peso",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Tehran",
+          "target": "Gaziantep",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Damascus",
+          "target": "Matola",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mozambique",
+            "currency": "Mozambique Metical",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Pyongyang",
+          "target": "Nizhniy Novgorod",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Russia",
+            "currency": "Russian Ruble",
+            "language": "Russian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Nizhniy Novgorod",
+          "target": "Brooklyn",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "United States",
+            "currency": "US Dollar",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Edinburgh",
+          "target": "Matola",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mozambique",
+            "currency": "Mozambique Metical",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Hamburg",
+          "target": "Yerevan",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Armenia",
+            "currency": "Armenian Dram",
+            "language": "Armenian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Gazipur",
+          "target": "Al Mawşil al Jadīdah",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": false,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Saudi Arabia",
+            "currency": "Saudi Riyal",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Saint Petersburg",
+          "target": "Matola",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mozambique",
+            "currency": "Mozambique Metical",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Aden",
+          "target": "Gazipur",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Bangladesh",
+            "currency": "Bangladeshi Taka",
+            "language": "Bengali",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Jeddah",
+          "target": "Edinburgh",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Scotland",
+            "currency": "British Pound Sterling",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Beirut",
+          "target": "Rangpur",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Bangladesh",
+            "currency": "Bangladeshi Taka",
+            "language": "Bengali",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Karbala",
+          "target": "Pyongyang",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "North Korea",
+            "currency": "North Korean Won",
+            "language": "Korean",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Rawalpindi",
+          "target": "Dammam",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Saudi Arabia",
+            "currency": "Saudi Riyal",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Kharkiv",
+          "target": "Giza",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Ecatepec de Morelos",
+          "target": "Diyarbakır",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Turkey",
+            "currency": "Turkish Lira",
+            "language": "Turkish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Perth",
+          "target": "Milan",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Ecatepec de Morelos",
+          "target": "Giza",
+          "multi_token_source": true,
+          "last_token_pass": false,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Egypt",
+            "currency": "Egyptian Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "New Taipei City",
+          "target": "Brussels",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Belgium",
+            "currency": "Euro",
+            "language": "Dutch",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Chengdu",
+          "target": "Ashgabat",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Turkmenistan",
+            "currency": "Turkmenistan manat",
+            "language": "Turkmen",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Haiphong",
+          "target": "Lima",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Peru",
+            "currency": "Peruvian Sol",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Tashkent",
+          "target": "Perth",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Australia",
+            "currency": "Australian Dollar",
+            "language": "English",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Chongqing",
+          "target": "La Paz",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Bolivia",
+            "currency": "Boliviano",
+            "language": "Spanish",
+            "hemisphere": "Southern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Durban",
+          "target": "Matola",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Mozambique",
+            "currency": "Mozambique Metical",
+            "language": "Portuguese",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Aden",
+          "target": "Kyiv",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Ukraine",
+            "currency": "Ukrainian Hryvnia",
+            "language": "Ukrainian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Damascus",
+          "target": "Cali",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Colombia",
+            "currency": "Colombian Peso",
+            "language": "Spanish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Brisbane",
+          "target": "Chengdu",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "China",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Diyarbakır",
+          "target": "Amsterdam",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Netherlands",
+            "currency": "Euro",
+            "language": "Dutch",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Sydney",
+          "target": "London",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "United Kingdom",
+            "currency": "Pound Sterling",
+            "language": "English",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Stockholm",
+          "target": "Makkah",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Saudi Arabia",
+            "currency": "Saudi Riyal",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Melbourne",
+          "target": "Rome",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Italy",
+            "currency": "Euro",
+            "language": "Italian",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Adelaide",
+          "target": "New Taipei City",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Taiwan",
+            "currency": "Chinese Yuan",
+            "language": "Mandarin",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "La Paz",
+          "target": "Prague",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Czech Republic",
+            "currency": "Czech Koruna",
+            "language": "Czech",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Edinburgh",
+          "target": "Helsinki",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Finland",
+            "currency": "Euro",
+            "language": "Finnish",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Santiago de Querétaro",
+          "target": "Omdurman",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Sudan",
+            "currency": "Sudanese Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Montevideo",
+          "target": "Beirut",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Lebanon",
+            "currency": "Lebanese Pound",
+            "language": "Arabic",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        },
+        {
+          "source": "Omdurman",
+          "target": "Johannesburg",
+          "multi_token_source": true,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "South Africa",
+            "currency": "South African Rand",
+            "language": "Zulu",
+            "hemisphere": "Southern",
+            "season": "Winter"
+          }
+        },
+        {
+          "source": "Chicago",
+          "target": "Berlin",
+          "multi_token_source": false,
+          "last_token_pass": true,
+          "all_token_pass": true,
+          "all_token_control_pass": false,
+          "all_token_answers": {
+            "country": "Germany",
+            "currency": "Euro",
+            "language": "German",
+            "hemisphere": "Northern",
+            "season": "Summer"
+          }
+        }
+      ]
+    }
+  },
+  "adopt": true,
+  "seconds": 444.7137930393219
+}
