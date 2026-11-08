@@ -93,8 +93,6 @@ The same for `gemma4-31b` (`mlx-community/gemma-4-31B-it-qat-4bit`). `scripts/bu
 
 Tests (no model needed: a small fake model stands in): `uv run python -m pytest -q tests`.
 
-See `DEMO.md` for the rehearsal script and the validated menus.
-
 ## Prior work
 
 - Gurnee & Tegmark (2023), *Language Models Represent Space and Time*, arXiv 2310.02207. Linear probes for place coordinates and static maps; we use their place list.
