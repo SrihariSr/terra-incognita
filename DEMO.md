@@ -16,15 +16,16 @@ uv run uvicorn terra.server:app --port 8000
 - First edit or locate after start-up may take a second or two longer (MPS warm-up).
 - Health check: http://localhost:8000/api/health
 - Full automated check: stop the server, then `uv run python scripts/demo_check.py` (starts its own server on port 8765).
+- To start on another model: `TERRA_MODEL=gemma4-12b uv run uvicorn terra.server:app --port 8000` (or `gemma4-31b`). Without `TERRA_MODEL` the server starts on Qwen.
 
 Last demo check: 32/32 checks passed at 2026-11-07 17:02 (`results/demo_check.json`).
 
 ## The 5-minute script
 
 1. **Hook (15 s).** "Every language model carries a map of the Earth that nobody drew. We pulled it out, and then we learned to edit it."
-2. **The map (45 s).** Map tab. Rotate the globe; the dots are where the model believes places are, coloured by true continent, lines go to the true position. Click a dot. Say: "For places the probe never saw, the median error is 829 km; if we hide whole countries from it, 1,986 km."
-3. **New worlds (60 s).** New worlds tab. Hand the keyboard to the judge, or click a suggestion chip. Read out the nearest real city.
-4. **The edit (90 s).** Edit tab. Drag the Paris marker onto Sydney (or pick Paris -> Sydney and press Move). The ripple table fills: before, after, random control; the landmark row shows the Eiffel Tower becoming the Sydney Opera House. Press "Ask before and after" on the Christmas packing question (the edited answer adds sunscreen and a hat), or let the judge type a question that mentions Paris. Then tick "move: X stays X", pick Berlin -> Cape Town and press Move: Germany, euro, German and the Brandenburg Gate stay, but the model now says Southern Hemisphere and winter in July.
+2. **The map (45 s).** Map tab. Rotate the globe; the dots are where the model believes places are, coloured by true continent, lines go to the true position. Click a dot: the card gives its true and believed position and the error. Say: "For places the probe never saw, the median error is 829 km; if we hide whole countries from it, 1,986 km." Then set Borders to "Both". Say: "These are the model's borders, read from the same probe: 93 countries survive, and 28% of its land lies in the right country." Click Australia: it sits 256 km north of where it is (`results/political_stats.json`).
+3. **New worlds (60 s).** New worlds tab. Hand the keyboard to the judge, or click a suggestion chip. Read out the nearest real city. The name joins "Your places" with a dashed marker: drag it onto Sydney, or type it as a source or target in the Edit tab (its answers are shown unscored, as there is no answer key for invented places).
+4. **The edit (90 s).** Edit tab. Drag the Paris marker onto Sydney (or type Paris -> Sydney and press Move). The ripple table fills: before, after, random control; the landmark row shows the Eiffel Tower becoming the Sydney Opera House. Press "Ask before and after" on the Christmas packing question (the edited answer adds sunscreen and a hat), or let the judge type a question that mentions Paris. Then tick "move: X stays X", pick Berlin -> Cape Town and press Move: Germany, euro, German and the Brandenburg Gate stay, but the model now says Southern Hemisphere and winter in July.
 5. **Rewrite the world (45 s).** Rewrite tab. Click a suggested world (or drag up to three cities onto new places, then press Rewrite). Every city's answers change, and the questions about two moved cities ("Are Paris and Tokyo in the same hemisphere?") answer for the rewritten world. Then press "Ask before and after" on the packing question that mentions all three cities. Say: "Over 40 random three-move worlds, 97% of moved cities change all their answers, and 73% of answers about two moved cities fit the rewritten world."
 6. **Rigour (30 s).** Rigour tab: held-out error, edit success against the control, invented-name chance level. Prior work: Gurnee & Tegmark 2023; Chen et al. 2023. Say: "On 100 fresh random city pairs across hemispheres, the edit succeeds 95% of the time; a random push of the same size succeeds 0%." (`results/edit_eval_fresh_alltoken.json`)
 7. **Close (15 s).**
@@ -139,8 +140,30 @@ Best pairs to show in move mode (in the gate run: hemisphere and season moved, c
 - Sydney -> Stockholm: Australia, Northern, July Summer, landmark Sydney Opera House
 - Buenos Aires -> Beijing: Argentina, Northern, July Summer, landmark Teatro Colón
 
+## Models
+
+The Model menu (bottom left, above the legend) switches models. Only one model is ever in memory: the server unloads the current one (and asks Ollama, if it is running, to unload its models) before loading the next. Switching to a Gemma model takes about a minute; do it before the judges arrive, not during the five minutes.
+
+| Model | Built (map) | Edits | Build command |
+|---|---|---|---|
+| Qwen2.5-7B-Instruct (`qwen2.5-7b`) | yes | yes | `uv run python scripts/build_model.py --model qwen2.5-7b --stage all` |
+| Gemma 4 12B (4-bit) (`gemma4-12b`) | no | no | `uv run python scripts/build_model.py --model gemma4-12b --stage all` |
+| Gemma 4 31B (4-bit) (`gemma4-31b`) | no | no | `uv run python scripts/build_model.py --model gemma4-31b --stage all` |
+
+## The model's political map
+
+Map tab, Borders: Real / The model's / Both. Every place is put at its believed position (out-of-fold probe reading) with its real country; each 1-degree cell is land if its 12th nearest believed place is within 250 km, and takes the country of a distance-weighted vote of those places (`results/political_stats.json`).
+
+- 93 of 222 countries with places survive; 28% of the model's land lies in the right country; model land 26% of the globe against 27% real.
+- Median displacement for countries with 20 or more places: 736 km.
+- Most displaced (20+ places): Antarctica 14,256 km north, Mauritius 5,519 km north-west, Haiti 3,976 km north-east, Lesotho 3,422 km north-east, Kiribati 3,244 km west.
+- Vanished (11 countries with 10 or more places but no land of their own), most places first: Solomon Islands, Kiribati, Vanuatu, Samoa, Suriname, Micronesia.
+- Caveat to say if asked: Countries with many places in the list (e.g. the US, the UK, India, Australia) win more neighbour votes and grow; countries with few places shrink or vanish. The map shows the model's beliefs as read by a linear probe, filtered through the place list's coverage.
+
 ## If something goes wrong
 
+- "switching models" in the page: wait for the overlay to clear; every request returns 503 until the new model is in.
+- A model shows "(not built yet)": run the build command in the table above with the server stopped.
 - Globe blank: hard-refresh the page; check the server terminal for errors.
 - An edit seems slow: the first live (uncached) edit takes a few seconds; menu pairs are instant.
 - Server will not start: another process holds the model. Quit it, or restart the Mac's terminal session.

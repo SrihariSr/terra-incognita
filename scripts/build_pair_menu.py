@@ -22,7 +22,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from terra import RESULTS  # noqa: E402
+from terra import registry  # noqa: E402
 from terra.data import city_info  # noqa: E402
 from terra.model import get_lm  # noqa: E402
 from terra.patch import band, generate_plans, plan_edit, plan_edit_all  # noqa: E402
@@ -37,13 +37,11 @@ HEADLINE_TARGETS = ["Sydney", "Buenos Aires", "Cape Town", "Rio de Janeiro", "To
                     "Melbourne", "Auckland", "Lima"]
 
 
-def main() -> int:
-    import argparse
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--method", choices=["last", "all"], default="last")
-    ap.add_argument("--out", default=str(RESULTS / "pair_menu.json"))
-    args = ap.parse_args()
-    planner = plan_edit_all if args.method == "all" else plan_edit
+def run(key: str = registry.DEFAULT_KEY, method: str = "last", out_path: str | None = None, lm=None) -> dict:
+    """Validated pair menu for `key` (needs its gate.json and baseline_cities.json)."""
+    RESULTS = registry.paths(key).results
+    out_file = Path(out_path) if out_path else RESULTS / ("pair_menu_alltoken.json" if method == "all" else "pair_menu.json")
+    planner = plan_edit_all if method == "all" else plan_edit
     t0 = time.time()
     gate = json.loads((RESULTS / "gate.json").read_text())
     layers = band(*gate["best_band"])
@@ -51,7 +49,7 @@ def main() -> int:
     cities = [c for c in DEMO_CITIES if base.get(c, {}).get("all_correct")]
     missing = [c for c in DEMO_CITIES if c not in cities]
     print(f"[menu] {len(cities)} demo cities pass baseline; not used: {missing}")
-    lm = get_lm()
+    lm = lm or get_lm(key)
     pairs = [(s, t) for s in cities for t in cities
              if s != t and city_info(s)["iso"] != city_info(t)["iso"]]
     rows = []
@@ -75,7 +73,9 @@ def main() -> int:
                          "after": after, "control": control, "n_countable": se["n_countable"],
                          "n_flipped": se["n_flipped"], "control_flipped": sc["n_flipped"], "validated": ok})
         if (b0 // 4) % 10 == 0:
-            print(f"[menu] {len(rows)}/{len(pairs)} ({time.time() - t0:.0f}s)", flush=True)
+            el = time.time() - t0
+            eta = el / len(rows) * (len(pairs) - len(rows)) / 60
+            print(f"[menu] {len(rows)}/{len(pairs)} pairs ({el:.0f}s, ETA {eta:.1f} min)", flush=True)
     valid = [r for r in rows if r["validated"]]
     print(f"[menu] {len(valid)}/{len(rows)} pairs validated")
 
@@ -92,11 +92,23 @@ def main() -> int:
 
     menu_cities = [{"name": c, "lat": city_info(c)["latitude"], "lon": city_info(c)["longitude"],
                     "iso": city_info(c)["iso"]} for c in cities]
-    out = {"band": [layers[0], layers[-1]], "method": args.method, "rule": ">= 80% of >= 3 countable answers flip; control < 50%",
+    out = {"band": [layers[0], layers[-1]], "method": method, "model": key, "rule": ">= 80% of >= 3 countable answers flip; control < 50%",
            "cities": menu_cities, "n_pairs": len(rows), "n_validated": len(valid),
            "pairs": valid, "all_pairs": rows, "free_answers": free, "seconds": time.time() - t0}
-    Path(args.out).write_text(json.dumps(out, indent=2, ensure_ascii=False))
-    print(f"[menu] wrote {args.out} in {time.time() - t0:.0f}s")
+    out_file.write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    print(f"[menu] wrote {out_file} in {time.time() - t0:.0f}s")
+    return out
+
+
+def main() -> int:
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model", default=registry.DEFAULT_KEY, choices=sorted(registry.MODELS))
+    ap.add_argument("--method", choices=["last", "all"], default="last")
+    ap.add_argument("--out", default=None)
+    args = ap.parse_args()
+    out = args.out or (str(registry.paths(args.model).result("pair_menu.json")) if args.method == "last" else None)
+    run(args.model, args.method, out)
     return 0
 
 

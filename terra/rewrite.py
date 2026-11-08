@@ -30,7 +30,7 @@ from itertools import combinations
 from typing import Sequence
 
 from .data import city_info
-from .model import LM
+from .backends.base import BaseLM as LM
 from .patch import generate_plans, plan_edit_multi, stable_seed
 from .ripple import LANDMARK_QUESTION, QKEYS, _mentions, make_key, prompts_for, score_edit
 
@@ -53,12 +53,22 @@ def free_question(sources: Sequence[str]) -> str:
     return FREE_TEMPLATE[len(sources)].format(*sources)
 
 
-def lat(name: str) -> float:
-    return city_info(name)["latitude"]
+UNSCORED = "no answer key for invented places: answers shown unscored"
 
 
-def pair_key(q: str, a_lat: float, b_lat: float):
-    """Right answer for a pair question given the two latitudes ("a"/"b" for slots)."""
+def lat(name: str) -> float | None:
+    """True latitude from GeoNames, or None for a name it does not know (invented places)."""
+    info = city_info(name)
+    return None if info is None else info["latitude"]
+
+
+def pair_key(q: str, a_lat: float | None, b_lat: float | None):
+    """Right answer for a pair question given the two latitudes ("a"/"b" for slots).
+
+    None (unscored) when either place has no known latitude.
+    """
+    if a_lat is None or b_lat is None:
+        return None
     if q == "same_hemisphere":
         return "yes" if (a_lat > 0) == (b_lat > 0) else "no"
     if abs(a_lat - b_lat) < MIN_LAT_GAP:
@@ -95,19 +105,25 @@ def build_texts(moves: Sequence[tuple[str, str]]):
 
 
 def run_rewrite(lm: LM, moves: Sequence[tuple[str, str]], layers: Sequence[int], mode: str = "swap",
-                all_tokens: bool = True, pad: bool = False) -> dict:
-    """Before / after / control answers for a whole rewritten world."""
+                all_tokens: bool = True, pad: bool = False, paths=None, target_latlons: dict | None = None) -> dict:
+    """Before / after / control answers for a whole rewritten world.
+
+    Moves may use any names. A city with no GeoNames answer key (an invented
+    place) gets its answers unscored; pair questions involving it too.
+    paths / target_latlons are only used by the steering mode (per-model
+    probe files, and believed positions for invented targets).
+    """
     moves = [(s.strip(), t.strip()) for s, t in moves]
     if not 1 <= len(moves) <= MAX_MOVES:
         raise ValueError(f"between 1 and {MAX_MOVES} moves")
     if len({s for s, _ in moves}) != len(moves):
         raise ValueError("each city can only be moved once")
-    if any(s == t for s, t in moves):
-        raise ValueError("source and target must differ")
+    if any(s == t or not s or not t for s, t in moves):
+        raise ValueError("source and target must differ and not be empty")
     texts, labels = build_texts(moves)
     if mode == "steer":
         from .steer import plan_steer_multi, random_like
-        edit = plan_steer_multi(lm, texts, moves)
+        edit = plan_steer_multi(lm, texts, moves, paths=paths, target_latlons=target_latlons)
         ctrl = random_like(lm, edit, stable_seed(*[f"{s}>{t}" for s, t in moves], "steer-control"))
     else:
         edit = plan_edit_multi(lm, texts, moves, layers, mode="swap", all_tokens=all_tokens, pad=pad)
@@ -144,6 +160,10 @@ def run_rewrite(lm: LM, moves: Sequence[tuple[str, str]], layers: Sequence[int],
             rec["score_control"] = score_edit(rec["control"], sk, tk)
             sc = rec["score_after"]
             rec["passes"] = sc["n_countable"] >= 3 and sc["n_flipped"] >= 0.8 * sc["n_countable"]
+            rec["scored"] = True
+        else:
+            rec["scored"] = False
+            rec["unscored_reason"] = UNSCORED
     pair_rows = []
     for (i, j), qs in pairs.items():
         (sa, ta), (sb, tb) = moves[i], moves[j]
@@ -157,10 +177,12 @@ def run_rewrite(lm: LM, moves: Sequence[tuple[str, str]], layers: Sequence[int],
                    "read_before": read_pair_answer(q, rec["before"], names_a, names_b),
                    "read_after": read_pair_answer(q, rec["after"], names_a, names_b),
                    "read_control": read_pair_answer(q, rec["control"], names_a, names_b)}
+            row["scored"] = ka is not None
             row["before_correct"] = kb is not None and row["read_before"] == kb
             row["after_correct"] = ka is not None and row["read_after"] == ka
             row["control_says_before"] = kb is not None and row["read_control"] == kb
             row["control_matches_after"] = ka is not None and row["read_control"] == ka
             pair_rows.append(row)
     return {"moves": [{"source": s, "target": t} for s, t in moves], "mode": mode,
-            "cities": cities, "pairs": pair_rows, "free_question": free_question([s for s, _ in moves])}
+            "cities": cities, "pairs": pair_rows, "free_question": free_question([s for s, _ in moves]),
+            "scored": all(c["scored"] for c in cities)}

@@ -36,7 +36,7 @@ import torch
 
 from . import RESULTS, ROOT
 from .data import city_info
-from .model import LM, Patch
+from .backends.base import BaseLM as LM, Patch
 from .patch import EditPlan, name_positions
 from .probe import Probe, Standardiser, latlon_to_xyz, loo_alpha
 
@@ -64,14 +64,19 @@ def fit_layer_probes(layers, tag: str = "3k", mode: str = "coords") -> None:
     np.savez(PROBE_PATH, layers=np.array(list(layers)), **A, **c)
 
 
-@lru_cache(maxsize=1)
-def layer_probes() -> dict[int, tuple[np.ndarray, np.ndarray]]:
-    z = np.load(PROBE_PATH)
+@lru_cache(maxsize=4)
+def _layer_probes(path: str) -> dict[int, tuple[np.ndarray, np.ndarray]]:
+    z = np.load(path)
     return {int(L): (z[f"A{L}"].astype(np.float64), z[f"c{L}"].astype(np.float64)) for L in z["layers"]}
 
 
-def steer_config() -> dict:
-    p = RESULTS / "steer_eval.json"
+def layer_probes(paths=None) -> dict[int, tuple[np.ndarray, np.ndarray]]:
+    """Per-layer probes for steering; `paths` is a registry.ModelPaths (default Qwen)."""
+    return _layer_probes(str(paths.steer_probes if paths is not None else PROBE_PATH))
+
+
+def steer_config(paths=None) -> dict:
+    p = (paths.results if paths is not None else RESULTS) / "steer_eval.json"
     if p.exists():
         cfg = json.loads(p.read_text()).get("chosen", {})
         if cfg:
@@ -80,9 +85,14 @@ def steer_config() -> dict:
 
 
 def plan_steer(lm: LM, locator, user_texts, source: str, target: str | None = None,
-               target_latlon: tuple[float, float] | None = None, layers=None, scale: float | None = None) -> EditPlan:
-    """Build a steering patch moving `source` toward `target` (a city name or lat/lon)."""
-    cfg = steer_config()
+               target_latlon: tuple[float, float] | None = None, layers=None, scale: float | None = None,
+               paths=None) -> EditPlan:
+    """Build a steering patch moving `source` toward `target` (a city name or lat/lon).
+
+    For a target with no GeoNames entry (an invented place) pass
+    target_latlon, e.g. where the model believes that place is.
+    """
+    cfg = steer_config(paths)
     layers = list(layers if layers is not None else range(cfg["band"][0], cfg["band"][1] + 1))
     scale = float(scale if scale is not None else cfg["scale"])
     if target_latlon is None:
@@ -91,7 +101,7 @@ def plan_steer(lm: LM, locator, user_texts, source: str, target: str | None = No
             raise ValueError(f"unknown target city {target!r}")
         target_latlon = (info["latitude"], info["longitude"])
     u_t = latlon_to_xyz(*target_latlon)
-    probes = layer_probes()
+    probes = layer_probes(paths)
     src = [lm.chat(t) for t in user_texts]
     pos = [name_positions(lm, t, source) for t in src]
     h = torch.cat(lm.residuals_multi(src, pos, layers), 0).numpy().astype(np.float64)  # [n, L, d]
@@ -141,13 +151,15 @@ def plan_context_city(lm: LM, user_texts, source: str, target: str, layers) -> E
                     delta_norms={L: float(norms[:, j].mean()) for j, L in enumerate(layers)}, layers=layers)
 
 
-def plan_move(lm: LM, user_texts, source: str, target: str) -> EditPlan:
+def plan_move(lm: LM, user_texts, source: str, target: str, paths=None,
+              target_latlon: tuple[float, float] | None = None) -> EditPlan:
     """The tier-2 edit chosen by scripts/steer_eval.py (steering or context)."""
-    cfg = steer_config()
+    cfg = steer_config(paths)
     layers = list(range(cfg["band"][0], cfg["band"][1] + 1))
     if cfg.get("method") == "context":
         return plan_context_city(lm, user_texts, source, target, layers)
-    return plan_steer(lm, None, user_texts, source, target, layers=layers, scale=cfg.get("scale", 8.0))
+    return plan_steer(lm, None, user_texts, source, target, target_latlon=target_latlon, layers=layers,
+                      scale=cfg.get("scale", 8.0), paths=paths)
 
 
 def random_like(lm: LM, plan: EditPlan, seed: int) -> EditPlan:
@@ -169,7 +181,8 @@ def random_like(lm: LM, plan: EditPlan, seed: int) -> EditPlan:
     return EditPlan(plan.source_texts, Patch(plan.patch.rows, plan.patch.cols, vecs), plan.delta_norms, plan.layers)
 
 
-def plan_steer_multi(lm: LM, user_texts, moves, layers=None, scale: float | None = None) -> EditPlan:
+def plan_steer_multi(lm: LM, user_texts, moves, layers=None, scale: float | None = None, paths=None,
+                     target_latlons: dict | None = None) -> EditPlan:
     """Tier-2 steering for several moves at once (one forward pass).
 
     Each mention of a moved city (its last name token) is pushed along the
@@ -177,16 +190,19 @@ def plan_steer_multi(lm: LM, user_texts, moves, layers=None, scale: float | None
     plan_steer; texts that mention no moved city are left alone.
     """
     from .patch import multi_substitute
-    cfg = steer_config()
+    cfg = steer_config(paths)
     layers = list(layers if layers is not None else range(cfg["band"][0], cfg["band"][1] + 1))
     scale = float(scale if scale is not None else cfg["scale"])
     u_targets = []
     for _, t in moves:
+        if target_latlons and t in target_latlons:
+            u_targets.append(latlon_to_xyz(*target_latlons[t]))
+            continue
         info = city_info(t)
         if info is None:
             raise ValueError(f"unknown target city {t!r}")
         u_targets.append(latlon_to_xyz(info["latitude"], info["longitude"]))
-    probes = layer_probes()
+    probes = layer_probes(paths)
     src, pos, slot_move = [], [], []
     for u in user_texts:
         a_txt = lm.chat(u)

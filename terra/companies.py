@@ -34,7 +34,7 @@ import torch
 from . import DATA
 from .data import city_info, load_countries
 from .locate import nearest_city
-from .model import LM, Patch
+from .backends.base import BaseLM as LM, Patch
 from .patch import EditPlan, generate_plans, name_positions, plan_edit
 from .ripple import _mentions, country_words, currency_words
 

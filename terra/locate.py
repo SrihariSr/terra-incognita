@@ -23,7 +23,7 @@ import numpy as np
 from . import ROOT
 from .activations import prompt_and_position
 from .data import load_cities, load_countries
-from .model import LM
+from .backends.base import BaseLM as LM
 from .probe import great_circle_km, latlon_to_xyz, xyz_to_latlon
 
 

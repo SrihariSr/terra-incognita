@@ -139,3 +139,46 @@ table#ripple { width: 100%; border-collapse: collapse; font-size: 12.5px; margin
 .rw-table td.other { color: var(--accent); }
 .rw-table td.wrong { color: var(--bad); }
 .rw-summary { font-size: 12.5px; margin: 8px 0; color: var(--text); }
+
+/* ---- v2: selection, model switcher, custom places, political map ---- */
+.row input[type=text], .row input:not([type]) { flex: 1; min-width: 0; }
+input:not([type]), input[type=text] { background: #0d1322; color: var(--text); border: 1px solid var(--panel-border);
+  border-radius: 6px; padding: 7px 8px; font-size: 13px; font-family: var(--font); }
+.move-row input { flex: 1; min-width: 0; }
+
+#selection { position: fixed; top: 74px; left: 24px; z-index: 7; width: 320px; background: var(--panel);
+  backdrop-filter: blur(6px); }
+#selection .x { position: absolute; top: 6px; right: 6px; background: none; color: var(--muted); border: none;
+  font-size: 16px; padding: 2px 6px; }
+#selection .sel-actions { margin: 8px 0 4px; }
+#selection .sel-actions button { flex: 1; }
+#sel-body b { color: var(--accent); }
+
+.model-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; color: var(--text); }
+.model-row select { flex: 1; }
+#model-note { margin-bottom: 6px; line-height: 1.4; }
+#model-note code { font-family: var(--mono); font-size: 11px; color: var(--text); }
+#tabs button.disabled { opacity: 0.4; }
+.warn { border-color: rgba(255, 181, 71, 0.5); color: var(--text); }
+.warn-text { color: var(--accent); }
+
+.city-marker.custom .dot { background: transparent; border: 2px dashed #fff; box-shadow: 0 0 6px #fff; }
+.city-marker.custom .lbl { font-style: italic; }
+.city-marker.picked .dot { background: #ffffff; border: 2px solid var(--accent); width: 12px; height: 12px; }
+.city-marker.selected .dot { outline: 3px solid rgba(255, 255, 255, 0.85); outline-offset: 2px; }
+
+.custom-list { list-style: none; padding: 0; margin: 6px 0; }
+.custom-list li { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid rgba(140, 170, 220, 0.08);
+  font-size: 13px; }
+.custom-list li span { flex: 1; }
+.custom-list li .x, .custom-list li .use { background: none; color: var(--muted); border: 1px solid var(--panel-border);
+  padding: 2px 8px; font-weight: 400; }
+.custom-list li.empty { color: var(--muted); font-size: 12px; }
+
+.borders-row { flex-wrap: wrap; gap: 12px; font-size: 13px; margin: 0 0 6px; }
+.borders-row label { cursor: pointer; color: var(--muted); }
+#displaced h3 { margin-top: 10px; }
+#displaced ol { margin: 4px 0; padding-left: 20px; font-size: 12.5px; color: var(--text); }
+#displaced li { margin: 2px 0; cursor: pointer; }
+#displaced li:hover { color: var(--accent); }
+.unscored { color: var(--muted); font-style: italic; }

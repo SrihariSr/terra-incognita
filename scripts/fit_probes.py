@@ -21,7 +21,8 @@ number per layer; the blocked splits would prefer *more* regularisation, so
 if anything this makes the blocked numbers slightly worse, not better.
 
     uv run python scripts/fit_probes.py --set 3k --modes bare coords
-Writes results/probe_layers.json
+    uv run python scripts/fit_probes.py --model gemma4-31b --set 3k --modes coords
+Writes probe_layers.json in the model's results folder (results/ for Qwen)
 """
 
 from __future__ import annotations
@@ -37,21 +38,19 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from terra import ACTS, RESULTS  # noqa: E402
+from terra import registry  # noqa: E402
 from terra.activations import load  # noqa: E402
 from terra.probe import (Standardiser, baseline_error, cross_val_predict, error_summary,  # noqa: E402
                          folds_grouped, folds_random, great_circle_km, grid_cells,
                          latlon_to_xyz, loo_alpha)
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--set", default="3k")
-    ap.add_argument("--modes", nargs="+", default=["bare", "coords"])
-    ap.add_argument("--out", default=str(RESULTS / "probe_layers.json"))
-    args = ap.parse_args()
-
-    places = pd.read_csv(ACTS / f"places_{args.set}.csv")
+def run(key: str = registry.DEFAULT_KEY, set_name: str = "3k", modes=("bare", "coords"), out: str | None = None,
+        layers=None) -> dict:
+    """Probe error per layer for `key`; writes probe_layers.json (or `out`)."""
+    P = registry.paths(key)
+    out_path = Path(out) if out else P.result("probe_layers.json")
+    places = pd.read_csv(P.acts / f"places_{set_name}.csv")
     Y = latlon_to_xyz(places["latitude"], places["longitude"])
     groups_country = places["iso"].fillna(places["country"]).astype(str).to_numpy()
     folds = {
@@ -59,18 +58,20 @@ def main() -> int:
         "blocked_country": folds_grouped(groups_country, 5, seed=0),
         "blocked_cell": folds_grouped(grid_cells(places["latitude"], places["longitude"], 10.0), 5, seed=0),
     }
-    out = {"set": args.set, "n_places": len(places), "folds": 5,
+    res = {"model": key, "set": set_name, "n_places": len(places), "folds": 5,
            "baseline_mean_direction": {k: error_summary(baseline_error(Y, f)) for k, f in folds.items()},
            "modes": {}}
     print("[baseline] predict-the-mean median km:",
-          {k: round(v["median_km"]) for k, v in out["baseline_mean_direction"].items()})
+          {k: round(v["median_km"]) for k, v in res["baseline_mean_direction"].items()})
 
-    for mode in args.modes:
-        meta = json.loads((ACTS / f"{args.set}_{mode}" / "meta.json").read_text())
+    for mode in modes:
+        meta = json.loads((P.acts / f"{set_name}_{mode}" / "meta.json").read_text())
         rows = []
-        for L in meta["layers"]:
+        use = [L for L in meta["layers"] if layers is None or L in layers]
+        t_start = time.time()
+        for n_done, L in enumerate(use):
             t0 = time.time()
-            pids, X = load(args.set, mode, L)
+            pids, X = load(set_name, mode, L, root=P.acts)
             assert (pids == places["pid"].to_numpy()).all()
             st = Standardiser.fit(X.astype(np.float64))
             alpha, _ = loo_alpha(st(X.astype(np.float64)), Y - Y.mean(0))
@@ -79,26 +80,39 @@ def main() -> int:
                 pred = cross_val_predict(X, Y, f, alpha)
                 rec[name] = error_summary(great_circle_km(pred, Y))
             rows.append(rec)
+            eta = (time.time() - t_start) / (n_done + 1) * (len(use) - n_done - 1)
             print(f"[{mode} L{L:02d}] alpha={alpha:9.0f}  median km: random {rec['random']['median_km']:6.0f}  "
                   f"country {rec['blocked_country']['median_km']:6.0f}  cell {rec['blocked_cell']['median_km']:6.0f}"
-                  f"  ({time.time() - t0:.1f}s)", flush=True)
-        out["modes"][mode] = rows
+                  f"  ({time.time() - t0:.1f}s, ETA {eta / 60:.1f} min)", flush=True)
+        res["modes"][mode] = rows
 
     # Choose (mode, layer) by the country-blocked median error.
-    best = min(((m, r) for m, rs in out["modes"].items() for r in rs),
+    best = min(((m, r) for m, rs in res["modes"].items() for r in rs),
                key=lambda mr: mr[1]["blocked_country"]["median_km"])
-    out["chosen"] = {"mode": best[0], "layer": best[1]["layer"], "alpha": best[1]["alpha"],
+    res["chosen"] = {"mode": best[0], "layer": best[1]["layer"], "alpha": best[1]["alpha"],
                      "rule": "lowest blocked_country median great-circle error",
                      "random": best[1]["random"], "blocked_country": best[1]["blocked_country"],
                      "blocked_cell": best[1]["blocked_cell"]}
-    for m, rs in out["modes"].items():
+    for m, rs in res["modes"].items():
         b = min(rs, key=lambda r: r["blocked_country"]["median_km"])
-        out[f"best_{m}"] = {"layer": b["layer"], "blocked_country_median_km": b["blocked_country"]["median_km"],
+        res[f"best_{m}"] = {"layer": b["layer"], "blocked_country_median_km": b["blocked_country"]["median_km"],
                             "random_median_km": b["random"]["median_km"]}
-    Path(args.out).write_text(json.dumps(out, indent=2))
-    print(f"[chosen] {out['chosen']['mode']} layer {out['chosen']['layer']}: "
-          f"random {out['chosen']['random']['median_km']:.0f} km, "
-          f"country-blocked {out['chosen']['blocked_country']['median_km']:.0f} km -> {args.out}")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(res, indent=2))
+    print(f"[chosen] {res['chosen']['mode']} layer {res['chosen']['layer']}: "
+          f"random {res['chosen']['random']['median_km']:.0f} km, "
+          f"country-blocked {res['chosen']['blocked_country']['median_km']:.0f} km -> {out_path}")
+    return res
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model", default=registry.DEFAULT_KEY, choices=sorted(registry.MODELS))
+    ap.add_argument("--set", default="3k")
+    ap.add_argument("--modes", nargs="+", default=["bare", "coords"])
+    ap.add_argument("--out", default=None, help="default: <model results>/probe_layers.json")
+    args = ap.parse_args()
+    run(args.model, args.set, args.modes, args.out)
     return 0
 
 

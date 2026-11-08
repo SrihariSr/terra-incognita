@@ -13,15 +13,33 @@
 
   <header id="title">
     <h1>TERRA INCOGNITA</h1>
-    <p>The map of the Earth inside Qwen2.5-7B, read out and edited</p>
+    <p>The map of the Earth inside <span id="model-name">a language model</span>, read out and edited</p>
   </header>
 
+  <div id="selection" class="card hidden">
+    <button id="sel-close" class="x" title="Clear the selection">&times;</button>
+    <div id="sel-body"></div>
+    <div class="row sel-actions">
+      <button id="sel-source" class="secondary">Use as source</button>
+      <button id="sel-target" class="secondary">Use as target</button>
+    </div>
+    <div class="small">Or drag the highlighted marker onto another place.</div>
+  </div>
+
   <div id="hud">
+    <div class="model-row">
+      <label for="model-select">Model</label>
+      <select id="model-select"></select>
+    </div>
+    <div id="model-note" class="small hidden"></div>
     <div id="hud-status">Loading the model's map...</div>
     <div id="legend"></div>
     <label class="toggle"><input type="checkbox" id="toggle-arcs" checked> error lines (believed to true)</label>
     <label class="toggle"><input type="checkbox" id="toggle-points" checked> believed positions</label>
   </div>
+
+  <datalist id="dl-names"></datalist>
+  <datalist id="dl-targets"></datalist>
 
   <aside id="panel">
     <nav id="tabs">
@@ -36,8 +54,19 @@
       <h2>Where the model believes places are</h2>
       <p>Each dot is a place, drawn where a linear probe on the model's hidden state puts it. The probe never saw that place during fitting. Colour shows the continent the place is really on. Lines join a city's believed position to its true one.</p>
       <div id="map-stats" class="stats"></div>
-      <p class="small">Click a dot to see the place, its true position and the error.</p>
-      <div id="map-picked" class="card hidden"></div>
+      <div id="borders-box" class="card">
+        <div class="row borders-row">
+          <b>Borders</b>
+          <label><input type="radio" name="borders" value="real" checked> Real</label>
+          <label><input type="radio" name="borders" value="model"> The model's</label>
+          <label><input type="radio" name="borders" value="both"> Both</label>
+        </div>
+        <div class="small">As read by a linear probe from the model's hidden states (out-of-fold), not drawn by the model.</div>
+        <div id="political-note" class="small"></div>
+      </div>
+      <div id="country-card" class="card hidden"></div>
+      <div id="displaced" class="hidden"></div>
+      <p class="small">Click a dot, a city or a country to select it.</p>
       <div id="map-mouth" class="card hidden"></div>
     </section>
 
@@ -49,24 +78,31 @@
       </form>
       <div id="locate-chips" class="chips"></div>
       <div id="locate-result" class="card hidden"></div>
-      <p class="small">The cloud shows 20 probes fitted on resampled places. A wide cloud means the reading is fragile.</p>
+      <p class="small">The cloud shows probes fitted on resampled places. A wide cloud means the reading is fragile.</p>
+      <h3>Your places</h3>
+      <p class="small">Every name you locate is kept here and on the globe (dashed markers). Drag one onto a city, or select it and use it in an edit.</p>
+      <ul id="custom-list" class="custom-list"></ul>
     </section>
 
     <section id="tab-edit" class="tab">
-      <h2>Move a city inside the model</h2>
-      <p class="small">Drag a labelled city on the globe onto another, or pick a pair below. The question text is never changed: we only change the model's hidden state at the city's name. <b>Swap</b> overwrites it with the target city's state (layers <span class="band">4 to 7</span>). <b>Move</b> nudges it only along the directions the location probe reads, so the city keeps its identity.</p>
+      <h2>Move a place inside the model</h2>
+      <div id="edit-disabled" class="card warn hidden"></div>
+      <p class="small">Drag any marker on the globe onto another, or type two names below (real or invented). The question text is never changed: we only change the model's hidden state at the name. <b>Swap</b> overwrites it with the target's state (layers <span class="band">4 to 7</span>). <b>Move</b> nudges it only along the directions the location probe reads, so the place keeps its identity.</p>
       <div class="row">
-        <select id="edit-source"></select>
+        <input id="edit-source" list="dl-names" placeholder="source, e.g. Paris" maxlength="80">
         <span class="arrow">&rarr;</span>
-        <select id="edit-target"></select>
+        <input id="edit-target" list="dl-targets" placeholder="target, e.g. Sydney" maxlength="80">
+      </div>
+      <div class="row">
         <button id="edit-go">Move</button>
-        <button id="edit-reset" class="secondary" title="Put every city back">Reset</button>
+        <button id="edit-reset" class="secondary" title="Put every marker back">Reset</button>
       </div>
       <div class="row mode-row hidden" id="mode-row">
-        <label title="Overwrite the city's hidden state with the target's"><input type="radio" name="mode" value="swap" checked> <span id="lbl-swap">swap: Paris becomes Sydney</span></label>
+        <label title="Overwrite the place's hidden state with the target's"><input type="radio" name="mode" value="swap" checked> <span id="lbl-swap">swap: Paris becomes Sydney</span></label>
         <label title="Push the hidden state only along the location probe's directions"><input type="radio" name="mode" value="steer"> <span id="lbl-steer">move: Paris stays Paris</span></label>
       </div>
       <div id="edit-status" class="small"></div>
+      <div id="unscored-note" class="small warn-text hidden"></div>
       <table id="ripple" class="hidden">
         <thead><tr><th>Question</th><th>Before</th><th>After edit</th><th>Random control</th></tr></thead>
         <tbody></tbody>
@@ -87,7 +123,8 @@
 
     <section id="tab-rewrite" class="tab">
       <h2>Rewrite the world</h2>
-      <p class="small">Move up to three cities at once. All the edits are applied together, in one pass, so questions that mention several moved cities ("Are Paris and Tokyo in the same hemisphere?") see the whole rewritten world. Drag cities on the globe to add moves, or pick them below.</p>
+      <div id="rw-disabled" class="card warn hidden"></div>
+      <p class="small">Move up to three places at once (real or invented). All the edits are applied together, in one pass, so questions that mention several moved places ("Are Paris and Tokyo in the same hemisphere?") see the whole rewritten world. Drag markers on the globe to add moves, or type them below.</p>
       <div id="world-chips" class="chips"></div>
       <div id="moves"></div>
       <div class="row">
@@ -96,8 +133,8 @@
         <button id="rewrite-reset" class="secondary">Reset</button>
       </div>
       <div class="row mode-row hidden" id="rw-mode-row">
-        <label><input type="radio" name="rwmode" value="swap" checked> swap: each city becomes its target</label>
-        <label><input type="radio" name="rwmode" value="steer"> move: each city stays itself</label>
+        <label><input type="radio" name="rwmode" value="swap" checked> swap: each place becomes its target</label>
+        <label><input type="radio" name="rwmode" value="steer"> move: each place stays itself</label>
       </div>
       <div id="rw-status" class="small"></div>
       <div id="rw-cities"></div>

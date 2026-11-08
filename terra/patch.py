@@ -44,10 +44,20 @@ from typing import Sequence
 
 import torch
 
-from .model import LM, Patch
+from .backends.base import BaseLM as LM, Patch
 
 
-USER_TURN = "<|im_start|>user"
+USER_TURN = "<|im_start|>user"     # Qwen's marker; each backend sets lm.user_turn
+
+
+class AlignmentError(ValueError):
+    """A name could not be found, or matched up, in a prompt."""
+
+
+def user_turn_start(lm: LM, text: str) -> int:
+    """Index where the user's message starts in a chat prompt (0 for raw prompts)."""
+    marker = getattr(lm, "user_turn", None) or USER_TURN
+    return max(text.rfind(marker), 0)
 
 
 def name_positions(lm: LM, text: str, name: str) -> list[int]:
@@ -57,7 +67,7 @@ def name_positions(lm: LM, text: str, name: str) -> list[int]:
     default system prompt says "created by Alibaba Cloud", and we must not
     patch that mention when editing the company Alibaba.
     """
-    start = max(text.rfind(USER_TURN), 0)
+    start = user_turn_start(lm, text)
     out = []
     for m in re.finditer(r"(?<!\w)" + re.escape(name) + r"(?!\w)", text):
         if m.start() >= start:
@@ -106,7 +116,7 @@ def plan_edit(lm: LM, user_texts: Sequence[str], source: str, target: str,
     tgt_pos = [name_positions(lm, t, target) for t in tgt]
     for a, b, t in zip(src_pos, tgt_pos, user_texts):
         if len(a) != len(b) or not a:
-            raise ValueError(f"could not align {source!r} and {target!r} in {t!r}")
+            raise AlignmentError(f"could not find or align {source!r} and {target!r} in {t!r}")
     # One reading pass over both sets of prompts: the clean source states
     # (needed for the control and for reporting) and the target states.
     reads = lm.residuals_multi(src + tgt, src_pos + tgt_pos, layers)
@@ -197,7 +207,7 @@ def band(a: int, b: int) -> list[int]:
 
 def name_spans(lm: LM, text: str, name: str) -> list[list[int]]:
     """Token indices of every whole-word occurrence of `name` in the user message."""
-    start = max(text.rfind(USER_TURN), 0)
+    start = user_turn_start(lm, text)
     out = []
     for m in re.finditer(r"(?<!\w)" + re.escape(name) + r"(?!\w)", text):
         if m.start() >= start:
@@ -217,7 +227,7 @@ def plan_edit_all(lm: LM, user_texts: Sequence[str], source: str, target: str,
     for r, (a, b) in enumerate(zip(src, tgt)):
         sa, sb = name_spans(lm, a, source), name_spans(lm, b, target)
         if len(sa) != len(sb) or not sa:
-            raise ValueError(f"could not align {source!r} and {target!r}")
+            raise AlignmentError(f"could not find or align {source!r} and {target!r} in {user_texts[r]!r}")
         sp, tp = [], []
         for ta, tb in zip(sa, sb):
             for k in range(len(ta)):                       # k counts from the right

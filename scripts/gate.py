@@ -15,7 +15,7 @@ Caveat recorded in the output: the band is chosen on these same 10 pairs,
 so the gate number is optimistic. The honest edit success rate comes from
 scripts/batch_edit_eval.py on fresh random pairs at the fixed band.
 
-Usage:  uv run python scripts/gate.py [--prompt-mode last|all]
+Usage:  uv run python scripts/gate.py [--model gemma4-31b]
 Writes: results/gate.json
 """
 
@@ -29,7 +29,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from terra import RESULTS  # noqa: E402
+from terra import registry  # noqa: E402
 from terra.data import city_info  # noqa: E402
 from terra.model import get_lm  # noqa: E402
 from terra.patch import ask, band  # noqa: E402
@@ -56,7 +56,18 @@ RESERVE = [
     ("Lima", "Berlin"),
 ]
 
-BANDS = [(a, b) for a in (0, 4, 8, 12) for b in (7, 11, 15, 19, 23, 27) if b > a + 2]
+def bands_for(n_layers: int) -> list[tuple[int, int]]:
+    """Layer bands to sweep, scaled to the model's depth.
+
+    For Qwen's 28 layers this is exactly the original sweep: bands starting
+    at 0, 4, 8, 12 and ending at 7, 11, 15, 19, 23, 27 (sevenths of the depth).
+    """
+    starts = [round(n_layers * k / 7) for k in range(4)]
+    ends = [round(n_layers * k / 7) - 1 for k in range(2, 8)]
+    return [(a, b) for a in starts for b in ends if b > a + 2]
+
+
+BANDS = bands_for(28)
 
 
 def key_for(city: str):
@@ -71,12 +82,12 @@ def run_edit(lm, src, tgt, layers, mode):
     return dict(zip(QKEYS, answers))
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default=str(RESULTS / "gate.json"))
-    args = ap.parse_args()
+def run(key: str = registry.DEFAULT_KEY, lm=None, out_path: str | None = None) -> dict:
+    """The ten-pair gate for `key`; writes gate.json in its results folder."""
+    out_file = Path(out_path) if out_path else registry.paths(key).result("gate.json")
     t0 = time.time()
-    lm = get_lm()
+    lm = lm or get_lm(key)
+    BANDS = bands_for(lm.n_layers)
 
     # ---- 1. baseline: does the clean model know every city?
     baseline = {}
@@ -162,10 +173,20 @@ def main() -> int:
                   "see results/edit_eval.json for fresh pairs at the fixed band.",
         "seconds": time.time() - t0,
     }
-    Path(args.out).parent.mkdir(parents=True, exist_ok=True)
-    Path(args.out).write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    out["model"] = key
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    out_file.write_text(json.dumps(out, indent=2, ensure_ascii=False))
     print(f"[gate] {out['decision']}: edit {best['n_pairs_pass']}/{len(pairs)}, "
-          f"control {ctrl_pass}/{len(pairs)} -> {args.out}")
+          f"control {ctrl_pass}/{len(pairs)} -> {out_file}")
+    return out
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model", default=registry.DEFAULT_KEY, choices=sorted(registry.MODELS))
+    ap.add_argument("--out", default=None, help="default: <model results>/gate.json")
+    args = ap.parse_args()
+    run(args.model, out_path=args.out)
     return 0
 
 

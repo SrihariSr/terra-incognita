@@ -15,7 +15,7 @@ Steps
 5. Save models/probe_final.npz, results/probe_final.json (held-out errors)
    and results/places_believed.json (about 10,000 places for the globe).
 
-    uv run python scripts/fit_final.py [--mode bare --layer 24]
+    uv run python scripts/fit_final.py [--model gemma4-31b] [--mode bare --layer 24]
 """
 
 from __future__ import annotations
@@ -31,7 +31,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from terra import ACTS, RESULTS, ROOT  # noqa: E402
+from terra import registry  # noqa: E402
 from terra.activations import load  # noqa: E402
 from terra.data import load_countries, subset_3k  # noqa: E402
 from terra.probe import (Probe, Standardiser, baseline_error, cross_val_predict, error_summary,  # noqa: E402
@@ -42,24 +42,24 @@ N_BOOT = 20
 N_DISPLAY = 10_000
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--set", default="full")
-    ap.add_argument("--mode", default=None)
-    ap.add_argument("--layer", type=int, default=None)
-    args = ap.parse_args()
+def run(key: str = registry.DEFAULT_KEY, set_name: str = "full", mode: str | None = None,
+        layer: int | None = None) -> dict:
+    """Final probe, bootstrap and believed positions for `key` (CPU only)."""
+    P = registry.paths(key)
+    RESULTS = P.results
+    RESULTS.mkdir(parents=True, exist_ok=True)
     # Prefer the layer sweep on the full place set if it has been run.
     sweep_file = RESULTS / "probe_layers_full.json"
     if not sweep_file.exists():
         sweep_file = RESULTS / "probe_layers.json"
     chosen = json.loads(sweep_file.read_text())["chosen"]
     print(f"[final] layer choice from {sweep_file.name}")
-    mode = args.mode or chosen["mode"]
-    layer = args.layer if args.layer is not None else chosen["layer"]
+    mode = mode or chosen["mode"]
+    layer = layer if layer is not None else chosen["layer"]
     t0 = time.time()
 
-    places = pd.read_csv(ACTS / f"places_{args.set}.csv")
-    pids, X = load(args.set, mode, layer)
+    places = pd.read_csv(P.acts / f"places_{set_name}.csv")
+    pids, X = load(set_name, mode, layer, root=P.acts)
     assert (pids == places["pid"].to_numpy()).all()
     Y = latlon_to_xyz(places["latitude"], places["longitude"])
     print(f"[final] {len(places)} places, mode={mode}, layer={layer}")
@@ -99,10 +99,10 @@ def main() -> int:
         a_k, c_k = p.raw_weights()
         boot_A.append(a_k)
         boot_c.append(c_k)
-        print(f"[final] bootstrap {k + 1}/{N_BOOT} ({time.time() - t0:.0f}s)", flush=True)
-    models = ROOT / "models"
-    models.mkdir(exist_ok=True)
-    np.savez(models / "probe_final.npz", A=A.astype(np.float32), c=c.astype(np.float32),
+        eta = (time.time() - t0) / (k + 1) * (N_BOOT - k - 1)
+        print(f"[final] bootstrap {k + 1}/{N_BOOT} ({time.time() - t0:.0f}s, ETA {eta / 60:.1f} min)", flush=True)
+    P.models.mkdir(parents=True, exist_ok=True)
+    np.savez(P.probe, A=A.astype(np.float32), c=c.astype(np.float32),
              boot_A=np.stack(boot_A).astype(np.float32), boot_c=np.stack(boot_c).astype(np.float32),
              alpha=alpha, layer=layer, mode=mode)
 
@@ -136,7 +136,7 @@ def main() -> int:
     np.savez(RESULTS / "probe_oof.npz", pid=places["pid"].to_numpy(),
              **{k: v.astype(np.float32) for k, v in oof.items()}, true=Y.astype(np.float32))
 
-    out = {"set": args.set, "n_places": len(places), "mode": mode, "layer": layer, "alpha": alpha,
+    out = {"model": key, "set": set_name, "n_places": len(places), "mode": mode, "layer": layer, "alpha": alpha,
            "loo_scores": scores, "heldout": summaries, "n_bootstrap": N_BOOT,
            "baseline_mean_direction": error_summary(baseline_error(Y, folds["random"])),
            "pred_norm_median": float(np.median(np.linalg.norm(oof["random"], axis=1))),
@@ -145,6 +145,17 @@ def main() -> int:
     (RESULTS / "probe_final.json").write_text(json.dumps(out, indent=2))
     print(f"[final] done in {time.time() - t0:.0f}s: random {summaries['random']['median_km']:.0f} km, "
           f"country-blocked {summaries['blocked_country']['median_km']:.0f} km")
+    return out
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model", default=registry.DEFAULT_KEY, choices=sorted(registry.MODELS))
+    ap.add_argument("--set", default="full")
+    ap.add_argument("--mode", default=None)
+    ap.add_argument("--layer", type=int, default=None)
+    args = ap.parse_args()
+    run(args.model, args.set, args.mode, args.layer)
     return 0
 
 

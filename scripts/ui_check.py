@@ -4,7 +4,12 @@ Needs the server running (uv run uvicorn terra.server:app --port 8000).
 Uses Playwright's Chromium (dev dependency). Checks that the page loads
 without JavaScript errors, the globe draws, a name can be located, an edit
 fills the ripple table, a free question is answered, a rewritten world with
-several moves runs, and the rigour tab renders. Screenshots go to results/figures/screenshots/.
+several moves runs, and the rigour tab renders. Version 2 checks: clicking a
+believed point selects it (Part 1), a located invented name joins "Your places"
+and can be an edit target with unscored answers (Part 2), the model menu lists
+every model (Part 3; switching is only exercised with --switch, which loads a
+second model), and the model's borders draw (Part 4).
+Screenshots go to results/figures/screenshots/.
 
     uv run python scripts/ui_check.py [--url http://127.0.0.1:8000]
 Writes results/ui_check.json
@@ -28,6 +33,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--url", default="http://127.0.0.1:8000")
     ap.add_argument("--name", default="Krasnovik")
+    ap.add_argument("--switch", default=None, help="also switch to this model key and back (slow)")
     args = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     checks, errors = [], []
@@ -55,6 +61,47 @@ def main() -> int:
         check("map stats rendered", page.locator("#map-stats .stat").count() >= 2,
               page.locator("#map-stats").inner_text()[:200])
 
+        # Part 3: the model menu lists every registered model.
+        n_opts = page.locator("#model-select option").count()
+        check("model menu lists the models", n_opts >= 3, n_opts)
+
+        # Part 4: the model's political map.
+        page.check('input[name="borders"][value="both"]')
+        page.wait_for_timeout(2500)
+        note = page.locator("#political-note").inner_text()
+        check("political map loaded", "countries drawn" in note, note[:200])
+        check("most displaced list shown", page.locator("#displaced li").count() > 0)
+        page.screenshot(path=str(OUT / "1b_political_map.png"))
+        if page.locator("#displaced li").count():
+            page.locator("#displaced li").first.click()
+            page.wait_for_timeout(1500)
+            card = page.locator("#country-card").inner_text()
+            check("country card explains the displacement", "world" in card and "km" in card, card[:200])
+        page.check('input[name="borders"][value="real"]')
+
+        # Part 1: click a believed point that is not a menu city; it is selected.
+        page.evaluate("() => { globe.pointOfView({lat: 20, lng: 78, altitude: 1.8}, 0); }")
+        page.wait_for_timeout(1500)
+        spot = page.evaluate("""() => {
+            const box = document.getElementById('globe').getBoundingClientRect();
+            const names = new Set((state.menu.cities || []).map((c) => c.name));
+            for (const p of state.places) {
+                if (names.has(p.name) || !p.big || !isVisible(p.blat, p.blon, 0.004)) continue;
+                const s = globe.getScreenCoords(p.blat, p.blon, 0.004);
+                if (s.x > 50 && s.y > 50 && s.x < box.width - 50 && s.y < box.height - 50)
+                    return {x: s.x + box.left, y: s.y + box.top, name: p.name};
+            }
+            return null; }""")
+        if spot:
+            page.mouse.click(spot["x"], spot["y"])
+            page.wait_for_timeout(800)
+            sel = page.locator("#selection").inner_text() if page.locator("#selection:not(.hidden)").count() else ""
+            check("clicking a believed point selects a place", "Error" in sel, {"clicked": spot["name"], "card": sel[:160]})
+            page.screenshot(path=str(OUT / "1c_selection.png"))
+            page.click("#sel-close")
+        else:
+            check("clicking a believed point selects a place", False, "no visible point found")
+
         # New worlds
         page.click('#tabs button[data-tab="worlds"]')
         page.fill("#locate-input", args.name)
@@ -68,11 +115,13 @@ def main() -> int:
         page.wait_for_timeout(2500)
         page.screenshot(path=str(OUT / "2_new_worlds.png"))
         check("suggestion chips shown", page.locator("#locate-chips .chip").count() > 0)
+        check("located name joins Your places", page.locator("#custom-list li:not(.empty)").count() >= 1
+              and page.locator(".city-marker.custom").count() >= 1)
 
         # Edit
         page.click('#tabs button[data-tab="edit"]')
-        page.select_option("#edit-source", "Paris")
-        page.select_option("#edit-target", "Sydney")
+        page.fill("#edit-source", "Paris")
+        page.fill("#edit-target", "Sydney")
         page.click("#edit-go")
         try:
             page.wait_for_function("document.getElementById('edit-status').textContent.startsWith('Done')", timeout=120_000)
@@ -89,6 +138,21 @@ def main() -> int:
         except Exception as exc:
             check("free question answered", False, str(exc)[:200])
         page.screenshot(path=str(OUT / "4_free_question.png"))
+
+        # Part 2: an invented target, computed live and shown unscored.
+        page.fill("#edit-source", "Paris")
+        page.fill("#edit-target", args.name)
+        page.click("#edit-go")
+        try:
+            page.wait_for_function("document.getElementById('edit-status').textContent.startsWith('Done')",
+                                   timeout=180_000)
+            note = page.locator("#unscored-note").inner_text()
+            meter = page.locator("#meter-edit-val").inner_text()
+            check(f"edit onto invented {args.name} runs unscored", "unscored" in note and meter == "unscored",
+                  {"note": note, "meter": meter})
+        except Exception as exc:
+            check(f"edit onto invented {args.name} runs unscored", False, str(exc)[:200])
+        page.screenshot(path=str(OUT / "4b_invented_target.png"))
 
         # Drag and drop: Paris marker onto Cape Town (both visible from this view).
         page.click("#edit-reset")
@@ -124,8 +188,8 @@ def main() -> int:
         # Tier 2 mode, if available
         if page.locator("#mode-row:not(.hidden)").count():
             page.check('input[name="mode"][value="steer"]')
-            page.select_option("#edit-source", "Paris")
-            page.select_option("#edit-target", "Sydney")
+            page.fill("#edit-source", "Paris")
+            page.fill("#edit-target", "Sydney")
             page.click("#edit-go")
             try:
                 page.wait_for_function("document.getElementById('edit-status').textContent.startsWith('Done')",
@@ -169,6 +233,19 @@ def main() -> int:
         page.wait_for_timeout(1500)
         check("rigour stats rendered", page.locator("#rigour .stat").count() >= 4, page.locator("#rigour").inner_text()[:200])
         page.screenshot(path=str(OUT / "6_rigour.png"))
+
+        # Part 3 (optional, slow): switch to another model and back.
+        if args.switch:
+            first = page.locator("#model-select").input_value()
+            for key in (args.switch, first):
+                page.select_option("#model-select", key)
+                try:
+                    page.wait_for_function(
+                        "document.getElementById('loading').classList.contains('done') && "
+                        f"document.getElementById('model-select').value === '{key}'", timeout=600_000)
+                    check(f"switch to {key}", True, page.locator("#hud-status").inner_text())
+                except Exception as exc:
+                    check(f"switch to {key}", False, str(exc)[:200])
         browser.close()
     check("no JavaScript errors", not errors, errors[:5])
     n_ok = sum(c["ok"] for c in checks)

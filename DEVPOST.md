@@ -13,6 +13,9 @@ Old maps marked the unexplored as *terra incognita*. Language models carry a map
 - **The edit.** Drag Paris onto Sydney. We change the model's internal activations, not the prompt, and a panel re-asks five questions about Paris: country, currency, main language, hemisphere, and whether July is summer or winter. Ask "I'm in Paris for Christmas, what should I pack?" and the edited model adds sunscreen and a hat.
 - **Move, don't swap.** A second mode moves a city without changing what it is: Berlin keeps Germany, the euro, German and the Brandenburg Gate, but the model now says it is in the Southern Hemisphere with winter in July.
 - **Rewrite the world.** Move up to three cities at once (Paris to Sydney, Tokyo to London, Rio de Janeiro to Moscow). All the edits are applied together, so questions about several moved cities ("Are Paris and Tokyo in the same hemisphere?", "Which is further south?") and free questions that mention them all answer for the rewritten world.
+- **The model's political map.** Put every place where the model believes it is, keep its real country, and draw the borders that result. Of 222 countries with places in our list, 93 keep land of their own, and 28% of the model's land lies in the right country. Australia sits 256 km north of where it is; the United Kingdom spreads over the North Atlantic to about 42 times its real area. Click a country to see how far it has moved and how much of it overlaps the real one.
+- **Any name, anywhere.** Every name you locate joins "Your places" on the globe, and can be moved onto a city or have a city moved onto it. Answers about invented places are shown unscored, since there is no answer key for them.
+- **Other models.** A menu switches between Qwen2.5-7B-Instruct and Gemma 4 (12B and 31B, 4-bit, through Apple's MLX), with only one model in memory at a time. One command builds a model's map, political map and edit menu. Every number on this page is for Qwen.
 - **Rigour.** Held-out errors, success on random pairs and random worlds against a random control of the same size, and a chance baseline for invented names, all on screen with the file each number comes from.
 
 ## Relation to New Worlds
@@ -26,9 +29,11 @@ The track asks for new worlds; we look for the one that already exists inside a 
 - **Editing (swap).** Activation patching during the prefill only: run "Which country is Sydney in?", copy the hidden state at the name " Sydney" for layers 4 to 7, and write it over the state at " Paris" when the model reads "Which country is Paris in?". The answer is generated from the patched cache. The band was chosen by a sweep on 10 gate pairs (patching the last name token), then fixed. Patching every token of a multi-word name (aligned from the right) was then tested with a rule written in advance, adopted, and re-measured on fresh pairs.
 - **Editing (move).** Probe-direction steering: shift the hidden state at the name only along the three directions the location probe reads (the minimum-length change that makes the probe read the target's position, times a scale), at layers 6 to 10.
 - **Rewriting the world.** Every move is substituted at once to build the target prompt ("Are Sydney and London in the same hemisphere?"), so each target's state is computed in the already-rewritten context, and all of them are written over the moved cities' tokens in one forward pass. Two cities can even swap places.
+- **The political map.** On a 1-degree grid, a cell is land if its 12th nearest believed place lies within 250 km, the radius whose land share (26% of the globe) comes closest to the real one (27%, Antarctica excluded). The cell takes the country of a distance-weighted vote of those 12 places, and one 3-by-3 majority pass smooths the edges. Areas are weighted by the cosine of latitude, because a 1-degree cell near the pole is much smaller than one at the equator. Every place is put where a probe that never saw it reads it (out-of-fold), so the map is not drawn by a probe that memorised it.
+- **Several models.** The pipeline sits behind a small backend interface: PyTorch forward hooks for Hugging Face models, and a thin wrapper module around each decoder layer for MLX models, which reads or overwrites the hidden state at chosen tokens. Hidden states cross the interface as PyTorch CPU tensors, so the probes, patch planning and scoring are shared. Each backend owns its chat format (Gemma's "thinking" mode is switched off and any thinking text is stripped). Switching models drops every reference to the old one, frees its memory and asks a running Ollama to unload its models before the new one loads.
 - **Controls.** At the same tokens and layers, we move the hidden state by a random vector with exactly the same length as the real edit at each layer. If size alone broke answers, the control would flip them too.
 - **Scoring.** Answer keys from GeoNames (country, currency, languages) and latitude (hemisphere, season, which city is further south). A question only counts if the edit changes its right answer, and only cities the unedited model gets right are used.
-- **Stack.** PyTorch forward hooks on the Hugging Face model in bf16 on Apple-silicon MPS, NumPy ridge with closed-form leave-one-out, FastAPI, globe.gl. Everything runs locally and offline on one MacBook. An automated check drives every endpoint (`results/demo_check.json`) and a headless browser drives the page, including drag and drop (`results/ui_check.json`), with the server sandboxed off the internet.
+- **Stack.** PyTorch forward hooks on the Hugging Face model in bf16 on Apple-silicon MPS, MLX (`mlx-lm`) for the Gemma models, Shapely for the political map's shapes, NumPy ridge with closed-form leave-one-out, FastAPI, globe.gl. Everything runs locally and offline on one MacBook. An automated check drives every endpoint (`results/demo_check.json`) and a headless browser drives the page, including drag and drop (`results/ui_check.json`), with the server sandboxed off the internet.
 
 ## Results
 
@@ -47,12 +52,18 @@ The track asks for new worlds; we look for the one that already exists inside a 
 | Same worlds: answers about two moved cities that fit the rewritten world (control) | 73% of 163 (45%) | `results/rewrite_eval.json` |
 | Same worlds: of those, answers the edits should change and do (control) | 67% of 67 (15%) | `results/rewrite_eval.json` |
 | Invented names landing in the region their sound suggests | 31 of 48 (chance 7%) | `results/fictional.json` |
+| Political map: countries that keep land of their own (of those with places) | 93 of 222 | `results/political_stats.json` |
+| Political map: share of the model's land in the right country | 28% | `results/political_stats.json` |
+| Political map: median displacement, countries with 20 or more places | 736 km | `results/political_stats.json` |
+| Political map: Australia displacement / share of its territory on real Australia / share of real Australia covered | 256 km north / 50% / 53% | `results/political_stats.json` |
 
 Findings we did not expect:
 
 - **The map knows more than the mouth.** Asked "Is Dublin in the Northern or Southern Hemisphere?", the unedited model says "Southern". Over 270 large cities its spoken answer is right 72% of the time, but the probe reading its hidden state puts the city in the right hemisphere 95% of the time, including 69 of the 76 cities it answers wrongly (`results/hemisphere_check.json`). Part of this is probably a bias towards the last option in the question.
 - **Edit too late and the world goes inconsistent.** Patching at layer 8 or later still changes country, currency and language, but the July-season answer flips on at most 1 of the 10 gate pairs: "Paris is in Australia, and July is summer" (`results/gate.json`, `results/figures/band_sweep.png`). Location facts are read off the name early.
 - **Editing several cities is easier than reasoning about them together.** With three moves applied at once, 97% of moved cities change all their own answers, but only 73% of answers to questions about two moved cities fit the rewritten world, and 67% of those whose right answer should change do (random control: 15%). The model updates each city's facts but does not always carry the new positions into comparisons (`results/rewrite_eval.json`).
+
+- **Some countries swell, others vanish.** In the political map the United Kingdom (5,648 places in the list) covers almost 10 million square kilometres, about 42 times its real area and mostly over sea, while Germany (223 places) keeps 9 grid cells, none of them on German soil. Part of this is the place list itself: a country with more places wins more of the neighbour votes, so the map shows the model's beliefs filtered through what the list covers (`results/political_stats.json`).
 
 ## Challenges
 
@@ -67,7 +78,7 @@ Findings we did not expect:
 - Gurnee & Tegmark (2023), *Language Models Represent Space and Time* (arXiv 2310.02207): linear probes for coordinates and static maps. We use their place list and prompt.
 - Chen et al. (2023), causal interventions on spatial representations in small models (arXiv 2312.16257).
 
-New here: invented places; live causal edits on a 7B chat model with measured consistency across five ripple questions and a matched random control; a move-without-swap edit tested on held-out pairs; several edits applied together, checked on questions that involve more than one moved city; and an interactive, offline demo.
+New here: invented places; live causal edits on a 7B chat model with measured consistency across five ripple questions and a matched random control; a move-without-swap edit tested on held-out pairs; several edits applied together, checked on questions that involve more than one moved city; the model's political map read from its hidden states; and an interactive, offline demo that can switch between models.
 
 ## Limits
 
@@ -75,7 +86,9 @@ New here: invented places; live causal edits on a 7B chat model with measured co
 - The swap edit replaces the whole representation of the name, so Paris takes on Sydney's identity too (it names the Sydney Opera House). The move mode keeps identity, but works on 60% of fresh pairs, not all.
 - Answers are scored by keyword match on short answers, which can miss correct paraphrases.
 - Probe errors are medians: some places are thousands of kilometres off, especially when whole countries are held out.
+- The political map depends on the place list, not only on the model: countries with many places win more neighbour votes and grow, countries with few shrink or vanish (11 countries with 10 or more places have no land at all). It shows the model's beliefs as read by a linear probe, not a map the model would draw if asked.
+- The Gemma models are wired in and tested in code with a stand-in model, but their probes, political maps and edits have to be built on the Mac (`scripts/build_model.py`) before any number can be quoted for them.
 
 ## What's next
 
-Larger models and other kinds of fact (dates, people, organisations) with the same read-edit-check loop; finding out why answers about two edited cities lag behind answers about one; and a "belief diff" tool that lists where a model's internal map disagrees with the record.
+Build and measure the Gemma models with the same scripts and compare their maps and edit success with Qwen's; other kinds of fact (dates, people, organisations) with the same read-edit-check loop; finding out why answers about two edited cities lag behind answers about one; and a "belief diff" tool that lists where a model's internal map disagrees with the record.

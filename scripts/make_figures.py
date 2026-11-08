@@ -9,7 +9,11 @@ Writes PNGs to results/figures/:
     believed_map.png      true vs believed positions for large cities
     swap_vs_move.png      tier 1 swap vs tier 2 steering vs control on fresh pairs
     rewrite_world.png     several moves applied together (results/rewrite_eval.json)
+    political_map.png     the model's political map against the real borders
+                          (results/political_map.geojson, political_stats.json)
 Each figure is skipped if its results file is missing.
+Pass figure names to draw only those, e.g.
+    uv run python scripts/make_figures.py political_map
 """
 
 from __future__ import annotations
@@ -284,9 +288,67 @@ def rewrite_world():
     plt.close(fig)
 
 
+# Natural Earth's MAPCOLOR7 index (1..7) mapped to seven distinct fills, so that
+# neighbouring countries in the model's map never share a colour.
+MAPCOL = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#9085e9", "#e66767"]
+
+
+def _rings(geom):
+    """Outer rings of a GeoJSON Polygon or MultiPolygon, as (lon, lat) arrays."""
+    if geom["type"] == "Polygon":
+        return [np.array(geom["coordinates"][0])]
+    if geom["type"] == "MultiPolygon":
+        return [np.array(poly[0]) for poly in geom["coordinates"]]
+    return []
+
+
+def political_map():
+    gj, st = load("political_map.geojson"), load("political_stats.json")
+    real_path = Path(__file__).resolve().parents[1] / "web" / "vendor" / "countries.geojson"
+    if not gj or not st or not real_path.exists():
+        return
+    from matplotlib.patches import Polygon as MplPolygon
+    real = json.loads(real_path.read_text())
+    fig, ax = plt.subplots(figsize=(11, 5.6))
+    # The model's countries: filled shapes on a plain longitude/latitude grid.
+    for f in gj["features"]:
+        col = MAPCOL[(int(f["properties"].get("MAPCOLOR7") or 1) - 1) % 7]
+        for ring in _rings(f["geometry"]):
+            ax.add_patch(MplPolygon(ring, closed=True, facecolor=col, edgecolor=col, alpha=0.55, lw=0.4, zorder=2))
+    # The real borders: thin grey outlines on top, for comparison.
+    for f in real["features"]:
+        for ring in _rings(f["geometry"]):
+            ax.plot(ring[:, 0], ring[:, 1], color=GREY, lw=0.35, zorder=3)
+    # Labels for the largest countries, at their believed centroids.
+    big = sorted(gj["features"], key=lambda f: -(f["properties"].get("model_area_km2") or 0))[:14]
+    for f in big:
+        la, lo = f["properties"]["believed_centroid"]
+        ax.text(lo, la, f["properties"]["name"], fontsize=7.5, ha="center", va="center", color=INK, zorder=4)
+    ax.set_xlim(-180, 180)
+    ax.set_ylim(-60, 85)
+    ax.set_aspect("equal")
+    ax.grid(False)
+    s = st["settings"]
+    ax.set_title(f"{st['model']}'s political map (filled) against the real borders (grey lines): "
+                 f"{st['n_countries_drawn']} countries drawn, "
+                 f"{st['share_of_model_land_in_right_country'] * 100:.0f}% of its land in the right country",
+                 loc="left", fontsize=10.5)
+    ax.text(-178, -57, f"Read by a linear probe from hidden states (out-of-fold), not drawn by the model. "
+                       f"{s['cell_deg']:g} degree grid, k = {s['k']}, land if the k-th neighbour is within "
+                       f"{s['radius_km']} km. Source: results/political_stats.json", fontsize=7.5, color=INK2)
+    fig.tight_layout()
+    fig.savefig(FIG / "political_map.png", dpi=160)
+    plt.close(fig)
+
+
 def main() -> int:
     FIG.mkdir(parents=True, exist_ok=True)
-    for f in (probe_by_layer, error_map, band_sweep, edit_vs_control, believed_map, swap_vs_move, rewrite_world):
+    every = (probe_by_layer, error_map, band_sweep, edit_vs_control, believed_map, swap_vs_move, rewrite_world,
+             political_map)
+    wanted = set(sys.argv[1:])
+    for f in every:
+        if wanted and f.__name__ not in wanted:
+            continue
         f()
         print(f"[figures] {f.__name__}")
     return 0

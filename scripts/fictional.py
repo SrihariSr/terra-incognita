@@ -10,12 +10,13 @@ Narnia) are reported but not scored.
 
 The coherent ones become the suggested names in the demo's search box.
 
-    uv run python scripts/fictional.py
-Writes results/fictional.json
+    uv run python scripts/fictional.py [--model gemma4-31b]
+Writes fictional.json in the model's results folder
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 import time
@@ -25,7 +26,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from terra import RESULTS  # noqa: E402
+from terra import registry  # noqa: E402
 from terra.locate import Locator  # noqa: E402
 from terra.model import get_lm  # noqa: E402
 
@@ -84,10 +85,12 @@ def coherent(nearest: dict, group: str | None):
     return nearest["iso"] in allowed or ("@" + nearest["continent"]) in allowed
 
 
-def main() -> int:
+def run(key: str = registry.DEFAULT_KEY, lm=None) -> dict:
+    """Locate the 50 names with `key`'s probe; writes fictional.json for that model."""
+    P = registry.paths(key)
     t0 = time.time()
-    lm = get_lm()
-    loc = Locator(lm)
+    lm = lm or get_lm(key)
+    loc = Locator(lm, path=P.probe)
     names = list(EXPECTED)
     res = loc.locate(names)
     rows = []
@@ -119,8 +122,18 @@ def main() -> int:
            "rule": "coherent = nearest real city (pop > 15k) to the believed point is in the "
                    "pre-registered expected countries/continent",
            "results": rows, "seconds": time.time() - t0}
-    (RESULTS / "fictional.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
-    print(f"[fiction] coherent {out['n_coherent']}/{out['n_scored']} -> results/fictional.json")
+    out["model"] = key
+    P.results.mkdir(parents=True, exist_ok=True)
+    P.result("fictional.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    print(f"[fiction] coherent {out['n_coherent']}/{out['n_scored']} -> {P.result('fictional.json')}")
+    return out
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model", default=registry.DEFAULT_KEY, choices=sorted(registry.MODELS))
+    args = ap.parse_args()
+    run(args.model)
     return 0
 
 

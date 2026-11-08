@@ -12,7 +12,10 @@ running), then calls every endpoint the demo uses and checks the answers:
 * /api/ask answers the free question before and after the edit;
 * /api/rewrite applies three moves together, and /api/ask answers a free
   question with all three applied;
-* /api/rigour returns numbers.
+* /api/rigour returns numbers;
+* version 2: /api/models lists every model, /api/political returns the
+  model's borders, and edits with an invented source or target run live and
+  come back unscored instead of failing.
 
     uv run python scripts/demo_check.py [--url http://127.0.0.1:8000]
 Writes results/demo_check.json
@@ -153,6 +156,26 @@ def main() -> int:
         check("over-long name rejected cleanly", r.status_code == 400, r.status_code, s)
         r, s = timed("POST", "/api/edit", json={"source": "Paris", "target": "Paris"})
         check("same source and target rejected cleanly", r.status_code == 400, r.status_code, s)
+
+        # Version 2 routes.
+        r, s = timed("GET", "/api/models")
+        j = r.json()
+        check("models listed", r.ok and len(j.get("models", [])) >= 3 and any(m["loaded"] for m in j["models"]),
+              [(m["key"], m["available"], m["editable"]) for m in j.get("models", [])], s)
+        r, s = timed("GET", "/api/political")
+        j = r.json()
+        check("political map", r.ok and len(j.get("map", {}).get("features", [])) > 10,
+              j.get("stats", {}).get("n_countries_drawn"), s)
+        for src, tgt in [("Paris", "Brindlemoor"), ("Brindlemoor", "Sydney")]:
+            r, s = timed("POST", "/api/edit", json={"source": src, "target": tgt})
+            j = r.json()
+            check(f"edit {src} -> {tgt} runs and is unscored", r.ok and j.get("scored") is False and "after" in j,
+                  {"after": j.get("after"), "reason": j.get("unscored_reason")}, s)
+        r, s = timed("POST", "/api/rewrite", json={"moves": [{"source": "Paris", "target": "Brindlemoor"},
+                                                           {"source": "Tokyo", "target": "Lima"}]})
+        j = r.json()
+        check("rewrite with an invented target runs", r.ok and len(j.get("cities", [])) == 2,
+              [c.get("scored") for c in j.get("cities", [])], s)
     except Exception as exc:  # record the failure instead of crashing without a file
         check("demo check ran to completion", False, f"{type(exc).__name__}: {exc}")
     finally:

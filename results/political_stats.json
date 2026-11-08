@@ -1,0 +1,5681 @@
+{
+  "model": "Qwen2.5-7B-Instruct",
+  "source": "out-of-fold probe readings (random 5-fold) of every place, labelled with its real country",
+  "caveat": "Countries with many places in the list (e.g. the US, the UK, India, Australia) win more neighbour votes and grow; countries with few places shrink or vanish. The map shows the model's beliefs as read by a linear probe, filtered through the place list's coverage.",
+  "settings": {
+    "cell_deg": 1.0,
+    "k": 12,
+    "radius_km": 250,
+    "majority_filter": "3x3, >= 5 of 9",
+    "min_piece_cells": 3,
+    "radius_rule": "land share closest to the real land share (Antarctica excluded)"
+  },
+  "radius_table": [
+    {
+      "radius_km": 200,
+      "land_fraction": 0.17885491011984345
+    },
+    {
+      "radius_km": 250,
+      "land_fraction": 0.2624557523064361
+    },
+    {
+      "radius_km": 300,
+      "land_fraction": 0.3383063444770742
+    },
+    {
+      "radius_km": 350,
+      "land_fraction": 0.3951121702438789
+    },
+    {
+      "radius_km": 400,
+      "land_fraction": 0.44255111604385367
+    },
+    {
+      "radius_km": 450,
+      "land_fraction": 0.48157289177598445
+    },
+    {
+      "radius_km": 500,
+      "land_fraction": 0.5132245267097927
+    },
+    {
+      "radius_km": 600,
+      "land_fraction": 0.5712433368686982
+    },
+    {
+      "radius_km": 700,
+      "land_fraction": 0.6246116529407129
+    },
+    {
+      "radius_km": 800,
+      "land_fraction": 0.6678830634990732
+    }
+  ],
+  "real_land_fraction": 0.271,
+  "model_land_fraction": 0.2625,
+  "n_places": 40270,
+  "n_countries_with_places": 222,
+  "n_countries_drawn": 93,
+  "share_of_model_land_in_right_country": 0.2799,
+  "median_displacement_km_20plus_places": 736.5,
+  "most_displaced": [
+    {
+      "iso": "AQ",
+      "name": "Antarctica",
+      "n_places": 20,
+      "n_cells": 1,
+      "believed_centroid": [
+        45.62,
+        -111.044
+      ],
+      "true_centroid": [
+        -82.444,
+        -99.306
+      ],
+      "displacement_km": 14255.6,
+      "direction": "north",
+      "model_area_km2": 11160,
+      "real_area_km2": 12253712,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 11160,
+      "imagined_mostly_over": "Algeria"
+    },
+    {
+      "iso": "MU",
+      "name": "Mauritius",
+      "n_places": 26,
+      "n_cells": 3,
+      "believed_centroid": [
+        7.828,
+        15.854
+      ],
+      "true_centroid": [
+        -19.727,
+        57.795
+      ],
+      "displacement_km": 5518.9,
+      "direction": "north-west",
+      "model_area_km2": 36469,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 36469,
+      "imagined_mostly_over": "Central African Republic"
+    },
+    {
+      "iso": "HT",
+      "name": "Haiti",
+      "n_places": 52,
+      "n_cells": 4,
+      "believed_centroid": [
+        29.231,
+        -35.015
+      ],
+      "true_centroid": [
+        18.863,
+        -72.687
+      ],
+      "displacement_km": 3975.8,
+      "direction": "north-east",
+      "model_area_km2": 46863,
+      "real_area_km2": 35106,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 46863,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "LS",
+      "name": "Lesotho",
+      "n_places": 20,
+      "n_cells": 2,
+      "believed_centroid": [
+        -3.352,
+        45.205
+      ],
+      "true_centroid": [
+        -29.444,
+        28.005
+      ],
+      "displacement_km": 3421.7,
+      "direction": "north-east",
+      "model_area_km2": 24067,
+      "real_area_km2": 21523,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 24067,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "KI",
+      "name": "Kiribati",
+      "n_places": 24,
+      "n_cells": 0,
+      "believed_centroid": [
+        -6.13,
+        150.634
+      ],
+      "true_centroid": [
+        0.024,
+        179.201
+      ],
+      "displacement_km": 3243.5,
+      "direction": "west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "VU",
+      "name": "Vanuatu",
+      "n_places": 20,
+      "n_cells": 0,
+      "believed_centroid": [
+        -2.919,
+        143.074
+      ],
+      "true_centroid": [
+        -16.836,
+        168.302
+      ],
+      "displacement_km": 3160.3,
+      "direction": "north-west",
+      "model_area_km2": 0,
+      "real_area_km2": 11855,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": 0.0,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "SC",
+      "name": "Seychelles",
+      "n_places": 37,
+      "n_cells": 3,
+      "believed_centroid": [
+        9.539,
+        33.754
+      ],
+      "true_centroid": [
+        -5.713,
+        53.85
+      ],
+      "displacement_km": 2798.9,
+      "direction": "north-west",
+      "model_area_km2": 36327,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 36327,
+      "imagined_mostly_over": "Mozambique"
+    },
+    {
+      "iso": "MG",
+      "name": "Madagascar",
+      "n_places": 41,
+      "n_cells": 8,
+      "believed_centroid": [
+        4.145,
+        37.56
+      ],
+      "true_centroid": [
+        -18.497,
+        47.165
+      ],
+      "displacement_km": 2728.8,
+      "direction": "north-west",
+      "model_area_km2": 92373,
+      "real_area_km2": 593583,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 92373,
+      "imagined_mostly_over": "Sudan"
+    },
+    {
+      "iso": "GY",
+      "name": "Guyana",
+      "n_places": 42,
+      "n_cells": 13,
+      "believed_centroid": [
+        12.373,
+        -34.712
+      ],
+      "true_centroid": [
+        6.233,
+        -58.465
+      ],
+      "displacement_km": 2692.6,
+      "direction": "east",
+      "model_area_km2": 159095,
+      "real_area_km2": 209354,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 159095,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "SB",
+      "name": "Solomon Islands",
+      "n_places": 28,
+      "n_cells": 0,
+      "believed_centroid": [
+        -14.53,
+        136.483
+      ],
+      "true_centroid": [
+        -9.342,
+        160.043
+      ],
+      "displacement_km": 2625.5,
+      "direction": "west",
+      "model_area_km2": 0,
+      "real_area_km2": 36648,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": 0.0,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "SL",
+      "name": "Sierra Leone",
+      "n_places": 20,
+      "n_cells": 4,
+      "believed_centroid": [
+        9.835,
+        10.628
+      ],
+      "true_centroid": [
+        8.358,
+        -12.176
+      ],
+      "displacement_km": 2508.7,
+      "direction": "east",
+      "model_area_km2": 48896,
+      "real_area_km2": 73364,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 48896,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "LR",
+      "name": "Liberia",
+      "n_places": 26,
+      "n_cells": 2,
+      "believed_centroid": [
+        28.38,
+        -4.589
+      ],
+      "true_centroid": [
+        6.454,
+        -9.634
+      ],
+      "displacement_km": 2495.2,
+      "direction": "north",
+      "model_area_km2": 21278,
+      "real_area_km2": 85960,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 21278,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "BZ",
+      "name": "Belize",
+      "n_places": 21,
+      "n_cells": 1,
+      "believed_centroid": [
+        28.309,
+        -68.132
+      ],
+      "true_centroid": [
+        17.249,
+        -88.6
+      ],
+      "displacement_km": 2426.4,
+      "direction": "north-east",
+      "model_area_km2": 11423,
+      "real_area_km2": 23647,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 11423,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "NZ",
+      "name": "New Zealand",
+      "n_places": 167,
+      "n_cells": 8,
+      "believed_centroid": [
+        -19.637,
+        169.266
+      ],
+      "true_centroid": [
+        -40.416,
+        173.954
+      ],
+      "displacement_km": 2353.2,
+      "direction": "north",
+      "model_area_km2": 72930,
+      "real_area_km2": 266448,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 72930,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "MZ",
+      "name": "Mozambique",
+      "n_places": 39,
+      "n_cells": 12,
+      "believed_centroid": [
+        -3.323,
+        21.497
+      ],
+      "true_centroid": [
+        -18.782,
+        35.722
+      ],
+      "displacement_km": 2312.6,
+      "direction": "north-west",
+      "model_area_km2": 146801,
+      "real_area_km2": 800863,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 146801,
+      "imagined_mostly_over": "Angola"
+    }
+  ],
+  "vanished": [
+    {
+      "iso": "SB",
+      "name": "Solomon Islands",
+      "n_places": 28
+    },
+    {
+      "iso": "KI",
+      "name": "Kiribati",
+      "n_places": 24
+    },
+    {
+      "iso": "VU",
+      "name": "Vanuatu",
+      "n_places": 20
+    },
+    {
+      "iso": "WS",
+      "name": "Samoa",
+      "n_places": 19
+    },
+    {
+      "iso": "SR",
+      "name": "Suriname",
+      "n_places": 18
+    },
+    {
+      "iso": "FM",
+      "name": "Micronesia",
+      "n_places": 16
+    },
+    {
+      "iso": "CK",
+      "name": "Cook Islands",
+      "n_places": 14
+    },
+    {
+      "iso": "CV",
+      "name": "Cabo Verde",
+      "n_places": 10
+    },
+    {
+      "iso": "JE",
+      "name": "Jersey",
+      "n_places": 10
+    },
+    {
+      "iso": "LU",
+      "name": "Luxembourg",
+      "n_places": 10
+    },
+    {
+      "iso": "TV",
+      "name": "Tuvalu",
+      "n_places": 10
+    }
+  ],
+  "imagined": [
+    {
+      "iso": "IN",
+      "name": "India",
+      "imagined_km2": 13380472,
+      "precision": 0.184,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "GB",
+      "name": "United Kingdom",
+      "imagined_km2": 9740960,
+      "precision": 0.0239,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "US",
+      "name": "United States",
+      "imagined_km2": 7502187,
+      "precision": 0.5139,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "AU",
+      "name": "Australia",
+      "imagined_km2": 4098067,
+      "precision": 0.4976,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "IT",
+      "name": "Italy",
+      "imagined_km2": 3849832,
+      "precision": 0.078,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "SY",
+      "name": "Syria",
+      "imagined_km2": 3271777,
+      "precision": 0.0555,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "ZA",
+      "name": "South Africa",
+      "imagined_km2": 3267155,
+      "precision": 0.2737,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "JP",
+      "name": "Japan",
+      "imagined_km2": 3214191,
+      "precision": 0.1114,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "PH",
+      "name": "Philippines",
+      "imagined_km2": 2461121,
+      "precision": 0.0933,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "MX",
+      "name": "Mexico",
+      "imagined_km2": 2405775,
+      "precision": 0.1972,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "CA",
+      "name": "Canada",
+      "imagined_km2": 2228062,
+      "precision": 0.6465,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "ID",
+      "name": "Indonesia",
+      "imagined_km2": 2174716,
+      "precision": 0.2695,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "UG",
+      "name": "Uganda",
+      "imagined_km2": 2034556,
+      "precision": 0.0572,
+      "mostly_over": "Democratic Republic of the Congo"
+    },
+    {
+      "iso": "MY",
+      "name": "Malaysia",
+      "imagined_km2": 1849977,
+      "precision": 0.0445,
+      "mostly_over": "sea"
+    },
+    {
+      "iso": "CO",
+      "name": "Colombia",
+      "imagined_km2": 1645612,
+      "precision": 0.3626,
+      "mostly_over": "sea"
+    }
+  ],
+  "countries": [
+    {
+      "iso": "AD",
+      "name": "Andorra",
+      "n_places": 10,
+      "n_cells": 1,
+      "believed_centroid": [
+        40.923,
+        -8.847
+      ],
+      "true_centroid": [
+        42.537,
+        1.569
+      ],
+      "displacement_km": 882.2,
+      "direction": "west",
+      "model_area_km2": 9809,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 9809,
+      "imagined_mostly_over": "Portugal"
+    },
+    {
+      "iso": "AE",
+      "name": "United Arab Emirates",
+      "n_places": 45,
+      "n_cells": 15,
+      "believed_centroid": [
+        28.689,
+        52.91
+      ],
+      "true_centroid": [
+        24.872,
+        54.984
+      ],
+      "displacement_km": 471.6,
+      "direction": "north-west",
+      "model_area_km2": 157720,
+      "real_area_km2": 67857,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 157720,
+      "imagined_mostly_over": "Saudi Arabia"
+    },
+    {
+      "iso": "AF",
+      "name": "Afghanistan",
+      "n_places": 92,
+      "n_cells": 19,
+      "believed_centroid": [
+        34.898,
+        61.996
+      ],
+      "true_centroid": [
+        34.061,
+        67.234
+      ],
+      "displacement_km": 488.9,
+      "direction": "west",
+      "model_area_km2": 183058,
+      "real_area_km2": 605900,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 183058,
+      "imagined_mostly_over": "Iran"
+    },
+    {
+      "iso": "AG",
+      "name": "Antigua and Barbuda",
+      "n_places": 9,
+      "n_cells": 3,
+      "believed_centroid": [
+        18.328,
+        -60.778
+      ],
+      "true_centroid": [
+        17.126,
+        -61.806
+      ],
+      "displacement_km": 172.3,
+      "direction": "north-east",
+      "model_area_km2": 36161,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 36161,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "AI",
+      "name": "Anguilla",
+      "n_places": 1,
+      "n_cells": 0,
+      "believed_centroid": [
+        57.565,
+        -26.272
+      ],
+      "true_centroid": [
+        18.133,
+        -63.083
+      ],
+      "displacement_km": 5323.4,
+      "direction": "north-east",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "AL",
+      "name": "Albania",
+      "n_places": 14,
+      "n_cells": 1,
+      "believed_centroid": [
+        40.456,
+        7.86
+      ],
+      "true_centroid": [
+        40.92,
+        20.04
+      ],
+      "displacement_km": 1027.4,
+      "direction": "west",
+      "model_area_km2": 10190,
+      "real_area_km2": 28064,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 10190,
+      "imagined_mostly_over": "Algeria"
+    },
+    {
+      "iso": "AM",
+      "name": "Armenia",
+      "n_places": 55,
+      "n_cells": 18,
+      "believed_centroid": [
+        40.303,
+        45.932
+      ],
+      "true_centroid": [
+        40.276,
+        44.81
+      ],
+      "displacement_km": 95.2,
+      "direction": "east",
+      "model_area_km2": 159275,
+      "real_area_km2": 18943,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 159275,
+      "imagined_mostly_over": "Kazakhstan"
+    },
+    {
+      "iso": "AO",
+      "name": "Angola",
+      "n_places": 49,
+      "n_cells": 3,
+      "believed_centroid": [
+        0.949,
+        4.257
+      ],
+      "true_centroid": [
+        -10.365,
+        14.691
+      ],
+      "displacement_km": 1707.4,
+      "direction": "north-west",
+      "model_area_km2": 36885,
+      "real_area_km2": 1243178,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 36885,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "AQ",
+      "name": "Antarctica",
+      "n_places": 20,
+      "n_cells": 1,
+      "believed_centroid": [
+        45.62,
+        -111.044
+      ],
+      "true_centroid": [
+        -82.444,
+        -99.306
+      ],
+      "displacement_km": 14255.6,
+      "direction": "north",
+      "model_area_km2": 11160,
+      "real_area_km2": 12253712,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 11160,
+      "imagined_mostly_over": "Algeria"
+    },
+    {
+      "iso": "AR",
+      "name": "Argentina",
+      "n_places": 279,
+      "n_cells": 104,
+      "believed_centroid": [
+        -25.037,
+        -60.431
+      ],
+      "true_centroid": [
+        -35.286,
+        -61.783
+      ],
+      "displacement_km": 1147.0,
+      "direction": "north",
+      "model_area_km2": 1110179,
+      "real_area_km2": 2795450,
+      "overlap_km2": 504472,
+      "precision": 0.4544,
+      "recall": 0.1805,
+      "imagined_km2": 605707,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "AS",
+      "name": "American Samoa",
+      "n_places": 1,
+      "n_cells": 0,
+      "believed_centroid": [
+        6.015,
+        -149.175
+      ],
+      "true_centroid": [
+        -14.547,
+        -168.152
+      ],
+      "displacement_km": 3099.4,
+      "direction": "north-east",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "AT",
+      "name": "Austria",
+      "n_places": 100,
+      "n_cells": 6,
+      "believed_centroid": [
+        50.708,
+        12.324
+      ],
+      "true_centroid": [
+        47.712,
+        14.48
+      ],
+      "displacement_km": 368.1,
+      "direction": "north-west",
+      "model_area_km2": 52949,
+      "real_area_km2": 91402,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 52949,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "AU",
+      "name": "Australia",
+      "n_places": 3378,
+      "n_cells": 783,
+      "believed_centroid": [
+        -30.534,
+        145.492
+      ],
+      "true_centroid": [
+        -32.672,
+        146.496
+      ],
+      "displacement_km": 256.1,
+      "direction": "north",
+      "model_area_km2": 8157195,
+      "real_area_km2": 7695319,
+      "overlap_km2": 4059129,
+      "precision": 0.4976,
+      "recall": 0.5275,
+      "imagined_km2": 4098067,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "AW",
+      "name": "Aruba",
+      "n_places": 3,
+      "n_cells": 0,
+      "believed_centroid": [
+        35.694,
+        -32.154
+      ],
+      "true_centroid": [
+        12.458,
+        -69.939
+      ],
+      "displacement_km": 4579.4,
+      "direction": "north-east",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "AZ",
+      "name": "Azerbaijan",
+      "n_places": 79,
+      "n_cells": 52,
+      "believed_centroid": [
+        42.779,
+        51.246
+      ],
+      "true_centroid": [
+        40.249,
+        47.83
+      ],
+      "displacement_km": 400.0,
+      "direction": "north-east",
+      "model_area_km2": 453983,
+      "real_area_km2": 103828,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 453983,
+      "imagined_mostly_over": "Kazakhstan"
+    },
+    {
+      "iso": "BA",
+      "name": "Bosnia and Herzegovina",
+      "n_places": 88,
+      "n_cells": 1,
+      "believed_centroid": [
+        41.84,
+        19.089
+      ],
+      "true_centroid": [
+        44.059,
+        17.915
+      ],
+      "displacement_km": 264.6,
+      "direction": "south",
+      "model_area_km2": 8819,
+      "real_area_km2": 44394,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 8819,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "BB",
+      "name": "Barbados",
+      "n_places": 16,
+      "n_cells": 3,
+      "believed_centroid": [
+        16.299,
+        -53.256
+      ],
+      "true_centroid": [
+        13.172,
+        -59.569
+      ],
+      "displacement_km": 762.6,
+      "direction": "north-east",
+      "model_area_km2": 35908,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 35908,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "BD",
+      "name": "Bangladesh",
+      "n_places": 270,
+      "n_cells": 29,
+      "believed_centroid": [
+        24.883,
+        87.417
+      ],
+      "true_centroid": [
+        23.47,
+        89.901
+      ],
+      "displacement_km": 297.0,
+      "direction": "north-west",
+      "model_area_km2": 327184,
+      "real_area_km2": 124615,
+      "overlap_km2": 56775,
+      "precision": 0.1735,
+      "recall": 0.4556,
+      "imagined_km2": 270409,
+      "imagined_mostly_over": "Myanmar"
+    },
+    {
+      "iso": "BE",
+      "name": "Belgium",
+      "n_places": 84,
+      "n_cells": 3,
+      "believed_centroid": [
+        47.654,
+        5.083
+      ],
+      "true_centroid": [
+        50.945,
+        4.232
+      ],
+      "displacement_km": 371.1,
+      "direction": "south",
+      "model_area_km2": 19605,
+      "real_area_km2": 23594,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 19605,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "BF",
+      "name": "Burkina Faso",
+      "n_places": 17,
+      "n_cells": 6,
+      "believed_centroid": [
+        16.129,
+        1.753
+      ],
+      "true_centroid": [
+        12.13,
+        -2.354
+      ],
+      "displacement_km": 627.5,
+      "direction": "north-east",
+      "model_area_km2": 72502,
+      "real_area_km2": 241470,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 72502,
+      "imagined_mostly_over": "Nigeria"
+    },
+    {
+      "iso": "BG",
+      "name": "Bulgaria",
+      "n_places": 138,
+      "n_cells": 16,
+      "believed_centroid": [
+        40.92,
+        24.733
+      ],
+      "true_centroid": [
+        42.667,
+        24.874
+      ],
+      "displacement_km": 194.6,
+      "direction": "south",
+      "model_area_km2": 151202,
+      "real_area_km2": 108944,
+      "overlap_km2": 8969,
+      "precision": 0.0593,
+      "recall": 0.0823,
+      "imagined_km2": 142233,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "BH",
+      "name": "Bahrain",
+      "n_places": 22,
+      "n_cells": 2,
+      "believed_centroid": [
+        40.275,
+        46.872
+      ],
+      "true_centroid": [
+        26.149,
+        50.571
+      ],
+      "displacement_km": 1607.6,
+      "direction": "north",
+      "model_area_km2": 19055,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 19055,
+      "imagined_mostly_over": "Iran"
+    },
+    {
+      "iso": "BI",
+      "name": "Burundi",
+      "n_places": 18,
+      "n_cells": 8,
+      "believed_centroid": [
+        2.214,
+        18.579
+      ],
+      "true_centroid": [
+        -3.377,
+        29.695
+      ],
+      "displacement_km": 1383.1,
+      "direction": "north-west",
+      "model_area_km2": 98246,
+      "real_area_km2": 24682,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 98246,
+      "imagined_mostly_over": "Cameroon"
+    },
+    {
+      "iso": "BJ",
+      "name": "Benin",
+      "n_places": 25,
+      "n_cells": 3,
+      "believed_centroid": [
+        13.861,
+        -8.311
+      ],
+      "true_centroid": [
+        7.791,
+        2.227
+      ],
+      "displacement_km": 1333.7,
+      "direction": "north-west",
+      "model_area_km2": 36526,
+      "real_area_km2": 133981,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 36526,
+      "imagined_mostly_over": "Cameroon"
+    },
+    {
+      "iso": "BM",
+      "name": "Bermuda",
+      "n_places": 3,
+      "n_cells": 0,
+      "believed_centroid": [
+        39.087,
+        -59.126
+      ],
+      "true_centroid": [
+        32.311,
+        -64.763
+      ],
+      "displacement_km": 908.8,
+      "direction": "north-east",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "BN",
+      "name": "Brunei",
+      "n_places": 8,
+      "n_cells": 0,
+      "believed_centroid": [
+        18.481,
+        92.527
+      ],
+      "true_centroid": [
+        4.121,
+        114.775
+      ],
+      "displacement_km": 2897.9,
+      "direction": "north-west",
+      "model_area_km2": 0,
+      "real_area_km2": 12326,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": 0.0,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "BO",
+      "name": "Bolivia",
+      "n_places": 54,
+      "n_cells": 8,
+      "believed_centroid": [
+        -5.456,
+        -63.216
+      ],
+      "true_centroid": [
+        -17.928,
+        -66.123
+      ],
+      "displacement_km": 1422.3,
+      "direction": "north",
+      "model_area_km2": 97723,
+      "real_area_km2": 1123510,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 97723,
+      "imagined_mostly_over": "Brazil"
+    },
+    {
+      "iso": "BR",
+      "name": "Brazil",
+      "n_places": 428,
+      "n_cells": 188,
+      "believed_centroid": [
+        -12.74,
+        -43.567
+      ],
+      "true_centroid": [
+        -18.775,
+        -46.505
+      ],
+      "displacement_km": 741.0,
+      "direction": "north-east",
+      "model_area_km2": 2186648,
+      "real_area_km2": 8523956,
+      "overlap_km2": 1657392,
+      "precision": 0.758,
+      "recall": 0.1944,
+      "imagined_km2": 529256,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "BS",
+      "name": "Bahamas",
+      "n_places": 36,
+      "n_cells": 7,
+      "believed_centroid": [
+        28.988,
+        -75.373
+      ],
+      "true_centroid": [
+        24.757,
+        -76.45
+      ],
+      "displacement_km": 482.4,
+      "direction": "north",
+      "model_area_km2": 82132,
+      "real_area_km2": 11065,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 82132,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "BT",
+      "name": "Bhutan",
+      "n_places": 29,
+      "n_cells": 3,
+      "believed_centroid": [
+        22.769,
+        85.42
+      ],
+      "true_centroid": [
+        27.274,
+        90.335
+      ],
+      "displacement_km": 704.3,
+      "direction": "south-west",
+      "model_area_km2": 34986,
+      "real_area_km2": 32902,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 34986,
+      "imagined_mostly_over": "Thailand"
+    },
+    {
+      "iso": "BW",
+      "name": "Botswana",
+      "n_places": 18,
+      "n_cells": 2,
+      "believed_centroid": [
+        -11.405,
+        31.855
+      ],
+      "true_centroid": [
+        -23.298,
+        25.113
+      ],
+      "displacement_km": 1502.8,
+      "direction": "north-east",
+      "model_area_km2": 24165,
+      "real_area_km2": 595141,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 24165,
+      "imagined_mostly_over": "Angola"
+    },
+    {
+      "iso": "BY",
+      "name": "Belarus",
+      "n_places": 46,
+      "n_cells": 7,
+      "believed_centroid": [
+        49.325,
+        30.452
+      ],
+      "true_centroid": [
+        53.551,
+        27.547
+      ],
+      "displacement_km": 511.1,
+      "direction": "south-east",
+      "model_area_km2": 54394,
+      "real_area_km2": 220937,
+      "overlap_km2": 14881,
+      "precision": 0.2736,
+      "recall": 0.0674,
+      "imagined_km2": 39512,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "BZ",
+      "name": "Belize",
+      "n_places": 21,
+      "n_cells": 1,
+      "believed_centroid": [
+        28.309,
+        -68.132
+      ],
+      "true_centroid": [
+        17.249,
+        -88.6
+      ],
+      "displacement_km": 2426.4,
+      "direction": "north-east",
+      "model_area_km2": 11423,
+      "real_area_km2": 23647,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 11423,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "CA",
+      "name": "Canada",
+      "n_places": 1128,
+      "n_cells": 875,
+      "believed_centroid": [
+        53.887,
+        -84.81
+      ],
+      "true_centroid": [
+        50.659,
+        -88.249
+      ],
+      "displacement_km": 428.3,
+      "direction": "north-east",
+      "model_area_km2": 6303484,
+      "real_area_km2": 10069151,
+      "overlap_km2": 4075423,
+      "precision": 0.6465,
+      "recall": 0.4047,
+      "imagined_km2": 2228062,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "CD",
+      "name": "Democratic Republic of the Congo",
+      "n_places": 56,
+      "n_cells": 26,
+      "believed_centroid": [
+        3.133,
+        19.947
+      ],
+      "true_centroid": [
+        -2.96,
+        21.137
+      ],
+      "displacement_km": 690.3,
+      "direction": "north",
+      "model_area_km2": 317398,
+      "real_area_km2": 2314848,
+      "overlap_km2": 73954,
+      "precision": 0.233,
+      "recall": 0.0319,
+      "imagined_km2": 243444,
+      "imagined_mostly_over": "Cameroon"
+    },
+    {
+      "iso": "CF",
+      "name": "Central African Republic",
+      "n_places": 17,
+      "n_cells": 8,
+      "believed_centroid": [
+        5.808,
+        23.578
+      ],
+      "true_centroid": [
+        6.181,
+        19.425
+      ],
+      "displacement_km": 461.1,
+      "direction": "east",
+      "model_area_km2": 97705,
+      "real_area_km2": 601785,
+      "overlap_km2": 24615,
+      "precision": 0.2519,
+      "recall": 0.0409,
+      "imagined_km2": 73090,
+      "imagined_mostly_over": "Democratic Republic of the Congo"
+    },
+    {
+      "iso": "CG",
+      "name": "Republic of the Congo",
+      "n_places": 7,
+      "n_cells": 2,
+      "believed_centroid": [
+        6.979,
+        3.974
+      ],
+      "true_centroid": [
+        -1.572,
+        15.407
+      ],
+      "displacement_km": 1585.5,
+      "direction": "north-west",
+      "model_area_km2": 24513,
+      "real_area_km2": 382918,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 24513,
+      "imagined_mostly_over": "Ethiopia"
+    },
+    {
+      "iso": "CH",
+      "name": "Switzerland",
+      "n_places": 312,
+      "n_cells": 4,
+      "believed_centroid": [
+        47.533,
+        7.786
+      ],
+      "true_centroid": [
+        46.695,
+        7.963
+      ],
+      "displacement_km": 94.2,
+      "direction": "north",
+      "model_area_km2": 32323,
+      "real_area_km2": 59104,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 32323,
+      "imagined_mostly_over": "Portugal"
+    },
+    {
+      "iso": "CI",
+      "name": "Ivory Coast",
+      "n_places": 22,
+      "n_cells": 2,
+      "believed_centroid": [
+        19.649,
+        1.614
+      ],
+      "true_centroid": [
+        6.211,
+        -5.101
+      ],
+      "displacement_km": 1661.2,
+      "direction": "north-east",
+      "model_area_km2": 23223,
+      "real_area_km2": 330981,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 23223,
+      "imagined_mostly_over": "Nigeria"
+    },
+    {
+      "iso": "CK",
+      "name": "Cook Islands",
+      "n_places": 14,
+      "n_cells": 0,
+      "believed_centroid": [
+        -19.748,
+        -175.009
+      ],
+      "true_centroid": [
+        -16.741,
+        -160.14
+      ],
+      "displacement_km": 1604.9,
+      "direction": "west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "CL",
+      "name": "Chile",
+      "n_places": 217,
+      "n_cells": 48,
+      "believed_centroid": [
+        -19.361,
+        -69.441
+      ],
+      "true_centroid": [
+        -36.993,
+        -71.745
+      ],
+      "displacement_km": 1973.4,
+      "direction": "north",
+      "model_area_km2": 528937,
+      "real_area_km2": 820308,
+      "overlap_km2": 95393,
+      "precision": 0.1803,
+      "recall": 0.1163,
+      "imagined_km2": 433544,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "CM",
+      "name": "Cameroon",
+      "n_places": 41,
+      "n_cells": 15,
+      "believed_centroid": [
+        15.633,
+        17.483
+      ],
+      "true_centroid": [
+        5.674,
+        10.873
+      ],
+      "displacement_km": 1321.5,
+      "direction": "north-east",
+      "model_area_km2": 179488,
+      "real_area_km2": 479224,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 179488,
+      "imagined_mostly_over": "Libya"
+    },
+    {
+      "iso": "CN",
+      "name": "China",
+      "n_places": 854,
+      "n_cells": 618,
+      "believed_centroid": [
+        34.04,
+        110.781
+      ],
+      "true_centroid": [
+        33.383,
+        112.892
+      ],
+      "displacement_km": 208.4,
+      "direction": "west",
+      "model_area_km2": 6285716,
+      "real_area_km2": 9430988,
+      "overlap_km2": 4799503,
+      "precision": 0.7636,
+      "recall": 0.5089,
+      "imagined_km2": 1486213,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "CO",
+      "name": "Colombia",
+      "n_places": 206,
+      "n_cells": 211,
+      "believed_centroid": [
+        8.783,
+        -69.223
+      ],
+      "true_centroid": [
+        6.009,
+        -74.925
+      ],
+      "displacement_km": 700.3,
+      "direction": "north-east",
+      "model_area_km2": 2581943,
+      "real_area_km2": 1120668,
+      "overlap_km2": 936330,
+      "precision": 0.3626,
+      "recall": 0.8355,
+      "imagined_km2": 1645612,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "CR",
+      "name": "Costa Rica",
+      "n_places": 62,
+      "n_cells": 28,
+      "believed_centroid": [
+        16.168,
+        -69.376
+      ],
+      "true_centroid": [
+        9.929,
+        -84.346
+      ],
+      "displacement_km": 1762.7,
+      "direction": "north-east",
+      "model_area_km2": 335088,
+      "real_area_km2": 60895,
+      "overlap_km2": 12229,
+      "precision": 0.0365,
+      "recall": 0.2008,
+      "imagined_km2": 322860,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "CU",
+      "name": "Cuba",
+      "n_places": 94,
+      "n_cells": 48,
+      "believed_centroid": [
+        23.656,
+        -67.598
+      ],
+      "true_centroid": [
+        22.33,
+        -80.481
+      ],
+      "displacement_km": 1326.5,
+      "direction": "east",
+      "model_area_km2": 547957,
+      "real_area_km2": 91863,
+      "overlap_km2": 34589,
+      "precision": 0.0631,
+      "recall": 0.3765,
+      "imagined_km2": 513368,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "CV",
+      "name": "Cabo Verde",
+      "n_places": 10,
+      "n_cells": 0,
+      "believed_centroid": [
+        13.123,
+        -25.635
+      ],
+      "true_centroid": [
+        16.023,
+        -24.072
+      ],
+      "displacement_km": 363.6,
+      "direction": "south-west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "CY",
+      "name": "Cyprus",
+      "n_places": 60,
+      "n_cells": 8,
+      "believed_centroid": [
+        35.676,
+        29.248
+      ],
+      "true_centroid": [
+        34.993,
+        33.334
+      ],
+      "displacement_km": 378.3,
+      "direction": "west",
+      "model_area_km2": 83374,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 83374,
+      "imagined_mostly_over": "Libya"
+    },
+    {
+      "iso": "CZ",
+      "name": "Czechia",
+      "n_places": 86,
+      "n_cells": 2,
+      "believed_centroid": [
+        50.881,
+        20.589
+      ],
+      "true_centroid": [
+        49.896,
+        15.06
+      ],
+      "displacement_km": 406.8,
+      "direction": "east",
+      "model_area_km2": 17322,
+      "real_area_km2": 71774,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 17322,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "DE",
+      "name": "Germany",
+      "n_places": 223,
+      "n_cells": 9,
+      "believed_centroid": [
+        50.841,
+        10.569
+      ],
+      "true_centroid": [
+        50.858,
+        10.5
+      ],
+      "displacement_km": 5.2,
+      "direction": "east",
+      "model_area_km2": 69185,
+      "real_area_km2": 341203,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 69185,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "DJ",
+      "name": "Djibouti",
+      "n_places": 14,
+      "n_cells": 1,
+      "believed_centroid": [
+        23.703,
+        38.256
+      ],
+      "true_centroid": [
+        11.55,
+        43.22
+      ],
+      "displacement_km": 1449.7,
+      "direction": "north",
+      "model_area_km2": 10866,
+      "real_area_km2": 24187,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 10866,
+      "imagined_mostly_over": "Libya"
+    },
+    {
+      "iso": "DK",
+      "name": "Denmark",
+      "n_places": 191,
+      "n_cells": 67,
+      "believed_centroid": [
+        59.82,
+        6.796
+      ],
+      "true_centroid": [
+        60.199,
+        3.062
+      ],
+      "displacement_km": 211.7,
+      "direction": "east",
+      "model_area_km2": 328868,
+      "real_area_km2": 55129,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 328868,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "DM",
+      "name": "Dominica",
+      "n_places": 7,
+      "n_cells": 1,
+      "believed_centroid": [
+        17.524,
+        -64.548
+      ],
+      "true_centroid": [
+        15.189,
+        -61.31
+      ],
+      "displacement_km": 432.1,
+      "direction": "north-west",
+      "model_area_km2": 12157,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 12157,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "DO",
+      "name": "Dominican Republic",
+      "n_places": 73,
+      "n_cells": 36,
+      "believed_centroid": [
+        16.88,
+        -68.353
+      ],
+      "true_centroid": [
+        18.854,
+        -70.229
+      ],
+      "displacement_km": 296.0,
+      "direction": "south-east",
+      "model_area_km2": 426453,
+      "real_area_km2": 70212,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 426453,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "DZ",
+      "name": "Algeria",
+      "n_places": 117,
+      "n_cells": 70,
+      "believed_centroid": [
+        31.802,
+        8.739
+      ],
+      "true_centroid": [
+        35.04,
+        2.824
+      ],
+      "displacement_km": 656.3,
+      "direction": "south-east",
+      "model_area_km2": 755113,
+      "real_area_km2": 2346227,
+      "overlap_km2": 389389,
+      "precision": 0.5157,
+      "recall": 0.166,
+      "imagined_km2": 365724,
+      "imagined_mostly_over": "Libya"
+    },
+    {
+      "iso": "EC",
+      "name": "Ecuador",
+      "n_places": 66,
+      "n_cells": 7,
+      "believed_centroid": [
+        4.061,
+        -66.184
+      ],
+      "true_centroid": [
+        -1.346,
+        -80.324
+      ],
+      "displacement_km": 1682.3,
+      "direction": "east",
+      "model_area_km2": 85971,
+      "real_area_km2": 247130,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 85971,
+      "imagined_mostly_over": "Peru"
+    },
+    {
+      "iso": "EE",
+      "name": "Estonia",
+      "n_places": 87,
+      "n_cells": 27,
+      "believed_centroid": [
+        57.069,
+        27.528
+      ],
+      "true_centroid": [
+        58.91,
+        25.146
+      ],
+      "displacement_km": 248.2,
+      "direction": "south-east",
+      "model_area_km2": 167594,
+      "real_area_km2": 38575,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 167594,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "EG",
+      "name": "Egypt",
+      "n_places": 91,
+      "n_cells": 21,
+      "believed_centroid": [
+        33.127,
+        32.551
+      ],
+      "true_centroid": [
+        29.46,
+        31.074
+      ],
+      "displacement_km": 431.2,
+      "direction": "north",
+      "model_area_km2": 223583,
+      "real_area_km2": 994623,
+      "overlap_km2": 33172,
+      "precision": 0.1484,
+      "recall": 0.0334,
+      "imagined_km2": 190411,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "EH",
+      "name": "Western Sahara",
+      "n_places": 6,
+      "n_cells": 2,
+      "believed_centroid": [
+        23.522,
+        10.976
+      ],
+      "true_centroid": [
+        25.525,
+        -13.041
+      ],
+      "displacement_km": 2436.6,
+      "direction": "east",
+      "model_area_km2": 22994,
+      "real_area_km2": 101556,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 22994,
+      "imagined_mostly_over": "Niger"
+    },
+    {
+      "iso": "ER",
+      "name": "Eritrea",
+      "n_places": 13,
+      "n_cells": 8,
+      "believed_centroid": [
+        18.313,
+        30.042
+      ],
+      "true_centroid": [
+        15.237,
+        39.049
+      ],
+      "displacement_km": 1017.9,
+      "direction": "west",
+      "model_area_km2": 93456,
+      "real_area_km2": 107158,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 93456,
+      "imagined_mostly_over": "Saudi Arabia"
+    },
+    {
+      "iso": "ES",
+      "name": "Spain",
+      "n_places": 244,
+      "n_cells": 112,
+      "believed_centroid": [
+        42.622,
+        -18.899
+      ],
+      "true_centroid": [
+        39.28,
+        -3.633
+      ],
+      "displacement_km": 1332.7,
+      "direction": "west",
+      "model_area_km2": 1078962,
+      "real_area_km2": 470677,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 1078962,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "ET",
+      "name": "Ethiopia",
+      "n_places": 96,
+      "n_cells": 84,
+      "believed_centroid": [
+        18.671,
+        36.918
+      ],
+      "true_centroid": [
+        9.583,
+        38.536
+      ],
+      "displacement_km": 1025.4,
+      "direction": "north",
+      "model_area_km2": 996980,
+      "real_area_km2": 1135420,
+      "overlap_km2": 339718,
+      "precision": 0.3407,
+      "recall": 0.2992,
+      "imagined_km2": 657262,
+      "imagined_mostly_over": "Sudan"
+    },
+    {
+      "iso": "FI",
+      "name": "Finland",
+      "n_places": 87,
+      "n_cells": 30,
+      "believed_centroid": [
+        59.295,
+        25.838
+      ],
+      "true_centroid": [
+        61.278,
+        24.985
+      ],
+      "displacement_km": 225.4,
+      "direction": "south",
+      "model_area_km2": 174403,
+      "real_area_km2": 346582,
+      "overlap_km2": 5900,
+      "precision": 0.0338,
+      "recall": 0.017,
+      "imagined_km2": 168503,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "FJ",
+      "name": "Fiji",
+      "n_places": 15,
+      "n_cells": 2,
+      "believed_centroid": [
+        0.155,
+        137.577
+      ],
+      "true_centroid": [
+        -17.826,
+        179.244
+      ],
+      "displacement_km": 4974.7,
+      "direction": "west",
+      "model_area_km2": 23480,
+      "real_area_km2": 23647,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 23480,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "FK",
+      "name": "Falkland Islands",
+      "n_places": 8,
+      "n_cells": 3,
+      "believed_centroid": [
+        75.496,
+        15.01
+      ],
+      "true_centroid": [
+        -51.689,
+        -59.579
+      ],
+      "displacement_km": 15113.8,
+      "direction": "north",
+      "model_area_km2": 13363,
+      "real_area_km2": 15394,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 13363,
+      "imagined_mostly_over": "Greenland"
+    },
+    {
+      "iso": "FM",
+      "name": "Micronesia",
+      "n_places": 16,
+      "n_cells": 0,
+      "believed_centroid": [
+        29.605,
+        146.223
+      ],
+      "true_centroid": [
+        7.039,
+        151.101
+      ],
+      "displacement_km": 2560.6,
+      "direction": "north",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "FO",
+      "name": "Faroe Islands",
+      "n_places": 3,
+      "n_cells": 0,
+      "believed_centroid": [
+        68.332,
+        -12.384
+      ],
+      "true_centroid": [
+        61.987,
+        -6.783
+      ],
+      "displacement_km": 751.7,
+      "direction": "north",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "FR",
+      "name": "France",
+      "n_places": 268,
+      "n_cells": 14,
+      "believed_centroid": [
+        53.053,
+        -1.008
+      ],
+      "true_centroid": [
+        51.57,
+        -5.943
+      ],
+      "displacement_km": 373.7,
+      "direction": "north-east",
+      "model_area_km2": 121619,
+      "real_area_km2": 650923,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 121619,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "GA",
+      "name": "Gabon",
+      "n_places": 12,
+      "n_cells": 1,
+      "believed_centroid": [
+        7.193,
+        0.967
+      ],
+      "true_centroid": [
+        -0.54,
+        11.388
+      ],
+      "displacement_km": 1440.6,
+      "direction": "north-west",
+      "model_area_km2": 11065,
+      "real_area_km2": 247205,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 11065,
+      "imagined_mostly_over": "Algeria"
+    },
+    {
+      "iso": "GB",
+      "name": "United Kingdom",
+      "n_places": 5648,
+      "n_cells": 1384,
+      "believed_centroid": [
+        52.738,
+        -0.87
+      ],
+      "true_centroid": [
+        52.375,
+        -1.794
+      ],
+      "displacement_km": 74.4,
+      "direction": "north-east",
+      "model_area_km2": 9979099,
+      "real_area_km2": 238139,
+      "overlap_km2": 238139,
+      "precision": 0.0239,
+      "recall": 1.0,
+      "imagined_km2": 9740960,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "GD",
+      "name": "Grenada",
+      "n_places": 11,
+      "n_cells": 5,
+      "believed_centroid": [
+        13.568,
+        -67.103
+      ],
+      "true_centroid": [
+        12.205,
+        -61.637
+      ],
+      "displacement_km": 611.6,
+      "direction": "west",
+      "model_area_km2": 60397,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 60397,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "GE",
+      "name": "Georgia",
+      "n_places": 33,
+      "n_cells": 7,
+      "believed_centroid": [
+        44.805,
+        44.864
+      ],
+      "true_centroid": [
+        42.276,
+        43.119
+      ],
+      "displacement_km": 314.4,
+      "direction": "north-east",
+      "model_area_km2": 63018,
+      "real_area_km2": 55129,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 63018,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "GG",
+      "name": "Guernsey",
+      "n_places": 7,
+      "n_cells": 1,
+      "believed_centroid": [
+        53.233,
+        -5.378
+      ],
+      "true_centroid": [
+        49.49,
+        -2.524
+      ],
+      "displacement_km": 460.9,
+      "direction": "north-west",
+      "model_area_km2": 6824,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 6824,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "GH",
+      "name": "Ghana",
+      "n_places": 132,
+      "n_cells": 101,
+      "believed_centroid": [
+        9.177,
+        13.183
+      ],
+      "true_centroid": [
+        6.756,
+        -0.96
+      ],
+      "displacement_km": 1580.4,
+      "direction": "east",
+      "model_area_km2": 1233298,
+      "real_area_km2": 257066,
+      "overlap_km2": 24386,
+      "precision": 0.0198,
+      "recall": 0.0949,
+      "imagined_km2": 1208912,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "GI",
+      "name": "Gibraltar",
+      "n_places": 5,
+      "n_cells": 0,
+      "believed_centroid": [
+        41.709,
+        -1.009
+      ],
+      "true_centroid": [
+        36.288,
+        -4.811
+      ],
+      "displacement_km": 686.4,
+      "direction": "north-east",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "GL",
+      "name": "Greenland",
+      "n_places": 35,
+      "n_cells": 1,
+      "believed_centroid": [
+        69.082,
+        -25.042
+      ],
+      "true_centroid": [
+        70.231,
+        -43.021
+      ],
+      "displacement_km": 703.9,
+      "direction": "east",
+      "model_area_km2": 6460,
+      "real_area_km2": 2199054,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 6460,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "GM",
+      "name": "Gambia",
+      "n_places": 8,
+      "n_cells": 3,
+      "believed_centroid": [
+        10.518,
+        11.353
+      ],
+      "true_centroid": [
+        13.429,
+        -15.699
+      ],
+      "displacement_km": 2958.9,
+      "direction": "east",
+      "model_area_km2": 36296,
+      "real_area_km2": 36068,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 36296,
+      "imagined_mostly_over": "Benin"
+    },
+    {
+      "iso": "GN",
+      "name": "Guinea",
+      "n_places": 21,
+      "n_cells": 8,
+      "believed_centroid": [
+        19.556,
+        7.151
+      ],
+      "true_centroid": [
+        10.165,
+        -11.171
+      ],
+      "displacement_km": 2226.1,
+      "direction": "north-east",
+      "model_area_km2": 96097,
+      "real_area_km2": 267449,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 96097,
+      "imagined_mostly_over": "Burkina Faso"
+    },
+    {
+      "iso": "GQ",
+      "name": "Equatorial Guinea",
+      "n_places": 14,
+      "n_cells": 5,
+      "believed_centroid": [
+        6.558,
+        -12.913
+      ],
+      "true_centroid": [
+        2.037,
+        9.045
+      ],
+      "displacement_km": 2485.4,
+      "direction": "west",
+      "model_area_km2": 60771,
+      "real_area_km2": 24720,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 60771,
+      "imagined_mostly_over": "Brazil"
+    },
+    {
+      "iso": "GR",
+      "name": "Greece",
+      "n_places": 156,
+      "n_cells": 22,
+      "believed_centroid": [
+        41.347,
+        24.649
+      ],
+      "true_centroid": [
+        38.52,
+        23.364
+      ],
+      "displacement_km": 332.9,
+      "direction": "north",
+      "model_area_km2": 202902,
+      "real_area_km2": 133935,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 202902,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "GS",
+      "name": "South Georgia and the South Sandwich Islands",
+      "n_places": 3,
+      "n_cells": 0,
+      "believed_centroid": [
+        67.144,
+        -146.811
+      ],
+      "true_centroid": [
+        -56.372,
+        -30.063
+      ],
+      "displacement_km": 16654.6,
+      "direction": "north-west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "GT",
+      "name": "Guatemala",
+      "n_places": 81,
+      "n_cells": 24,
+      "believed_centroid": [
+        16.878,
+        -80.927
+      ],
+      "true_centroid": [
+        14.951,
+        -90.758
+      ],
+      "displacement_km": 1072.7,
+      "direction": "east",
+      "model_area_km2": 287558,
+      "real_area_km2": 130864,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 287558,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "GU",
+      "name": "Guam",
+      "n_places": 1,
+      "n_cells": 0,
+      "believed_centroid": [
+        43.631,
+        78.455
+      ],
+      "true_centroid": [
+        13.474,
+        144.752
+      ],
+      "displacement_km": 7078.4,
+      "direction": "north-west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "GW",
+      "name": "Guinea-Bissau",
+      "n_places": 13,
+      "n_cells": 4,
+      "believed_centroid": [
+        14.259,
+        8.77
+      ],
+      "true_centroid": [
+        11.837,
+        -15.424
+      ],
+      "displacement_km": 2633.4,
+      "direction": "east",
+      "model_area_km2": 47994,
+      "real_area_km2": 36259,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 47994,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "GY",
+      "name": "Guyana",
+      "n_places": 42,
+      "n_cells": 13,
+      "believed_centroid": [
+        12.373,
+        -34.712
+      ],
+      "true_centroid": [
+        6.233,
+        -58.465
+      ],
+      "displacement_km": 2692.6,
+      "direction": "east",
+      "model_area_km2": 159095,
+      "real_area_km2": 209354,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 159095,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "HK",
+      "name": "Hong Kong",
+      "n_places": 42,
+      "n_cells": 5,
+      "believed_centroid": [
+        34.815,
+        102.43
+      ],
+      "true_centroid": [
+        22.303,
+        114.146
+      ],
+      "displacement_km": 1798.4,
+      "direction": "north-west",
+      "model_area_km2": 51236,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 51236,
+      "imagined_mostly_over": "Laos"
+    },
+    {
+      "iso": "HN",
+      "name": "Honduras",
+      "n_places": 42,
+      "n_cells": 17,
+      "believed_centroid": [
+        13.392,
+        -74.207
+      ],
+      "true_centroid": [
+        15.088,
+        -87.138
+      ],
+      "displacement_km": 1406.1,
+      "direction": "east",
+      "model_area_km2": 205165,
+      "real_area_km2": 107563,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 205165,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "HR",
+      "name": "Croatia",
+      "n_places": 260,
+      "n_cells": 19,
+      "believed_centroid": [
+        46.97,
+        20.057
+      ],
+      "true_centroid": [
+        44.672,
+        16.057
+      ],
+      "displacement_km": 401.6,
+      "direction": "north-east",
+      "model_area_km2": 155566,
+      "real_area_km2": 61119,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 155566,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "HT",
+      "name": "Haiti",
+      "n_places": 52,
+      "n_cells": 4,
+      "believed_centroid": [
+        29.231,
+        -35.015
+      ],
+      "true_centroid": [
+        18.863,
+        -72.687
+      ],
+      "displacement_km": 3975.8,
+      "direction": "north-east",
+      "model_area_km2": 46863,
+      "real_area_km2": 35106,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 46863,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "HU",
+      "name": "Hungary",
+      "n_places": 169,
+      "n_cells": 12,
+      "believed_centroid": [
+        48.526,
+        19.695
+      ],
+      "true_centroid": [
+        47.28,
+        19.301
+      ],
+      "displacement_km": 141.6,
+      "direction": "north",
+      "model_area_km2": 100974,
+      "real_area_km2": 84003,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 100974,
+      "imagined_mostly_over": "Turkey"
+    },
+    {
+      "iso": "ID",
+      "name": "Indonesia",
+      "n_places": 348,
+      "n_cells": 242,
+      "believed_centroid": [
+        1.181,
+        108.803
+      ],
+      "true_centroid": [
+        -4.195,
+        113.353
+      ],
+      "displacement_km": 782.9,
+      "direction": "north-west",
+      "model_area_km2": 2977072,
+      "real_area_km2": 1776086,
+      "overlap_km2": 802356,
+      "precision": 0.2695,
+      "recall": 0.4518,
+      "imagined_km2": 2174716,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "IE",
+      "name": "Ireland",
+      "n_places": 306,
+      "n_cells": 17,
+      "believed_centroid": [
+        55.358,
+        -3.64
+      ],
+      "true_centroid": [
+        53.251,
+        -7.918
+      ],
+      "displacement_km": 363.1,
+      "direction": "north-east",
+      "model_area_km2": 95468,
+      "real_area_km2": 51478,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 95468,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "IL",
+      "name": "Israel",
+      "n_places": 43,
+      "n_cells": 14,
+      "believed_centroid": [
+        35.251,
+        33.891
+      ],
+      "true_centroid": [
+        31.89,
+        35.173
+      ],
+      "displacement_km": 392.2,
+      "direction": "north",
+      "model_area_km2": 153650,
+      "real_area_km2": 10428,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 153650,
+      "imagined_mostly_over": "Saudi Arabia"
+    },
+    {
+      "iso": "IM",
+      "name": "Isle of Man",
+      "n_places": 7,
+      "n_cells": 1,
+      "believed_centroid": [
+        54.136,
+        -6.79
+      ],
+      "true_centroid": [
+        53.991,
+        -4.656
+      ],
+      "displacement_km": 140.1,
+      "direction": "west",
+      "model_area_km2": 4532,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 4532,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "IN",
+      "name": "India",
+      "n_places": 3764,
+      "n_cells": 1483,
+      "believed_centroid": [
+        23.266,
+        76.916
+      ],
+      "true_centroid": [
+        21.008,
+        79.853
+      ],
+      "displacement_km": 393.1,
+      "direction": "north-west",
+      "model_area_km2": 16396901,
+      "real_area_km2": 3139210,
+      "overlap_km2": 3016429,
+      "precision": 0.184,
+      "recall": 0.9609,
+      "imagined_km2": 13380472,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "IO",
+      "name": "British Indian Ocean Territory",
+      "n_places": 1,
+      "n_cells": 0,
+      "believed_centroid": [
+        9.064,
+        90.909
+      ],
+      "true_centroid": [
+        -7.313,
+        72.411
+      ],
+      "displacement_km": 2741.7,
+      "direction": "north-east",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "IQ",
+      "name": "Iraq",
+      "n_places": 52,
+      "n_cells": 7,
+      "believed_centroid": [
+        36.353,
+        42.426
+      ],
+      "true_centroid": [
+        33.903,
+        44.598
+      ],
+      "displacement_km": 336.5,
+      "direction": "north-west",
+      "model_area_km2": 76493,
+      "real_area_km2": 446040,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 76493,
+      "imagined_mostly_over": "Egypt"
+    },
+    {
+      "iso": "IR",
+      "name": "Iran",
+      "n_places": 195,
+      "n_cells": 98,
+      "believed_centroid": [
+        38.395,
+        54.709
+      ],
+      "true_centroid": [
+        33.834,
+        51.407
+      ],
+      "displacement_km": 587.4,
+      "direction": "north-east",
+      "model_area_km2": 948373,
+      "real_area_km2": 1633682,
+      "overlap_km2": 365176,
+      "precision": 0.3851,
+      "recall": 0.2235,
+      "imagined_km2": 583197,
+      "imagined_mostly_over": "Turkmenistan"
+    },
+    {
+      "iso": "IS",
+      "name": "Iceland",
+      "n_places": 99,
+      "n_cells": 19,
+      "believed_centroid": [
+        61.939,
+        -5.288
+      ],
+      "true_centroid": [
+        64.818,
+        -20.001
+      ],
+      "displacement_km": 797.5,
+      "direction": "east",
+      "model_area_km2": 97121,
+      "real_area_km2": 83407,
+      "overlap_km2": 41606,
+      "precision": 0.4284,
+      "recall": 0.4988,
+      "imagined_km2": 55515,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "IT",
+      "name": "Italy",
+      "n_places": 1765,
+      "n_cells": 436,
+      "believed_centroid": [
+        43.077,
+        11.948
+      ],
+      "true_centroid": [
+        42.803,
+        12.321
+      ],
+      "displacement_km": 43.0,
+      "direction": "north-west",
+      "model_area_km2": 4175482,
+      "real_area_km2": 325650,
+      "overlap_km2": 325650,
+      "precision": 0.078,
+      "recall": 1.0,
+      "imagined_km2": 3849832,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "JE",
+      "name": "Jersey",
+      "n_places": 10,
+      "n_cells": 0,
+      "believed_centroid": [
+        47.635,
+        -4.589
+      ],
+      "true_centroid": [
+        49.308,
+        -2.097
+      ],
+      "displacement_km": 261.4,
+      "direction": "south-west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "JM",
+      "name": "Jamaica",
+      "n_places": 29,
+      "n_cells": 5,
+      "believed_centroid": [
+        30.036,
+        -60.688
+      ],
+      "true_centroid": [
+        18.121,
+        -77.129
+      ],
+      "displacement_km": 2126.5,
+      "direction": "north-east",
+      "model_area_km2": 54001,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 54001,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "JO",
+      "name": "Jordan",
+      "n_places": 30,
+      "n_cells": 4,
+      "believed_centroid": [
+        35.352,
+        40.796
+      ],
+      "true_centroid": [
+        31.723,
+        35.956
+      ],
+      "displacement_km": 603.2,
+      "direction": "north-east",
+      "model_area_km2": 43208,
+      "real_area_km2": 84662,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 43208,
+      "imagined_mostly_over": "Saudi Arabia"
+    },
+    {
+      "iso": "JP",
+      "name": "Japan",
+      "n_places": 563,
+      "n_cells": 366,
+      "believed_centroid": [
+        38.118,
+        132.986
+      ],
+      "true_centroid": [
+        35.59,
+        136.697
+      ],
+      "displacement_km": 433.6,
+      "direction": "north-west",
+      "model_area_km2": 3617331,
+      "real_area_km2": 411959,
+      "overlap_km2": 403140,
+      "precision": 0.1114,
+      "recall": 0.9786,
+      "imagined_km2": 3214191,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "KE",
+      "name": "Kenya",
+      "n_places": 121,
+      "n_cells": 73,
+      "believed_centroid": [
+        5.36,
+        38.256
+      ],
+      "true_centroid": [
+        -0.624,
+        37.056
+      ],
+      "displacement_km": 678.6,
+      "direction": "north",
+      "model_area_km2": 887621,
+      "real_area_km2": 580664,
+      "overlap_km2": 111147,
+      "precision": 0.1252,
+      "recall": 0.1914,
+      "imagined_km2": 776475,
+      "imagined_mostly_over": "Ethiopia"
+    },
+    {
+      "iso": "KG",
+      "name": "Kyrgyzstan",
+      "n_places": 24,
+      "n_cells": 7,
+      "believed_centroid": [
+        49.81,
+        62.132
+      ],
+      "true_centroid": [
+        41.723,
+        73.589
+      ],
+      "displacement_km": 1261.6,
+      "direction": "north-west",
+      "model_area_km2": 51722,
+      "real_area_km2": 222355,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 51722,
+      "imagined_mostly_over": "Kazakhstan"
+    },
+    {
+      "iso": "KH",
+      "name": "Cambodia",
+      "n_places": 30,
+      "n_cells": 3,
+      "believed_centroid": [
+        22.807,
+        91.941
+      ],
+      "true_centroid": [
+        12.356,
+        104.636
+      ],
+      "displacement_km": 1776.0,
+      "direction": "north-west",
+      "model_area_km2": 31708,
+      "real_area_km2": 180811,
+      "overlap_km2": 12023,
+      "precision": 0.3792,
+      "recall": 0.0665,
+      "imagined_km2": 19685,
+      "imagined_mostly_over": "China"
+    },
+    {
+      "iso": "KI",
+      "name": "Kiribati",
+      "n_places": 24,
+      "n_cells": 0,
+      "believed_centroid": [
+        -6.13,
+        150.634
+      ],
+      "true_centroid": [
+        0.024,
+        179.201
+      ],
+      "displacement_km": 3243.5,
+      "direction": "west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "KM",
+      "name": "Comoros",
+      "n_places": 9,
+      "n_cells": 4,
+      "believed_centroid": [
+        8.327,
+        34.019
+      ],
+      "true_centroid": [
+        -11.391,
+        44.455
+      ],
+      "displacement_km": 2477.8,
+      "direction": "north-west",
+      "model_area_km2": 48481,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 48481,
+      "imagined_mostly_over": "Democratic Republic of the Congo"
+    },
+    {
+      "iso": "KN",
+      "name": "Saint Kitts and Nevis",
+      "n_places": 2,
+      "n_cells": 0,
+      "believed_centroid": [
+        7.969,
+        -66.069
+      ],
+      "true_centroid": [
+        17.305,
+        -62.727
+      ],
+      "displacement_km": 1099.5,
+      "direction": "south",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "KP",
+      "name": "North Korea",
+      "n_places": 43,
+      "n_cells": 10,
+      "believed_centroid": [
+        42.425,
+        102.551
+      ],
+      "true_centroid": [
+        40.111,
+        126.68
+      ],
+      "displacement_km": 2026.1,
+      "direction": "west",
+      "model_area_km2": 95462,
+      "real_area_km2": 122895,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 95462,
+      "imagined_mostly_over": "China"
+    },
+    {
+      "iso": "KR",
+      "name": "South Korea",
+      "n_places": 220,
+      "n_cells": 87,
+      "believed_centroid": [
+        38.502,
+        119.945
+      ],
+      "true_centroid": [
+        36.48,
+        127.585
+      ],
+      "displacement_km": 710.3,
+      "direction": "west",
+      "model_area_km2": 844619,
+      "real_area_km2": 89567,
+      "overlap_km2": 39624,
+      "precision": 0.0469,
+      "recall": 0.4424,
+      "imagined_km2": 804996,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "KW",
+      "name": "Kuwait",
+      "n_places": 17,
+      "n_cells": 4,
+      "believed_centroid": [
+        35.691,
+        47.894
+      ],
+      "true_centroid": [
+        29.329,
+        48.016
+      ],
+      "displacement_km": 707.5,
+      "direction": "north",
+      "model_area_km2": 42091,
+      "real_area_km2": 10761,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 42091,
+      "imagined_mostly_over": "Oman"
+    },
+    {
+      "iso": "KZ",
+      "name": "Kazakhstan",
+      "n_places": 52,
+      "n_cells": 37,
+      "believed_centroid": [
+        49.466,
+        62.757
+      ],
+      "true_centroid": [
+        47.927,
+        69.485
+      ],
+      "displacement_km": 522.4,
+      "direction": "west",
+      "model_area_km2": 290495,
+      "real_area_km2": 2707300,
+      "overlap_km2": 171584,
+      "precision": 0.5907,
+      "recall": 0.0634,
+      "imagined_km2": 118911,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "LA",
+      "name": "Laos",
+      "n_places": 11,
+      "n_cells": 1,
+      "believed_centroid": [
+        20.749,
+        105.472
+      ],
+      "true_centroid": [
+        18.708,
+        102.555
+      ],
+      "displacement_km": 380.4,
+      "direction": "north-east",
+      "model_area_km2": 11725,
+      "real_area_km2": 210665,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 11725,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "LB",
+      "name": "Lebanon",
+      "n_places": 61,
+      "n_cells": 16,
+      "believed_centroid": [
+        32.061,
+        31.695
+      ],
+      "true_centroid": [
+        33.821,
+        35.703
+      ],
+      "displacement_km": 422.1,
+      "direction": "south-west",
+      "model_area_km2": 172662,
+      "real_area_km2": 10310,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 172662,
+      "imagined_mostly_over": "Egypt"
+    },
+    {
+      "iso": "LC",
+      "name": "Saint Lucia",
+      "n_places": 5,
+      "n_cells": 1,
+      "believed_centroid": [
+        14.943,
+        -57.573
+      ],
+      "true_centroid": [
+        13.895,
+        -61.003
+      ],
+      "displacement_km": 387.4,
+      "direction": "east",
+      "model_area_km2": 12023,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 12023,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "LI",
+      "name": "Liechtenstein",
+      "n_places": 12,
+      "n_cells": 1,
+      "believed_centroid": [
+        49.025,
+        2.735
+      ],
+      "true_centroid": [
+        47.175,
+        9.53
+      ],
+      "displacement_km": 544.6,
+      "direction": "north-west",
+      "model_area_km2": 6088,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 6088,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "LK",
+      "name": "Sri Lanka",
+      "n_places": 112,
+      "n_cells": 4,
+      "believed_centroid": [
+        13.637,
+        71.646
+      ],
+      "true_centroid": [
+        7.413,
+        80.548
+      ],
+      "displacement_km": 1193.8,
+      "direction": "north-west",
+      "model_area_km2": 37463,
+      "real_area_km2": 73510,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 37463,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "LR",
+      "name": "Liberia",
+      "n_places": 26,
+      "n_cells": 2,
+      "believed_centroid": [
+        28.38,
+        -4.589
+      ],
+      "true_centroid": [
+        6.454,
+        -9.634
+      ],
+      "displacement_km": 2495.2,
+      "direction": "north",
+      "model_area_km2": 21278,
+      "real_area_km2": 85960,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 21278,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "LS",
+      "name": "Lesotho",
+      "n_places": 20,
+      "n_cells": 2,
+      "believed_centroid": [
+        -3.352,
+        45.205
+      ],
+      "true_centroid": [
+        -29.444,
+        28.005
+      ],
+      "displacement_km": 3421.7,
+      "direction": "north-east",
+      "model_area_km2": 24067,
+      "real_area_km2": 21523,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 24067,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "LT",
+      "name": "Lithuania",
+      "n_places": 78,
+      "n_cells": 12,
+      "believed_centroid": [
+        53.721,
+        27.174
+      ],
+      "true_centroid": [
+        55.2,
+        24.086
+      ],
+      "displacement_km": 258.6,
+      "direction": "south-east",
+      "model_area_km2": 89434,
+      "real_area_km2": 63559,
+      "overlap_km2": 7003,
+      "precision": 0.0783,
+      "recall": 0.1102,
+      "imagined_km2": 82431,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "LU",
+      "name": "Luxembourg",
+      "n_places": 10,
+      "n_cells": 0,
+      "believed_centroid": [
+        48.764,
+        9.294
+      ],
+      "true_centroid": [
+        49.686,
+        6.136
+      ],
+      "displacement_km": 251.2,
+      "direction": "south-east",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "LV",
+      "name": "Latvia",
+      "n_places": 31,
+      "n_cells": 6,
+      "believed_centroid": [
+        51.447,
+        34.788
+      ],
+      "true_centroid": [
+        56.938,
+        24.153
+      ],
+      "displacement_km": 920.9,
+      "direction": "south-east",
+      "model_area_km2": 44584,
+      "real_area_km2": 67700,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 44584,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "LY",
+      "name": "Libya",
+      "n_places": 62,
+      "n_cells": 27,
+      "believed_centroid": [
+        31.505,
+        31.768
+      ],
+      "true_centroid": [
+        30.317,
+        16.226
+      ],
+      "displacement_km": 1487.3,
+      "direction": "east",
+      "model_area_km2": 295243,
+      "real_area_km2": 1638373,
+      "overlap_km2": 188963,
+      "precision": 0.64,
+      "recall": 0.1153,
+      "imagined_km2": 106280,
+      "imagined_mostly_over": "Sudan"
+    },
+    {
+      "iso": "MA",
+      "name": "Morocco",
+      "n_places": 102,
+      "n_cells": 57,
+      "believed_centroid": [
+        32.455,
+        6.509
+      ],
+      "true_centroid": [
+        33.171,
+        -6.271
+      ],
+      "displacement_km": 1196.2,
+      "direction": "east",
+      "model_area_km2": 625015,
+      "real_area_km2": 567351,
+      "overlap_km2": 10190,
+      "precision": 0.0163,
+      "recall": 0.018,
+      "imagined_km2": 614825,
+      "imagined_mostly_over": "Algeria"
+    },
+    {
+      "iso": "MC",
+      "name": "Monaco",
+      "n_places": 8,
+      "n_cells": 0,
+      "believed_centroid": [
+        45.618,
+        -0.418
+      ],
+      "true_centroid": [
+        43.738,
+        7.424
+      ],
+      "displacement_km": 654.0,
+      "direction": "west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "MD",
+      "name": "Moldova",
+      "n_places": 40,
+      "n_cells": 2,
+      "believed_centroid": [
+        43.75,
+        22.901
+      ],
+      "true_centroid": [
+        46.984,
+        28.632
+      ],
+      "displacement_km": 573.9,
+      "direction": "south-west",
+      "model_area_km2": 17405,
+      "real_area_km2": 33728,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 17405,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "ME",
+      "name": "Montenegro",
+      "n_places": 28,
+      "n_cells": 2,
+      "believed_centroid": [
+        44.372,
+        22.257
+      ],
+      "true_centroid": [
+        42.477,
+        19.058
+      ],
+      "displacement_km": 333.4,
+      "direction": "north-east",
+      "model_area_km2": 20825,
+      "real_area_km2": 18232,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 20825,
+      "imagined_mostly_over": "Saudi Arabia"
+    },
+    {
+      "iso": "MG",
+      "name": "Madagascar",
+      "n_places": 41,
+      "n_cells": 8,
+      "believed_centroid": [
+        4.145,
+        37.56
+      ],
+      "true_centroid": [
+        -18.497,
+        47.165
+      ],
+      "displacement_km": 2728.8,
+      "direction": "north-west",
+      "model_area_km2": 92373,
+      "real_area_km2": 593583,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 92373,
+      "imagined_mostly_over": "Sudan"
+    },
+    {
+      "iso": "MH",
+      "name": "Marshall Islands",
+      "n_places": 31,
+      "n_cells": 1,
+      "believed_centroid": [
+        15.104,
+        149.502
+      ],
+      "true_centroid": [
+        8.845,
+        168.542
+      ],
+      "displacement_km": 2183.4,
+      "direction": "west",
+      "model_area_km2": 12229,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 12229,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "MK",
+      "name": "North Macedonia",
+      "n_places": 13,
+      "n_cells": 1,
+      "believed_centroid": [
+        44.252,
+        26.488
+      ],
+      "true_centroid": [
+        41.72,
+        21.379
+      ],
+      "displacement_km": 501.9,
+      "direction": "north-east",
+      "model_area_km2": 8666,
+      "real_area_km2": 27781,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 8666,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "ML",
+      "name": "Mali",
+      "n_places": 24,
+      "n_cells": 12,
+      "believed_centroid": [
+        20.975,
+        12.777
+      ],
+      "true_centroid": [
+        15.505,
+        -2.902
+      ],
+      "displacement_km": 1762.8,
+      "direction": "north-east",
+      "model_area_km2": 136806,
+      "real_area_km2": 1238461,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 136806,
+      "imagined_mostly_over": "Niger"
+    },
+    {
+      "iso": "MM",
+      "name": "Myanmar",
+      "n_places": 52,
+      "n_cells": 7,
+      "believed_centroid": [
+        22.771,
+        92.407
+      ],
+      "true_centroid": [
+        19.23,
+        95.774
+      ],
+      "displacement_km": 526.4,
+      "direction": "north-west",
+      "model_area_km2": 83170,
+      "real_area_km2": 714454,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 83170,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "MN",
+      "name": "Mongolia",
+      "n_places": 47,
+      "n_cells": 14,
+      "believed_centroid": [
+        38.768,
+        79.632
+      ],
+      "true_centroid": [
+        48.057,
+        102.89
+      ],
+      "displacement_km": 2131.8,
+      "direction": "west",
+      "model_area_km2": 123008,
+      "real_area_km2": 1487005,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 123008,
+      "imagined_mostly_over": "Kazakhstan"
+    },
+    {
+      "iso": "MO",
+      "name": "Macao",
+      "n_places": 1,
+      "n_cells": 1,
+      "believed_centroid": [
+        22.47,
+        114.572
+      ],
+      "true_centroid": [
+        22.201,
+        113.546
+      ],
+      "displacement_km": 109.7,
+      "direction": "east",
+      "model_area_km2": 11423,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 11423,
+      "imagined_mostly_over": "China"
+    },
+    {
+      "iso": "MR",
+      "name": "Mauritania",
+      "n_places": 22,
+      "n_cells": 8,
+      "believed_centroid": [
+        17.548,
+        8.024
+      ],
+      "true_centroid": [
+        18.788,
+        -13.294
+      ],
+      "displacement_km": 2255.1,
+      "direction": "east",
+      "model_area_km2": 96912,
+      "real_area_km2": 1054611,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 96912,
+      "imagined_mostly_over": "Ghana"
+    },
+    {
+      "iso": "MS",
+      "name": "Montserrat",
+      "n_places": 2,
+      "n_cells": 0,
+      "believed_centroid": [
+        5.001,
+        -16.258
+      ],
+      "true_centroid": [
+        16.639,
+        -61.947
+      ],
+      "displacement_km": 5141.0,
+      "direction": "east",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "MT",
+      "name": "Malta",
+      "n_places": 60,
+      "n_cells": 14,
+      "believed_centroid": [
+        37.752,
+        25.709
+      ],
+      "true_centroid": [
+        35.004,
+        14.425
+      ],
+      "displacement_km": 1054.7,
+      "direction": "east",
+      "model_area_km2": 146254,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 146254,
+      "imagined_mostly_over": "Libya"
+    },
+    {
+      "iso": "MU",
+      "name": "Mauritius",
+      "n_places": 26,
+      "n_cells": 3,
+      "believed_centroid": [
+        7.828,
+        15.854
+      ],
+      "true_centroid": [
+        -19.727,
+        57.795
+      ],
+      "displacement_km": 5518.9,
+      "direction": "north-west",
+      "model_area_km2": 36469,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 36469,
+      "imagined_mostly_over": "Central African Republic"
+    },
+    {
+      "iso": "MV",
+      "name": "Maldives",
+      "n_places": 68,
+      "n_cells": 5,
+      "believed_centroid": [
+        9.877,
+        85.888
+      ],
+      "true_centroid": [
+        3.972,
+        73.283
+      ],
+      "displacement_km": 1537.9,
+      "direction": "north-east",
+      "model_area_km2": 57744,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 57744,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "MW",
+      "name": "Malawi",
+      "n_places": 21,
+      "n_cells": 5,
+      "believed_centroid": [
+        -10.569,
+        28.931
+      ],
+      "true_centroid": [
+        -13.839,
+        34.539
+      ],
+      "displacement_km": 709.7,
+      "direction": "north-west",
+      "model_area_km2": 59050,
+      "real_area_km2": 132471,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 59050,
+      "imagined_mostly_over": "Zambia"
+    },
+    {
+      "iso": "MX",
+      "name": "Mexico",
+      "n_places": 405,
+      "n_cells": 256,
+      "believed_centroid": [
+        21.344,
+        -91.037
+      ],
+      "true_centroid": [
+        22.271,
+        -101.627
+      ],
+      "displacement_km": 1097.9,
+      "direction": "east",
+      "model_area_km2": 2996874,
+      "real_area_km2": 1948512,
+      "overlap_km2": 591099,
+      "precision": 0.1972,
+      "recall": 0.3034,
+      "imagined_km2": 2405775,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "MY",
+      "name": "Malaysia",
+      "n_places": 251,
+      "n_cells": 159,
+      "believed_centroid": [
+        9.605,
+        96.931
+      ],
+      "true_centroid": [
+        4.249,
+        105.588
+      ],
+      "displacement_km": 1125.7,
+      "direction": "north-west",
+      "model_area_km2": 1936223,
+      "real_area_km2": 394638,
+      "overlap_km2": 86246,
+      "precision": 0.0445,
+      "recall": 0.2185,
+      "imagined_km2": 1849977,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "MZ",
+      "name": "Mozambique",
+      "n_places": 39,
+      "n_cells": 12,
+      "believed_centroid": [
+        -3.323,
+        21.497
+      ],
+      "true_centroid": [
+        -18.782,
+        35.722
+      ],
+      "displacement_km": 2312.6,
+      "direction": "north-west",
+      "model_area_km2": 146801,
+      "real_area_km2": 800863,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 146801,
+      "imagined_mostly_over": "Angola"
+    },
+    {
+      "iso": "NA",
+      "name": "Namibia",
+      "n_places": 37,
+      "n_cells": 3,
+      "believed_centroid": [
+        -4.618,
+        16.9
+      ],
+      "true_centroid": [
+        -22.306,
+        17.169
+      ],
+      "displacement_km": 1967.1,
+      "direction": "north",
+      "model_area_km2": 36368,
+      "real_area_km2": 869463,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 36368,
+      "imagined_mostly_over": "Zambia"
+    },
+    {
+      "iso": "NE",
+      "name": "Niger",
+      "n_places": 14,
+      "n_cells": 3,
+      "believed_centroid": [
+        19.641,
+        15.814
+      ],
+      "true_centroid": [
+        14.778,
+        6.569
+      ],
+      "displacement_km": 1120.6,
+      "direction": "north-east",
+      "model_area_km2": 34813,
+      "real_area_km2": 1214219,
+      "overlap_km2": 11970,
+      "precision": 0.3438,
+      "recall": 0.0099,
+      "imagined_km2": 22843,
+      "imagined_mostly_over": "Algeria"
+    },
+    {
+      "iso": "NG",
+      "name": "Nigeria",
+      "n_places": 157,
+      "n_cells": 139,
+      "believed_centroid": [
+        14.989,
+        23.274
+      ],
+      "true_centroid": [
+        8.694,
+        7.37
+      ],
+      "displacement_km": 1865.9,
+      "direction": "north-east",
+      "model_area_km2": 1667026,
+      "real_area_km2": 877541,
+      "overlap_km2": 243809,
+      "precision": 0.1463,
+      "recall": 0.2778,
+      "imagined_km2": 1423217,
+      "imagined_mostly_over": "Chad"
+    },
+    {
+      "iso": "NI",
+      "name": "Nicaragua",
+      "n_places": 42,
+      "n_cells": 15,
+      "believed_centroid": [
+        11.72,
+        -75.871
+      ],
+      "true_centroid": [
+        12.291,
+        -85.58
+      ],
+      "displacement_km": 1057.8,
+      "direction": "east",
+      "model_area_km2": 176480,
+      "real_area_km2": 132526,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 176480,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "NL",
+      "name": "The Netherlands",
+      "n_places": 274,
+      "n_cells": 6,
+      "believed_centroid": [
+        48.288,
+        6.836
+      ],
+      "true_centroid": [
+        52.119,
+        4.076
+      ],
+      "displacement_km": 469.0,
+      "direction": "south-east",
+      "model_area_km2": 54406,
+      "real_area_km2": 37975,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 54406,
+      "imagined_mostly_over": "Romania"
+    },
+    {
+      "iso": "NO",
+      "name": "Norway",
+      "n_places": 271,
+      "n_cells": 197,
+      "believed_centroid": [
+        60.833,
+        12.01
+      ],
+      "true_centroid": [
+        63.817,
+        10.357
+      ],
+      "displacement_km": 342.6,
+      "direction": "south",
+      "model_area_km2": 962418,
+      "real_area_km2": 397244,
+      "overlap_km2": 67547,
+      "precision": 0.0702,
+      "recall": 0.17,
+      "imagined_km2": 894870,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "NP",
+      "name": "Nepal",
+      "n_places": 169,
+      "n_cells": 12,
+      "believed_centroid": [
+        28.062,
+        79.599
+      ],
+      "true_centroid": [
+        28.156,
+        84.361
+      ],
+      "displacement_km": 467.2,
+      "direction": "west",
+      "model_area_km2": 122794,
+      "real_area_km2": 141650,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 122794,
+      "imagined_mostly_over": "China"
+    },
+    {
+      "iso": "NR",
+      "name": "Nauru",
+      "n_places": 10,
+      "n_cells": 1,
+      "believed_centroid": [
+        9.585,
+        92.518
+      ],
+      "true_centroid": [
+        -0.534,
+        166.923
+      ],
+      "displacement_km": 8308.6,
+      "direction": "west",
+      "model_area_km2": 12307,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 12307,
+      "imagined_mostly_over": "Tanzania"
+    },
+    {
+      "iso": "NU",
+      "name": "Niue",
+      "n_places": 2,
+      "n_cells": 0,
+      "believed_centroid": [
+        31.86,
+        116.546
+      ],
+      "true_centroid": [
+        -18.992,
+        -169.866
+      ],
+      "displacement_km": 9656.1,
+      "direction": "north-west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "NZ",
+      "name": "New Zealand",
+      "n_places": 167,
+      "n_cells": 8,
+      "believed_centroid": [
+        -19.637,
+        169.266
+      ],
+      "true_centroid": [
+        -40.416,
+        173.954
+      ],
+      "displacement_km": 2353.2,
+      "direction": "north",
+      "model_area_km2": 72930,
+      "real_area_km2": 266448,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 72930,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "OM",
+      "name": "Oman",
+      "n_places": 18,
+      "n_cells": 6,
+      "believed_centroid": [
+        27.893,
+        49.244
+      ],
+      "true_centroid": [
+        23.308,
+        57.538
+      ],
+      "displacement_km": 975.1,
+      "direction": "north-west",
+      "model_area_km2": 65387,
+      "real_area_km2": 323556,
+      "overlap_km2": 11423,
+      "precision": 0.1747,
+      "recall": 0.0353,
+      "imagined_km2": 53964,
+      "imagined_mostly_over": "Iran"
+    },
+    {
+      "iso": "PA",
+      "name": "Panama",
+      "n_places": 42,
+      "n_cells": 8,
+      "believed_centroid": [
+        15.161,
+        -71.431
+      ],
+      "true_centroid": [
+        8.732,
+        -80.566
+      ],
+      "displacement_km": 1223.7,
+      "direction": "north-east",
+      "model_area_km2": 97401,
+      "real_area_km2": 85562,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 97401,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "PE",
+      "name": "Peru",
+      "n_places": 138,
+      "n_cells": 35,
+      "believed_centroid": [
+        -0.839,
+        -68.76
+      ],
+      "true_centroid": [
+        -11.523,
+        -75.485
+      ],
+      "displacement_km": 1400.9,
+      "direction": "north-east",
+      "model_area_km2": 425152,
+      "real_area_km2": 1302728,
+      "overlap_km2": 171778,
+      "precision": 0.404,
+      "recall": 0.1319,
+      "imagined_km2": 253374,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "PF",
+      "name": "French Polynesia",
+      "n_places": 1,
+      "n_cells": 0,
+      "believed_centroid": [
+        -1.874,
+        168.696
+      ],
+      "true_centroid": [
+        -16.472,
+        -151.707
+      ],
+      "displacement_km": 4625.7,
+      "direction": "west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "PG",
+      "name": "Papua New Guinea",
+      "n_places": 48,
+      "n_cells": 2,
+      "believed_centroid": [
+        -7.013,
+        129.706
+      ],
+      "true_centroid": [
+        -6.719,
+        148.405
+      ],
+      "displacement_km": 2064.4,
+      "direction": "west",
+      "model_area_km2": 24315,
+      "real_area_km2": 429737,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 24315,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "PH",
+      "name": "Philippines",
+      "n_places": 421,
+      "n_cells": 232,
+      "believed_centroid": [
+        25.59,
+        118.61
+      ],
+      "true_centroid": [
+        13.539,
+        121.754
+      ],
+      "displacement_km": 1379.7,
+      "direction": "north",
+      "model_area_km2": 2714434,
+      "real_area_km2": 277736,
+      "overlap_km2": 253313,
+      "precision": 0.0933,
+      "recall": 0.9121,
+      "imagined_km2": 2461121,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "PK",
+      "name": "Pakistan",
+      "n_places": 320,
+      "n_cells": 30,
+      "believed_centroid": [
+        31.717,
+        68.262
+      ],
+      "true_centroid": [
+        30.905,
+        70.985
+      ],
+      "displacement_km": 274.0,
+      "direction": "west",
+      "model_area_km2": 311152,
+      "real_area_km2": 898956,
+      "overlap_km2": 33480,
+      "precision": 0.1076,
+      "recall": 0.0372,
+      "imagined_km2": 277672,
+      "imagined_mostly_over": "Oman"
+    },
+    {
+      "iso": "PL",
+      "name": "Poland",
+      "n_places": 463,
+      "n_cells": 119,
+      "believed_centroid": [
+        52.15,
+        20.249
+      ],
+      "true_centroid": [
+        51.832,
+        19.576
+      ],
+      "displacement_km": 58.1,
+      "direction": "north-east",
+      "model_area_km2": 870229,
+      "real_area_km2": 327138,
+      "overlap_km2": 152705,
+      "precision": 0.1755,
+      "recall": 0.4668,
+      "imagined_km2": 717524,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "PR",
+      "name": "Puerto Rico",
+      "n_places": 64,
+      "n_cells": 65,
+      "believed_centroid": [
+        18.459,
+        -70.866
+      ],
+      "true_centroid": [
+        18.256,
+        -66.399
+      ],
+      "displacement_km": 472.0,
+      "direction": "west",
+      "model_area_km2": 763334,
+      "real_area_km2": 11725,
+      "overlap_km2": 11725,
+      "precision": 0.0154,
+      "recall": 1.0,
+      "imagined_km2": 751609,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "PS",
+      "name": "Palestinian Territory",
+      "n_places": 91,
+      "n_cells": 20,
+      "believed_centroid": [
+        35.821,
+        36.104
+      ],
+      "true_centroid": [
+        32.042,
+        35.145
+      ],
+      "displacement_km": 429.4,
+      "direction": "north",
+      "model_area_km2": 215182,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 215182,
+      "imagined_mostly_over": "Saudi Arabia"
+    },
+    {
+      "iso": "PT",
+      "name": "Portugal",
+      "n_places": 98,
+      "n_cells": 29,
+      "believed_centroid": [
+        31.604,
+        -4.623
+      ],
+      "true_centroid": [
+        39.316,
+        -11.125
+      ],
+      "displacement_km": 1039.6,
+      "direction": "south-east",
+      "model_area_km2": 309500,
+      "real_area_km2": 104637,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 309500,
+      "imagined_mostly_over": "Algeria"
+    },
+    {
+      "iso": "PW",
+      "name": "Palau",
+      "n_places": 7,
+      "n_cells": 0,
+      "believed_centroid": [
+        28.721,
+        148.817
+      ],
+      "true_centroid": [
+        7.206,
+        134.379
+      ],
+      "displacement_km": 2831.6,
+      "direction": "north-east",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "PY",
+      "name": "Paraguay",
+      "n_places": 38,
+      "n_cells": 3,
+      "believed_centroid": [
+        -12.821,
+        -64.61
+      ],
+      "true_centroid": [
+        -25.006,
+        -57.011
+      ],
+      "displacement_km": 1572.0,
+      "direction": "north-west",
+      "model_area_km2": 37073,
+      "real_area_km2": 374782,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 37073,
+      "imagined_mostly_over": "Colombia"
+    },
+    {
+      "iso": "QA",
+      "name": "Qatar",
+      "n_places": 29,
+      "n_cells": 2,
+      "believed_centroid": [
+        30.719,
+        44.931
+      ],
+      "true_centroid": [
+        25.346,
+        51.525
+      ],
+      "displacement_km": 880.4,
+      "direction": "north-west",
+      "model_area_km2": 21627,
+      "real_area_km2": 11160,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 21627,
+      "imagined_mostly_over": "Egypt"
+    },
+    {
+      "iso": "RO",
+      "name": "Romania",
+      "n_places": 95,
+      "n_cells": 2,
+      "believed_centroid": [
+        46.999,
+        19.786
+      ],
+      "true_centroid": [
+        45.692,
+        24.785
+      ],
+      "displacement_km": 410.3,
+      "direction": "north-west",
+      "model_area_km2": 17267,
+      "real_area_km2": 214920,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 17267,
+      "imagined_mostly_over": "Turkey"
+    },
+    {
+      "iso": "RS",
+      "name": "Serbia",
+      "n_places": 143,
+      "n_cells": 20,
+      "believed_centroid": [
+        45.024,
+        24.041
+      ],
+      "true_centroid": [
+        44.664,
+        20.449
+      ],
+      "displacement_km": 286.0,
+      "direction": "east",
+      "model_area_km2": 174678,
+      "real_area_km2": 97599,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 174678,
+      "imagined_mostly_over": "Turkey"
+    },
+    {
+      "iso": "RU",
+      "name": "Russia",
+      "n_places": 279,
+      "n_cells": 305,
+      "believed_centroid": [
+        63.705,
+        55.751
+      ],
+      "true_centroid": [
+        66.098,
+        66.059
+      ],
+      "displacement_km": 553.3,
+      "direction": "south-west",
+      "model_area_km2": 1850434,
+      "real_area_km2": 17002788,
+      "overlap_km2": 1317713,
+      "precision": 0.7121,
+      "recall": 0.0775,
+      "imagined_km2": 532721,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "RW",
+      "name": "Rwanda",
+      "n_places": 42,
+      "n_cells": 11,
+      "believed_centroid": [
+        2.031,
+        32.117
+      ],
+      "true_centroid": [
+        -1.994,
+        29.898
+      ],
+      "displacement_km": 511.1,
+      "direction": "north-east",
+      "model_area_km2": 135671,
+      "real_area_km2": 37073,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 135671,
+      "imagined_mostly_over": "Democratic Republic of the Congo"
+    },
+    {
+      "iso": "SA",
+      "name": "Saudi Arabia",
+      "n_places": 51,
+      "n_cells": 16,
+      "believed_centroid": [
+        30.24,
+        49.921
+      ],
+      "true_centroid": [
+        24.173,
+        42.986
+      ],
+      "displacement_km": 961.6,
+      "direction": "north-east",
+      "model_area_km2": 168198,
+      "real_area_km2": 1915103,
+      "overlap_km2": 56614,
+      "precision": 0.3366,
+      "recall": 0.0296,
+      "imagined_km2": 111584,
+      "imagined_mostly_over": "Iran"
+    },
+    {
+      "iso": "SB",
+      "name": "Solomon Islands",
+      "n_places": 28,
+      "n_cells": 0,
+      "believed_centroid": [
+        -14.53,
+        136.483
+      ],
+      "true_centroid": [
+        -9.342,
+        160.043
+      ],
+      "displacement_km": 2625.5,
+      "direction": "west",
+      "model_area_km2": 0,
+      "real_area_km2": 36648,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": 0.0,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "SC",
+      "name": "Seychelles",
+      "n_places": 37,
+      "n_cells": 3,
+      "believed_centroid": [
+        9.539,
+        33.754
+      ],
+      "true_centroid": [
+        -5.713,
+        53.85
+      ],
+      "displacement_km": 2798.9,
+      "direction": "north-west",
+      "model_area_km2": 36327,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 36327,
+      "imagined_mostly_over": "Mozambique"
+    },
+    {
+      "iso": "SD",
+      "name": "Sudan",
+      "n_places": 24,
+      "n_cells": 13,
+      "believed_centroid": [
+        16.278,
+        24.817
+      ],
+      "true_centroid": [
+        15.533,
+        30.541
+      ],
+      "displacement_km": 617.7,
+      "direction": "west",
+      "model_area_km2": 155453,
+      "real_area_km2": 1875041,
+      "overlap_km2": 96180,
+      "precision": 0.6187,
+      "recall": 0.0513,
+      "imagined_km2": 59273,
+      "imagined_mostly_over": "Chad"
+    },
+    {
+      "iso": "SE",
+      "name": "Sweden",
+      "n_places": 346,
+      "n_cells": 88,
+      "believed_centroid": [
+        57.811,
+        15.261
+      ],
+      "true_centroid": [
+        59.135,
+        15.555
+      ],
+      "displacement_km": 148.3,
+      "direction": "south",
+      "model_area_km2": 504265,
+      "real_area_km2": 462451,
+      "overlap_km2": 58907,
+      "precision": 0.1168,
+      "recall": 0.1274,
+      "imagined_km2": 445358,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "SG",
+      "name": "Singapore",
+      "n_places": 95,
+      "n_cells": 8,
+      "believed_centroid": [
+        12.514,
+        104.186
+      ],
+      "true_centroid": [
+        1.331,
+        103.842
+      ],
+      "displacement_km": 1244.1,
+      "direction": "north",
+      "model_area_km2": 81512,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 81512,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "SI",
+      "name": "Slovenia",
+      "n_places": 106,
+      "n_cells": 3,
+      "believed_centroid": [
+        45.411,
+        15.829
+      ],
+      "true_centroid": [
+        46.15,
+        14.588
+      ],
+      "displacement_km": 126.5,
+      "direction": "south-east",
+      "model_area_km2": 37028,
+      "real_area_km2": 17022,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 37028,
+      "imagined_mostly_over": "Somalia"
+    },
+    {
+      "iso": "SK",
+      "name": "Slovakia",
+      "n_places": 114,
+      "n_cells": 8,
+      "believed_centroid": [
+        49.701,
+        21.673
+      ],
+      "true_centroid": [
+        48.696,
+        19.123
+      ],
+      "displacement_km": 216.4,
+      "direction": "north-east",
+      "model_area_km2": 65464,
+      "real_area_km2": 32771,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 65464,
+      "imagined_mostly_over": "Ukraine"
+    },
+    {
+      "iso": "SL",
+      "name": "Sierra Leone",
+      "n_places": 20,
+      "n_cells": 4,
+      "believed_centroid": [
+        9.835,
+        10.628
+      ],
+      "true_centroid": [
+        8.358,
+        -12.176
+      ],
+      "displacement_km": 2508.7,
+      "direction": "east",
+      "model_area_km2": 48896,
+      "real_area_km2": 73364,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 48896,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "SM",
+      "name": "San Marino",
+      "n_places": 3,
+      "n_cells": 0,
+      "believed_centroid": [
+        66.86,
+        -4.195
+      ],
+      "true_centroid": [
+        43.929,
+        12.46
+      ],
+      "displacement_km": 2737.4,
+      "direction": "north",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "SN",
+      "name": "Senegal",
+      "n_places": 35,
+      "n_cells": 19,
+      "believed_centroid": [
+        14.314,
+        -0.328
+      ],
+      "true_centroid": [
+        14.557,
+        -15.848
+      ],
+      "displacement_km": 1671.2,
+      "direction": "east",
+      "model_area_km2": 227335,
+      "real_area_km2": 167554,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 227335,
+      "imagined_mostly_over": "Niger"
+    },
+    {
+      "iso": "SO",
+      "name": "Somalia",
+      "n_places": 34,
+      "n_cells": 18,
+      "believed_centroid": [
+        19.115,
+        48.7
+      ],
+      "true_centroid": [
+        4.85,
+        45.874
+      ],
+      "displacement_km": 1615.5,
+      "direction": "north",
+      "model_area_km2": 212248,
+      "real_area_km2": 504245,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 212248,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "SR",
+      "name": "Suriname",
+      "n_places": 18,
+      "n_cells": 0,
+      "believed_centroid": [
+        19.536,
+        -12.957
+      ],
+      "true_centroid": [
+        5.457,
+        -55.498
+      ],
+      "displacement_km": 4858.6,
+      "direction": "north-east",
+      "model_area_km2": 0,
+      "real_area_km2": 172650,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": 0.0,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "SS",
+      "name": "South Sudan",
+      "n_places": 20,
+      "n_cells": 7,
+      "believed_centroid": [
+        13.905,
+        34.606
+      ],
+      "true_centroid": [
+        7.832,
+        30.837
+      ],
+      "displacement_km": 790.7,
+      "direction": "north-east",
+      "model_area_km2": 83552,
+      "real_area_km2": 625097,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 83552,
+      "imagined_mostly_over": "Sudan"
+    },
+    {
+      "iso": "ST",
+      "name": "Sao Tome and Principe",
+      "n_places": 7,
+      "n_cells": 0,
+      "believed_centroid": [
+        13.49,
+        -5.479
+      ],
+      "true_centroid": [
+        1.019,
+        7.068
+      ],
+      "displacement_km": 1957.1,
+      "direction": "north-west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "SV",
+      "name": "El Salvador",
+      "n_places": 36,
+      "n_cells": 16,
+      "believed_centroid": [
+        8.352,
+        -75.057
+      ],
+      "true_centroid": [
+        13.727,
+        -88.977
+      ],
+      "displacement_km": 1631.8,
+      "direction": "east",
+      "model_area_km2": 193102,
+      "real_area_km2": 24045,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 193102,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "SY",
+      "name": "Syria",
+      "n_places": 538,
+      "n_cells": 331,
+      "believed_centroid": [
+        34.168,
+        41.234
+      ],
+      "true_centroid": [
+        35.02,
+        36.667
+      ],
+      "displacement_km": 428.5,
+      "direction": "east",
+      "model_area_km2": 3464111,
+      "real_area_km2": 192334,
+      "overlap_km2": 192334,
+      "precision": 0.0555,
+      "recall": 1.0,
+      "imagined_km2": 3271777,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "SZ",
+      "name": "Eswatini",
+      "n_places": 6,
+      "n_cells": 1,
+      "believed_centroid": [
+        -18.501,
+        31.55
+      ],
+      "true_centroid": [
+        -26.425,
+        31.466
+      ],
+      "displacement_km": 881.2,
+      "direction": "north",
+      "model_area_km2": 12195,
+      "real_area_km2": 11065,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 12195,
+      "imagined_mostly_over": "Tanzania"
+    },
+    {
+      "iso": "TD",
+      "name": "Chad",
+      "n_places": 14,
+      "n_cells": 1,
+      "believed_centroid": [
+        19.149,
+        16.467
+      ],
+      "true_centroid": [
+        13.341,
+        17.688
+      ],
+      "displacement_km": 658.8,
+      "direction": "north",
+      "model_area_km2": 12195,
+      "real_area_km2": 1285112,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 12195,
+      "imagined_mostly_over": "Central African Republic"
+    },
+    {
+      "iso": "TG",
+      "name": "Togo",
+      "n_places": 8,
+      "n_cells": 0,
+      "believed_centroid": [
+        14.292,
+        4.285
+      ],
+      "true_centroid": [
+        7.656,
+        1.134
+      ],
+      "displacement_km": 814.0,
+      "direction": "north-east",
+      "model_area_km2": 0,
+      "real_area_km2": 61124,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": 0.0,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "TH",
+      "name": "Thailand",
+      "n_places": 65,
+      "n_cells": 23,
+      "believed_centroid": [
+        18.016,
+        99.282
+      ],
+      "true_centroid": [
+        13.405,
+        100.679
+      ],
+      "displacement_km": 534.1,
+      "direction": "north",
+      "model_area_km2": 265930,
+      "real_area_km2": 512564,
+      "overlap_km2": 35677,
+      "precision": 0.1342,
+      "recall": 0.0696,
+      "imagined_km2": 230253,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "TJ",
+      "name": "Tajikistan",
+      "n_places": 18,
+      "n_cells": 8,
+      "believed_centroid": [
+        47.972,
+        62.873
+      ],
+      "true_centroid": [
+        38.585,
+        70.688
+      ],
+      "displacement_km": 1219.0,
+      "direction": "north-west",
+      "model_area_km2": 67744,
+      "real_area_km2": 154805,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 67744,
+      "imagined_mostly_over": "Kazakhstan"
+    },
+    {
+      "iso": "TL",
+      "name": "Timor Leste",
+      "n_places": 9,
+      "n_cells": 2,
+      "believed_centroid": [
+        2.967,
+        83.46
+      ],
+      "true_centroid": [
+        -8.842,
+        125.706
+      ],
+      "displacement_km": 4863.2,
+      "direction": "west",
+      "model_area_km2": 23941,
+      "real_area_km2": 12229,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 23941,
+      "imagined_mostly_over": "Niger"
+    },
+    {
+      "iso": "TM",
+      "name": "Turkmenistan",
+      "n_places": 14,
+      "n_cells": 9,
+      "believed_centroid": [
+        41.869,
+        49.708
+      ],
+      "true_centroid": [
+        39.228,
+        59.042
+      ],
+      "displacement_km": 841.0,
+      "direction": "north-west",
+      "model_area_km2": 76487,
+      "real_area_km2": 470727,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 76487,
+      "imagined_mostly_over": "Kazakhstan"
+    },
+    {
+      "iso": "TN",
+      "name": "Tunisia",
+      "n_places": 58,
+      "n_cells": 35,
+      "believed_centroid": [
+        32.082,
+        16.322
+      ],
+      "true_centroid": [
+        35.563,
+        9.959
+      ],
+      "displacement_km": 703.6,
+      "direction": "south-east",
+      "model_area_km2": 389519,
+      "real_area_km2": 163806,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 389519,
+      "imagined_mostly_over": "Libya"
+    },
+    {
+      "iso": "TO",
+      "name": "Tonga",
+      "n_places": 8,
+      "n_cells": 0,
+      "believed_centroid": [
+        -12.475,
+        175.796
+      ],
+      "true_centroid": [
+        -20.931,
+        -174.981
+      ],
+      "displacement_km": 1358.9,
+      "direction": "north-west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "TR",
+      "name": "Turkey",
+      "n_places": 161,
+      "n_cells": 45,
+      "believed_centroid": [
+        40.541,
+        37.929
+      ],
+      "true_centroid": [
+        39.159,
+        32.836
+      ],
+      "displacement_km": 461.1,
+      "direction": "east",
+      "model_area_km2": 417573,
+      "real_area_km2": 787005,
+      "overlap_km2": 144426,
+      "precision": 0.3459,
+      "recall": 0.1835,
+      "imagined_km2": 273147,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "TT",
+      "name": "Trinidad and Tobago",
+      "n_places": 27,
+      "n_cells": 5,
+      "believed_centroid": [
+        19.711,
+        -55.222
+      ],
+      "true_centroid": [
+        10.532,
+        -61.322
+      ],
+      "displacement_km": 1212.2,
+      "direction": "north-east",
+      "model_area_km2": 59575,
+      "real_area_km2": 12157,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 59575,
+      "imagined_mostly_over": "Venezuela"
+    },
+    {
+      "iso": "TV",
+      "name": "Tuvalu",
+      "n_places": 10,
+      "n_cells": 0,
+      "believed_centroid": [
+        -7.851,
+        174.992
+      ],
+      "true_centroid": [
+        -7.797,
+        178.162
+      ],
+      "displacement_km": 349.3,
+      "direction": "west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "TW",
+      "name": "Taiwan",
+      "n_places": 115,
+      "n_cells": 36,
+      "believed_centroid": [
+        29.793,
+        116.596
+      ],
+      "true_centroid": [
+        24.162,
+        120.954
+      ],
+      "displacement_km": 760.4,
+      "direction": "north-west",
+      "model_area_km2": 397967,
+      "real_area_km2": 34013,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 397967,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "TZ",
+      "name": "Tanzania",
+      "n_places": 160,
+      "n_cells": 119,
+      "believed_centroid": [
+        0.061,
+        39.311
+      ],
+      "true_centroid": [
+        -5.128,
+        35.189
+      ],
+      "displacement_km": 736.5,
+      "direction": "north-east",
+      "model_area_km2": 1462048,
+      "real_area_km2": 945388,
+      "overlap_km2": 442706,
+      "precision": 0.3028,
+      "recall": 0.4683,
+      "imagined_km2": 1019342,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "UA",
+      "name": "Ukraine",
+      "n_places": 228,
+      "n_cells": 93,
+      "believed_centroid": [
+        48.918,
+        31.129
+      ],
+      "true_centroid": [
+        48.998,
+        30.203
+      ],
+      "displacement_km": 68.2,
+      "direction": "east",
+      "model_area_km2": 736210,
+      "real_area_km2": 558791,
+      "overlap_km2": 227386,
+      "precision": 0.3089,
+      "recall": 0.4069,
+      "imagined_km2": 508824,
+      "imagined_mostly_over": "Russia"
+    },
+    {
+      "iso": "UG",
+      "name": "Uganda",
+      "n_places": 171,
+      "n_cells": 177,
+      "believed_centroid": [
+        3.637,
+        33.655
+      ],
+      "true_centroid": [
+        0.964,
+        32.289
+      ],
+      "displacement_km": 333.7,
+      "direction": "north-east",
+      "model_area_km2": 2158070,
+      "real_area_km2": 247145,
+      "overlap_km2": 123514,
+      "precision": 0.0572,
+      "recall": 0.4998,
+      "imagined_km2": 2034556,
+      "imagined_mostly_over": "Democratic Republic of the Congo"
+    },
+    {
+      "iso": "US",
+      "name": "United States",
+      "n_places": 6496,
+      "n_cells": 1691,
+      "believed_centroid": [
+        41.425,
+        -91.532
+      ],
+      "true_centroid": [
+        39.773,
+        -92.394
+      ],
+      "displacement_km": 197.6,
+      "direction": "north",
+      "model_area_km2": 15434059,
+      "real_area_km2": 9473173,
+      "overlap_km2": 7931872,
+      "precision": 0.5139,
+      "recall": 0.8373,
+      "imagined_km2": 7502187,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "UY",
+      "name": "Uruguay",
+      "n_places": 47,
+      "n_cells": 4,
+      "believed_centroid": [
+        -13.859,
+        -58.383
+      ],
+      "true_centroid": [
+        -33.961,
+        -56.265
+      ],
+      "displacement_km": 2245.4,
+      "direction": "north",
+      "model_area_km2": 46444,
+      "real_area_km2": 176885,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 46444,
+      "imagined_mostly_over": "Bolivia"
+    },
+    {
+      "iso": "UZ",
+      "name": "Uzbekistan",
+      "n_places": 34,
+      "n_cells": 21,
+      "believed_centroid": [
+        47.402,
+        58.733
+      ],
+      "true_centroid": [
+        40.421,
+        67.856
+      ],
+      "displacement_km": 1064.7,
+      "direction": "north-west",
+      "model_area_km2": 166733,
+      "real_area_km2": 470024,
+      "overlap_km2": 27201,
+      "precision": 0.1631,
+      "recall": 0.0579,
+      "imagined_km2": 139533,
+      "imagined_mostly_over": "Kazakhstan"
+    },
+    {
+      "iso": "VA",
+      "name": "Vatican",
+      "n_places": 3,
+      "n_cells": 0,
+      "believed_centroid": [
+        44.697,
+        11.243
+      ],
+      "true_centroid": [
+        41.902,
+        12.453
+      ],
+      "displacement_km": 325.9,
+      "direction": "north",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "VC",
+      "name": "Saint Vincent and the Grenadines",
+      "n_places": 7,
+      "n_cells": 1,
+      "believed_centroid": [
+        22.552,
+        -47.154
+      ],
+      "true_centroid": [
+        13.099,
+        -61.209
+      ],
+      "displacement_km": 1819.5,
+      "direction": "north-east",
+      "model_area_km2": 11339,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": null,
+      "imagined_km2": 11339,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "VE",
+      "name": "Venezuela",
+      "n_places": 67,
+      "n_cells": 26,
+      "believed_centroid": [
+        8.58,
+        -64.562
+      ],
+      "true_centroid": [
+        9.819,
+        -67.622
+      ],
+      "displacement_km": 363.0,
+      "direction": "east",
+      "model_area_km2": 317569,
+      "real_area_km2": 907218,
+      "overlap_km2": 73364,
+      "precision": 0.231,
+      "recall": 0.0809,
+      "imagined_km2": 244206,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "VG",
+      "name": "British Virgin Islands",
+      "n_places": 4,
+      "n_cells": 0,
+      "believed_centroid": [
+        39.5,
+        -67.393
+      ],
+      "true_centroid": [
+        18.421,
+        -64.358
+      ],
+      "displacement_km": 2362.0,
+      "direction": "north",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "VI",
+      "name": "U.S. Virgin Islands",
+      "n_places": 2,
+      "n_cells": 0,
+      "believed_centroid": [
+        24.752,
+        -77.588
+      ],
+      "true_centroid": [
+        18.027,
+        -64.868
+      ],
+      "displacement_km": 1513.1,
+      "direction": "north-west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "VN",
+      "name": "Vietnam",
+      "n_places": 91,
+      "n_cells": 46,
+      "believed_centroid": [
+        21.29,
+        106.268
+      ],
+      "true_centroid": [
+        15.326,
+        106.548
+      ],
+      "displacement_km": 663.9,
+      "direction": "north",
+      "model_area_km2": 547101,
+      "real_area_km2": 353360,
+      "overlap_km2": 71462,
+      "precision": 0.1306,
+      "recall": 0.2022,
+      "imagined_km2": 475639,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "VU",
+      "name": "Vanuatu",
+      "n_places": 20,
+      "n_cells": 0,
+      "believed_centroid": [
+        -2.919,
+        143.074
+      ],
+      "true_centroid": [
+        -16.836,
+        168.302
+      ],
+      "displacement_km": 3160.3,
+      "direction": "north-west",
+      "model_area_km2": 0,
+      "real_area_km2": 11855,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": 0.0,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "WS",
+      "name": "Samoa",
+      "n_places": 19,
+      "n_cells": 0,
+      "believed_centroid": [
+        -13.677,
+        166.246
+      ],
+      "true_centroid": [
+        -13.805,
+        -171.937
+      ],
+      "displacement_km": 2355.7,
+      "direction": "west",
+      "model_area_km2": 0,
+      "real_area_km2": 0,
+      "overlap_km2": 0,
+      "precision": null,
+      "recall": null,
+      "imagined_km2": 0,
+      "imagined_mostly_over": null
+    },
+    {
+      "iso": "XK",
+      "name": "Kosovo",
+      "n_places": 22,
+      "n_cells": 2,
+      "believed_centroid": [
+        40.915,
+        26.758
+      ],
+      "true_centroid": [
+        42.662,
+        20.952
+      ],
+      "displacement_km": 518.9,
+      "direction": "east",
+      "model_area_km2": 20005,
+      "real_area_km2": 18232,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 20005,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "YE",
+      "name": "Yemen",
+      "n_places": 22,
+      "n_cells": 8,
+      "believed_centroid": [
+        25.237,
+        48.721
+      ],
+      "true_centroid": [
+        14.213,
+        45.433
+      ],
+      "displacement_km": 1273.0,
+      "direction": "north",
+      "model_area_km2": 91654,
+      "real_area_km2": 451625,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 91654,
+      "imagined_mostly_over": "Libya"
+    },
+    {
+      "iso": "ZA",
+      "name": "South Africa",
+      "n_places": 756,
+      "n_cells": 406,
+      "believed_centroid": [
+        -18.35,
+        24.997
+      ],
+      "true_centroid": [
+        -28.885,
+        26.397
+      ],
+      "displacement_km": 1180.0,
+      "direction": "north",
+      "model_area_km2": 4498331,
+      "real_area_km2": 1252232,
+      "overlap_km2": 1231176,
+      "precision": 0.2737,
+      "recall": 0.9832,
+      "imagined_km2": 3267155,
+      "imagined_mostly_over": "sea"
+    },
+    {
+      "iso": "ZM",
+      "name": "Zambia",
+      "n_places": 48,
+      "n_cells": 19,
+      "believed_centroid": [
+        -5.101,
+        27.475
+      ],
+      "true_centroid": [
+        -13.199,
+        28.487
+      ],
+      "displacement_km": 907.2,
+      "direction": "north",
+      "model_area_km2": 229529,
+      "real_area_km2": 721192,
+      "overlap_km2": 23941,
+      "precision": 0.1043,
+      "recall": 0.0332,
+      "imagined_km2": 205588,
+      "imagined_mostly_over": "Angola"
+    },
+    {
+      "iso": "ZW",
+      "name": "Zimbabwe",
+      "n_places": 51,
+      "n_cells": 8,
+      "believed_centroid": [
+        -10.634,
+        31.994
+      ],
+      "true_centroid": [
+        -18.572,
+        30.199
+      ],
+      "displacement_km": 903.5,
+      "direction": "north",
+      "model_area_km2": 95987,
+      "real_area_km2": 386033,
+      "overlap_km2": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "imagined_km2": 95987,
+      "imagined_mostly_over": "Democratic Republic of the Congo"
+    }
+  ]
+}

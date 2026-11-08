@@ -1,7 +1,9 @@
 """Write DEMO.md: start-up commands, the 5-minute script, and validated menus.
 
-The menus (edit pairs, invented names, companies) and every number are read
-from results/, so DEMO.md can be regenerated after any re-run.
+The menus (edit pairs, invented names, suggested worlds), the political map
+numbers and every other number are read from results/ (Qwen's files), so
+DEMO.md can be regenerated after any re-run. The model table reads the
+registry, so it shows which models are built at the time of writing.
 
     uv run python scripts/write_demo_md.py
 """
@@ -13,7 +15,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from terra import RESULTS, ROOT  # noqa: E402
+from terra import RESULTS, ROOT, registry  # noqa: E402
 
 
 def load(name):
@@ -42,7 +44,9 @@ def main() -> int:
           "- Use Chrome or Safari, full screen, at least 1400 px wide.",
           "- First edit or locate after start-up may take a second or two longer (MPS warm-up).",
           "- Health check: http://localhost:8000/api/health",
-          "- Full automated check: stop the server, then `uv run python scripts/demo_check.py` (starts its own server on port 8765).", ""]
+          "- Full automated check: stop the server, then `uv run python scripts/demo_check.py` (starts its own server on port 8765).",
+          "- To start on another model: `TERRA_MODEL=gemma4-12b uv run uvicorn terra.server:app --port 8000` "
+          "(or `gemma4-31b`). Without `TERRA_MODEL` the server starts on Qwen.", ""]
     if dc:
         L += [f"Last demo check: {dc['n_pass']}/{dc['n_checks']} checks passed at {dc['time']} (`results/demo_check.json`).", ""]
 
@@ -57,6 +61,14 @@ def main() -> int:
         sw = rw["summary"]["swap"]
         rewrite_line = (f" Say: \"Over {sw['n_worlds']} random three-move worlds, {sw['city_pass_rate']:.0%} of moved cities change all their "
                         f"answers, and {sw['pair_questions']['all']['after_consistent_rate']:.0%} of answers about two moved cities fit the rewritten world.\"")
+    pol_line = ""
+    ps = load("political_stats.json")
+    if ps:
+        au = next((c for c in ps["countries"] if c["iso"] == "AU"), None)
+        pol_line = (f" Then set Borders to \"Both\". Say: \"These are the model's borders, read from the same probe: "
+                    f"{ps['n_countries_drawn']} countries survive, and {ps['share_of_model_land_in_right_country']:.0%} of its land lies in the right country.\"")
+        if au:
+            pol_line += f" Click Australia: it sits {au['displacement_km']:,.0f} km {au['direction']} of where it is (`results/political_stats.json`)."
     edit_line = ""
     if ev:
         e, c = ev["sets"]["cross"]["edit"], ev["sets"]["cross"]["control"]
@@ -64,9 +76,9 @@ def main() -> int:
                      f"of the time; a random push of the same size succeeds {c['pass_rate']:.0%}.\" (`results/{eval_name}`)")
     L += [
         "1. **Hook (15 s).** \"Every language model carries a map of the Earth that nobody drew. We pulled it out, and then we learned to edit it.\"",
-        "2. **The map (45 s).** Map tab. Rotate the globe; the dots are where the model believes places are, coloured by true continent, lines go to the true position. Click a dot." + probe_line,
-        "3. **New worlds (60 s).** New worlds tab. Hand the keyboard to the judge, or click a suggestion chip. Read out the nearest real city.",
-        "4. **The edit (90 s).** Edit tab. Drag the Paris marker onto Sydney (or pick Paris -> Sydney and press Move). The ripple table fills: before, after, random control; the landmark row shows the Eiffel Tower becoming the Sydney Opera House. Press \"Ask before and after\" on the Christmas packing question (the edited answer adds sunscreen and a hat), or let the judge type a question that mentions Paris. Then tick \"move: X stays X\", pick Berlin -> Cape Town and press Move: Germany, euro, German and the Brandenburg Gate stay, but the model now says Southern Hemisphere and winter in July.",
+        "2. **The map (45 s).** Map tab. Rotate the globe; the dots are where the model believes places are, coloured by true continent, lines go to the true position. Click a dot: the card gives its true and believed position and the error." + probe_line + pol_line,
+        "3. **New worlds (60 s).** New worlds tab. Hand the keyboard to the judge, or click a suggestion chip. Read out the nearest real city. The name joins \"Your places\" with a dashed marker: drag it onto Sydney, or type it as a source or target in the Edit tab (its answers are shown unscored, as there is no answer key for invented places).",
+        "4. **The edit (90 s).** Edit tab. Drag the Paris marker onto Sydney (or type Paris -> Sydney and press Move). The ripple table fills: before, after, random control; the landmark row shows the Eiffel Tower becoming the Sydney Opera House. Press \"Ask before and after\" on the Christmas packing question (the edited answer adds sunscreen and a hat), or let the judge type a question that mentions Paris. Then tick \"move: X stays X\", pick Berlin -> Cape Town and press Move: Germany, euro, German and the Brandenburg Gate stay, but the model now says Southern Hemisphere and winter in July.",
         "5. **Rewrite the world (45 s).** Rewrite tab. Click a suggested world (or drag up to three cities onto new places, then press Rewrite). Every city's answers change, and the questions about two moved cities (\"Are Paris and Tokyo in the same hemisphere?\") answer for the rewritten world. Then press \"Ask before and after\" on the packing question that mentions all three cities." + rewrite_line,
         "6. **Rigour (30 s).** Rigour tab: held-out error, edit success against the control, invented-name chance level. Prior work: Gurnee & Tegmark 2023; Chen et al. 2023." + edit_line,
         "7. **Close (15 s).**", ""]
@@ -138,7 +150,33 @@ def main() -> int:
         else:
             L += [f"Not in the demo: the best setting moved the hemisphere or season answer while keeping the landmark on only "
                   f"{st['best']['n_moved_and_kept']}/{len(st['pairs'])} gate pairs (rule needs half). Say so if asked.", ""]
+    L += ["## Models", "",
+          "The Model menu (bottom left, above the legend) switches models. Only one model is ever in memory: the server unloads the "
+          "current one (and asks Ollama, if it is running, to unload its models) before loading the next. Switching to a "
+          "Gemma model takes about a minute; do it before the judges arrive, not during the five minutes.", "",
+          "| Model | Built (map) | Edits | Build command |", "|---|---|---|---|"]
+    for k, sp in registry.MODELS.items():
+        L.append(f"| {sp.display} (`{k}`) | {'yes' if registry.available(k) else 'no'} | "
+                 f"{'yes' if registry.editable(k) else 'no'} | `{registry.build_command(k)}` |")
+    L.append("")
+    if ps:
+        st_ = ps["settings"]
+        L += ["## The model's political map", "",
+              f"Map tab, Borders: Real / The model's / Both. Every place is put at its believed position (out-of-fold probe "
+              f"reading) with its real country; each {st_['cell_deg']:g}-degree cell is land if its {st_['k']}th nearest believed "
+              f"place is within {st_['radius_km']} km, and takes the country of a distance-weighted vote of those places "
+              f"(`results/political_stats.json`).", "",
+              f"- {ps['n_countries_drawn']} of {ps['n_countries_with_places']} countries with places survive; "
+              f"{ps['share_of_model_land_in_right_country']:.0%} of the model's land lies in the right country; "
+              f"model land {ps['model_land_fraction']:.0%} of the globe against {ps['real_land_fraction']:.0%} real.",
+              f"- Median displacement for countries with 20 or more places: {ps['median_displacement_km_20plus_places']:,.0f} km.",
+              "- Most displaced (20+ places): " + ", ".join(f"{c['name']} {c['displacement_km']:,.0f} km {c['direction']}"
+                                                         for c in ps["most_displaced"][:5]) + ".",
+              f"- Vanished ({len(ps['vanished'])} countries with 10 or more places but no land of their own), most places first: " + ", ".join(c["name"] for c in ps["vanished"][:6]) + ".",
+              f"- Caveat to say if asked: {ps['caveat']}", ""]
     L += ["## If something goes wrong", "",
+          "- \"switching models\" in the page: wait for the overlay to clear; every request returns 503 until the new model is in.",
+          "- A model shows \"(not built yet)\": run the build command in the table above with the server stopped.",
           "- Globe blank: hard-refresh the page; check the server terminal for errors.",
           "- An edit seems slow: the first live (uncached) edit takes a few seconds; menu pairs are instant.",
           "- Server will not start: another process holds the model. Quit it, or restart the Mac's terminal session.", ""]

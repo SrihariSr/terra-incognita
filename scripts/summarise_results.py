@@ -168,6 +168,25 @@ def main() -> int:
         for k, lab in (("steer", "tier 2 steering"), ("swap", "tier 1 swap"), ("control", "random control")):
             add(f"Held-out {sh['n_pairs']} pairs, {lab}: location moved / identity kept / both",
                 f"{pct(r[k]['moved'])} / {pct(r[k]['identity_kept'])} / {pct(r[k]['moved_and_kept'])}", "steer_heldout.json")
+    ps = load("political_stats.json")
+    if ps:
+        st_ = ps["settings"]
+        add("Political map: settings", f"{st_['cell_deg']:g}-degree grid, k = {st_['k']}, land if the k-th neighbour is "
+            f"within {st_['radius_km']} km", "political_stats.json")
+        add("Political map: model land / real land (share of the globe)",
+            f"{pct(ps['model_land_fraction'])} / {pct(ps['real_land_fraction'])}", "political_stats.json")
+        add("Political map: countries drawn (of countries with places)",
+            f"{ps['n_countries_drawn']} of {ps['n_countries_with_places']}", "political_stats.json")
+        add("Political map: share of the model's land in the right country",
+            pct(ps["share_of_model_land_in_right_country"]), "political_stats.json")
+        add("Political map: median displacement, countries with 20+ places",
+            f"{ps['median_displacement_km_20plus_places']:,.0f} km", "political_stats.json")
+        au = next((c for c in ps["countries"] if c["iso"] == "AU"), None)
+        if au:
+            add("Political map: Australia displacement / precision / recall",
+                f"{au['displacement_km']:,.0f} km {au['direction']} / {pct(au['precision'])} / {pct(au['recall'])}",
+                "political_stats.json")
+        add("Political map: countries with 10+ places that vanish", str(len(ps["vanished"])), "political_stats.json")
     uc = load("ui_check.json")
     if uc:
         add("Browser check of the page", f"{uc['n_pass']}/{uc['n_checks']} checks pass ({uc['time']})", "ui_check.json")

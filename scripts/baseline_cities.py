@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from terra import RESULTS  # noqa: E402
+from terra import registry  # noqa: E402
 from terra.data import big_cities, city_info  # noqa: E402
 from terra.model import get_lm  # noqa: E402
 from terra.ripple import QKEYS, baseline_correct, make_key, prompts_for  # noqa: E402
@@ -35,9 +35,10 @@ EXTRA = ["Paris", "Sydney", "Melbourne", "Stockholm", "Wellington", "Auckland", 
          "Mumbai", "São Paulo", "Seoul", "Shanghai"]
 
 
-def main() -> int:
+def run(key: str = registry.DEFAULT_KEY, lm=None) -> dict:
+    """Ask the unedited `key` the five ripple questions about each city."""
     t0 = time.time()
-    lm = get_lm()
+    lm = lm or get_lm(key)
     c = big_cities(min_population=1_000_000)
     c = c.groupby("country_code", group_keys=False).head(6)
     names = [n for n in dict.fromkeys(list(c["name"]) + EXTRA) if city_info(n) is not None]
@@ -53,19 +54,30 @@ def main() -> int:
         for i, n in enumerate(chunk):
             info = city_info(n)
             ans = dict(zip(QKEYS, outs[i * 5:(i + 1) * 5]))
-            key = make_key(n, info["iso"], info["latitude"])
-            ok = baseline_correct(ans, key)
+            answer_key = make_key(n, info["iso"], info["latitude"])
+            ok = baseline_correct(ans, answer_key)
             rows.append({"name": n, "iso": info["iso"], "latitude": info["latitude"],
                          "longitude": info["longitude"], "population": info["population"],
                          "answers": ans, "correct": ok, "all_correct": all(ok.values()),
-                         "key": key.main})
+                         "key": answer_key.main})
         print(f"[baseline] {b0 + len(chunk)}/{len(names)}  ({time.time() - t0:.0f}s)", flush=True)
     good = [r for r in rows if r["all_correct"]]
     per_q = {q: sum(r["correct"][q] for r in rows) / len(rows) for q in QKEYS}
     out = {"model": lm.model_id, "n_cities": len(rows), "n_all_correct": len(good),
            "per_question_accuracy": per_q, "cities": rows, "seconds": time.time() - t0}
-    (RESULTS / "baseline_cities.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    out["model_key"] = key
+    P = registry.paths(key)
+    P.results.mkdir(parents=True, exist_ok=True)
+    P.result("baseline_cities.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
     print(f"[baseline] {len(good)}/{len(rows)} cities all-correct; per question {per_q}")
+    return out
+
+
+def main() -> int:
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--model", default=registry.DEFAULT_KEY, choices=sorted(registry.MODELS))
+    run(ap.parse_args().model)
     return 0
 
 
